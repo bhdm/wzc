@@ -1,3 +1,8 @@
+wzc_main:
+    resource: "@WzcMainBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 wzc_admin:
     resource: "@WzcAdminBundle/Controller/"
     type:     annotation

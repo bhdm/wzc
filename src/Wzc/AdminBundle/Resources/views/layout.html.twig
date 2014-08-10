@@ -1,0 +1,83 @@
+<html>
+    <head>
+        {% block javascripts %}
+            <script src="{{ asset('bundles/wzcadmin/js/jquery-1.11.1.min.js') }}"></script>
+            <script src="{{ asset('bundles/wzcadmin/js/bootstrap.min.js') }}"></script>
+        {% endblock %}
+
+        {% block stylesheets %}
+            <link href=" {{ asset('bundles/wzcadmin/css/bootstrap.min.css') }}" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">ПАНЕЛЬ <span class="text-danger">[ АДМИНИСТРАТОР ]</span></a>
+                    </div>
+                    <div class="navbar-right">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">На сайт</a></li>
+                                <li><a href="#">Профиль</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="well">
+                        <h2 class="modal-title">Навигация</h2>
+                        <ul class="nav list-group">
+                            <li class="">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-align-justify"></i>
+                                    Страницы сайта
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-question-sign"></i>
+                                    Частые вопросы
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-info-sign"></i>
+                                    Онлайн косультация
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    Пользователи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <ul class="breadcrumb well">
+                        {% block breadcrumb %}
+                            <li><a href="#">Домой</a> <span class="divider"></span></li>
+                            <li><a href="#">Библиотека</a> <span class="divider"></span></li>
+                            <li class="active">Данные</li>
+                        {% endblock %}
+                    </ul>
+                    <div class="well">
+                        {% block content %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        {% block body %}{% endblock %}
+    </body>
+</html>

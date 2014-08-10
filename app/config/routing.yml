@@ -1,0 +1,5 @@
+wzc_admin:
+    resource: "@WzcAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

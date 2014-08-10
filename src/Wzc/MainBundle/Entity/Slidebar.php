@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity
  */
-class Page extends BaseEntity
+class Slidebar extends BaseEntity
 {
     /**
      * @ORM\Column(type="string")
@@ -18,27 +18,14 @@ class Page extends BaseEntity
     protected $title;
 
     /**
-     * @ORM\Column(type="string")
-     */
-    protected $keywords;
-
-    /**
-     * @ORM\Column(type="string")
-     */
-    protected $description;
-
-    /**
      * @ORM\Column(type="text")
      */
     protected $body;
 
-    public function getId(){
-        return $this->id;
-    }
-
-    public function __toString(){
-        return $this->title;
-    }
+    /**
+     * ORM\Column(type="iphp_file")
+     */
+    protected $file;
 
     /**
      * @param mixed $body
@@ -57,35 +44,19 @@ class Page extends BaseEntity
     }
 
     /**
-     * @param mixed $description
+     * @param mixed $file
      */
-    public function setDescription($description)
+    public function setFile($file)
     {
-        $this->description = $description;
+        $this->file = $file;
     }
 
     /**
      * @return mixed
      */
-    public function getDescription()
+    public function getFile()
     {
-        return $this->description;
-    }
-
-    /**
-     * @param mixed $keywords
-     */
-    public function setKeywords($keywords)
-    {
-        $this->keywords = $keywords;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getKeywords()
-    {
-        return $this->keywords;
+        return $this->file;
     }
 
     /**
@@ -104,6 +75,9 @@ class Page extends BaseEntity
         return $this->title;
     }
 
+    protected function __toString(){
+        return $this->title;
+    }
 
 
 }

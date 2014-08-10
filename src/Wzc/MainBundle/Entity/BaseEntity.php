@@ -19,28 +19,28 @@ class BaseEntity
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected  $id;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="created", type="datetime")
      */
-    private $created;
+    protected $created;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="enabled", type="boolean")
+     * @ORM\Column(name="enabled", type="boolean", nullable=true)
      */
-    private $enabled = 1;
+    protected $enabled = 1;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="updated", type="datetime")
      */
-    private $updated;
+    protected $updated;
 
 
     /**
@@ -121,4 +121,5 @@ class BaseEntity
     {
         return $this->updated;
     }
+
 }

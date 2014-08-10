@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f5bf28fac35560dbdb2e597d32df056",
+    "hash": "cc368e4a800056c8b12b94c02e869ecc",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -680,6 +680,65 @@
                 "parameters management"
             ],
             "time": "2013-12-07 10:10:39"
+        },
+        {
+            "name": "iphp/filestore-bundle",
+            "version": "dev-master",
+            "target-dir": "Iphp/FileStoreBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vitiko/IphpFileStoreBundle.git",
+                "reference": "6ec54228bad160b69f86e17ed6ba347238614a96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vitiko/IphpFileStoreBundle/zipball/6ec54228bad160b69f86e17ed6ba347238614a96",
+                "reference": "6ec54228bad160b69f86e17ed6ba347238614a96",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/framework-bundle": ">=2.2,<2.6-dev"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "@stable",
+                "doctrine/orm": "@stable",
+                "mikey179/vfsstream": "v1.2.0",
+                "sensio/framework-extra-bundle": "@stable",
+                "symfony/browser-kit": "@stable",
+                "symfony/class-loader": "@stable",
+                "symfony/css-selector": "@stable",
+                "symfony/finder": "@stable",
+                "symfony/form": "@stable",
+                "symfony/process": "@stable",
+                "symfony/twig-bundle": "@stable",
+                "symfony/validator": "@stable",
+                "symfony/yaml": "@stable"
+            },
+            "type": "bundle",
+            "autoload": {
+                "psr-0": {
+                    "Iphp\\FileStoreBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitiko",
+                    "email": "vitiko@mail.ru"
+                }
+            ],
+            "description": "Upload files for doctrine entities in symfony 2 project",
+            "homepage": "http://symfonydev.ru",
+            "keywords": [
+                "file upload",
+                "sonata admin file upload",
+                "symfony file upload",
+                "upload"
+            ],
+            "time": "2014-06-02 09:45:50"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1621,9 +1680,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "iphp/filestore-bundle": 20
+    },
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.3"

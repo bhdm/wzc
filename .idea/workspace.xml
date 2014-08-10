@@ -6,6 +6,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/SymfonyStandard/RootPackageInstallSubscriber.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Slidebar.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Slidebar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +32,7 @@
       <file leaf-file-name="Slidebar.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Slidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="20" selection-start="566" selection-end="566" vertical-scroll-proportion="0.55813956" vertical-offset="54" max-vertical-offset="1674">
+            <state line="81" column="10" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.89700997" vertical-offset="648" max-vertical-offset="1674">
               <folding>
                 <element signature="e#41#73#0" expanded="true" />
               </folding>
@@ -596,7 +597,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Slidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="20" selection-start="566" selection-end="566" vertical-scroll-proportion="0.55813956" vertical-offset="54" max-vertical-offset="1674">
+        <state line="81" column="10" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.89700997" vertical-offset="648" max-vertical-offset="1674">
           <folding>
             <element signature="e#41#73#0" expanded="true" />
           </folding>

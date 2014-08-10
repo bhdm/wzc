@@ -79,7 +79,7 @@ class Slidebar extends BaseEntity
         return $this->title;
     }
 
-    protected function __toString(){
+    public function __toString(){
         return $this->title;
     }
 

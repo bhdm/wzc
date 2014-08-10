@@ -3,12 +3,15 @@
 namespace Wzc\MainBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Page
  *
  * @ORM\Table()
  * @ORM\Entity
+ * @FileStore\Uploadable
  */
 class Slidebar extends BaseEntity
 {
@@ -23,9 +26,10 @@ class Slidebar extends BaseEntity
     protected $body;
 
     /**
-     * ORM\Column(type="iphp_file")
-     */
-    protected $file;
+     * @Assert\File( maxSize="20M")
+     * @FileStore\UploadableField(mapping="photo")
+     **/
+    protected $image;
 
     /**
      * @param mixed $body

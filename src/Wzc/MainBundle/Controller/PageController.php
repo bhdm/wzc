@@ -108,9 +108,9 @@ class PageController extends Controller
      */
     public function showAction($id)
     {
-        $em = $this->getDoctrine()->getManager();
+        $em = $this->getDoctrine();
 
-        $entity = $em->getRepository('WzcMainBundle:Page')->find($id);
+        $entity = $em->getRepository('WzcMainBundle:Page')->findOneById($id);
 
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find Page entity.');

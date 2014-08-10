@@ -3,12 +3,13 @@
 namespace Wzc\MainBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * BaseEntity
  *
- * @ORM\Table()
- * @ORM\Entity(repositoryClass="BaseEntityRepository")
+ * @ORM\MappedSuperclass
  */
 class BaseEntity
 {
@@ -25,6 +26,7 @@ class BaseEntity
      * @var \DateTime
      *
      * @ORM\Column(name="created", type="datetime")
+     * @Gedmo\Timestampable(on="create")
      */
     protected $created;
 
@@ -39,6 +41,7 @@ class BaseEntity
      * @var \DateTime
      *
      * @ORM\Column(name="updated", type="datetime")
+     * @Gedmo\Timestampable(on="update")
      */
     protected $updated;
 

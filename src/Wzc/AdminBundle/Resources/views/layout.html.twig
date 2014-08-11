@@ -42,6 +42,12 @@
                             </li>
                             <li class="">
                                 <a href="#">
+                                    <i class="glyphicon glyphicon-picture"></i>
+                                    Слайдбар
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
                                     <i class="glyphicon glyphicon-question-sign"></i>
                                     Частые вопросы
                                 </a>
@@ -70,7 +76,63 @@
                         {% endblock %}
                     </ul>
                     <div class="well">
-                        {% block content %}{% endblock %}
+                        <div class="panel-heading">
+                            Фильтр:
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default active">Все</button>
+                                <button type="button" class="btn btn-default">Активные</button>
+                                <button type="button" class="btn btn-default">Неактивные</button>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Заголовок</th>
+                                <th></th>
+                                <th>Инструменты</th>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>1</td>
+                                <td>Название</td>
+                                <td><span class="glyphicon glyphicon-star" style="color: green"></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>1</td>
+                                <td>Название</td>
+                                <td><span class="glyphicon glyphicon-star" style="color: green"></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>1</td>
+                                <td>Название</td>
+                                <td><span class="glyphicon glyphicon-star" style="color: red"></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <td>1</td>
+                                <td>Название</td>
+                                <td><span class="glyphicon glyphicon-star" style="color: green"></span></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div style="text-align: right">
+                            <ul class="pagination">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>
+                        </div>
+                        {#{% block content %}{% endblock %}#}
                     </div>
                 </div>
             </div>

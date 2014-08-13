@@ -1,12 +1,25 @@
 security:
+    encoders:
+        Company\BlogBundle\Entity\User:
+            algorithm: sha512
+            encode-as-base64: true
+            iterations: 10
+
     providers:
-        in_memory:
-            memory: ~
+        main:
+            entity: { class: WzcMainBundle:User, property: username }
 
     firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
+        main:
+            pattern: /.*
+            form_login:
+                check_path: /login_check
+                login_path: /login
+            logout: true
+            security: true
+            anonymous: true
 
-        default:
-            anonymous: ~
+    access_control:
+        - { path: /admin/.*, role: ROLE_ADMIN }
+        - { path: /profile, role: ROLE_USER }
+        - { path: /.*, role: IS_AUTHENTICATED_ANONYMOUSLY }

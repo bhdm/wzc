@@ -2,6 +2,7 @@
 
 namespace Wzc\MainBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -15,6 +16,11 @@ use Symfony\Component\Security\Core\Role\RoleInterface;
  */
 class User extends BaseEntity implements UserInterface
 {
+    /**
+     * @ORM\OneToMany(targetEntity="Faq", mappedBy="user", orphanRemoval=false)
+     */
+    protected $questions;
+
     /**
      * @ORM\Column(type="string", length=100)
      * @Assert\NotBlank( message = "поле E-mail обязательно для заполнения" )
@@ -64,6 +70,7 @@ class User extends BaseEntity implements UserInterface
 
     public function __construct(){
         $this->roles    = 'ROLE_USER';
+        $this->questions = new ArrayCollection();
     }
 
     public function equals(UserInterface $user)
@@ -197,6 +204,111 @@ class User extends BaseEntity implements UserInterface
     {
         $this->username = $username;
     }
+
+    /**
+     * @param mixed $birthdate
+     */
+    public function setBirthdate($birthdate)
+    {
+        $this->birthdate = $birthdate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBirthdate()
+    {
+        return $this->birthdate;
+    }
+
+    /**
+     * @param mixed $city
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param mixed $firstName
+     */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @param mixed $lastName
+     */
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * @param mixed $questions
+     */
+    public function setQuestions($questions)
+    {
+        $this->questions = $questions;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getQuestions()
+    {
+        return $this->questions;
+    }
+
+    public function addQuestion($question){
+        $this->questions[] = $question;
+    }
+
+    public function removeQuestion($question){
+        $this->questions->remove($question);
+    }
+
+    /**
+     * @param mixed $surName
+     */
+    public function setSurName($surName)
+    {
+        $this->surName = $surName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSurName()
+    {
+        return $this->surName;
+    }
+
 
 
 }

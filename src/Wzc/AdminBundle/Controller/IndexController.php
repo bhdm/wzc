@@ -9,16 +9,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class IndexController extends Controller
 {
     /**
-     * @Route("/hello/{name}/{count}")
+     * @Route("/")
      * @Template()
      */
-    public function indexAction($name,$count)
+    public function indexAction()
     {
-        return array(
-            'name' => $name,
-            'count' => $count,
-            'ss' => '19'
-        );
+        return array();
     }
 
 

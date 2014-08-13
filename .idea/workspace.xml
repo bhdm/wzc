@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/BaseEntityRepository.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Slidebar.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/SlidebarType.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/DependencyInjection/WzcMainExtension.php" />

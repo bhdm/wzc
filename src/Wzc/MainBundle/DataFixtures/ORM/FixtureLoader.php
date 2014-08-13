@@ -3,11 +3,12 @@ namespace Company\BlogBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Wzc\MainBundle\Entity\User;
+use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 
 class FixtureLoader implements FixtureInterface
 {
-    public function load($manager)
+    public function load(ObjectManager $manager)
     {
         // создание пользователя
         $user = new User();

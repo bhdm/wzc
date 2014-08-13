@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        {% block header %}
+            <title></title>
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{ asset('bundles/wzcmain/js/jquery-1.11.1.min.js') }}"></script>
+        {% endblock %}
+
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/wzcmain/css/common.css') }}" rel="stylesheet" media="all">
+            <style>
+                *{
+                    border: 0;
+                    margin: 0;
+                    padding: 0;
+                }
+                a{
+                    text-decoration: none;
+                }
+                .header{
+                    background: #920055;
+                    height: 100px
+                }
+            </style>
+        {% endblock %}
+    </head>
+    <body>
+        <div class="header">
+
+        </div>
+        <div class="body">
+            <div class="menu"></div>
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

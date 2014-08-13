@@ -25,6 +25,12 @@ class Page extends BaseEntity
     protected $keywords;
 
     /**
+     * @Assert\NotBlank( message = "поле URL обязательно для заполнения" )
+     * @ORM\Column(type="string")
+     */
+    protected $url;
+
+    /**
      * @ORM\Column(type="string", nullable=true)
      */
     protected $description;

@@ -3,6 +3,7 @@
 namespace Wzc\MainBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Page
@@ -14,6 +15,7 @@ class Page extends BaseEntity
 {
     /**
      * @ORM\Column(type="string")
+     * @Assert\NotBlank( message = "поле Заголовок обязательно для заполнения" )
      */
     protected $title;
 
@@ -29,6 +31,7 @@ class Page extends BaseEntity
 
     /**
      * @ORM\Column(type="text")
+     * @Assert\NotBlank( message = "поле Текст обязательно для заполнения" )
      */
     protected $body;
 

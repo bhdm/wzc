@@ -4,7 +4,6 @@ namespace Wzc\MainBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
-use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\Role\RoleInterface;
 
@@ -18,13 +17,40 @@ class User extends BaseEntity implements UserInterface
 {
     /**
      * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank( message = "поле E-mail обязательно для заполнения" )
      */
     protected $username;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank( message = "поле пароль" )
      */
     protected $password;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    protected $birthdate;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $city;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $lastName;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $firstName;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $surName;
 
     /**
      * @ORM\Column(type="string", length=150)

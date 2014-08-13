@@ -17,6 +17,7 @@ class Slidebar extends BaseEntity
 {
     /**
      * @ORM\Column(type="string")
+     * @Assert\NotBlank( message = "поле Заголовок обязательно для заполнения" )
      */
     protected $title;
 
@@ -26,8 +27,9 @@ class Slidebar extends BaseEntity
     protected $body;
 
     /**
-     * @Assert\File( maxSize="20M")
+     * @Assert\File( maxSize="2M", uploadIniSizeErrorMessage = "Максимальный размер файла - 2 Мб")
      * @FileStore\UploadableField(mapping="photo")
+     * @ORM\Column(type="array", nullable=true)
      **/
     protected $image;
 

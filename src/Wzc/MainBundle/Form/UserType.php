@@ -15,18 +15,31 @@ class UserType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('username')
-            ->add('password')
-            ->add('birthdate')
-            ->add('city')
-            ->add('lastName')
-            ->add('firstName')
-            ->add('surName')
-            ->add('salt')
-            ->add('roles')
-            ->add('created')
-            ->add('enabled')
-            ->add('updated')
+            ->add('username',null, array('label'=>'E-mail'))
+//            ->add('password',null, array('label'=>''))
+            ->add('birthdate',null, array('label'=>'дата рождения'))
+            ->add('city',null, array('label'=>'Город'))
+            ->add('lastName',null, array('label'=>'Фамилия'))
+            ->add('firstName',null, array('label'=>'Имя'))
+            ->add('surName', array('label'=>'Отчество'))
+            ->add('roles','choice',  array(
+                'empty_value' => false,
+                'choices' => array(
+                    'ROLE_USER' => 'Пользователь',
+                    'ROLE_ADMIN' => 'Администратор',
+                ),
+                'label' => 'Активность',
+                'required'  => false,
+            ))
+            ->add('enabled','choice',  array(
+                'empty_value' => false,
+                'choices' => array(
+                    '1' => 'Активна',
+                    '0' => 'Не активна',
+                ),
+                'label' => 'Активность',
+                'required'  => false,
+            ))
         ;
     }
     

@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" line="300" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="" />
+    <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Form/UserType.php" />
+    </list>
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,10 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsultationType.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ConsultationType.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/ConsultationType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="52" selection-start="541" selection-end="541" vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="954">
+            <state line="18" column="52" selection-start="541" selection-end="541" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="954">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserType.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/UserType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="52" selection-start="664" selection-end="664" vertical-scroll-proportion="0.46022728" vertical-offset="0" max-vertical-offset="1206">
               <folding />
             </state>
           </provider>
@@ -94,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/FaqType.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/ConsultationType.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/UserType.php" />
       </list>
     </option>
   </component>
@@ -343,7 +355,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20729166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18352681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18352681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -645,7 +657,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/ConsultationType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="52" selection-start="541" selection-end="541" vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="954">
+        <state line="18" column="52" selection-start="541" selection-end="541" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="954">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="52" selection-start="664" selection-end="664" vertical-scroll-proportion="0.46022728" vertical-offset="0" max-vertical-offset="1206">
           <folding />
         </state>
       </provider>

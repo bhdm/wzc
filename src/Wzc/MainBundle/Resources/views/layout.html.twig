@@ -12,27 +12,76 @@
         {% block stylesheets %}
             <link href="{{ asset('bundles/wzcmain/css/common.css') }}" rel="stylesheet" media="all">
             <style>
-                *{
-                    border: 0;
-                    margin: 0;
-                    padding: 0;
+                body{
+                    background: #eee;
                 }
-                a{
-                    text-decoration: none;
+                .header_line{
+                    height: 1px;
+                    width: 100%;
+                    background: url("{{ asset('bundles/wzcmain/images/bg_line_red.png') }}") repeat-x ;
                 }
-                .header{
-                    background: #920055;
-                    height: 100px
+                .menu{
+                    text-align: center;
+                    height: 50px;
+                    background: url("{{ asset('bundles/wzcmain/images/menu_bg.png') }}") repeat-x ;
+                    margin-bottom: -50px;
+                    z-index: 50;
+                    padding-top: 6px;
+                    position: absolute;
+                    width: 1200px;
+                }
+                .menu ul{
+                    list-style: none;
+                    color: #920055;
+                }
+                .menu ul li{
+                    display: inline-block;
+                    padding: 10px;
+                }
+                .menu ul li a{
+                    color: #920055;
                 }
             </style>
         {% endblock %}
     </head>
     <body>
         <div class="header">
-
+            <div class="header_line"></div>
+            <div class="body">
+                <div class="logo">
+                    <a href="{{ path('main') }}"><img src="{{ asset('bundles/wzcmain/images/logo.png') }}"></a>
+                </div>
+                <div class="auth">
+                    <div class="top">
+                        <a href="#">РЕГИСТРАЦИЯ <img src="{{ asset('bundles/wzcmain/images/ico_in.png') }}" class="ico in"></a>
+                        <a href="#">ВХОД <img src="{{ asset('bundles/wzcmain/images/ico_in.png') }}" class="ico in"></a>
+                        <a href="#"><img src="{{ asset('bundles/wzcmain/images/ico_s_1.png') }}" class="ico soc"></a>
+                        <a href="#"><img src="{{ asset('bundles/wzcmain/images/ico_s_2.png') }}" class="ico soc"></a>
+                        <a href="#"><img src="{{ asset('bundles/wzcmain/images/ico_s_3.png') }}" class="ico soc"></a>
+                    </div>
+                    <div class="right">
+                        <div class="top">
+                            {% spaceless %}
+                            <input type="text" class="search" placeholder="Поиск...">
+                            <div id="search-btn"><img src="{{ asset('bundles/wzcmain/images/ico_search.png') }}"></div>
+                            {% endspaceless %}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="body">
-            <div class="menu"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">О ПРОЕКТЕ</a></li>
+                    <li><a href="#">О ЗАБОЛЕВАНИИ</a></li>
+                    <li><a href="#">ПОСОБЫ ЛЕЧЕНИЯ</a></li>
+                    <li><a href="#">ЕСТИРОВАНИЕ</a></li>
+                    <li><a href="#">NLINE КОНСУЛЬТАЦИЯ</a></li>
+                    <li><a href="#">ФОРУМ</a></li>
+                    <li><a href="#">НТЕРАКТИВНАЯ КАРТА</a></li>
+                </ul>
+            </div>
             {% block content %}{% endblock %}
         </div>
     </body>

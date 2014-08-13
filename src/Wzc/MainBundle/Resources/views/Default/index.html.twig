@@ -1,7 +1,60 @@
 {% extends "WzcMainBundle::layout.html.twig" %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .banner{
+            width: 860px;
+            margin: 40px auto;
+            position: relative;
+        }
+        .banner-btn{
+            position: absolute;
+            left: 50%;
+            margin-left: -141px;
+            top: 75px;
+            cursor: pointer;
+        }
+        .slidebar{
+            position: relative;
+        }
+        .btn-left{
+            position: absolute;
+            top: 200px;
+            left: 0;
+        }
+        .btn-right{
+            position: absolute;
+            top: 200px;
+            right: 0;
+        }
+        .message{
+            background: url("{{ asset('bundles/wzcmain/images/message_bg.png') }}") repeat-x ;
+            height: 150px;
+            text-align: center;
+
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
-    <div class="slidebar"></div>
-    <div class="banner"></div>
+    <div class="slidebar">
+        <img src="{{ asset('bundles/wzcmain/images/banner_img_1.png') }}">
+        <img src="{{ asset('bundles/wzcmain/images/ico_left.png') }}" class="btn-left">
+        <img src="{{ asset('bundles/wzcmain/images/ico_right.png') }}" class="btn-right">
+    </div>
+    <div class="banner">
+        <img src="{{ asset('bundles/wzcmain/images/banner.png') }}">
+        <img class="banner-btn" src="{{ asset('bundles/wzcmain/images/btn_4.png') }}">
+    </div>
     <div class="message"></div>
+
+    <div class="bottom">
+        <div class="left-tr">
+            <img src="{{ asset('bundles/wzcmain/images/btn_1.png') }}">
+            <img src="{{ asset('bundles/wzcmain/images/btn_2.png') }}">
+            <img src="{{ asset('bundles/wzcmain/images/btn_3.png') }}">
+        </div>
+        <div class="right-tr"></div>
+    </div>
 {% endblock %}

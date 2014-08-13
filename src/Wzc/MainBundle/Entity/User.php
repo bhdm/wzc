@@ -22,7 +22,7 @@ class User extends BaseEntity implements UserInterface
     protected $questions;
 
     /**
-     * @ORM\OneToMany(targetEntity="Faq", mappedBy="consultation", orphanRemoval=false)
+     * @ORM\OneToMany(targetEntity="Consultation", mappedBy="user", orphanRemoval=false)
      */
     protected $consultations;
 

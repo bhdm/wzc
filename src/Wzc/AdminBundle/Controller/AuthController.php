@@ -12,16 +12,23 @@ use Wzc\MainBundle\Entity\User;
 class AuthController extends Controller
 {
     /**
-     * @Route("/admin/login")
+     * @Route("/admin/login", name="login")
      * @Template()
      */
     public function loginAction()
     {
 
-        $error = null;
-        if (!$this->get('request')->attributes->has(SecurityContext::AUTHENTICATION_ERROR)) {
-            $error = 'Неправильный логин или пароль';
+//        $error = null;
+//        if (!$this->get('request')->attributes->has(SecurityContext::AUTHENTICATION_ERROR)) {
+//            $error = 'Неправильный логин или пароль';
+//        }
+        if ($this->get('request')->attributes->has(SecurityContext::AUTHENTICATION_ERROR)) {
+            $error = $this->get('request')->attributes->get(SecurityContext::AUTHENTICATION_ERROR);
+        } else {
+            $error = $this->get('request')->getSession()->get(SecurityContext::AUTHENTICATION_ERROR);
         }
+//        var_dump($error);
+//        exit;
         return array(
             'error' => $error
         );

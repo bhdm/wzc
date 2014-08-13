@@ -2,11 +2,14 @@
 
 {% block menu %}{% endblock %}
 {% block breadcrumb %}{% endblock %}
-{% if error is not null  %}
+
+{#{{ dump(error) }}#}
+
     {% block alert %}
-        <div class="alert alert-danger" role="alert">{{ error }}</div>
+        {% if error.message is defined  %}
+            <div class="alert alert-danger" role="alert">{{ error.message }}</div>
+        {% endif %}
     {% endblock %}
-{% endif %}
 
 {% block content %}
     <div class="col-md-6">
@@ -20,7 +23,7 @@
                 <br/>
                 <div class="input-group">
                     <span class="input-group-addon" style="padding-left: 17px;">#</span>
-                    <input type="text" class="form-control" placeholder="Пароль" required autofocus name="_password">
+                    <input type="password" class="form-control" placeholder="Пароль" required autofocus name="_password">
                 </div>
                 <br />
                 <button type="submit" class="btn btn-default">

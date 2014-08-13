@@ -22,6 +22,13 @@ class User extends BaseEntity implements UserInterface
     protected $questions;
 
     /**
+     * @ORM\OneToMany(targetEntity="Faq", mappedBy="consultation", orphanRemoval=false)
+     */
+    protected $consultations;
+
+
+
+    /**
      * @ORM\Column(type="string", length=100)
      * @Assert\NotBlank( message = "поле E-mail обязательно для заполнения" )
      */
@@ -71,6 +78,7 @@ class User extends BaseEntity implements UserInterface
     public function __construct(){
         $this->roles    = 'ROLE_USER';
         $this->questions = new ArrayCollection();
+        $this->consultations = new ArrayCollection();
     }
 
     public function equals(UserInterface $user)
@@ -290,7 +298,7 @@ class User extends BaseEntity implements UserInterface
     }
 
     public function removeQuestion($question){
-        $this->questions->remove($question);
+        $this->questions->removeElement($question);
     }
 
     /**
@@ -309,6 +317,28 @@ class User extends BaseEntity implements UserInterface
         return $this->surName;
     }
 
+    /**
+     * @param mixed $consultations
+     */
+    public function setConsultations($consultations)
+    {
+        $this->consultations = $consultations;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getConsultations()
+    {
+        return $this->consultations;
+    }
+
+    public function addConsultation($consultation){
+        $this->consultations[] = $consultation;
+    }
+
+    public function removeConsultation($consultation){
+        $this->consultations->removeElement($consultation);
+    }
 
 }

@@ -6,12 +6,12 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Faq
+ * consultation
  *
  * @ORM\Table()
  * @ORM\Entity
  */
-class Faq extends BaseEntity
+class Consultation extends BaseEntity
 {
     /**
      * @ORM\Column(type="text")
@@ -25,7 +25,7 @@ class Faq extends BaseEntity
     protected $answer;
 
     /**
-     * @ORM\ManyToOne(targetEntity="User", inversedBy="questions")
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="consultations")
      */
     protected $user;
 

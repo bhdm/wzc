@@ -2,7 +2,7 @@
 
 {% block menu %}{% endblock %}
 {% block breadcrumb %}{% endblock %}
-{% if error is defined and error != false %}
+{% if error is not null  %}
     {% block alert %}
         <div class="alert alert-danger" role="alert">{{ error }}</div>
     {% endblock %}

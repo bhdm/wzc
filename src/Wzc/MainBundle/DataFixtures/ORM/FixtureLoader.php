@@ -24,7 +24,7 @@ class FixtureLoader implements FixtureInterface
         $user->setRoles('ROLE_ADMIN');
 
         $manager->persist($user);
-
+        $manager->flush($user);
 
 
     }

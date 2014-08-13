@@ -4,12 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" line="300" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Consultation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="" />
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,33 +26,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Consultation.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Consultation.php">
+      <file leaf-file-name="FaqType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/FaqType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="68" selection-start="543" selection-end="543" vertical-scroll-proportion="-13.333333" vertical-offset="108" max-vertical-offset="1710">
+            <state line="17" column="12" selection-start="436" selection-end="532" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="954">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php">
+      <file leaf-file-name="ConsultationType.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/ConsultationType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="300" column="39" selection-start="5642" selection-end="5642" vertical-scroll-proportion="0.87215906" vertical-offset="4786" max-vertical-offset="6282">
-              <folding>
-                <element signature="e#41#89#0" expanded="true" />
-              </folding>
+            <state line="18" column="52" selection-start="541" selection-end="541" vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="954">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Faq.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php">
+      <file leaf-file-name="PageType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="6" selection-start="140" selection-end="140" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="1728">
-              <folding>
-                <element signature="e#41#73#0" expanded="true" />
-              </folding>
+            <state line="29" column="14" selection-start="705" selection-end="1006" vertical-scroll-proportion="-16.0" vertical-offset="54" max-vertical-offset="990">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,6 +92,8 @@
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Consultation.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/FaqType.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/ConsultationType.php" />
       </list>
     </option>
   </component>
@@ -193,6 +186,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,11 +484,6 @@
         <state line="15" column="5" selection-start="411" selection-end="411" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="954" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="56" selection-start="1259" selection-end="1259" vertical-scroll-proportion="-22.666666" vertical-offset="54" max-vertical-offset="990" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/WzcMainBundle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930" />
@@ -592,7 +606,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="140" selection-end="140" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="1728">
+        <state line="8" column="6" selection-start="140" selection-end="140" vertical-scroll-proportion="0.20454545" vertical-offset="0" max-vertical-offset="1728">
           <folding>
             <element signature="e#41#73#0" expanded="true" />
           </folding>
@@ -608,10 +622,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="300" column="39" selection-start="5642" selection-end="5642" vertical-scroll-proportion="0.87215906" vertical-offset="4786" max-vertical-offset="6282">
+        <state line="276" column="31" selection-start="5195" selection-end="5195" vertical-scroll-proportion="0.25852272" vertical-offset="4786" max-vertical-offset="6282">
           <folding>
             <element signature="e#41#89#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="14" selection-start="705" selection-end="1006" vertical-scroll-proportion="-16.0" vertical-offset="54" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/FaqType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="12" selection-start="436" selection-end="532" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="954">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/ConsultationType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="52" selection-start="541" selection-end="541" vertical-scroll-proportion="0.4090909" vertical-offset="0" max-vertical-offset="954">
+          <folding />
         </state>
       </provider>
     </entry>

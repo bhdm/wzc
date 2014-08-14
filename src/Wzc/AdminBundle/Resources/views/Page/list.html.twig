@@ -18,7 +18,7 @@
                 <th>Заголовок</th>
                 <th></th>
                 <th>Статус</th>
-                <th>Инструменты</th>
+                <th class="setting">Инструменты</th>
             </tr>
             {% for item in items %}
                 <tr>
@@ -26,9 +26,21 @@
                     <td>{{ item.title }}</td>
                     <td></td>
                     <td>{{ item.enabledStr }}</td>
-                    <td>
-                        <a><span class="glyphicon glyphicon-pencil"></span></a>
-                        <a><span class="glyphicon glyphicon-remove"></span></a>
+                    <td class="setting">
+                        {% spaceless %}
+                        <a href="{{ path('admin_page_edit',{'id' : item.id}) }}">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </button>
+                        </a>
+                            &nbsp;
+                            &nbsp;
+                        <a href="{{ path('admin_page_remove',{'id' : item.id}) }}">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </a>
+                        {% endspaceless %}
                     </td>
                 </tr>
             {% endfor%}

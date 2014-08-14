@@ -3,10 +3,16 @@
         {% block javascripts %}
             <script src="{{ asset('bundles/wzcadmin/js/jquery-1.11.1.min.js') }}"></script>
             <script src="{{ asset('bundles/wzcadmin/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('bundles/wzcadmin/ckeditor/ckeditor.js') }}"></script>
         {% endblock %}
 
         {% block stylesheets %}
             <link href=" {{ asset('bundles/wzcadmin/css/bootstrap.min.css') }}" rel="stylesheet">
+            <style>
+                .setting{
+                    text-align: right;
+                }
+            </style>
         {% endblock %}
     </head>
     <body>

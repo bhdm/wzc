@@ -113,6 +113,22 @@ class Page extends BaseEntity
         return $this->title;
     }
 
+    /**
+     * @param mixed $url
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
 
 
 }

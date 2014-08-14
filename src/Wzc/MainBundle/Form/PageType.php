@@ -16,6 +16,7 @@ class PageType extends AbstractType
     {
         $builder
             ->add('title',null, array('label' => 'Заголовок'))
+            ->add('url',null, array('label' => 'URL страницы'))
             ->add('keywords',null, array('label' => 'Мета слова'))
             ->add('description',null, array('label' => 'Мета описание'))
             ->add('body',null, array('label' => 'Контент страницы', 'attr' => array('class'=>'ckeditor')))

@@ -9,7 +9,7 @@
             </tr>
             <tr>
                 <td>Пароль:</td>
-                <td><input type="password" class="ainput" name="_username"></td>
+                <td><input type="password" class="ainput" name="_password"></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -23,31 +23,33 @@
     </form>
 </div>
 
-<div class="popup popup-register" style="height: 280px; display: none">
+<div class="popup popup-register" style="min-height: 280px; display: none">
     <h2>Регистрация</h2>
     <br />
-    <form method="post" action="/app_dev/login_check_user">
+    <div id="register-errors"></div>
+    <form method="post" action="{{ path('register') }}">
         <table>
             <tr>
                 <td style="width: 150px">E-mail:<br /></td>
-                <td><input type="text" class="ainput" name="_username"></td>
+                <td><input type="text" class="ainput" name="username" id="username"></td>
             </tr>
             <tr>
                 <td>Пароль:</td>
-                <td><input type="password" class="ainput" name="_username"></td>
+                <td><input type="password" class="ainput" name="password" id="password"></td>
             </tr>
             <tr>
                 <td>Повторите пароль:</td>
-                <td><input type="password" class="ainput" name="_username"></td>
+                <td><input type="password" class="ainput" name="confirm" id="confirm"></td>
             </tr>
             <tr>
                 <td colspan="2">
                     <div style="float: left; padding-top: 10px;">
                         <a href="#" style="color: #920055;">Нажимая кнопку зарегистрироваться вы принимаете наше соглашение</a>
                     </div>
-                    <button type="submit" style="float: right;">Зарегистрироваться</button>
+                    <button type="submit" id="register-submit" style="float: right;">Зарегистрироваться</button>
                 </td>
             </tr>
         </table>
+        <br/>
     </form>
 </div>

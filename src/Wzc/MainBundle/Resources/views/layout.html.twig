@@ -29,6 +29,22 @@
                         return false;
                     });
 
+                    $('#register-submit').click(function(){
+                        var error = '';
+                        if ($('#username').val() == '' ){
+                            error += '<div>Вы не ввели E-mail</div>';
+                        }
+                        if ($('#password').val() != $('#confirm').val() ){
+                            error += '<div>Пароль пустой или не совпадают</div>';
+                        }
+                        if (error == ''){
+                            $('#register-errors').html(error);
+                            return false;
+                        }else{
+                            return true;
+                        }
+                    })
+
                 })
             </script>
         {% endblock %}

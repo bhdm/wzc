@@ -15,6 +15,7 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="main")
+     * @Route("/login")
      * @Template()
      */
     public function indexAction()

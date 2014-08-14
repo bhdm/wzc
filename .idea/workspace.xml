@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wzc.iws" />
@@ -27,10 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="34" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.33834586" vertical-offset="864" max-vertical-offset="4122">
+            <state line="55" column="62" selection-start="2101" selection-end="2101" vertical-scroll-proportion="-12.666667" vertical-offset="648" max-vertical-offset="4122">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="22" selection-start="554" selection-end="554" vertical-scroll-proportion="0.33834586" vertical-offset="0" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -58,7 +67,9 @@
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="29" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="756">
-              <folding />
+              <folding>
+                <marker date="1408055408875" expanded="true" signature="408:507" placeholder="form_login:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,7 +78,10 @@
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="0" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <folding />
+              <folding>
+                <marker date="1408055444875" expanded="true" signature="342:378" placeholder="login_check:" />
+                <marker date="1408055444875" expanded="true" signature="379:426" placeholder="admin_login_check:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,13 +152,13 @@
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/page.html.twig" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/faq.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/popup_auth.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Auth/login.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -837,22 +851,22 @@
         <state line="28" column="14" selection-start="0" selection-end="676" vertical-scroll-proportion="0.55813956" vertical-offset="0" max-vertical-offset="903" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="29" selection-start="2219" selection-end="2219" vertical-scroll-proportion="-28.11111" vertical-offset="501" max-vertical-offset="1458" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="29" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="756">
-          <folding />
+          <folding>
+            <marker date="1408055408875" expanded="true" signature="408:507" placeholder="form_login:" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <folding />
+          <folding>
+            <marker date="1408055444875" expanded="true" signature="342:378" placeholder="login_check:" />
+            <marker date="1408055444875" expanded="true" signature="379:426" placeholder="admin_login_check:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -879,7 +893,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="34" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.33834586" vertical-offset="864" max-vertical-offset="4122">
+        <state line="55" column="62" selection-start="2101" selection-end="2101" vertical-scroll-proportion="-12.666667" vertical-offset="648" max-vertical-offset="4122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="22" selection-start="554" selection-end="554" vertical-scroll-proportion="0.33834586" vertical-offset="0" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>

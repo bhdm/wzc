@@ -1,0 +1,72 @@
+{% extends "WzcMainBundle::layout.html.twig" %}
+
+
+{#{% block header %}#}
+    {#<title>{{ page.title }}</title>#}
+    {#<META NAME="Keywords" CONTENT="{{ page.keywords | raw}}">#}
+    {#<META NAME="Description" CONTENT="{{ page.description  | raw }}">#}
+{#{% endblock %}#}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .content{
+            padding: 50px 0 30px 0;
+        }
+        h2{
+            color: #920055;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .faq{
+            width: 800px;
+        }
+        .faq-item{
+            /*border: 1px solid #920055;*/
+            border-radius: 5px;
+            background: #feb5e0;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .faq-question{
+            margin: 0 20px;
+            padding: 10px 0;
+            color: #920055;
+            font-weight: bold;
+        }
+        .faq-answer{
+            border-top: 1px dashed #FFFFFF;
+            /*border-top: 1px dashed #920055;*/
+            margin: 0 20px;
+            padding: 10px 0;
+            color: #920055;
+            display: none;
+        }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $(document).ready(function(){
+            $('.faq-item').click(function(){
+                $('.faq-item .faq-answer').hide('drop');
+                $(this).children('.faq-answer').show('drop');
+            })
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <h2>Частые вопросы</h2>
+        <br />
+        <div class="faq">
+            {% for faq in faqs %}
+                <div class="faq-item">
+                    <div class="faq-question">{{ faq.question | raw }}</div>
+                    <div class="faq-answer">{{ faq.answer | raw  }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

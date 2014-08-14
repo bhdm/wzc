@@ -62,4 +62,14 @@ class DefaultController extends Controller
         }
         return $this->redirect($request->headers->get('referer'));
     }
+
+    /**
+     * @Route("/faq" ,name="faq")
+     * @Template()
+     */
+    public function faqAction(){
+        $faqs = $this->getDoctrine()->getRepository('WzcMainBundle:Faq')->findByEnabled(1);
+
+        return array('faqs' => $faqs);
+    }
 }

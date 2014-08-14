@@ -26,7 +26,7 @@ class DefaultController extends Controller
 
 
     /**
-     * @Route("/page/{url}")
+     * @Route("/page/{url}" ,name="page")
      * @Template()
      */
     public function pageAction($url)

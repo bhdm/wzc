@@ -1,20 +1,21 @@
 security:
     encoders:
-        Zwc\MainBundle\Entity\User:
+        Wzc\MainBundle\Entity\User:
             algorithm: sha512
             encode-as-base64: true
             iterations: 10
 
     providers:
-        main:
+        admin:
             entity: { class: WzcMainBundle:User, property: username }
 
     firewalls:
-        main:
+        admin:
             pattern: /.*
             form_login:
                 check_path: /login_check
                 login_path: /admin/login
+                provider: admin
             logout: true
             security: true
             anonymous: true

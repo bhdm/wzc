@@ -28,7 +28,7 @@ class Slidebar extends BaseEntity
 
     /**
      * @Assert\File( maxSize="2M", uploadIniSizeErrorMessage = "Максимальный размер файла - 2 Мб")
-     * @FileStore\UploadableField(mapping="photo")
+     * @FileStore\UploadableField(mapping="slidebar")
      * @ORM\Column(type="array", nullable=true)
      **/
     protected $image;
@@ -47,22 +47,6 @@ class Slidebar extends BaseEntity
     public function getBody()
     {
         return $this->body;
-    }
-
-    /**
-     * @param mixed $file
-     */
-    public function setFile($file)
-    {
-        $this->file = $file;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFile()
-    {
-        return $this->file;
     }
 
     /**

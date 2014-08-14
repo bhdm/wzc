@@ -90,6 +90,6 @@ swiftmailer:
 
 iphp_file_store:
     mappings:
-       image:
-           upload_dir:  %kernel.root_dir%/../web/upload
-           upload_path: /file
+       slidebar:
+           upload_dir:  %kernel.root_dir%/../web/upload/slidebar
+           upload_path: /upload/slidebar

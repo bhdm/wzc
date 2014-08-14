@@ -15,3 +15,13 @@
         </form>
     </div>
 {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        #wzc_mainbundle_user_birthdate_day, #wzc_mainbundle_user_birthdate_month, #wzc_mainbundle_user_birthdate_year{
+            display: inline-block;
+            width: 100px
+        }
+    </style>
+{% endblock %}

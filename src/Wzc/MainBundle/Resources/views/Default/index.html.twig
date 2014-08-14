@@ -88,6 +88,32 @@
             padding: 0;
             position: relative;
         }
+
+        .bottom{
+            margin: 30px 0;
+        }
+        .left-tr{
+            float: left;
+            width: 40%;
+            text-align: center;
+        }
+        .right-tr{
+            float: right;
+            width: 60%;
+        }
+        .post-title{
+            color: #595959;
+            font-size: 25px;
+        }
+
+        .post-body{
+            color: #595959;
+        }
+        .right-tr table tr td{
+            /*vertical-align: top;*/
+            padding-left: 15px;
+            padding-bottom: 10px;
+        }
     </style>
 {% endblock %}
 
@@ -186,9 +212,44 @@
     <div class="bottom">
         <div class="left-tr">
             <img src="{{ asset('bundles/wzcmain/images/btn_1.png') }}">
+            <br/>
+            <br/>
             <img src="{{ asset('bundles/wzcmain/images/btn_2.png') }}">
+            <br/>
+            <br/>
             <img src="{{ asset('bundles/wzcmain/images/btn_3.png') }}">
         </div>
-        <div class="right-tr"></div>
+        <div class="right-tr">
+            <table>
+                <tr>
+                    <td>
+                        <img src="{{ asset('bundles/wzcmain/images/thrumb_1.png') }}">
+                    </td>
+                    <td>
+                        <div class="post-title">Как востановить силы</div>
+                        <div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="{{ asset('bundles/wzcmain/images/thrumb_2.png') }}">
+                    </td>
+                    <td>
+                        <div class="post-title">Как востановить силы</div>
+                        <div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="{{ asset('bundles/wzcmain/images/thrumb_3.png') }}">
+                    </td>
+                    <td>
+                        <div class="post-title">Как востановить силы</div>
+                        <div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br style="clear: both">
     </div>
 {% endblock %}

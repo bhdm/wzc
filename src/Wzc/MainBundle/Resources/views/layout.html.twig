@@ -11,6 +11,26 @@
 
         {% block stylesheets %}
             <link href="{{ asset('bundles/wzcmain/css/common.css') }}" rel="stylesheet" media="all">
+            <style>
+                body{
+                    background: #ffffff;
+                }
+                .footer{
+                    height: 149px;
+                    padding-top: 50px;
+                    background: url('{{ asset('bundles/wzcmain/images/footer_bg.png') }}');
+                }
+                .footer a{
+                    color: #9b9b9b;
+                }
+                .footer a:hover{
+                    color: #920055;
+                }
+                .footer-menu li{
+                    color: #9b9b9b;
+                    padding: 5px;
+                }
+            </style>
         {% endblock %}
     </head>
     <body>
@@ -46,12 +66,43 @@
                     <li><a href="#">О ЗАБОЛЕВАНИИ</a></li>
                     <li><a href="#">ПОСОБЫ ЛЕЧЕНИЯ</a></li>
                     <li><a href="#">ЕСТИРОВАНИЕ</a></li>
-                    <li><a href="#">NLINE КОНСУЛЬТАЦИЯ</a></li>
+                    <li><a href="#">OLINE КОНСУЛЬТАЦИЯ</a></li>
                     <li><a href="#">ФОРУМ</a></li>
-                    <li><a href="#">НТЕРАКТИВНАЯ КАРТА</a></li>
+                    <li><a href="#">ИТЕРАКТИВНАЯ КАРТА</a></li>
                 </ul>
             </div>
             {% block content %}{% endblock %}
+        </div>
+        <div class="footer">
+            <div class="body">
+                <table style="margin: 0 auto">
+                    <tr>
+                        <td style="width: 300px;">
+                            &copy; {{ 'now' | date('Y')  }} Все права защищены
+                            <br />
+                            <br />
+                            <a href="mailto:bhd.m@ya.ru" target="_blank">Сайт разработан bhdm</a>
+                        </td>
+                        <td style="width: 300px;">
+                            <ul class="footer-menu">
+                                <li><a href="#">О ПРОЕКТЕ       </a></li>
+                                <li><a href="#">О ЗАБОЛЕВАНИИ   </a></li>
+                                <li><a href="#">СПОСОБЫ ЛЕЧЕНИЯ </a></li>
+                                <li><a href="#">ТЕСТИРОВАНИЕ    </a></li>
+                            </ul>
+                        </td>
+                        <td style="width: 300px;">
+                            <ul class="footer-menu">
+                                <li><a href="#">ОНЛАЙН КОНСУЛЬТИРОВАНИЕ </a></li>
+                                <li><a href="#">ИНТЕРАКТИВНАЯ КАРТА     </a></li>
+                                <li><a href="#">СКАЧАТЬ БРОШУРКУ        </a></li>
+                                <li><a href="#">FAQ                     </a></li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 </html>

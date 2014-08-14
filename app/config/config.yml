@@ -93,6 +93,9 @@ iphp_file_store:
        slidebar:
            upload_dir:  %kernel.root_dir%/../web/upload/slidebar
            upload_path: /upload/slidebar
+           namer:
+              property:
+                  params: { field : id }
 
 knp_paginator:
     page_range: 20                      # default page range used in pagination control

@@ -17,29 +17,160 @@
         }
         .slidebar{
             position: relative;
+            overflow: hidden;
+            width: 1200px;
+            height: 450px;
         }
         .btn-left{
             position: absolute;
             top: 200px;
             left: 0;
+            cursor: pointer;
         }
         .btn-right{
             position: absolute;
             top: 200px;
             right: 0;
+            cursor: pointer;
         }
         .message{
             background: url("{{ asset('bundles/wzcmain/images/message_bg.png') }}") repeat-x ;
-            height: 150px;
+            height: 120px;
             text-align: center;
+            padding: 15px;
 
+        }
+        .message-title{
+            font-size: 45px;
+            text-align: center;
+            color: #920055;
+            font-style: italic;
+        }
+
+        .message-body{
+            font-size: 20px;
+            text-align: center;
+            color: #920055;
+            font-style: italic;
+            line-height: 30px;
+        }
+
+
+        .slidebar-msg{
+            background: url("{{ asset('bundles/wzcmain/images/banner_message_bg.png') }}") repeat-x;
+            width: 400px;
+            height: 160px;
+            position: absolute;
+            z-index: 80;
+            bottom: 50px;
+            left: 100px;
+            padding: 13px;
+            color: #920055;
+            font-size: 25px;
+        }
+        .slidebar-title{
+            font-size: 45px;
+        }
+        .slidewrapper{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 450px;
+            margin: 0;
+            padding: 0;
+        }
+        .slide{
+            width: 1200px;
+            height: 450px;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
         }
     </style>
 {% endblock %}
 
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $(document).ready(function(){
+           $('.btn-left').hover(
+                   function(){
+                        $(this).attr('src','{{ asset('bundles/wzcmain/images/ico_left_active.png') }}')
+                   },
+                   function(){
+                       $(this).attr('src','{{ asset('bundles/wzcmain/images/ico_left.png') }}')
+                   }
+           );
+           $('.btn-right').hover(
+                    function(){
+                        $(this).attr('src','{{ asset('bundles/wzcmain/images/ico_right_active.png') }}')
+                    },
+                    function(){
+                        $(this).attr('src','{{ asset('bundles/wzcmain/images/ico_right.png') }}')
+                    }
+           );
+
+            $('.btn-left').click(function(){
+                $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
+                nextSlide();
+            });
+
+            $('.btn-right').click(function(){
+                $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
+                backSlide();
+            });
+
+            var slideWidth=1200;
+            var sliderTimer;
+            $(function(){
+                $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
+                sliderTimer=setInterval(nextSlide,10000);
+                $('.viewport').hover(function(){
+                    clearInterval(sliderTimer);
+                },function(){
+                    sliderTimer=setInterval(nextSlide,10000);
+                });
+            });
+
+            function nextSlide(){
+                var currentSlide=parseInt($('.slidewrapper').data('current'));
+                currentSlide++;
+                if(currentSlide>=$('.slidewrapper').children().size())
+                {
+                    currentSlide=0;
+                }
+                $('.slidewrapper').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);
+            }
+
+            function backSlide(){
+                var currentSlide=parseInt($('.slidewrapper').data('current'));
+                currentSlide++;
+                if(currentSlide>=$('.slidewrapper').children().size())
+                {
+                    currentSlide=0;
+                }
+                $('.slidewrapper').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);
+            }
+
+        });
+    </script>
+{% endblock %}
+
 {% block content %}
-    <div class="slidebar">
-        <img src="{{ asset('bundles/wzcmain/images/banner_img_1.png') }}">
+    <div class="slidebar viewport">
+        <div class="slidewrapper" data-current=0>
+            {% for item in banners %}
+                <li class="slide">
+                    <img src="{{ item.image.path }}">
+                    <div class="slidebar-msg">
+                        <div class="slidebar-title" >{{ item.title | raw }}</div>
+                        {{ item.body | raw }}
+                    </div>
+                </li>
+            {% endfor %}
+        </div>
         <img src="{{ asset('bundles/wzcmain/images/ico_left.png') }}" class="btn-left">
         <img src="{{ asset('bundles/wzcmain/images/ico_right.png') }}" class="btn-right">
     </div>
@@ -47,7 +178,10 @@
         <img src="{{ asset('bundles/wzcmain/images/banner.png') }}">
         <img class="banner-btn" src="{{ asset('bundles/wzcmain/images/btn_4.png') }}">
     </div>
-    <div class="message"></div>
+    <div class="message">
+        <div class="message-title">{{ message.title | raw }}</div>
+        <div class="message-body">{{ message.body | raw }}</div>
+    </div>
 
     <div class="bottom">
         <div class="left-tr">

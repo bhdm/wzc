@@ -16,7 +16,12 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return array();
+        $message = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('message');
+        $banners = $this->getDoctrine()->getRepository('WzcMainBundle:Slidebar')->findByEnabled(1);
+        return array(
+            'banners' => $banners,
+            'message' => $message
+        );
     }
 
 

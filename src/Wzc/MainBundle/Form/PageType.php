@@ -18,7 +18,7 @@ class PageType extends AbstractType
             ->add('title',null, array('label' => 'Заголовок'))
             ->add('keywords',null, array('label' => 'Мета слова'))
             ->add('description',null, array('label' => 'Мета описание'))
-            ->add('body',null, array('label' => 'Контент страницы'))
+            ->add('body',null, array('label' => 'Контент страницы', 'attr' => array('class'=>'ckeditor')))
             ->add('enabled','choice',  array(
                 'empty_value' => false,
                 'choices' => array(
@@ -28,6 +28,7 @@ class PageType extends AbstractType
                 'label' => 'Активность',
                 'required'  => false,
             ))
+            ->add('submit', 'submit', array('label' => 'Сохранить'));
 ;
     }
     

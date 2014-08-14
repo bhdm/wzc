@@ -26,6 +26,7 @@ class ConsultationType extends AbstractType
                 'label' => 'Активность',
                 'required'  => false,
             ))
+            ->add('submit', 'submit', array('label' => 'Сохранить'));
         ;
     }
     

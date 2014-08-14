@@ -1,39 +1,37 @@
 {% extends "WzcAdminBundle::layout.html.twig" %}
 
-{% block menu %}{% endblock %}
-{% block breadcrumb %}{% endblock %}
-
-{#{{ dump(error) }}#}
-
-    {% block alert %}
-        {% if error.message is defined  %}
-            <div class="alert alert-danger" role="alert">{{ error.message }}</div>
-        {% endif %}
-    {% endblock %}
+{% block breadcrumb %}
+    <ul class="breadcrumb well">
+        <li><a href="{{ path('admin_main') }}">Домой</a> <span class="divider"></span></li>
+        <li class="active"><a href="{{ path('admin_page_list') }}">Страницы</a> <span class="divider"></span></li>
+        <div style="float: right">
+            <a href="{{ path('admin_page_add') }}">Добавить</a> <span class="divider"></span>
+        </div>
+    </ul>
+{% endblock %}
 
 {% block content %}
-    <div class="col-md-6">
-        <div class="well">
-            <table class="table">
+    <div class="well">
+        <table class="table">
+            <tr>
+                <th>№</th>
+                <th>Заголовок</th>
+                <th></th>
+                <th>Статус</th>
+                <th>Инструменты</th>
+            </tr>
+            {% for item in items %}
                 <tr>
-                    <th>№</th>
-                    <th>Заголовок</th>
-                    <th></th>
-                    <th>Статус</th>
-                    <th>Инструменты</th>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.title }}</td>
+                    <td></td>
+                    <td>{{ item.enabledStr }}</td>
+                    <td>
+                        <a><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a><span class="glyphicon glyphicon-remove"></span></a>
+                    </td>
                 </tr>
-                {% for item in items %}
-                    <tr>
-                        <th>{{ item.id }}</th>
-                        <th>{{ item.title }}</th>
-                        <th></th>
-                        <th>{{ item.enabledStr }}</th>
-                        <th>
-
-                        </th>
-                    </tr>
-                {% endfor%}
-            </table>
-        </div>
+            {% endfor%}
+        </table>
     </div>
 {% endblock %}

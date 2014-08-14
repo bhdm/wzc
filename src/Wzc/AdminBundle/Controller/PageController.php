@@ -16,7 +16,7 @@ use Wzc\MainBundle\Form\PageType;
 class PageController extends Controller{
         const ENTITY_NAME = 'Page';
     /**
-     * @Route("/" name="page_list")
+     * @Route("/", name="admin_page_list")
      * @Template()
      */
     public function listAction(){
@@ -25,13 +25,12 @@ class PageController extends Controller{
     }
 
     /**
-     * @Route("/add" name="page_add")
+     * @Route("/add", name="admin_page_add")
      * @Template()
      */
     public function addAction(Request $request){
         $em = $this->getDoctrine()->getManager();
-        $class = self::ENTITY_NAME.'()';
-        $item = new $class;
+        $item = new Page();
         $form = $this->createForm(new PageType($em), $item);
         $formData = $form->handleRequest($request);
 
@@ -47,7 +46,7 @@ class PageController extends Controller{
     }
 
     /**
-     * @Route("/edit/{id}" name="page_edit")
+     * @Route("/edit/{id}", name="admin_page_edit")
      * @Template()
      */
     public function editAction(Request $request, $id){
@@ -67,7 +66,7 @@ class PageController extends Controller{
     }
 
     /**
-     * @Route("/remove/{id}" name="page_remove")
+     * @Route("/remove/{id}", name="admin_page_remove")
      */
     public function removeAction(Request $request, $id){
         $em = $this->getDoctrine()->getManager();

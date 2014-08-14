@@ -37,7 +37,7 @@
                         if ($('#password').val() != $('#confirm').val() ){
                             error += '<div>Пароль пустой или не совпадают</div>';
                         }
-                        if (error == ''){
+                        if (error != ''){
                             $('#register-errors').html(error);
                             return false;
                         }else{

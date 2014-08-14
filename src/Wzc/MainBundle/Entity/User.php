@@ -81,6 +81,14 @@ class User extends BaseEntity implements UserInterface
         $this->consultations = new ArrayCollection();
     }
 
+    static public function getRolesNames(){
+        return array(
+            "ADMIN" => "Administrateur",
+            "ANIMATOR" => "Animateur",
+            "USER" => "Utilisateur",
+        );
+    }
+
     public function equals(UserInterface $user)
     {
         return md5($this->getUsername()) == md5($user->getUsername());

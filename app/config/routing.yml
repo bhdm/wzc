@@ -8,6 +8,7 @@ wzc_admin:
     type:     annotation
     prefix:   /
 
+
 _security_login:
     pattern:  /admin/login
     defaults: { _controller: WzcAdminBundle:Auth:login }

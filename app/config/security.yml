@@ -23,7 +23,7 @@ security:
         user:
             pattern: /.*
             form_login:
-                check_path: /login_check
+                check_path: /login_check_user
                 login_path: /login
                 provider: user
             logout: true

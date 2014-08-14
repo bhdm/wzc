@@ -30,7 +30,7 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="35" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.575188" vertical-offset="396" max-vertical-offset="4068">
+            <state line="58" column="34" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.33834586" vertical-offset="864" max-vertical-offset="4122">
               <folding />
             </state>
           </provider>
@@ -879,7 +879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="35" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.575188" vertical-offset="396" max-vertical-offset="4068">
+        <state line="58" column="34" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.33834586" vertical-offset="864" max-vertical-offset="4122">
           <folding />
         </state>
       </provider>

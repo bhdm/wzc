@@ -125,4 +125,11 @@ class BaseEntity
         return $this->updated;
     }
 
+    public function getEnabledStr(){
+        if ($this->enabled == true){
+            return 'Активна';
+        }else{
+            return 'Неактивна';
+        }
+    }
 }

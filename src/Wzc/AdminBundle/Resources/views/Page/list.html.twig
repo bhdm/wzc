@@ -1,0 +1,39 @@
+{% extends "WzcAdminBundle::layout.html.twig" %}
+
+{% block menu %}{% endblock %}
+{% block breadcrumb %}{% endblock %}
+
+{#{{ dump(error) }}#}
+
+    {% block alert %}
+        {% if error.message is defined  %}
+            <div class="alert alert-danger" role="alert">{{ error.message }}</div>
+        {% endif %}
+    {% endblock %}
+
+{% block content %}
+    <div class="col-md-6">
+        <div class="well">
+            <table class="table">
+                <tr>
+                    <th>№</th>
+                    <th>Заголовок</th>
+                    <th></th>
+                    <th>Статус</th>
+                    <th>Инструменты</th>
+                </tr>
+                {% for item in items %}
+                    <tr>
+                        <th>{{ item.id }}</th>
+                        <th>{{ item.title }}</th>
+                        <th></th>
+                        <th>{{ item.enabledStr }}</th>
+                        <th>
+
+                        </th>
+                    </tr>
+                {% endfor%}
+            </table>
+        </div>
+    </div>
+{% endblock %}

@@ -40,6 +40,7 @@ class UserController extends Controller{
                 $em->persist($item);
                 $em->flush();
                 $em->refresh($item);
+                return $this->redirect($this->generateUrl('admin_user_list'));
             }
         }
         return array('form' => $form->createView());
@@ -60,6 +61,7 @@ class UserController extends Controller{
                 $item = $formData->getData();
                 $em->flush($item);
                 $em->refresh($item);
+                return $this->redirect($this->generateUrl('admin_user_list'));
             }
         }
         return array('form' => $form->createView());

@@ -40,6 +40,7 @@ class PageController extends Controller{
                 $em->persist($item);
                 $em->flush();
                 $em->refresh($item);
+                return $this->redirect($this->generateUrl('admin_page_list'));
             }
         }
         return array('form' => $form->createView());
@@ -60,6 +61,7 @@ class PageController extends Controller{
                 $item = $formData->getData();
                 $em->flush($item);
                 $em->refresh($item);
+                return $this->redirect($this->generateUrl('admin_page_list'));
             }
         }
         return array('form' => $form->createView());

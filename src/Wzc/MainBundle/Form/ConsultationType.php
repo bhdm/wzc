@@ -15,8 +15,8 @@ class ConsultationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('question', array('label'=>'Вопрос'))
-            ->add('answer', array('label'=>'Ответ'))
+            ->add('question',null, array('label'=>'Вопрос'))
+            ->add('answer',null, array('label'=>'Ответ'))
             ->add('enabled','choice',  array(
                 'empty_value' => false,
                 'choices' => array(

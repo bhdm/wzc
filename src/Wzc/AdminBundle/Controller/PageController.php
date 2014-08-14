@@ -21,7 +21,15 @@ class PageController extends Controller{
      */
     public function listAction(){
         $items = $this->getDoctrine()->getRepository('WzcMainBundle:'.self::ENTITY_NAME)->findAll();
-        return array('items' => $items);
+
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $items,
+            $this->get('request')->query->get('page', 1),
+            20
+        );
+
+        return array('pagination' => $pagination);
     }
 
     /**

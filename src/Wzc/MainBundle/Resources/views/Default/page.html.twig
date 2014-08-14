@@ -1,0 +1,17 @@
+{% extends "WzcMainBundle::layout.html.twig" %}
+
+
+{% block header %}
+    <title>{{ page.title }}</title>
+    <META NAME="Keywords" CONTENT="{{ page.keyword }}">
+    <META NAME="Description" CONTENT="{{ page.description }}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="content">
+        <h2>{{ page.title }}</h2>
+        <br />
+        {{ page.body }}
+    </div>
+{% endblock %}

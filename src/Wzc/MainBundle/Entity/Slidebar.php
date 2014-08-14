@@ -85,5 +85,21 @@ class Slidebar extends BaseEntity
         return $this->title;
     }
 
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
 
 }

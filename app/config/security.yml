@@ -8,7 +8,8 @@ security:
     providers:
         admin:
             entity: { class: WzcMainBundle:User, property: username }
-
+        user:
+            entity: { class: WzcMainBundle:User, property: username }
     firewalls:
         admin:
             pattern: /.*
@@ -16,6 +17,15 @@ security:
                 check_path: /login_check
                 login_path: /admin/login
                 provider: admin
+            logout: true
+            security: true
+            anonymous: true
+        user:
+            pattern: /.*
+            form_login:
+                check_path: /login_check
+                login_path: /login
+                provider: user
             logout: true
             security: true
             anonymous: true

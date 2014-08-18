@@ -16,6 +16,19 @@ use Symfony\Component\Security\Core\Role\RoleInterface;
  */
 class User extends BaseEntity implements UserInterface
 {
+
+    /**
+     * @ORM\OneToMany(targetEntity="ForumQuestion", mappedBy="author")
+     */
+    protected $forumQuestions;
+
+    /**
+     * @ORM\OneToMany(targetEntity="ForumAnswer", mappedBy="author")
+     */
+    protected $forumAnswers;
+
+
+
     /**
      * @ORM\OneToMany(targetEntity="Faq", mappedBy="user", orphanRemoval=false)
      */
@@ -78,6 +91,8 @@ class User extends BaseEntity implements UserInterface
     public function __construct(){
         $this->roles    = 'ROLE_USER';
         $this->questions = new ArrayCollection();
+        $this->forumQuestions = new ArrayCollection();
+        $this->forumAnswers = new ArrayCollection();
         $this->consultations = new ArrayCollection();
     }
 
@@ -347,6 +362,54 @@ class User extends BaseEntity implements UserInterface
 
     public function removeConsultation($consultation){
         $this->consultations->removeElement($consultation);
+    }
+
+    /**
+     * @param mixed $forumQuestions
+     */
+    public function setForumQuestions($forumQuestions)
+    {
+        $this->forumQuestions = $forumQuestions;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getForumQuestions()
+    {
+        return $this->forumQuestions;
+    }
+
+    public function addForumQuestion($question){
+        $this->forumQuestions[] = $question;
+    }
+
+    public function removeForumQuestion($question){
+        $this->forumQuestions->removeElement($question);
+    }
+
+    /**
+     * @param mixed $forumAnswers
+     */
+    public function setForumAnswers($forumAnswers)
+    {
+        $this->forumAnswers = $forumAnswers;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getForumAnswers()
+    {
+        return $this->forumAnswers;
+    }
+
+    public function addForumAnswer($answer){
+        $this->forumAnswers[] = $answer;
+    }
+
+    public function removeForumAnswer($answer){
+        $this->forumAnswers->removeElement($answer);
     }
 
 }

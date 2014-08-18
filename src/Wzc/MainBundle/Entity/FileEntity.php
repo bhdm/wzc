@@ -11,6 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table()
  * @ORM\Entity
+ * @FileStore\Uploadable
  */
 class File extends BaseEntity
 {
@@ -20,11 +21,15 @@ class File extends BaseEntity
     protected $user;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=true)
      */
     protected $title;
 
-
+    /**
+     * @Assert\File( maxSize="2M", uploadIniSizeErrorMessage = "Максимальный размер файла - 2 Мб")
+     * @FileStore\UploadableField(mapping="files")
+     * @ORM\Column(type="array", nullable=true)
+     **/
     protected $file;
 
     /**
@@ -39,9 +44,9 @@ class File extends BaseEntity
 
     /**
      * file|folder|image
-     * @ORM\Column(type="string", length=6)
+     * @ORM\Column(type="string", length=6, nullable=true)
      */
-    protected $type;
+    protected $type = 'folder';
 
     public function __toString(){
         return $this->title;
@@ -118,7 +123,7 @@ class File extends BaseEntity
     /**
      * @param mixed $type
      */
-    public function setType($type)
+    public function setType($type = 'folder')
     {
         $this->type = $type;
     }

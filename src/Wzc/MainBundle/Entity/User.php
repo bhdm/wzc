@@ -27,7 +27,10 @@ class User extends BaseEntity implements UserInterface
      */
     protected $forumAnswers;
 
-
+    /**
+     * @ORM\OneToMany(targetEntity="File", mappedBy="user")
+     */
+    protected $files;
 
     /**
      * @ORM\OneToMany(targetEntity="Faq", mappedBy="user", orphanRemoval=false)
@@ -94,6 +97,7 @@ class User extends BaseEntity implements UserInterface
         $this->forumQuestions = new ArrayCollection();
         $this->forumAnswers = new ArrayCollection();
         $this->consultations = new ArrayCollection();
+        $this->files = new ArrayCollection();
     }
 
     static public function getRolesNames(){
@@ -410,6 +414,30 @@ class User extends BaseEntity implements UserInterface
 
     public function removeForumAnswer($answer){
         $this->forumAnswers->removeElement($answer);
+    }
+
+    /**
+     * @param mixed $files
+     */
+    public function setFiles($files)
+    {
+        $this->files = $files;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFiles()
+    {
+        return $this->files;
+    }
+
+    public function addFile($file){
+        $this->files[] = $file;
+    }
+
+    public function removeFile($file){
+        $this->files->removeElement($file);
     }
 
 }

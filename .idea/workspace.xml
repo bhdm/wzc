@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswerEntity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestionEntity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumThemeEntity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/FileEntity.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wzc.iml" afterPath="$PROJECT_DIR$/.idea/wzc.iml" />
     </list>
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,17 +50,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForumThemeEntity.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumThemeEntity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="4" selection-start="630" selection-end="733" vertical-scroll-proportion="-21.333334" vertical-offset="0" max-vertical-offset="2106">
-              <folding>
-                <element signature="e#41#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ForumQuestionEntity.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestionEntity.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,12 +61,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForumAnswerEntity.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ForumAnswerEntity.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswerEntity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="38" selection-start="1951" selection-end="1951" vertical-scroll-proportion="0.40199336" vertical-offset="1761" max-vertical-offset="3222">
+            <state line="23" column="5" selection-start="376" selection-end="437" vertical-scroll-proportion="-11.444445" vertical-offset="105" max-vertical-offset="3222">
               <folding>
                 <element signature="e#41#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileEntity.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/FileEntity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="147" column="5" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.8405316" vertical-offset="1887" max-vertical-offset="2790">
+              <folding>
+                <element signature="e#41#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,7 +86,7 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="47" selection-start="579" selection-end="579" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="7560">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="8064">
               <folding>
                 <element signature="e#41#89#0" expanded="true" />
               </folding>
@@ -111,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/AuthController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/PageController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" />
@@ -158,10 +153,11 @@
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumThemeEntity.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestionEntity.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswerEntity.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/FileEntity.php" />
       </list>
     </option>
   </component>
@@ -489,11 +485,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Page/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="467" selection-end="467" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="396" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="104" selection-start="754" selection-end="792" vertical-scroll-proportion="0.5121951" vertical-offset="90" max-vertical-offset="1026" />
@@ -710,20 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="217" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="74" selection-start="470" selection-end="539" vertical-scroll-proportion="-15.333333" vertical-offset="54" max-vertical-offset="2502">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="594">
@@ -740,24 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="47" selection-start="579" selection-end="579" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="7560">
-          <folding>
-            <element signature="e#41#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumThemeEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="630" selection-end="733" vertical-scroll-proportion="-21.333334" vertical-offset="0" max-vertical-offset="2106">
-          <folding>
-            <element signature="e#41#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestionEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="143" column="47" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-30.777779" vertical-offset="1743" max-vertical-offset="2772">
@@ -767,11 +726,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswerEntity.php">
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="38" selection-start="1951" selection-end="1951" vertical-scroll-proportion="0.40199336" vertical-offset="1761" max-vertical-offset="3222">
+        <state line="22" column="44" selection-start="414" selection-end="414" vertical-scroll-proportion="0.30751708" vertical-offset="108" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumThemeEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="23" selection-start="733" selection-end="733" vertical-scroll-proportion="0.34851936" vertical-offset="324" max-vertical-offset="2106">
           <folding>
             <element signature="e#41#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="74" selection-start="470" selection-end="539" vertical-scroll-proportion="-15.333333" vertical-offset="54" max-vertical-offset="2502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswerEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="376" selection-end="437" vertical-scroll-proportion="-11.444445" vertical-offset="105" max-vertical-offset="3222">
+          <folding>
+            <element signature="e#41#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="8064">
+          <folding>
+            <element signature="e#41#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/FileEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="5" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.8405316" vertical-offset="1887" max-vertical-offset="2790">
+          <folding>
+            <element signature="e#41#89#0" expanded="true" />
           </folding>
         </state>
       </provider>

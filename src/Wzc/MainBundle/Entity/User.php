@@ -17,20 +17,20 @@ use Symfony\Component\Security\Core\Role\RoleInterface;
 class User extends BaseEntity implements UserInterface
 {
 
-    /**
-     * @ORM\OneToMany(targetEntity="ForumQuestion", mappedBy="author")
-     */
-    protected $forumQuestions;
+//    /**
+//     * @ORM\OneToMany(targetEntity="ForumQuestion", mappedBy="author")
+//     */
+//    protected $forumQuestions;
 
-    /**
-     * @ORM\OneToMany(targetEntity="ForumAnswer", mappedBy="author")
-     */
-    protected $forumAnswers;
+//    /**
+//     * @ORM\OneToMany(targetEntity="ForumAnswer", mappedBy="author")
+//     */
+//    protected $forumAnswers;
 
-    /**
-     * @ORM\OneToMany(targetEntity="File", mappedBy="user")
-     */
-    protected $files;
+//    /**
+//     * @ORM\OneToMany(targetEntity="File", mappedBy="user")
+//     */
+//    protected $files;
 
     /**
      * @ORM\OneToMany(targetEntity="Faq", mappedBy="user", orphanRemoval=false)
@@ -439,5 +439,6 @@ class User extends BaseEntity implements UserInterface
     public function removeFile($file){
         $this->files->removeElement($file);
     }
+
 
 }

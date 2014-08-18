@@ -25,20 +25,20 @@ class ForumQuestion extends BaseEntity
      */
     protected $body;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="User", inversedBy="ForumQuestion")
-     */
-    protected $author;
+//    /**
+//     * @ORM\ManyToOne(targetEntity="User", inversedBy="forumQuestions")
+//     */
+//    protected $author;
 
     /**
      * @ORM\ManyToOne(targetEntity="ForumTheme", inversedBy="questions")
      */
     protected $theme;
 
-    /**
-     * @ORM\OneToMany(targetEntity="ForumAnswer", mappedBy="question")
-     */
-    protected $answers;
+//    /**
+//     * @ORM\OneToMany(targetEntity="ForumAnswer", mappedBy="question")
+//     */
+//    protected $answers;
 
     /**
      *
@@ -143,6 +143,7 @@ class ForumQuestion extends BaseEntity
     public function removeAnswer($answer){
         $this->answers->removeElement($answer);
     }
+
 
 }
 

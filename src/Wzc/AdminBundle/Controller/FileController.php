@@ -9,14 +9,14 @@ use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\File;
 
 /**
- * Class FileController
+ * Class FilesController
  * @package Wzc\AdminBundle\Controller
  * @Route("/file")
  */
 class FileController extends Controller
 {
     /**
-     * @Route("/{folderId}", name="file_index", defaults={ "folderId" = null })
+     * @Route("/{folderId}", name="file_index", defaults={"folderId"="null"})
      * @Template()
      */
     public function indexAction($folderId = null){
@@ -34,7 +34,7 @@ class FileController extends Controller
     }
 
     /**
-     * @Route("/add/{folderId}", name="file_add", defaults={ "folderId" = null })
+     * @Route("/add/{folderId}", name="file_add", defaults={"folderId"="null"})
      * @Template()
      */
     public function addFileAction(Request $request, $folderId = null){
@@ -71,7 +71,4 @@ class FileController extends Controller
         }
         return $this->redirect($request->headers->get('referer'));
     }
-
-
-
 }

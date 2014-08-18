@@ -30,10 +30,10 @@ class ForumAnswer extends BaseEntity
      */
     protected $by;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="User", inversedBy="forumAnswers")
-     */
-    protected $author;
+//    /**
+//     * @ORM\ManyToOne(targetEntity="User", inversedBy="forumAnswers")
+//     */
+//    protected $author;
 
     /**
      * @ORM\ManyToOne(targetEntity="ForumQuestion", inversedBy="answers")

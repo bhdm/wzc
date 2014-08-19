@@ -96,6 +96,13 @@ iphp_file_store:
            namer:
               property:
                   params: { field : id }
+       postcard:
+           upload_dir:  %kernel.root_dir%/../web/upload/postcard
+           upload_path: /upload/postcard
+           namer:
+              property:
+                  params: { field : id }
+
 
 knp_paginator:
     page_range: 20                      # default page range used in pagination control

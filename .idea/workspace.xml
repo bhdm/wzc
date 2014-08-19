@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Map.php" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wzc.iws" />
@@ -27,19 +27,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SlidebarType.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/SlidebarType.php">
+      <file leaf-file-name="Map.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="420" selection-end="1062" vertical-scroll-proportion="-7.4074073" vertical-offset="52" max-vertical-offset="990">
+            <state line="30" column="0" selection-start="538" selection-end="538" vertical-scroll-proportion="-10.037037" vertical-offset="269" max-vertical-offset="3798">
+              <folding>
+                <element signature="e#41#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapType.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/MapType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="57" selection-start="790" selection-end="790" vertical-scroll-proportion="0.59398496" vertical-offset="44" max-vertical-offset="1044">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostcardType.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php">
+      <file leaf-file-name="PageType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="14" selection-start="805" selection-end="805" vertical-scroll-proportion="0.4924812" vertical-offset="170" max-vertical-offset="990">
+            <state line="22" column="12" selection-start="807" selection-end="1178" vertical-scroll-proportion="-10.0" vertical-offset="90" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
@@ -58,8 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Page/add.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Page/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/FaqType.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/ConsultationType.php" />
@@ -109,6 +118,8 @@
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Postcard/list.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Map.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/MapType.php" />
       </list>
     </option>
   </component>
@@ -386,11 +397,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Wzc/MainBundle/Entity" />
       <recent name="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views" />
       <recent name="$PROJECT_DIR$/src/Wzc/AdminBundle/Controller" />
       <recent name="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default" />
       <recent name="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Auth" />
-      <recent name="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views" />
@@ -507,26 +518,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="756" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/faq.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="61" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="1386" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="62" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4122" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="7" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1350" />
@@ -585,11 +576,6 @@
     <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="41" selection-start="320" selection-end="320" vertical-scroll-proportion="0.3292683" vertical-offset="0" max-vertical-offset="504" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="104" selection-start="754" selection-end="792" vertical-scroll-proportion="0.5121951" vertical-offset="90" max-vertical-offset="1026" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/FaqType.php">
@@ -741,7 +727,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="52" selection-start="2529" selection-end="2529" vertical-scroll-proportion="-10.037037" vertical-offset="1043" max-vertical-offset="1692">
           <folding>
-            <element signature="e#45#102#0" expanded="true" />
+            <element signature="e#45#102#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,16 +760,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/SlidebarType.php">
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="420" selection-end="1062" vertical-scroll-proportion="-7.4074073" vertical-offset="52" max-vertical-offset="990">
+        <state line="28" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.5601504" vertical-offset="170" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php">
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/SlidebarType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="805" selection-end="805" vertical-scroll-proportion="0.4924812" vertical-offset="170" max-vertical-offset="990">
+        <state line="16" column="8" selection-start="420" selection-end="1062" vertical-scroll-proportion="0.37593985" vertical-offset="52" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/BaseEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="12" selection-start="807" selection-end="1178" vertical-scroll-proportion="-10.0" vertical-offset="90" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Map.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="538" selection-end="538" vertical-scroll-proportion="-10.037037" vertical-offset="269" max-vertical-offset="3798">
+          <folding>
+            <element signature="e#41#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/MapType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="57" selection-start="790" selection-end="790" vertical-scroll-proportion="0.59398496" vertical-offset="44" max-vertical-offset="1044">
           <folding />
         </state>
       </provider>

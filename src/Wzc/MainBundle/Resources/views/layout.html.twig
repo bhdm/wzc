@@ -7,8 +7,15 @@
 
         {% block javascripts %}
             <script src="{{ asset('bundles/wzcmain/js/jquery-1.11.1.min.js') }}"></script>
+            <script src="{{ asset('bundles/wzcmain/js/styler.js') }}"></script>
+            <script src="{{ asset('bundles/wzcmain/js/styler.js') }}"></script>
+
             <script>
                 $(document).ready(function(){
+
+                    $('input, select').styler();
+
+
                     $('.blaskbg').click(function(){
                        $('.popup').fadeOut();
                        $('.blaskbg').fadeOut();
@@ -50,98 +57,9 @@
         {% endblock %}
 
         {% block stylesheets %}
-            <link href="{{ asset('bundles/wzcmain/css/common.css') }}" rel="stylesheet" media="all">
+            <link href="{{ asset('bundles/wzcmain/css/styler.css') }}" rel="stylesheet">
+            <link href="{{ asset('bundles/wzcmain/css/common.css') }}" rel="stylesheet">
             <style>
-                *{
-                    font-family: Arial, Helvetica, sans-serif;
-                }
-                #register-errors{
-                    color: #CC3333;
-                }
-                .blaskbg{
-                    background: #000000;
-                    opacity: 0.5;
-                    position: fixed;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
-                    z-index: 149;
-                    display: none;
-                    /*color: #920055;*/
-                }
-                .popup table{
-                    color: #920055;
-                }
-
-                .popup table tr td{
-                    padding-bottom: 10px;
-                }
-                button{
-                    background: #ba6295;
-                    padding: 5px 10px;
-                    font-size: 18px;
-                    color: #ffffff;
-                    border-radius: 3px;
-                    outline: none;
-                    cursor: pointer;
-                }
-                .popup{
-                    position: fixed;
-                    width: 400px;
-                    left: 50%;
-                    margin-left: -200px;
-                    height: 160px;
-                    padding: 20px;
-                    background: #feb5e0;
-                    border: 3px dashed #920055;
-                    border-radius: 5px;
-                    top: 20%;
-                    z-index: 150;
-                    box-shadow: 0 0 10px rgba(0,0,0,0.8);
-                    display: none;
-                }
-                .popup h2{
-                    font-weight: normal;
-                    font-style: italic;
-                    text-transform: none;
-                }
-                body{
-                    background: #ffffff;
-                    position: relative;
-                }
-                .footer{
-                    height: 149px;
-                    padding-top: 50px;
-                    background: url('{{ asset('bundles/wzcmain/images/footer_bg.png') }}');
-                }
-                .footer a{
-                    color: #9b9b9b;
-                }
-                .footer a:hover{
-                    color: #920055;
-                }
-                .footer-menu li{
-                    color: #9b9b9b;
-                    padding: 5px;
-                    font-size: 14px;
-                }
-                h2{
-                    color: #920055;
-                    font-size: 30px;
-                    text-transform: uppercase;
-                }
-                .ainput{
-                    background: #ba6295;
-                    border: 0;
-                    height: 35px;
-                    border-radius: 3px 0 0 3px;
-                    width: 290px;
-                    font-size: 18px;
-                    padding-left: 10px;
-                    color: #ffffff;
-                    outline: 0;
-                }
 
             </style>
         {% endblock %}
@@ -183,7 +101,7 @@
                         <li><a href="{{ path('faq') }}">FAQ</a></li>
                         <li><a href="#">OLINE КОНСУЛЬТАЦИЯ</a></li>
                         <li><a href="#">ФОРУМ</a></li>
-                        <li><a href="#">ИТЕРАКТИВНАЯ КАРТА</a></li>
+                        <li><a href="{{ path('map') }}">ИТЕРАКТИВНАЯ КАРТА</a></li>
                     </ul>
                 </div>
                 {% block content %}{% endblock %}

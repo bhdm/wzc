@@ -15,11 +15,17 @@ class TestAnswerType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('created')
-            ->add('enabled')
-            ->add('updated')
-            ->add('question')
+            ->add('title',null, array('label' => 'Ответ'))
+            ->add('true','choice',  array(
+                'empty_value' => false,
+                'choices' => array(
+                    '0' => 'не правильный',
+                    '1' => 'правильный',
+                ),
+                'label' => 'Правильный',
+                'required'  => false,
+            ))
+            ->add('submit', 'submit', array('label' => 'Сохранить'));
         ;
     }
     

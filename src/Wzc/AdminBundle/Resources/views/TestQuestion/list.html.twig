@@ -3,9 +3,9 @@
 {% block breadcrumb %}
     <ul class="breadcrumb well">
         <li><a href="{{ path('admin_main') }}">Домой</a> <span class="divider"></span></li>
-        <li class="active"><a href="{{ path('admin_postcard_list') }}">Открытки</a> <span class="divider"></span></li>
+        <li class="active"><a href="{{ path('admin_testquestion_list') }}">Тестирование</a> <span class="divider"></span></li>
         <div style="float: right">
-            <a href="{{ path('admin_postcard_add') }}">Добавить</a> <span class="divider"></span>
+            <a href="{{ path('admin_testquestion_add') }}">Добавить вопрос</a> <span class="divider"></span>
         </div>
     </ul>
 {% endblock %}
@@ -15,31 +15,27 @@
         <table class="table">
             <tr>
                 <th>№</th>
-                <th>Заголовок</th>
-                <th>Превью</th>
+                <th>Вопрос</th>
                 <th></th>
+                <th>Статус</th>
                 <th class="setting">Инструменты</th>
             </tr>
             {% for item in pagination %}
                 <tr>
                     <td>{{ item.id }}</td>
                     <td>{{ item.title }}</td>
-                    <td>
-                        {% if item.image is not empty %}
-                            <img src="{{ item.image.path }}" style="max-width: 50px; max-height: 50px">
-                        {% endif %}
-                    </td>
                     <td></td>
+                    <td>{{ item.enabledStr }}</td>
                     <td class="setting">
                         {% spaceless %}
-                        <a href="{{ path('admin_postcard_edit',{'id' : item.id}) }}">
+                        <a href="{{ path('admin_testquestion_edit',{'id' : item.id}) }}">
                             <button type="button" class="btn btn-default btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                             </button>
                         </a>
                             &nbsp;
                             &nbsp;
-                        <a href="{{ path('admin_postcard_remove',{'id' : item.id}) }}">
+                        <a href="{{ path('admin_testquestion_remove',{'id' : item.id}) }}">
                             <button type="button" class="btn btn-default btn-sm">
                                 <span class="glyphicon glyphicon-remove"></span>
                             </button>

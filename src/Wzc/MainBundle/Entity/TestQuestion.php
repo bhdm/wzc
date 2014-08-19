@@ -30,6 +30,11 @@ class TestQuestion extends BaseEntity
      */
     protected $body;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    protected $isText = 0;
+
 
     public function getId(){
         return $this->id;
@@ -98,4 +103,22 @@ class TestQuestion extends BaseEntity
     public function removeAnswer($answer){
         $this->answers->removeElement($answer);
     }
+
+    /**
+     * @param mixed $isText
+     */
+    public function setIsText($isText)
+    {
+        $this->isText = $isText;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIsText()
+    {
+        return $this->isText;
+    }
+
+
 }

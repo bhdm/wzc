@@ -18,7 +18,6 @@
                 <th>Название</th>
                 <th>Телефон</th>
                 <th></th>
-                <th>Статус</th>
                 <th class="setting">Инструменты</th>
             </tr>
             {% for item in pagination %}
@@ -27,7 +26,6 @@
                     <td>{{ item.title }}</td>
                     <td>{{ item.phone }}</td>
                     <td></td>
-                    <td>{{ item.enabledStr }}</td>
                     <td class="setting">
                         {% spaceless %}
                         <a href="{{ path('admin_map_edit',{'id' : item.id}) }}">

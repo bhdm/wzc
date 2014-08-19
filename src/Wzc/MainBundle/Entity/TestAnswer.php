@@ -24,6 +24,11 @@ class TestAnswer extends BaseEntity
      */
     protected $question;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    protected $true = 0;
+
     public function getId(){
         return $this->id;
     }
@@ -62,6 +67,22 @@ class TestAnswer extends BaseEntity
     public function getQuestion()
     {
         return $this->question;
+    }
+
+    /**
+     * @param mixed $true
+     */
+    public function setTrue($true = 0)
+    {
+        $this->true = $true;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTrue()
+    {
+        return $this->true;
     }
 
 

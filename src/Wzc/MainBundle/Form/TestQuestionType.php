@@ -5,6 +5,7 @@ namespace Wzc\MainBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Wzc\MainBundle\Entity\TestAnswer;
 
 class TestQuestionType extends AbstractType
 {
@@ -14,12 +15,29 @@ class TestQuestionType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        $testAnswer = new TestAnswer();
         $builder
-            ->add('title')
-            ->add('body')
-            ->add('created')
-            ->add('enabled')
-            ->add('updated')
+            ->add('title',null, array('label' => 'Вопрос'))
+            ->add('body',null, array('label' => 'Описание вопроса'))
+            ->add('isText','choice',  array(
+                'empty_value' => false,
+                'choices' => array(
+                    '0' => 'Выборный',
+                    '1' => 'Текстовый',
+                ),
+                'label' => 'Тип ответов',
+                'required'  => false,
+            ))
+            ->add('enabled','choice',  array(
+                'empty_value' => false,
+                'choices' => array(
+                    '1' => 'Активна',
+                    '0' => 'Не активна',
+                ),
+                'label' => 'Активность',
+                'required'  => false,
+            ))
+            ->add('submit', 'submit', array('label' => 'Сохранить'));
         ;
     }
     

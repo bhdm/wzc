@@ -18,7 +18,8 @@ class MapController extends Controller
     public function indexAction()
     {
         $coords = $this->getDoctrine()->getRepository('WzcMainBundle:Map')->findByEnabled(1);
-        return array('coords' => $coords);
+        $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('map');
+        return array('coords' => $coords, 'page' => $page);
     }
 
 

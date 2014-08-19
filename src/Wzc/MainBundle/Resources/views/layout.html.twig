@@ -8,12 +8,12 @@
         {% block javascripts %}
             <script src="{{ asset('bundles/wzcmain/js/jquery-1.11.1.min.js') }}"></script>
             <script src="{{ asset('bundles/wzcmain/js/styler.js') }}"></script>
-            <script src="{{ asset('bundles/wzcmain/js/styler.js') }}"></script>
 
             <script>
                 $(document).ready(function(){
 
-                    $('input, select').styler();
+                    $('select').styler();
+                    $('.styler').styler();
 
 
                     $('.blaskbg').click(function(){

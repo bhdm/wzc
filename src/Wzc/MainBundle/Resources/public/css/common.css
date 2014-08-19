@@ -89,7 +89,7 @@ body{
 }
 .menu{
     text-align: center;
-    height: 50px;
+    min-height: 50px;
     background: url("../images/menu_bg.png") repeat-x ;
     margin-bottom: -50px;
     z-index: 50;

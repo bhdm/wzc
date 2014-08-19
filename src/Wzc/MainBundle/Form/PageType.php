@@ -30,7 +30,7 @@ class PageType extends AbstractType
                 'required'  => false,
             ))
             ->add('submit', 'submit', array('label' => 'Сохранить'));
-;
+
     }
     
     /**

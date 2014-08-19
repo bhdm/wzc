@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/styler.css" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/styler.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wzc.iws" />
@@ -61,12 +59,12 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="34" selection-start="3062" selection-end="3062" vertical-scroll-proportion="0.6179402" vertical-offset="1296" max-vertical-offset="2844">
+            <state line="74" column="89" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.575188" vertical-offset="1026" max-vertical-offset="2844">
               <folding>
-                <element signature="e#2638#2664#0" expanded="true" />
-                <element signature="e#4372#4407#0" expanded="true" />
-                <element signature="e#4540#4564#0" expanded="true" />
-                <element signature="e#4792#4811#0" expanded="true" />
+                <element signature="e#2652#2678#0" expanded="true" />
+                <element signature="e#4386#4421#0" expanded="true" />
+                <element signature="e#4554#4578#0" expanded="true" />
+                <element signature="e#4806#4825#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,6 +83,15 @@
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/page.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="8" selection-start="572" selection-end="619" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="612">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="13" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.0" vertical-offset="3052" max-vertical-offset="3744">
               <folding />
             </state>
           </provider>
@@ -148,11 +155,11 @@
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Map/add.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Map/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/menu.html.twig" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js/styler.js" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/styler.css" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" />
       </list>
     </option>
@@ -628,7 +635,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38645834" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38645834" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2106136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -907,13 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="23" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="3708">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js/styler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="72" selection-start="14852" selection-end="14852" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="630">
@@ -966,14 +966,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="13" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.0" vertical-offset="3052" max-vertical-offset="3744">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="34" selection-start="3062" selection-end="3062" vertical-scroll-proportion="0.6179402" vertical-offset="1296" max-vertical-offset="2844">
+        <state line="74" column="89" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.575188" vertical-offset="1026" max-vertical-offset="2844">
           <folding>
-            <element signature="e#2638#2664#0" expanded="true" />
-            <element signature="e#4372#4407#0" expanded="true" />
-            <element signature="e#4540#4564#0" expanded="true" />
-            <element signature="e#4792#4811#0" expanded="true" />
+            <element signature="e#2652#2678#0" expanded="true" />
+            <element signature="e#4386#4421#0" expanded="true" />
+            <element signature="e#4554#4578#0" expanded="true" />
+            <element signature="e#4806#4825#0" expanded="true" />
           </folding>
         </state>
       </provider>

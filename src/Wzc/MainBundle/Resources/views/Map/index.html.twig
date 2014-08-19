@@ -72,7 +72,7 @@
             {% for c in coords %}
                 myPlacemark = new ymaps.Placemark([{{ c.latitude }}, {{ c.longitude }}], {
                     hintContent: '{{ c.title }}',
-                    balloonContent: '<div>Адрес: {{ c.adrs }}<br />Телефон: {{ c.phone }}<br />{{ c.body }}</div>'
+                    balloonContent: '<div><b>Адрес:</b> {{ c.adrs }}<br /><b>Телефон:</b> {{ c.phone }}<br />{{ c.body }}</div>'
                 });
                 myMap.geoObjects.add(myPlacemark);
             {% endfor %}

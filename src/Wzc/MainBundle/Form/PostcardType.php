@@ -16,8 +16,7 @@ class PostcardType extends AbstractType
     {
         $builder
             ->add('title', null, array('label'=> 'Заголовок'))
-            ->add('image', 'iphp_file', array('label'=> 'Картинка'))
-            ->add('body', null, array('label'=> 'Текст к картинке', 'attr' => array('class'=> 'ckeditor')))
+            ->add('image', 'iphp_file', array('label'=> 'Открытка'))
             ->add('enabled','choice',  array(
                 'empty_value' => false,
                 'choices' => array(

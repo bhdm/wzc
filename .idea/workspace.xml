@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Postcard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/PostcardController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Postcard/add.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Postcard/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Postcard/list.html.twig" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/menu.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/menu.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php" />
     </list>
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +38,8 @@
       <file leaf-file-name="PostcardType.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="9" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.84586465" vertical-offset="54" max-vertical-offset="990">
-              <folding>
-                <marker date="1408471568088" expanded="true" signature="447:454" placeholder="..." />
-              </folding>
+            <state line="18" column="68" selection-start="560" selection-end="560" vertical-scroll-proportion="0.22180451" vertical-offset="170" max-vertical-offset="972">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -791,10 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PostcardType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="9" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.84586465" vertical-offset="54" max-vertical-offset="990">
-          <folding>
-            <marker date="1408471568088" expanded="true" signature="447:454" placeholder="..." />
-          </folding>
+        <state line="18" column="68" selection-start="560" selection-end="560" vertical-scroll-proportion="0.22180451" vertical-offset="170" max-vertical-offset="972">
+          <folding />
         </state>
       </provider>
     </entry>

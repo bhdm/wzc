@@ -144,6 +144,10 @@ button{
     outline: none;
     cursor: pointer;
 }
+.cbtn:hover{
+    background: rgba(146, 0, 85, 0.73);
+}
+
 .popup{
     position: fixed;
     width: 400px;

@@ -27,15 +27,30 @@
             width: 600px;
             margin: 0 auto;
         }
+        .question{
+            font-weight: bold;
+            color: #920055;
+            padding: 5px;
+        }
+        .answer{
+            margin-left: 30px;
+            padding: 5px;
+        }
+        .textarea{
+            width: 450px;
+            height: 150px;
+        }
+        .test{
+            min-width: 500px;
+        }
+        .test button{
+            margin-left: 375px;
+        }
     </style>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
-
-
 {% endblock %}
 
 {% block content %}
@@ -43,21 +58,25 @@
         <h2>{{ page.title  | raw }}</h2>
         <br />
         {{ page.body  | raw }}
-        {% for t in test %}
-            <div>{{ t.title }}</div>
-                {% if t.isText == 1 %}
-                    <div><textarea class="styler"></textarea></div>
-                {% else %}
-                    {% for a in t.answers %}
-                        <div>
-                            <input type="checkbox" class="styler"> {{ a.title }}
-                        </div>
+        <br />
+        <div class="test">
+            {% for t in test %}
+                <div class="question">{{ t.title }}</div>
+                    {% if t.isText == 1 %}
+                        <div class="answer"><textarea class="styler textarea"></textarea></div>
                     {% else %}
-                        нету вариентов ответа
-                    {% endfor %}
-                {% endif %}
-        {% endfor %}
-
+                        {% for a in t.answers %}
+                            <div class="answer">
+                                <input type="checkbox" class="styler" name="{{ a.id }}"> {{ a.title }}
+                            </div>
+                        {% else %}
+                            нету вариентов ответа
+                        {% endfor %}
+                    {% endif %}
+            {% endfor %}
+            <br />
+            <button class="cbtn">Отправить</button>
+        </div>
         <br style="clear: both"/>
     </div>
 {% endblock %}

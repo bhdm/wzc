@@ -16,7 +16,7 @@ class TestAnswerType extends AbstractType
     {
         $builder
             ->add('title',null, array('label' => 'Ответ'))
-            ->add('true','choice',  array(
+            ->add('istrue','choice',  array(
                 'empty_value' => false,
                 'choices' => array(
                     '0' => 'не правильный',
@@ -25,7 +25,8 @@ class TestAnswerType extends AbstractType
                 'label' => 'Правильный',
                 'required'  => false,
             ))
-            ->add('submit', 'submit', array('label' => 'Сохранить'));
+            ->add('submit', 'submit', array('label' => 'Сохранить'))
+            ->add('back', 'button', array('label' => 'Назад', 'attr' => array('class' => 'alignRight')));
         ;
     }
     

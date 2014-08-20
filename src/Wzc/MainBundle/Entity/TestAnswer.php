@@ -27,7 +27,7 @@ class TestAnswer extends BaseEntity
     /**
      * @ORM\Column(type="boolean")
      */
-    protected $true = 0;
+    protected $istrue = 0;
 
     public function getId(){
         return $this->id;
@@ -70,20 +70,22 @@ class TestAnswer extends BaseEntity
     }
 
     /**
-     * @param mixed $true
+     * @param mixed $istrue
      */
-    public function setTrue($true = 0)
+    public function setIstrue($istrue = 0)
     {
-        $this->true = $true;
+        $this->istrue = $istrue;
     }
 
     /**
      * @return mixed
      */
-    public function getTrue()
+    public function getIstrue()
     {
-        return $this->true;
+        return $this->istrue;
     }
+
+
 
 
 

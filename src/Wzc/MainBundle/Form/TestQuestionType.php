@@ -15,7 +15,7 @@ class TestQuestionType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $testAnswer = new TestAnswer();
+
         $builder
             ->add('title',null, array('label' => 'Вопрос'))
             ->add('body',null, array('label' => 'Описание вопроса'))
@@ -37,7 +37,7 @@ class TestQuestionType extends AbstractType
                 'label' => 'Активность',
                 'required'  => false,
             ))
-            ->add('submit', 'submit', array('label' => 'Сохранить'));
+            ->add('submit', 'submit', array('label' => 'Сохранить'))
         ;
     }
     

@@ -38,8 +38,8 @@ class TestAnswerController extends Controller{
      * @Template()
      */
     public function addAction(Request $request,$questionId){
-        $question = $this->getDoctrine()->getRepository('WzcMainBundle:TestQuestion')->findOneById($questionId);
         $em = $this->getDoctrine()->getManager();
+        $question = $this->getDoctrine()->getRepository('WzcMainBundle:TestQuestion')->findOneById($questionId);
         $item = new TestAnswer();
         $form = $this->createForm(new TestAnswerType($em), $item);
         $formData = $form->handleRequest($request);
@@ -51,6 +51,9 @@ class TestAnswerController extends Controller{
                 $em->persist($item);
                 $em->flush();
                 $em->refresh($item);
+                $question->addAnswer($item);
+                $em->flush($question);
+                $em->refresh($question);
                 return $this->redirect($this->generateUrl('admin_testanswer_list', array('questionId' => $questionId)));
             }
         }

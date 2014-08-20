@@ -15,7 +15,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 class TestQuestion extends BaseEntity
 {
     /**
-     * @ORM\OneToMany(targetEntity="TestAnswer", mappedBy="answers")
+     * @ORM\OneToMany(targetEntity="TestAnswer", mappedBy="question")
      */
     protected $answers;
 

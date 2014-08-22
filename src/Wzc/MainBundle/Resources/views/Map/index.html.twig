@@ -1,0 +1,161 @@
+{% extends "WzcMainBundle::layout.html.twig" %}
+
+
+{% block header %}
+    <title>{{ page.title }}</title>
+    <META NAME="Keywords" CONTENT="{{ page.keywords | raw}}">
+    <META NAME="Description" CONTENT="{{ page.description  | raw }}">
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .content{
+            padding: 50px 0 30px 0;
+            width: 900px;
+            margin: 0 auto;
+        }
+        h2{
+            color: #920055;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        input.styler{
+            width: 505px;
+        }
+        .table{
+            width: 600px;
+            margin: 0 auto ;
+        }
+        #map{
+            border: 1px solid #920055;
+            border-radius: 5px;
+            padding: 3px;
+        }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+                myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7,
+                controls: ['default']
+            });
+
+//            myMap.controls.remove('geolocationControl');
+            myMap.controls.add('geolocationControl');
+            myMap.controls.remove('fullscreenControl');
+            myMap.controls.remove('searchControl');
+            myMap.controls.remove('trafficControl');
+            myMap.controls.remove('rulerControl');
+
+            var myListBox = new ymaps.control.ListBox({
+                data: {
+                    content: 'Выбрать город'
+                },
+                items: [
+                    new ymaps.control.ListBoxItem('Москва'),
+                    new ymaps.control.ListBoxItem('Санкт-Петербург'),
+                ]
+            });
+            myMap.controls.add(myListBox);
+
+            {% for c in coords %}
+                myPlacemark = new ymaps.Placemark([{{ c.latitude }}, {{ c.longitude }}], {
+                    hintContent: '{{ c.title }}',
+                    balloonContent: '<div><b>Адрес:</b> {{ c.adrs }}<br /><b>Телефон:</b> {{ c.phone }}<br />{{ c.body }}</div>'
+                });
+                myMap.geoObjects.add(myPlacemark);
+            {% endfor %}
+        }
+        $('#city').change(function(){
+            if ($(this).val() == 1){
+
+            }else{
+
+            }
+        });
+
+    </script>
+
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <h2>{{ page.title  | raw }}</h2>
+        <br />
+        <div style="text-align: center">
+            {% spaceless %}
+                <table class="table">
+                    <tr>
+                        <td colspan="2">
+                            <select>
+                                <option value="Бульвар Рокоссовского">Бульвар Рокоссовского</option>
+                                <option value="Черкизовская">Черкизовская</option>
+                                <option value="Преображенская площадь">Преображенская площадь</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <input type="text" value="" class="styler" placeholder="Поиск по названию названию" data-placeholder="Поиск по названию названию"/>
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <button class="styler">Найти</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><br /></td>
+                    </tr>
+                    {#<tr>#}
+                        {#<td>#}
+                            {#Выберите город:#}
+                            {#<select id="city">#}
+                                {#<option value="1">Москва</option>#}
+                                {#<option value="2">Санкт-Петербург</option>#}
+                            {#</select>#}
+                        {#</td>#}
+                        {#<td>#}
+                            {#<div style="float: right">#}
+                                {#Найти по метро:#}
+                                {#<select>#}
+                                    {#<option>Москва</option>#}
+                                    {#<option>Санкт-Петербург</option>#}
+                                {#</select>#}
+                            {#</div>#}
+                        {#</td>#}
+                    {#</tr>#}
+                    {#<tr>#}
+                        {#<td colspan="2"><br /></td>#}
+                    {#</tr>#}
+                    <tr>
+                        <td colspan="2">
+                            <div id="map" style="width: 850px; height: 400px"></div>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <div style="text-align: left">
+                    {{ page.body  | raw }}
+                </div>
+            {% endspaceless %}
+        </div>
+        <div class="cell25">
+
+        </div>
+        <div class="cell33" id="metro">
+
+        </div>
+
+        <br style="clear: both"/>
+    </div>
+{% endblock %}

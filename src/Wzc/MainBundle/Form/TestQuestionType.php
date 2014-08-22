@@ -5,21 +5,29 @@ namespace Wzc\MainBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Wzc\MainBundle\Entity\TestAnswer;
 
-class PageType extends AbstractType
+class TestQuestionType extends AbstractType
 {
-    /**
+        /**
      * @param FormBuilderInterface $builder
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+
         $builder
-            ->add('title',null, array('label' => 'Заголовок'))
-            ->add('url',null, array('label' => 'URL страницы'))
-            ->add('keywords',null, array('label' => 'Мета слова'))
-            ->add('description',null, array('label' => 'Мета описание'))
-            ->add('body',null, array('label' => 'Контент страницы', 'attr' => array('class'=>'ckeditor')))
+            ->add('title',null, array('label' => 'Вопрос'))
+            ->add('body',null, array('label' => 'Описание вопроса'))
+            ->add('isText','choice',  array(
+                'empty_value' => false,
+                'choices' => array(
+                    '0' => 'Выборный',
+                    '1' => 'Текстовый',
+                ),
+                'label' => 'Тип ответов',
+                'required'  => false,
+            ))
             ->add('enabled','choice',  array(
                 'empty_value' => false,
                 'choices' => array(
@@ -29,8 +37,8 @@ class PageType extends AbstractType
                 'label' => 'Активность',
                 'required'  => false,
             ))
-            ->add('submit', 'submit', array('label' => 'Сохранить'));
-
+            ->add('submit', 'submit', array('label' => 'Сохранить'))
+        ;
     }
     
     /**
@@ -39,7 +47,7 @@ class PageType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Wzc\MainBundle\Entity\Page'
+            'data_class' => 'Wzc\MainBundle\Entity\TestQuestion'
         ));
     }
 
@@ -48,6 +56,6 @@ class PageType extends AbstractType
      */
     public function getName()
     {
-        return 'wzc_mainbundle_page';
+        return 'wzc_mainbundle_testquestion';
     }
 }

@@ -12,11 +12,11 @@ security:
             entity: { class: WzcMainBundle:User, property: username }
     firewalls:
         admin:
-            pattern: /.*
+            pattern: ^/admin
             form_login:
-                check_path: /login_check
+                check_path: /admin/login_check
                 login_path: /admin/login
-                provider: admin
+            provider: admin
             logout: true
             security: true
             anonymous: true

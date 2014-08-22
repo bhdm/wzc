@@ -11,7 +11,8 @@ a{
     height: 100px
 }
 .body{
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 900px;
     margin: 0 auto;
 }
 .logo{
@@ -84,17 +85,18 @@ body{
 .header_line{
     height: 1px;
     width: 100%;
-    background: url("/bundles/wzcmain/images/bg_line_red.png") repeat-x ;
+    background: url("../images/bg_line_red.png") repeat-x ;
 }
 .menu{
     text-align: center;
-    height: 50px;
-    background: url("/bundles/wzcmain/images/menu_bg.png") repeat-x ;
+    min-height: 50px;
+    background: url("../images/menu_bg.png") repeat-x ;
     margin-bottom: -50px;
     z-index: 50;
     padding-top: 6px;
     position: absolute;
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 900px;
 }
 .menu ul{
     list-style: none;
@@ -106,4 +108,99 @@ body{
 }
 .menu ul li a{
     color: #920055;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#register-errors{
+    color: #CC3333;
+}
+.blaskbg{
+    background: #000000;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 149;
+    display: none;
+    /*color: #920055;*/
+}
+.popup table{
+    color: #920055;
+}
+
+.popup table tr td{
+    padding-bottom: 10px;
+}
+button{
+    background: #ba6295;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+.cbtn:hover{
+    background: rgba(146, 0, 85, 0.73);
+}
+
+.popup{
+    position: fixed;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    height: 160px;
+    padding: 20px;
+    background: #feb5e0;
+    border: 3px dashed #920055;
+    border-radius: 5px;
+    top: 20%;
+    z-index: 150;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    display: none;
+}
+.popup h2{
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+}
+body{
+    background: #ffffff;
+    position: relative;
+}
+.footer{
+    height: 149px;
+    padding-top: 50px;
+    background: url('../images/footer_bg.png');
+}
+.footer a{
+    color: #9b9b9b;
+}
+.footer a:hover{
+    color: #920055;
+}
+.footer-menu li{
+    color: #9b9b9b;
+    padding: 5px;
+    font-size: 14px;
+}
+h2{
+    color: #920055;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.ainput{
+    background: #ba6295;
+    border: 0;
+    height: 35px;
+    border-radius: 3px 0 0 3px;
+    width: 290px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #ffffff;
+    outline: 0;
 }

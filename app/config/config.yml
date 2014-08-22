@@ -93,6 +93,16 @@ iphp_file_store:
        slidebar:
            upload_dir:  %kernel.root_dir%/../web/upload/slidebar
            upload_path: /upload/slidebar
+           namer:
+              property:
+                  params: { field : id }
+       postcard:
+           upload_dir:  %kernel.root_dir%/../web/upload/postcard
+           upload_path: /upload/postcard
+           namer:
+              property:
+                  params: { field : id }
+
        files:
            upload_dir:  %kernel.root_dir%/../web/upload/files
            upload_path: /upload/files

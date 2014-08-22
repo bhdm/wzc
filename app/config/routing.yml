@@ -8,12 +8,19 @@ wzc_admin:
     type:     annotation
     prefix:   /
 
+
 _security_login:
     pattern:  /admin/login
     defaults: { _controller: WzcAdminBundle:Auth:login }
 
-_security_check:
-    pattern:  /login_check
+#_security_check:
+#    pattern:  /login_check
+
+login_check:
+    path: /login_check
+
+admin_login_check:
+   path: /admin/login_check
 
 _security_logout:
     pattern:  /logout

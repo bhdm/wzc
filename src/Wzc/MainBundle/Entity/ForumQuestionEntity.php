@@ -10,7 +10,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * ForumQuestion
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="ForumQuestionRepository")
  */
 class ForumQuestion extends BaseEntity
 {

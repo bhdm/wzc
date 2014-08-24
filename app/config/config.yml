@@ -103,6 +103,11 @@ iphp_file_store:
               property:
                   params: { field : id }
 
+       files:
+           upload_dir:  %kernel.root_dir%/../web/upload/files
+           upload_path: /upload/files
+
+
 
 knp_paginator:
     page_range: 20                      # default page range used in pagination control

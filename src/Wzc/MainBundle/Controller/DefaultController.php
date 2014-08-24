@@ -5,11 +5,13 @@ namespace Wzc\MainBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 use Wzc\MainBundle\Entity\Page;
 use Wzc\MainBundle\Entity\User;
 use Wzc\MainBundle\Entity\Slidebar;
+use Wzc\MainBundle\Form\UserType;
 
 class DefaultController extends Controller
 {
@@ -72,5 +74,28 @@ class DefaultController extends Controller
         $faqs = $this->getDoctrine()->getRepository('WzcMainBundle:Faq')->findByEnabled(1);
 
         return array('faqs' => $faqs);
+    }
+
+    /**
+     * @Security("has_role('ROLE_USER')")
+     * @Route("/profile", name="profile")
+     * @Template()
+     */
+    public function profileAction(Request $request){
+
+        $em = $this->getDoctrine()->getManager();
+        $item = $this->getDoctrine()->getRepository('WzcMainBundle:User')->findOneById($this->getUser()->getId());
+        $form = $this->createForm(new UserType($em), $item);
+        $formData = $form->handleRequest($request);
+
+        if ($request->getMethod() == 'POST'){
+            if ($formData->isValid()){
+                $item = $formData->getData();
+                $em->flush($item);
+                $em->refresh($item);
+                return $this->redirect($this->generateUrl('admin_user_list'));
+            }
+        }
+        return array('form' => $form->createView());
     }
 }

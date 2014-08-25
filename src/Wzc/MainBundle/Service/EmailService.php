@@ -19,7 +19,7 @@ class EmailService
     {
         $mail = new \PHPMailer();
 
-        $portal = $this->container->getParameter('portal');
+        $portal = 'ВЗК';
 
         $mail->isSMTP();
         $mail->isHTML(true);

@@ -102,12 +102,13 @@
                 </div>
             </div>
             <div class="body" style="padding-bottom: 200px">
+
+
                 <div class="menu">
                     <ul>
                         <li><a href="{{ path('page',{'url' : 'about'}) }}">О ПРОЕКТЕ</a></li>
-                        <li><a href="{{ path('page',{'url' : 'o_zabolevanii'}) }}">О ЗАБОЛЕВАНИИ</a></li>
                         <li>
-                            <a href="{{ path('page',{'url' : 'lechenie'}) }}">СПОСОБЫ ЛЕЧЕНИЯ</a>
+                            <a href="{{ path('page',{'url' : 'o_zabolevanii'}) }}">О ЗАБОЛЕВАНИИ</a>
                             <div class="sub-menu">
                                 <img class="triangle-3" src="{{ asset('bundles/wzcmain/images/triangle-3.png') }}">
                                 <ul>
@@ -119,27 +120,59 @@
                                         </a>
                                         <div class="sub-menu-2">
                                             <ul>
-                                                <li><a>На работе</a></li>
-                                                <li><a>свидания, досуг</a></li>
-                                                <li><a>гигиенический аспект</a></li>
-                                                <li><a>качество жизни</a></li>
-                                                <li><a>взрослым о детях с ВЗК</a></li>
+                                                <li><a href="{{ path('page',{'url' : 'na-rabote'}) }}">На работе</a></li>
+                                                <li><a href="{{ path('page',{'url' : 'dosug'}) }}">свидания, досуг</a></li>
+                                                <li><a href="{{ path('page',{'url' : 'gigienicheskiy-aspect'}) }}">гигиенический аспект</a></li>
+                                                <li><a href="{{ path('page',{'url' : 'kachestvo-jizni'}) }}">качество жизни</a></li>
+                                                <li><a href="{{ path('page',{'url' : 'vzroslim-o-dedyah'}) }}">взрослым о детях с ВЗК</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="#">Физиологические проблемы <img class="triangle-1" src="{{ asset('bundles/wzcmain/images/triangle-1.png') }}"><img class="triangle-2" src="{{ asset('bundles/wzcmain/images/triangle-2.png') }}"></a></li>
-                                    <li><a href="#">Осложнения при заболевании <img class="triangle-1" src="{{ asset('bundles/wzcmain/images/triangle-1.png') }}"><img class="triangle-2" src="{{ asset('bundles/wzcmain/images/triangle-2.png') }}"></a></li>
+                                    <li>
+                                        <a href="#">
+                                            Физиологические проблемы
+                                            <img class="triangle-1" src="{{ asset('bundles/wzcmain/images/triangle-1.png') }}">
+                                            <img class="triangle-2" src="{{ asset('bundles/wzcmain/images/triangle-2.png') }}">
+                                        </a>
+                                        <div class="sub-menu-2">
+                                            <ul>
+                                                <li><a href="{{ path('page',{'url' : 'vliyanie-na-fertilnost'}) }}">влияние на фертильность (при лечении)</a></li>
+                                                <li><a href="{{ path('page',{'url' : 'plotnost-kostnoy-tkani'}) }}">плотность костной ткани</a></li>
+                                                <li><a href="{{ path('page',{'url' : 'skachki-vesa'}) }}">скачки веса (падение веса при ВЗК недиагностированном и повышение веса при медикаментозном лечении ВЗК)</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('page',{'url' : 'oslojneniya'}) }}">
+                                            Осложнения при заболевании
+                                        </a>
+                                    </li>
                                 </ul>
-
+                            </div>
+                        </li>
+                        <li>
+                            <a href="{{ path('page',{'url' : 'lechenie'}) }}">СПОСОБЫ ЛЕЧЕНИЯ</a>
+                            <div class="sub-menu">
+                                <img class="triangle-3" src="{{ asset('bundles/wzcmain/images/triangle-3.png') }}">
+                                <ul>
+                                    <li><a href="{{ path('page',{'url' : 'dietoterapiya'}) }}">Диетотерапия</a></li>
+                                    <li><a href="{{ path('page',{'url' : 'medikamentoznoe-lechenie'}) }}">Медикаментозное лечение</a></li>
+                                    <li><a href="{{ path('page',{'url' : 'hirurgicheskoe-vmeshatelstvo'}) }}">Хирургическое вмешательство при осложнениях</a></li>
+                                    <li><a href="{{ path('page',{'url' : 'problemi-s-sustavami'}) }}">Проблемы с суставами</a></li>
+                                    <li><a href="{{ path('page',{'url' : 'korekciya-obraza-jizni'}) }}">Коррекция образа жизни</a></li>
+                                    <li><a href="{{ path('page',{'url' : 'soputstvuyushie-oslojneniya'}) }}">Сопутствующие осложнения и заболевания</a></li>
+                                </ul>
                             </div>
                         </li>
                         <li><a href="{{ path('test') }}">ТЕСТИРОВАНИЕ</a></li>
-                        <li><a href="{{ path('faq') }}">FAQ</a></li>
-                        <li><a href="#">ONLINE КОНСУЛЬТАЦИЯ</a></li>
+                        {#<li><a href="">FAQ</a></li>#}
+                        <li><a href="{{ path('faq') }}">ONLINE КОНСУЛЬТАЦИЯ</a></li>
                         <li><a href="#">ФОРУМ</a></li>
                         <li><a href="{{ path('map') }}">ЗАПИСАТЬСЯ К ВРАЧУ</a></li>
                     </ul>
                 </div>
+
+
                 {% block content %}{% endblock %}
             </div>
         </div>
@@ -155,7 +188,7 @@
                         </td>
                         <td style="width: 300px;">
                             <ul class="footer-menu">
-                                <li><a href="#">О ПРОЕКТЕ       </a></li>
+                                <li><a href="{{ path('page',{'url' : 'about'}) }}">О ПРОЕКТЕ       </a></li>
                                 <li><a href="#">О ЗАБОЛЕВАНИИ   </a></li>
                                 <li><a href="#">СПОСОБЫ ЛЕЧЕНИЯ </a></li>
                                 <li><a href="#">ТЕСТИРОВАНИЕ    </a></li>
@@ -163,10 +196,9 @@
                         </td>
                         <td style="width: 300px;">
                             <ul class="footer-menu">
-                                <li><a href="#">ОНЛАЙН КОНСУЛЬТИРОВАНИЕ </a></li>
-                                <li><a href="#">ИНТЕРАКТИВНАЯ КАРТА     </a></li>
+                                <li><a href="{{ path('faq') }}">ОНЛАЙН КОНСУЛЬТИРОВАНИЕ </a></li>
+                                <li><a href="{{ path('map') }}">ИНТЕРАКТИВНАЯ КАРТА     </a></li>
                                 <li><a href="#">СКАЧАТЬ БРОШУРКУ        </a></li>
-                                <li><a href="#">FAQ                     </a></li>
                             </ul>
                         </td>
                     </tr>

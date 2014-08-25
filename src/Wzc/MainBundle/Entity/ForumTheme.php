@@ -107,5 +107,22 @@ class ForumTheme extends BaseEntity
         $this->questions->removeElement($question);
     }
 
+    /**
+     * @param mixed $answers
+     */
+    public function setAnswers($answers)
+    {
+        $this->answers = $answers;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAnswers()
+    {
+        return $this->answers;
+    }
+
+
 }
 

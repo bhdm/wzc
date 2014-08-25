@@ -63,6 +63,10 @@
                 .top a:hover{
                     text-decoration: underline;
                 }
+                .register, .in{
+                    padding-right: 19px;
+                    padding-top: 4px;
+                }
             </style>
         {% endblock %}
     </head>
@@ -77,8 +81,8 @@
                     <div class="auth">
                         {% if not is_granted('IS_AUTHENTICATED_REMEMBERED') %}
                             <div class="top">
-                                <a href="#" class="register">РЕГИСТРАЦИЯ <img src="{{ asset('bundles/wzcmain/images/ico_in.png') }}" class="ico "></a>
-                                <a href="#" class="in">ВХОД <img src="{{ asset('bundles/wzcmain/images/ico_in.png') }}" class="ico"></a>
+                                <a href="#" class="register">РЕГИСТРАЦИЯ</a>
+                                <a href="#" class="in">ВХОД </a>
                                 <a href="#"><img src="{{ asset('bundles/wzcmain/images/ico_s_1.png') }}" class="ico soc"></a>
                                 <a href="#"><img src="{{ asset('bundles/wzcmain/images/ico_s_2.png') }}" class="ico soc"></a>
                                 <a href="#"><img src="{{ asset('bundles/wzcmain/images/ico_s_3.png') }}" class="ico soc"></a>

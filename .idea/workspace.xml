@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
     </list>
     <ignored path="wzc.iws" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="200" column="81" selection-start="11313" selection-end="11313" vertical-scroll-proportion="0.68641114" vertical-offset="3009" max-vertical-offset="3870">
+            <state line="65" column="31" selection-start="2393" selection-end="2393" vertical-scroll-proportion="-1.7804878" vertical-offset="2703" max-vertical-offset="3942">
               <folding />
             </state>
           </provider>
@@ -718,11 +716,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/TestAnswer/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="191" selection-end="191" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="270" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/TestQuestionType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="41" selection-start="861" selection-end="861" vertical-scroll-proportion="0.78759396" vertical-offset="13" max-vertical-offset="1152" />
@@ -1033,9 +1026,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5chars.ent">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="10" selection-start="1953" selection-end="1953" vertical-scroll-proportion="0.34324944" vertical-offset="834" max-vertical-offset="37008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="81" selection-start="11313" selection-end="11313" vertical-scroll-proportion="0.68641114" vertical-offset="3009" max-vertical-offset="3870">
+        <state line="65" column="31" selection-start="2393" selection-end="2393" vertical-scroll-proportion="-1.7804878" vertical-offset="2703" max-vertical-offset="3942">
           <folding />
         </state>
       </provider>

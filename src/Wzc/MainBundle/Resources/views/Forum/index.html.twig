@@ -16,7 +16,16 @@
         <div>
             {{ page.body | raw }}
         </div>
-
+        <br />
+        {% if is_granted("ROLE_ADMIN") %}
+            <button class="styler showform"><b>+</b> Добавить тему</button>
+            <br />
+            <div class="form">
+                <form method="POST">
+                    {{ form_widget(form) }}
+                </form>
+            </div>
+        {% endif %}
         {% for theme in themes %}
             <div class="forum-item">
                 <table>
@@ -41,6 +50,15 @@
 {% block stylesheets %}
     {{ parent() }}
     <style>
+        .form{
+            display: none;
+        }
+        #cke_wzc_mainbundle_forumtheme_body{
+            width: 640px;
+        }
+        .form-group{
+            margin: 10px 0;
+        }
         .forum-theme-body{
             color: #444444;
             font-size: 14px;
@@ -61,6 +79,7 @@
             border: 1px solid #920055;
             padding: 10px;
             height: 55px;
+            border-radius: 3px;
             {#background: url('{{ asset('bundles/wzcmain/images/forum_bg.png') }}');#}
         }
         .forum-item:hover{
@@ -93,4 +112,16 @@
             margin: 0 auto ;
         }
     </style>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/wzcadmin/ckeditor/ckeditor.js') }}"></script>
+    <script>
+        $(document).ready(function(){
+           $('.showform').click(function(){
+               $('.form').fadeIn();
+           });
+        });
+    </script>
 {% endblock %}

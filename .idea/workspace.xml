@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/FileEntity.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/File.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswerEntity.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestionEntity.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestion.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumThemeEntity.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestion.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig" />
     </list>
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,25 +32,36 @@
       <file leaf-file-name="ForumController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="29" selection-start="2045" selection-end="2045" vertical-scroll-proportion="-34.37037" vertical-offset="134" max-vertical-offset="1224">
+            <state line="62" column="33" selection-start="1993" selection-end="1993" vertical-scroll-proportion="-3.4444444" vertical-offset="1023" max-vertical-offset="1872">
+              <folding>
+                <element signature="e#45#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForumQuestionType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/ForumQuestionType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="84" selection-start="620" selection-end="620" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="792">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig">
+      <file leaf-file-name="ForumThemeType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/ForumThemeType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="0" selection-end="2557" vertical-scroll-proportion="-5.3333335" vertical-offset="54" max-vertical-offset="1818">
+            <state line="19" column="105" selection-start="443" selection-end="738" vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="792">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="questions.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig">
+      <file leaf-file-name="ForumQuestion.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="35" selection-start="821" selection-end="821" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="1800">
+            <state line="23" column="29" selection-start="511" selection-end="515" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="2754">
               <folding />
             </state>
           </provider>
@@ -62,63 +70,43 @@
       <file leaf-file-name="ForumTheme.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="-27.037037" vertical-offset="1484" max-vertical-offset="2376">
+            <state line="52" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="-33.333332" vertical-offset="0" max-vertical-offset="2376">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Faq.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php">
+      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="4" selection-start="373" selection-end="373" vertical-scroll-proportion="5.888889" vertical-offset="483" max-vertical-offset="1710">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="7" selection-start="3701" selection-end="3701" vertical-scroll-proportion="0.36042404" vertical-offset="2808" max-vertical-offset="8028">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInterface.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="51" selection-start="1490" selection-end="1973" vertical-scroll-proportion="-13.444445" vertical-offset="699" max-vertical-offset="1548">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="130" selection-end="213" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="2520">
-              <folding>
-                <element signature="e#41#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForumAnswer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="31" selection-start="308" selection-end="308" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="3186">
+            <state line="5" column="12" selection-start="242" selection-end="318" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="253" selection-end="831" vertical-scroll-proportion="-4.0" vertical-offset="54" max-vertical-offset="2988">
+            <state line="116" column="0" selection-start="3109" selection-end="3419" vertical-scroll-proportion="-20.777779" vertical-offset="1527" max-vertical-offset="2376">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questions.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="9" selection-start="1872" selection-end="1872" vertical-scroll-proportion="-0.8657244" vertical-offset="1743" max-vertical-offset="2592">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Map/add.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="35" selection-start="475" selection-end="499" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="396">
               <folding />
             </state>
           </provider>
@@ -137,9 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/MapController.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Map/add.html.twig" />
-        <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Map/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js/styler.js" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/styler.css" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
@@ -182,12 +167,15 @@
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestionEntity.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/TestSuccess.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestion.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/ForumThemeType.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/ForumQuestionType.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig" />
       </list>
     </option>
   </component>
@@ -343,40 +331,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wzc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wzc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wzc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Forum" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -404,6 +358,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,6 +454,138 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckeditor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckeditor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -556,7 +668,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29662424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -579,12 +691,12 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4109442" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5510204" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18553285" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29662424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -614,40 +726,10 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Postcard/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="700" selection-end="700" vertical-scroll-proportion="0.32706767" vertical-offset="168" max-vertical-offset="1098" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/ConsultationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="0.2706767" vertical-offset="0" max-vertical-offset="532" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="64" selection-start="6363" selection-end="6363" vertical-scroll-proportion="0.0" vertical-offset="3618" max-vertical-offset="4734" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/PageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.487882" vertical-offset="77" max-vertical-offset="1026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Postcard/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="27" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.0" vertical-offset="1250" max-vertical-offset="2916" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/TestAnswer/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="8" selection-start="102" selection-end="102" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="270" />
@@ -782,27 +864,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/BaseEntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878" />
+        <state line="0" column="0" selection-start="0" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/PageRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="235" selection-end="267" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="486" />
+        <state line="11" column="12" selection-start="235" selection-end="267" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/FaqRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="0" selection-end="497" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="486" />
+        <state line="6" column="9" selection-start="0" selection-end="497" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswerRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="0" selection-end="459" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="468" />
+        <state line="16" column="23" selection-start="0" selection-end="459" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestionRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="380" selection-end="380" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="486" />
+        <state line="13" column="47" selection-start="380" selection-end="380" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php">
@@ -812,54 +904,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/TestSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="5" selection-start="718" selection-end="718" vertical-scroll-proportion="0.62126243" vertical-offset="285" max-vertical-offset="1188" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="264" selection-end="264" vertical-scroll-proportion="-0.6666667" vertical-offset="162" max-vertical-offset="2754">
-          <folding />
+        <state line="47" column="5" selection-start="718" selection-end="718" vertical-scroll-proportion="0.62126243" vertical-offset="285" max-vertical-offset="1188">
+          <folding>
+            <element signature="e#41#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="253" selection-end="831" vertical-scroll-proportion="-4.0" vertical-offset="54" max-vertical-offset="2988">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="29" selection-start="2045" selection-end="2045" vertical-scroll-proportion="-34.37037" vertical-offset="134" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="0" selection-end="2557" vertical-scroll-proportion="-5.3333335" vertical-offset="54" max-vertical-offset="1818">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="35" selection-start="821" selection-end="821" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="1800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="-27.037037" vertical-offset="1484" max-vertical-offset="2376">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="308" selection-end="308" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="3186">
           <folding />
         </state>
       </provider>
@@ -880,7 +934,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="130" selection-end="213" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="2520">
+        <state line="7" column="0" selection-start="130" selection-end="213" vertical-scroll-proportion="0.14416476" vertical-offset="0" max-vertical-offset="2520">
           <folding>
             <element signature="e#41#73#0" expanded="true" />
           </folding>
@@ -889,14 +943,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="51" selection-start="1490" selection-end="1973" vertical-scroll-proportion="-13.444445" vertical-offset="699" max-vertical-offset="1548">
+        <state line="66" column="51" selection-start="1490" selection-end="1973" vertical-scroll-proportion="0.44393593" vertical-offset="674" max-vertical-offset="1548">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="7" selection-start="3701" selection-end="3701" vertical-scroll-proportion="0.36042404" vertical-offset="2808" max-vertical-offset="8028">
+        <state line="185" column="50" selection-start="3865" selection-end="3865" vertical-scroll-proportion="-8.666667" vertical-offset="3024" max-vertical-offset="8028">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumAnswer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="62" selection-start="788" selection-end="798" vertical-scroll-proportion="0.7414188" vertical-offset="0" max-vertical-offset="3186">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/FaqController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="50" selection-start="1652" selection-end="1681" vertical-scroll-proportion="-21.333334" vertical-offset="270" max-vertical-offset="1602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Map/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="475" selection-end="499" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="-33.333332" vertical-offset="0" max-vertical-offset="2376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2969" column="0" selection-start="88269" selection-end="88269" vertical-scroll-proportion="0.33333334" vertical-offset="53288" max-vertical-offset="55782">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/ForumQuestionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="84" selection-start="620" selection-end="620" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Form/ForumThemeType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="105" selection-start="443" selection-end="738" vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="242" selection-end="318" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="511" selection-end="515" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="2754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="33" selection-start="1993" selection-end="1993" vertical-scroll-proportion="-3.4444444" vertical-offset="1023" max-vertical-offset="1872">
+          <folding>
+            <element signature="e#45#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="0" selection-start="3109" selection-end="3419" vertical-scroll-proportion="-20.777779" vertical-offset="1527" max-vertical-offset="2376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="9" selection-start="1872" selection-end="1872" vertical-scroll-proportion="-0.8657244" vertical-offset="1743" max-vertical-offset="2592">
           <folding />
         </state>
       </provider>

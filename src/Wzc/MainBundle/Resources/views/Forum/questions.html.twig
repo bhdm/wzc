@@ -33,14 +33,14 @@
             <div class="forum-item">
                 <table>
                     <tr>
-                        <td class="forum-theme-title"><a href="{{ path('forum_answers',{ 'themeId' : theme.id, 'questionId' : q.id  }) }}" class="title">{{ q.title }}</a></td>
+                        <td class="forum-theme-title"><a href="{{ path('forum_answers',{ 'themeId' : theme.id, 'questionId' : q.id  }) }}" class="title">{{ q.title |raw }}</a></td>
                         <td rowspan="2" class="forum-theme-setting">
                             <b>{{ q.answers | length }}</b> Ответов <br />
                             Последний - <b>22.08.2014</b>
                         </td>
                     </tr>
                     <tr>
-                        <td class="forum-theme-body">{{ q.body|length > 200 ? q.body|slice(0, 200)|raw ~ '...' : q.body|raw  }}</td>
+                        <td class="forum-theme-body">{{ q.body|length > 200 ? q.body | raw | slice(0, 200) ~ '...' : q.body | raw  }}</td>
                     </tr>
                 </table>
             </div>

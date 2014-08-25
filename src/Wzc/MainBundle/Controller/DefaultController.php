@@ -12,6 +12,7 @@ use Wzc\MainBundle\Entity\Page;
 use Wzc\MainBundle\Entity\User;
 use Wzc\MainBundle\Entity\Slidebar;
 use Wzc\MainBundle\Form\UserType;
+use Wzc\MainBundle\Form\ProfileType;
 
 class DefaultController extends Controller
 {
@@ -85,7 +86,7 @@ class DefaultController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         $item = $this->getDoctrine()->getRepository('WzcMainBundle:User')->findOneById($this->getUser()->getId());
-        $form = $this->createForm(new UserType($em), $item);
+        $form = $this->createForm(new ProfileType($em), $item);
         $formData = $form->handleRequest($request);
 
         if ($request->getMethod() == 'POST'){

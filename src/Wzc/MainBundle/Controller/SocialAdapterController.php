@@ -24,19 +24,19 @@ class SocialAdapterController extends Controller
 {
     private $adapterConfigs = array(
         'vk' => array(
-            'client_id'     => '3749200',
-            'client_secret' => 'ktgIF9MQKSrEA4ZQNuKm',
+            'client_id'     => '4524333',
+            'client_secret' => 'MRAPcZtDAZO3fMiaYBmJ',
             'redirect_uri'  => 'http://medram.ru/sociallogin?provider=vk'
         ),
         'odnoklassniki' => array(
-            'client_id'     => '185768448',
-            'client_secret' => '132BC2D1805BC6A88F202ECD',
+            'client_id'     => 'CBAFPLICEBABABABA',
+            'client_secret' => '5E19627A46F4ECAE5B68E406',
             'redirect_uri'  => 'http://medram.ru/sociallogin?provider=odnoklassniki',
             'public_key'    => 'CBALJDBMABABABABA'
         ),
         'facebook' => array(
-            'client_id'     => '433291173434876',
-            'client_secret' => '2874deb722ee4051bbe7ab43936d6aac',
+            'client_id'     => '545052125595569',
+            'client_secret' => 'b1d967d9d5bb29b4d2484fbbe5bb5337',
             'redirect_uri'  => 'http://medram.ru/sociallogin?provider=facebook'
         )
     );

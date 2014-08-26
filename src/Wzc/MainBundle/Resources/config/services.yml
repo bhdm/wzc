@@ -1,4 +1,4 @@
 services:
     email.service:
-        class: Vidal\MainBundle\Service\EmailService
+        class: Wzc\MainBundle\Service\EmailService
         arguments: [@service_container, @templating]

@@ -1,5 +1,5 @@
 <?php
-namespace Vidal\MainBundle\Service;
+namespace Wzc\MainBundle\Service;
 
 use Symfony\Component\DependencyInjection\ContainerInterface as Container;
 use Symfony\Bundle\TwigBundle\TwigEngine as Templating;

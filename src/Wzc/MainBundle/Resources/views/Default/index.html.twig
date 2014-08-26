@@ -42,6 +42,7 @@
         }
         .left-tr img{
             cursor: pointer;
+            width: 230px;
         }
         .message-title{
             font-size: 45px;
@@ -64,7 +65,7 @@
             width: 400px;
             height: 160px;
             position: absolute;
-            z-index: 80;
+            /*z-index: 80;*/
             bottom: 50px;
             left: 100px;
             padding: 13px;
@@ -205,7 +206,7 @@
     </div>
     <div class="banner">
         <img src="{{ asset('bundles/wzcmain/images/banner.png') }}">
-        <img class="banner-btn" src="{{ asset('bundles/wzcmain/images/btn_4.png') }}">
+        <a href="{{ path('test') }}"><img class="banner-btn" src="{{ asset('bundles/wzcmain/images/btn_4.png') }}"></a>
     </div>
     <div class="message">
         <div class="message-title">{{ message.title | raw }}</div>

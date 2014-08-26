@@ -10,7 +10,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * ForumQuestion
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="ForumQuestionRepository")
  */
 class ForumQuestion extends BaseEntity
 {
@@ -21,7 +21,7 @@ class ForumQuestion extends BaseEntity
     protected $title;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\Column(type="text", nullable=true)
      */
     protected $body;
 
@@ -35,10 +35,10 @@ class ForumQuestion extends BaseEntity
      */
     protected $theme;
 
-//    /**
-//     * @ORM\OneToMany(targetEntity="ForumAnswer", mappedBy="question")
-//     */
-//    protected $answers;
+    /**
+     * @ORM\OneToMany(targetEntity="ForumAnswer", mappedBy="question")
+     */
+    protected $answers;
 
     /**
      *

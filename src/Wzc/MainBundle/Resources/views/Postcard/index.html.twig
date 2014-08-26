@@ -114,12 +114,21 @@
         .column{
             float: left;
         }
+
     </style>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-
+    <script>
+        $(document).ready(function(){
+            $('.img-item').click(function(){
+                var originalName = $(this).attr('data-name');
+                $('.postcard').css('background', 'url("'+originalName+'")');
+                $('#imgid').val($(this).attr('data-id'));
+            });
+        });
+    </script>
 {% endblock %}
 
 {% block content %}
@@ -131,12 +140,13 @@
         <div class="column" style="width: 645px">
             {% for pc in postcards %}
             <div class="thrumb" id="img{{ pc.id }}">
-                <img src="{{ pc.image.path }}" alt="{{ pc.title }}" title="{{ pc.title }}">
+                <img src="{{ pc.image.path }}" alt="{{ pc.title }}" title="{{ pc.title }}" class="img-item" data-name="{{ pc.image.path }}" data-id="{{ pc.id }}">
             </div>
             {% endfor %}
             <br />
             <form method="POST">
                 <div class="postcard">
+                    <input type="hidden" name="imgid" id="imgid" value="1">
                     <div class="postcard-title"></div>
                     <input type="text" class="input-postcard-title">
                     <div class="postcard-body"></div>

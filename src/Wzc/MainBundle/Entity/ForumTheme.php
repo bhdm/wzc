@@ -21,7 +21,7 @@ class ForumTheme extends BaseEntity
     protected $title;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\Column(type="text", nullable=true)
      */
     protected $body;
 
@@ -106,6 +106,23 @@ class ForumTheme extends BaseEntity
     public function removeQuestion($question){
         $this->questions->removeElement($question);
     }
+
+    /**
+     * @param mixed $answers
+     */
+    public function setAnswers($answers)
+    {
+        $this->answers = $answers;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAnswers()
+    {
+        return $this->answers;
+    }
+
 
 }
 

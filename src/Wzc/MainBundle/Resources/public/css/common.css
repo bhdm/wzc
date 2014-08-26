@@ -97,6 +97,7 @@ body{
     position: absolute;
     max-width: 1200px;
     min-width: 900px;
+    width: 100%;
 }
 .menu ul{
     list-style: none;
@@ -108,6 +109,88 @@ body{
 }
 .menu ul li a{
     color: #920055;
+}
+.menu ul li{
+    height: 45px;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+.sub-menu{
+    position: absolute;
+    background: #feb5e0;
+    padding: 7px;
+    margin-top: 16px;
+    width: 190px;
+    display: none;
+    z-index: 400;
+}
+.triangle-3{
+    position: absolute;
+    top: -6px;
+}
+.menu ul li:hover .sub-menu{
+    display: block;
+}
+.sub-menu ul li{
+    display: block;
+    height: inherit;
+    text-align: left;
+    padding: 4px 10px;
+}
+
+.sub-menu ul li a{
+    width: 177px;
+    display: block;
+}
+.sub-menu ul li a:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.sub-menu ul li a:hover .triangle-1{
+    display: none;
+}
+.sub-menu ul li a:hover .triangle-2{
+    display: block;
+}
+
+.triangle-1, .triangle-2{
+    float: right;
+    margin-top: -6px;
+    margin-right: 10px;
+}
+.triangle-2{
+    display: none;
+}
+.jq-selectbox{
+    z-index: auto !important;
+}
+
+.sub-menu ul li:hover .sub-menu-2{
+    display: block;
+}
+.sub-menu-2{
+    position: absolute;
+    background: #feb5e0;
+    left: 192px;
+    padding: 7px;
+    display: none;
+    top: 0;
+}
+.sub-menu-2 ul li{
+    height: inherit;
+    margin: 0;
+    line-height: 15px;
+    padding: 5px 0;
+}
+.sub-menu-2 ul li a{
+    color: #444444;
+    font-size: 15px;
+}
+.sub-menu-2 ul li a:hover{
+    color: #920055;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 *{

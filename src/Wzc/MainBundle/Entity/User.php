@@ -91,6 +91,7 @@ class User extends BaseEntity implements UserInterface
      */
     protected $roles;
 
+
     public function __construct(){
         $this->roles    = 'ROLE_USER';
         $this->questions = new ArrayCollection();

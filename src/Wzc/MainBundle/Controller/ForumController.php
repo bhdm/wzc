@@ -11,6 +11,8 @@ use Wzc\MainBundle\Entity\ForumQuestion;
 use Wzc\MainBundle\Entity\ForumAnswer;
 use Wzc\MainBundle\Form\ForumThemeType;
 use Wzc\MainBundle\Form\ForumQuestionType;
+use Wzc\MainBundle\Form\ForumAnswerType;
+
 /**
  * Class ForumController
  * @package Wzc\MainBundle\Controller
@@ -88,12 +90,42 @@ class ForumController extends Controller
         $em = $this->getDoctrine()->getManager();
         $theme = $em->getRepository('WzcMainBundle:ForumTheme')->find($themeId);
         $question = $em->getRepository('WzcMainBundle:ForumQuestion')->find($questionId);
+//        $answers = $em->getRepository('WzcMainBundle:ForumAnswer')->findBy(array('enabled'=>true, 'question'=>$question));
+
+        $item = new ForumAnswer();
+        $form = $this->createForm(new ForumAnswerType($em), $item);
+        $formData = $form->handleRequest($request);
+        if ($request->getMethod() == 'POST'){
+            if ($formData->isValid()){
+                $item = $formData->getData();
+                $item->setTheme($theme);
+                $item->setAuthor($this->getUser());
+                $item->setQuestion($question);
+                $em->persist($item);
+                $em->flush();
+                $em->refresh($item);
+
+            }
+        }
         $answers = $em->getRepository('WzcMainBundle:ForumAnswer')->findBy(array('enabled'=>true, 'question'=>$question));
 
         return array(
             'answers' => $answers,
             'question' => $question,
-            'theme' => $theme
+            'theme' => $theme,
+            'form' => $form->createView()
         );
+    }
+
+    /**
+     * @Route("answers/delete/{answerId}", name="answers-delete")
+     */
+    public function answerDeleteAction(Request $request, $answerId){
+        $answer = $this->getDoctrine()->getRepository('WzcMainBundle:ForumAnswer')->find($answerId);
+        if ($answer){
+            $this->getDoctrine()->getManager()->remove($answer);
+            $this->getDoctrine()->getManager()->flush();
+        }
+        return $this->redirect($request->headers->get('referer'));
     }
 }

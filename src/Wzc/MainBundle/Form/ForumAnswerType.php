@@ -15,14 +15,8 @@ class ForumAnswerType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('body')
-            ->add('created')
-            ->add('enabled')
-            ->add('updated')
-            ->add('for')
-            ->add('question')
-            ->add('theme')
-        ;
+            ->add('body', null, array('label' => ' ', 'attr' => array('class' => 'minickeditor')))
+            ->add('submit', 'submit', array('label' => 'Ответить'));
     }
     
     /**

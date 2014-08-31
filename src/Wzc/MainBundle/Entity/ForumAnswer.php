@@ -16,9 +16,11 @@ class ForumAnswer extends BaseEntity
 {
 
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @Assert\NotBlank( message = "поле Ответ обязательно для заполнения" )
+     * @ORM\Column(type="text")
      */
     protected $body;
+
 
     /**
      * @ORM\ManyToOne(targetEntity="ForumAnswer", inversedBy="by")
@@ -30,10 +32,10 @@ class ForumAnswer extends BaseEntity
      */
     protected $by;
 
-//    /**
-//     * @ORM\ManyToOne(targetEntity="User", inversedBy="forumAnswers")
-//     */
-//    protected $author;
+    /**
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="forumAnswers")
+     */
+    protected $author;
 
     /**
      * @ORM\ManyToOne(targetEntity="ForumQuestion", inversedBy="answers")

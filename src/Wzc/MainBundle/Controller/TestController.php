@@ -17,13 +17,24 @@ class TestController extends Controller
      */
     public function indexAction()
     {
-        $test = $this->getDoctrine()->getRepository('WzcMainBundle:TestQuestion')->findByEnabled(1);
-        $a = $this->getDoctrine()->getRepository('WzcMainBundle:TestAnswer')->findByEnabled(1);
-
         $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('test');
+        $question = $this->getDoctrine()->getRepository('WzcMainBundle:TestQuestion')->findByEnabled(1);
+        if ($question){
+            $question = $question[0];
+        }
 
-        return array('test' => $test, 'page' => $page, );
+        return array('question' => $question, 'page' => $page, );
     }
+
+    /**
+     * @Route("/test/next/{questionId}", name="test_next", options={"expose"=true})
+     * @Template()
+     */
+    public function nextQuestionAction($questionId, Request $request){
+        $question = $this->getDoctrine()->getRepository('WzcMainBundle:TestQuestion')->findNext($questionId);
+        return array('question' => $question);
+    }
+
 
 
 }

@@ -28,3 +28,6 @@ _security_logout:
 admin_home:
     pattern:  /admin/
     defaults: { _controller: WzcAdminBundle:Index:index }
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

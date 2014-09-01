@@ -8,6 +8,7 @@
 {% endblock %}
 
 {% block stylesheets %}
+    <script src="{{ asset('bundles/wzcmain/js/jquery.form.js') }}"></script>
     {{ parent() }}
     <style>
         .content{
@@ -51,6 +52,28 @@
 
 {% block javascripts %}
     {{ parent() }}
+    <script>
+        $(document).ready(function(){
+            $('.next').click(function(){
+                var items = [];
+                $("input:checkbox:checked").each(function(item){
+                    items.pu(item.attr('name'));
+                    alert(item.attr('name'));
+                });
+
+
+                $("#form_question").ajaxSubmit({
+                    url: Routing.generate('test_next', { questionId: $('#questionId').val() }),
+                    type: 'post',
+                    success: function (msg){
+                        $('select').styler();
+                        $('.styler').styler();
+                        $('#form_question').html(msg);
+                    }
+                });
+            });
+        });
+    </script>
 {% endblock %}
 
 {% block content %}
@@ -60,22 +83,25 @@
         {{ page.body  | raw }}
         <br />
         <div class="test">
-            {% for t in test %}
-                <div class="question">{{ t.title }}</div>
-                    {% if t.isText == 1 %}
-                        <div class="answer"><textarea class="styler textarea"></textarea></div>
+            {#{% for t in test %}#}
+            <form method="POST" id="form_question">
+                <div class="question">{{ question.title }}</div>
+                <input type="hidden" id="questionId" value="{{ question.id }}">
+                {% if question.isText == 1 %}
+                    <div class="answer"><textarea class="styler textarea"></textarea></div>
+                {% else %}
+                    {% for a in question.answers %}
+                        <div class="answer">
+                            <input type="checkbox" class="styler check" name="{{ a.id }}"> {{ a.title }}
+                        </div>
                     {% else %}
-                        {% for a in t.answers %}
-                            <div class="answer">
-                                <input type="checkbox" class="styler" name="{{ a.id }}"> {{ a.title }}
-                            </div>
-                        {% else %}
-                            нету вариентов ответа
-                        {% endfor %}
-                    {% endif %}
-            {% endfor %}
+                        нету вариентов ответа
+                    {% endfor %}
+                {% endif %}
+            </form>
+            {#{% endfor %}#}
             <br />
-            <button class="cbtn">Отправить</button>
+            <button class="cbtn next">Далее</button>
         </div>
         <br style="clear: both"/>
     </div>

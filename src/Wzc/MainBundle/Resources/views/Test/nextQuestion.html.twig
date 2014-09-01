@@ -1,0 +1,13 @@
+<div class="question">{{ question.title }}</div>
+<input type="hidden" id="questionId" value="{{ question.id }}">
+{% if question.isText == 1 %}
+    <div class="answer"><textarea class="styler textarea"></textarea></div>
+{% else %}
+    {% for a in question.answers %}
+        <div class="answer">
+            <input type="checkbox" class="styler check" name="{{ a.id }}"> {{ a.title }}
+        </div>
+    {% else %}
+        нету вариентов ответа
+    {% endfor %}
+{% endif %}

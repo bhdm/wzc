@@ -2,9 +2,11 @@
 
 
 {% block header %}
-    <title>{{ page.title }}</title>
-    <META NAME="Keywords" CONTENT="{{ page.keywords | raw}}">
-    <META NAME="Description" CONTENT="{{ page.description  | raw }}">
+    {% if page != null %}
+        <title>{{ page.title }}</title>
+        <META NAME="Keywords" CONTENT="{{ page.keywords | raw}}">
+        <META NAME="Description" CONTENT="{{ page.description  | raw }}">
+    {% endif %}
 {% endblock %}
 
 {% block stylesheets %}
@@ -133,9 +135,11 @@
 
 {% block content %}
     <div class="content">
+    {% if page != null %}
         <h2>{{ page.title | raw }}</h2>
         <br />
         {{ page.body | raw }}
+    {% endif %}
         <br />
         <div class="column" style="width: 645px">
             {% for pc in postcards %}
@@ -146,14 +150,14 @@
             <br />
             <form method="POST">
                 <div class="postcard">
-                    <input type="hidden" name="imgid" id="imgid" value="1">
+                    <input type="hidden" name="imgid" id="imgid" value="3">
                     <div class="postcard-title"></div>
-                    <input type="text" class="input-postcard-title">
+                    <input type="text" class="input-postcard-title" name="title">
                     <div class="postcard-body"></div>
-                    <textarea class="textarea-postcard-body"></textarea>
+                    <textarea class="textarea-postcard-body" name="text"></textarea>
                 </div>
                 <br />
-                Email: <input type="text" class="styler" style="width: 260px">
+                Email: <input type="text" class="styler" style="width: 260px" name="email">
                 <button type="submit" class="styler">Отправить</button>
             </form>
         </div>

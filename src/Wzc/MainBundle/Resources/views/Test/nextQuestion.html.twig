@@ -1,13 +1,22 @@
-<div class="question">{{ question.title }}</div>
-<input type="hidden" id="questionId" value="{{ question.id }}">
-{% if question.isText == 1 %}
-    <div class="answer"><textarea class="styler textarea"></textarea></div>
-{% else %}
-    {% for a in question.answers %}
-        <div class="answer">
-            <input type="checkbox" class="styler check" name="{{ a.id }}"> {{ a.title }}
-        </div>
+{% if question is defined %}
+    <div class="question">{{ question.title | raw }}</div>
+    <div class="question-body">{{ question.body | raw}}</div>
+    <input type="hidden" id="questionId" value="{{ question.id }}">
+    {% if question.isText == 1 %}
+        <div class="answer"><textarea class="styler textarea"></textarea></div>
     {% else %}
-        нету вариентов ответа
-    {% endfor %}
+        {% for a in question.answers %}
+            <div class="answer">
+                <input type="radio" class="styler check" name="answer" value="{{ a.priority }}"> {{ a.title }}
+            </div>
+        {% else %}
+            нету вариентов ответа
+        {% endfor %}
+    {% endif %}
+{% else %}
+    <div style="text-align: center">
+    <b>{{ answer.title | raw }}</b>
+    <br />
+    {{ answer.body | raw }}
+    </div>
 {% endif %}

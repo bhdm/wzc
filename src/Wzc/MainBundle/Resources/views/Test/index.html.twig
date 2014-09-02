@@ -44,9 +44,9 @@
         .test{
             min-width: 500px;
         }
-        .test button{
-            margin-left: 375px;
-        }
+        /*.test button{*/
+            /*margin-left: 375px;*/
+        /*}*/
     </style>
 {% endblock %}
 
@@ -85,14 +85,15 @@
         <div class="test">
             {#{% for t in test %}#}
             <form method="POST" id="form_question">
-                <div class="question">{{ question.title }}</div>
+                <div class="question">{{ question.title | raw }}</div>
+                <div class="question-body">{{ question.body | raw}}</div>
                 <input type="hidden" id="questionId" value="{{ question.id }}">
                 {% if question.isText == 1 %}
                     <div class="answer"><textarea class="styler textarea"></textarea></div>
                 {% else %}
                     {% for a in question.answers %}
                         <div class="answer">
-                            <input type="checkbox" class="styler check" name="{{ a.id }}"> {{ a.title }}
+                            <input type="radio" class="styler check" name="answer" value="{{ a.priority }}"> {{ a.title }}
                         </div>
                     {% else %}
                         нету вариентов ответа

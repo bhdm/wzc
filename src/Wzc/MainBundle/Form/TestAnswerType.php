@@ -25,6 +25,7 @@ class TestAnswerType extends AbstractType
                 'label' => 'Правильный',
                 'required'  => false,
             ))
+            ->add('priority',null, array('label' => 'Приоритет'))
             ->add('submit', 'submit', array('label' => 'Сохранить'))
             ->add('back', 'button', array('label' => 'Назад', 'attr' => array('class' => 'alignRight')));
         ;

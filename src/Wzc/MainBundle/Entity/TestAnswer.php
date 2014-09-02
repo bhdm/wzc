@@ -25,6 +25,11 @@ class TestAnswer extends BaseEntity
     protected $question;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    protected $priority = 0;
+
+    /**
      * @ORM\Column(type="boolean")
      */
     protected $istrue = 0;
@@ -83,6 +88,22 @@ class TestAnswer extends BaseEntity
     public function getIstrue()
     {
         return $this->istrue;
+    }
+
+    /**
+     * @param mixed $priority
+     */
+    public function setPriority($priority = 0)
+    {
+        $this->priority = $priority;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPriority()
+    {
+        return $this->priority;
     }
 
 

@@ -67,15 +67,16 @@ class TestAnswerController extends Controller{
     public function editAction(Request $request, $id){
         $em = $this->getDoctrine()->getManager();
         $item = $this->getDoctrine()->getRepository('WzcMainBundle:'.self::ENTITY_NAME)->findOneById($id);
+        $question = $item->getQuestion();
         $form = $this->createForm(new TestAnswerType($em), $item);
         $formData = $form->handleRequest($request);
-
         if ($request->getMethod() == 'POST'){
             if ($formData->isValid()){
                 $item = $formData->getData();
+                $item->setQuestion($question);
                 $em->flush($item);
                 $em->refresh($item);
-                return $this->redirect($this->generateUrl('admin_testanswer_list'));
+                return $this->redirect($this->generateUrl('admin_testanswer_list', array('questionId' =>$question->getId() )));
             }
         }
         return array('form' => $form->createView());

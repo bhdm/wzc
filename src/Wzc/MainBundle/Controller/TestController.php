@@ -31,6 +31,9 @@ class TestController extends Controller
      * @Template()
      */
     public function nextQuestionAction($questionId, Request $request){
+
+
+
         $question = $this->getDoctrine()->getRepository('WzcMainBundle:TestQuestion')->findNext($questionId);
         return array('question' => $question);
     }

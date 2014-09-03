@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php" line="128" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/SocialAdapterController.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/SocialAdapterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="" />
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +47,7 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="131" selection-start="4083" selection-end="4083" vertical-scroll-proportion="0.3955056" vertical-offset="1250" max-vertical-offset="3978">
+            <state line="85" column="49" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.31460676" vertical-offset="1250" max-vertical-offset="3978">
               <folding />
             </state>
           </provider>
@@ -839,7 +835,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="131" selection-start="4083" selection-end="4083" vertical-scroll-proportion="0.3955056" vertical-offset="1250" max-vertical-offset="3978">
+        <state line="85" column="49" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.31460676" vertical-offset="1250" max-vertical-offset="3978">
           <folding />
         </state>
       </provider>

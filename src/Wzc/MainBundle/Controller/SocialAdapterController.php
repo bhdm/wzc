@@ -40,6 +40,8 @@ class SocialAdapterController extends Controller
             'redirect_uri'  => 'http://medram.ru/sociallogin?provider=facebook'
         )
     );
+
+
     /**
      * Авторизация через токен полученный из соц сети
      *
@@ -83,7 +85,7 @@ class SocialAdapterController extends Controller
                         #$auther->getAvatar()
                     );
 
-                    #return new RedirectResponse($this->generateUrl('main_feed'));
+                    #return new RedirectResponse($this->generateUrl('main'));
                     #$this->registerAction(null,$values);
                     return $this->redirect($this->generateUrl('register',array('campaign' => NULL, 'user' => $values)));
                 } else {
@@ -102,11 +104,11 @@ class SocialAdapterController extends Controller
                     $this->get("event_dispatcher")->dispatch("security.interactive_login", $event);
 
 
-                    return new RedirectResponse($this->generateUrl('main_feed'));
+                    return new RedirectResponse($this->generateUrl('main'));
 
                 }
             }else{
-                return $this->render($this->generateUrl('main-feed'));
+                return $this->render($this->generateUrl('main'));
             }
         }
     }

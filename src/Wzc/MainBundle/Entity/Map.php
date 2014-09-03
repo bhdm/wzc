@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Map
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MapRepository")
  */
 class Map extends BaseEntity
 {

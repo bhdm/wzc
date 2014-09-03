@@ -21,7 +21,7 @@
             text-transform: uppercase;
         }
         input.styler{
-            width: 505px;
+            width: 500px;
         }
         .table{
             width: 600px;
@@ -31,6 +31,15 @@
             border: 1px solid #920055;
             border-radius: 5px;
             padding: 3px;
+        }
+        .jq-selectbox__dropdown{
+            z-index: 50;
+        }
+        #searchmap::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+            color: #cccccc;
+        }
+        #searchmap:-moz-placeholder, textarea:-moz-placeholder {
+            color: #cccccc;
         }
     </style>
 {% endblock %}
@@ -46,8 +55,13 @@
 
         function init(){
             myMap = new ymaps.Map("map", {
-                center: [55.76, 37.64],
-                zoom: 7,
+                {% if thisMetro is defined and thisMetro != null %}
+                    center: [{{ thisMetro.longitude }}, {{ thisMetro.latitude }}],
+                    zoom: 9,
+                {% else %}
+                    center: [55.76, 37.64],
+                    zoom: 7,
+                {% endif %}
                 controls: ['default']
             });
 
@@ -58,31 +72,38 @@
             myMap.controls.remove('trafficControl');
             myMap.controls.remove('rulerControl');
 
-            var myListBox = new ymaps.control.ListBox({
-                data: {
-                    content: 'Выбрать город'
-                },
-                items: [
-                    new ymaps.control.ListBoxItem('Москва'),
-                    new ymaps.control.ListBoxItem('Санкт-Петербург')
-                ]
-            });
-            myMap.controls.add(myListBox);
+//            var myListBox = new ymaps.control.ListBox({
+//                data: {
+//                    content: 'Выбрать город'
+//                },
+//                items: [
+//                    new ymaps.control.ListBoxItem('Москва'),
+//                    new ymaps.control.ListBoxItem('Санкт-Петербург')
+//                ]
+//            });
+
 
             {% for c in coords %}
                 myPlacemark = new ymaps.Placemark([{{ c.latitude }}, {{ c.longitude }}], {
                     hintContent: '{{ c.title }}',
-                    balloonContent: '<div><b>Адрес:</b> {{ c.adrs }}<br /><b>Телефон:</b> {{ c.phone }}<br />{{ c.body }}</div>'
+                    balloonContent: '<div><b>{{ c.title }}</b><br /><b>Адрес:</b> {{ c.adrs }}<br /><b>Телефон:</b> {{ c.phone }}<br />{{ c.body }}</div>'
                 });
                 myMap.geoObjects.add(myPlacemark);
             {% endfor %}
         }
-        $('#city').change(function(){
-            if ($(this).val() == 1){
 
-            }else{
 
-            }
+
+        $(document).ready(function(){
+            $('.changeMetro').change(function(){
+                var url = Routing.generate('map', { thisMetro: $('.changeMetro').val() });
+                window.location.href = url;
+                return false;
+            });
+
+            $('#searchbtn').click(function(){
+                window.location.href = '?s='+$('#searchmap').val();
+            });
         });
 
     </script>
@@ -98,19 +119,20 @@
                 <table class="table">
                     <tr>
                         <td colspan="2">
-                            <select>
-                                <option value="Бульвар Рокоссовского">Бульвар Рокоссовского</option>
-                                <option value="Черкизовская">Черкизовская</option>
-                                <option value="Преображенская площадь">Преображенская площадь</option>
+                            <select class="changeMetro">
+                                    <option value="0">Выберите метро</option>
+                                {% for m in metro %}
+                                    <option value="{{ m.id }}">{{ m.title }}</option>
+                                {% endfor %}
                             </select>
                             &nbsp;
                             &nbsp;
                             &nbsp;
-                            <input type="text" value="" class="styler" placeholder="Поиск по названию названию" data-placeholder="Поиск по названию названию"/>
+                            <input type="text" name="searchmap" id="searchmap" value="" class="styler" placeholder="Поиск по названию названию" data-placeholder="Поиск по названию названию"/>
                             &nbsp;
                             &nbsp;
                             &nbsp;
-                            <button class="styler">Найти</button>
+                            <button class="styler" id="searchbtn">Найти</button>
                         </td>
                     </tr>
                     <tr>

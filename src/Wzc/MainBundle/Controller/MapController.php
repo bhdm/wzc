@@ -12,14 +12,25 @@ use Wzc\MainBundle\Entity\Map;
 class MapController extends Controller
 {
     /**
-     * @Route("/map", name="map")
+     * @Route("/map/{thisMetro}", name="map", defaults={"thisMetro" = 0}, options={"expose" = true})
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request, $thisMetro = 0)
     {
-        $coords = $this->getDoctrine()->getRepository('WzcMainBundle:Map')->findByEnabled(1);
+        if (isset($thisMetro) && $thisMetro != 0){
+            $thisMetro = $this->getDoctrine()->getRepository('WzcMainBundle:Metro')->findOneById($thisMetro);
+        }else{
+            $thisMetro = null;
+        }
+
+        if ($request->query->get('s')){
+            $coords = $this->getDoctrine()->getRepository('WzcMainBundle:Map')->search($request->query->get('s'));
+        }else{
+            $coords = $this->getDoctrine()->getRepository('WzcMainBundle:Map')->findByEnabled(1);
+        }
         $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('map');
-        return array('coords' => $coords, 'page' => $page);
+        $metro = $this->getDoctrine()->getRepository('WzcMainBundle:Metro')->findAll();
+        return array('coords' => $coords, 'page' => $page, 'metro' => $metro, 'thisMetro' => $thisMetro);
     }
 
 

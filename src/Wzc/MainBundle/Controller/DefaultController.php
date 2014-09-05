@@ -100,16 +100,23 @@ class DefaultController extends Controller
         return array('form' => $form->createView());
     }
 
-    public function searchAction(){
+    /**
+     * @Route("/search", name="search")
+     * @Template()
+     */
+    public function searchAction(Request $request){
         $page['title'] = 'Поиск';
         $page['keywords'] = 'Поиск';
         $page['description'] = 'Поиск';
-        $searchString = htmlspecialchars($_GET['search']);
-
-
-        $search_1 = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->search($searchString);
-        $search_2 = $this->getDoctrine()->getRepository('WzcMainBundle:Faq')->search($searchString);
-        $search_3 = $this->getDoctrine()->getRepository('WzcMainBundle:ForumQuestion')->search($searchString);
+        $searchString = htmlspecialchars($request->query->get('s'));
+        $search_1 = null;
+        $search_2 = null;
+        $search_3 = null;
+        if ( empty($searchString) ){
+            $search_1 = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->search($searchString);
+            $search_2 = $this->getDoctrine()->getRepository('WzcMainBundle:Faq')->search($searchString);
+            $search_3 = $this->getDoctrine()->getRepository('WzcMainBundle:ForumQuestion')->search($searchString);
+        }
 
         return array(
           'search_1' =>$search_1,

@@ -106,16 +106,15 @@ class DefaultController extends Controller
         $page['description'] = 'Поиск';
         $searchString = htmlspecialchars($_GET['search']);
 
+
         $search_1 = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->search($searchString);
         $search_2 = $this->getDoctrine()->getRepository('WzcMainBundle:Faq')->search($searchString);
         $search_3 = $this->getDoctrine()->getRepository('WzcMainBundle:ForumQuestion')->search($searchString);
-        $search_4 = $this->getDoctrine()->getRepository('WzcMainBundle:ForumAnswer')->search($searchString);
 
         return array(
           'search_1' =>$search_1,
           'search_2' =>$search_2,
           'search_3' =>$search_3,
-          'search_4' =>$search_4,
         );
 
     }

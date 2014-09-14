@@ -25,7 +25,7 @@ class MapController extends Controller
 // $SxGeo->getCity($ip); (возвращает с краткой информацией, без названия региона и временной зоны)
 
 //        $ip = $_SERVER["REMOTE_ADDR"];
-        $ip = '91.78.94.11';
+        $ip = '212.92.128.0';
         $info = $SxGeo->getCityFull($ip);
         unset($SxGeo);
 

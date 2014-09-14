@@ -57,10 +57,10 @@
             myMap = new ymaps.Map("map", {
                 {% if thisMetro is defined and thisMetro != null %}
                     center: [{{ thisMetro.longitude }}, {{ thisMetro.latitude }}],
-                    zoom: 9,
+                    zoom: 14,
                 {% else %}
-                    center: [55.76, 37.64],
-                    zoom: 7,
+                    center: [{{ ipCity.lat }}, {{ ipCity.lon }}],
+                    zoom: 10,
                 {% endif %}
                 controls: ['default']
             });
@@ -86,7 +86,10 @@
             {% for c in coords %}
                 myPlacemark = new ymaps.Placemark([{{ c.latitude }}, {{ c.longitude }}], {
                     hintContent: '{{ c.title }}',
-                    balloonContent: '<div><b>{{ c.title }}</b><br /><b>Адрес:</b> {{ c.adrs }}<br /><b>Телефон:</b> {{ c.phone }}<br />{{ c.body }}</div>'
+                    balloonContent: '<div><b>{{ c.title }}</b><br /><b>Адрес:</b> {{ c.adrs }}<br /><b>Телефон:</b> {{ c.phone }}<br />{{ c.body }}</div>',
+                },{
+                    preset: 'islands#icon',
+                    iconColor: '#920055'
                 });
                 myMap.geoObjects.add(myPlacemark);
             {% endfor %}
@@ -96,7 +99,7 @@
 
         $(document).ready(function(){
             $('.changeMetro').change(function(){
-                var url = Routing.generate('map', { thisMetro: $('.changeMetro').val() });
+                var url = Routing.generate('map', { thisMetro: $('#changeMetro').val() });
                 window.location.href = url;
                 return false;
             });
@@ -119,12 +122,14 @@
                 <table class="table">
                     <tr>
                         <td colspan="2">
-                            <select class="changeMetro">
-                                    <option value="0">Выберите метро</option>
-                                {% for m in metro %}
-                                    <option value="{{ m.id }}">{{ m.title }}</option>
-                                {% endfor %}
-                            </select>
+                            {% if ipRegion.iso == 'RU-MOW' %}
+                                <select class="changeMetro" id="changeMetro">
+                                        <option value="0">Выберите метро</option>
+                                    {% for m in metro %}
+                                        <option value="{{ m.id }}">{{ m.title }}</option>
+                                    {% endfor %}
+                                </select>
+                            {% endif %}
                             &nbsp;
                             &nbsp;
                             &nbsp;

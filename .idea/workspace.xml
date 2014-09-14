@@ -2,535 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/img/cover/0001-B.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/img/cover/0001-B.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/img/cover/0001-BL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/img/cover/0001-BL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/img/cover/0001-BR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/img/cover/0001-BR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/img/cover/0001-L.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/img/cover/0001-L.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/img/cover/0001-R.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/img/cover/0001-R.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/img/cover/0001-T.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/img/cover/0001-T.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/img/cover/0001-TL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/img/cover/0001-TL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/img/cover/0001-TR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/img/cover/0001-TR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/002.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/002.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/005.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/005.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/005.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/007.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/007.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/008.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/008.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/009.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/home/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/appicon/01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/010.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/011.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/011.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/012.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/013.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/013.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/014.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/014.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/015.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/019.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/home/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/appicon/02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/020.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/021.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/022.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/024.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/025.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/027.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/029.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/home/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/appicon/03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/030.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/031.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/032.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/034.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/038.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/039.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/home/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/043.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/044.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/047.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/ancient-lady/050.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/paint/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/29.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/30.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/Icon-Slider-12-No-jQuery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/Icon-Slider-12-jQuery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/tool/Jssor.Compress.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/a21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/amazon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/android.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/b21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/home/back-dice-02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/home/back-dice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/back.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/bitly.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/blogger.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/1920/blue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/browser-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-finger-pointing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-fruit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-jssor-slider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-navigator-horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-navigator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-phone-horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-slide-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-slide-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-slide-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/c-text.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/new-site/cool-guy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/dnn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/drupal.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/ebay.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/facebook.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/find-out-more-bt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/qr/full-width-slider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/google.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/ibm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/ios.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/joomla.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/qr/jssor.com.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/jssor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/nested-thumb/landscape.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/linkedin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/loading2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/mac.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/magento.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/main_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/main_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/home/moc-ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/home/moc-iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/nested-thumb/motor.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/nested-thumb/photography.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/pinterest.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/1920/purple.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/1920/red.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s1t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s2t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s3t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s4t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s5t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s6t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s7t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/major/s8t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/samsung.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/share/share-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/t01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/thumb-001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/thumb-002.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-002.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/thumb-003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/thumb-004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/thumb-005.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-005.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/thumb-006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/thumb-007.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-007.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/motor/thumb-008.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-008.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-009.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-010.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-011.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-012.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-013.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-014.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/photography/thumb-015.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/landscape/thumb-12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/travel/thumb-19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-29.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/alila/thumb-30.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/twitter.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/windows.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/wordpress.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/img/logo/youtube.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-01.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-02.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-03.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-04.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-05.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-06.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-07.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-08.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-09.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-10.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-11.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-12.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-13.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-14.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-15.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-16.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-18.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-19.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-20.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/arrow-21.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/banner-rotator-2.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/banner-rotator-2.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/banner-rotator-2.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/banner-rotator.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/banner-rotator.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/banner-rotator.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/banner-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/banner-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/banner-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-01.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-02.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-03.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-05.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-06.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-07.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-09.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-10.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-11.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-12.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-13.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-14.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-16.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-17.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-18.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-20.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/bullet-21.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/transition-builder/caption-transition-builder-controller.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/transitions/caption-transition-builder-controller.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/transitions/caption-transitions(390).html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/carousel-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/carousel-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/carousel-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/content-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/content-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/content-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/different-size-photo-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/different-size-photo-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/different-size-photo-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/full-width-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/full-width-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/full-width-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/grid-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/grid-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/grid-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/image-gallery-with-vertical-thumbnail.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/image-gallery-with-vertical-thumbnail.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/image-gallery-with-vertical-thumbnail.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/image-gallery.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/image-gallery.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/image-gallery.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/image-slider-2.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/image-slider-2.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/image-slider-2.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/image-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/image-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/image-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/introduction-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/introduction-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/introduction-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.player.ytiframe.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.player.ytiframe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.player.ytiframe.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.slider.debug.min.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.slider.debug.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.slider.min.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.slider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.slider.mini.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.slider.mini.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.sliderc.mini.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.sliderc.mini.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.sliders.mini.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.sliders.mini.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/js/jssor.utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/layout-arrangement.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/layout-arrangement.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/layout-arrangement.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/list-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/list-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/list-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/nearby-image-partial-visible-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/nearby-image-partial-visible-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/nearby-image-partial-visible-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/nested-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/nested-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/nested-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/overlay-cover.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/overlay-cover.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/overlay-cover.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/responsive-slider-div-span.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/responsive-slider-div-span.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/responsive-slider-div-span.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/responsive-slider-float-text.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/responsive-slider-float-text.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/responsive-slider-float-text.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/scrolling-logo-thumbnail-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/scrolling-logo-thumbnail-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/scrolling-logo-thumbnail-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/simple-fade-slideshow.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/simple-fade-slideshow.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/simple-fade-slideshow.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/simple-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/simple-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/simple-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slide-definition.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/slide-definition.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slide-definition.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/slider-cluster.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/slider-cluster.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/slider-cluster.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slider-with-arrow-navigator.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/slider-with-arrow-navigator.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slider-with-arrow-navigator.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slider-with-bullet-navigator.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/slider-with-bullet-navigator.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slider-with-bullet-navigator.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slider-with-caption.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/slider-with-caption.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slider-with-caption.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slider-with-slideshow.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/slider-with-slideshow.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/slider-with-slideshow.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/transition-builder/slideshow-transition-builder-controller.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/transitions/slideshow-transition-builder-controller.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/transitions/slideshow-transitions(360).html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/tab-slider-text-vertical.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/tab-slider-text-vertical.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/tab-slider-text-vertical.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/tab-slider-text.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/tab-slider-text.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/tab-slider-text.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/tab-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/tab-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/tab-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-01.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-02.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-03.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-04.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-05.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-06.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-07.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-08.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-09.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-10.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-11.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/skin/thumbnail-12.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/thumbnail-navigator-with-arrows.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/thumbnail-navigator-with-arrows.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/thumbnail-navigator-with-arrows.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/tiled-menu-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-jquery/tiled-menu-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/demos-no-jquery/tiled-menu-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/transition-builder/tool-caption-transition-builder.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/transition-builder/tool-slideshow-transition-builder.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/ui-definition-1.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/ui-definition-1.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/ui-definition-1.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/ui-definition-2.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/ui-definition-2.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/ui-definition-2.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/validated-html.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/validated-html.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/validated-html.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/vertical-slider.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/vertical-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/vertical-slider.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/video-gallery.compress.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-jquery/video-gallery.source.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/JssorSlider/examples-no-jquery/video-gallery.source.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Geo/SxGeoCity.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Geo/Geo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Geo/SxGeo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js/styler.js" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js/styler.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wzc.iws" />
@@ -554,35 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig">
+      <file leaf-file-name="MapController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="0" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-30.962963" vertical-offset="2116" max-vertical-offset="4914">
+            <state line="28" column="40" selection-start="951" selection-end="951" vertical-scroll-proportion="-6.4074073" vertical-offset="331" max-vertical-offset="1098">
               <folding>
-                <element signature="e#5416#5491#0" expanded="true" />
-                <element signature="e#5552#5674#0" expanded="true" />
-                <element signature="e#5901#5958#0" expanded="true" />
-                <element signature="e#6052#6109#0" expanded="true" />
-                <element signature="e#6180#6201#0" expanded="true" />
-                <element signature="e#8674#8693#0" expanded="true" />
+                <element signature="e#45#102#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
+      <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="64" selection-start="6327" selection-end="6327" vertical-scroll-proportion="1.933934" vertical-offset="980" max-vertical-offset="3978">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="23" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.0" vertical-offset="1527" max-vertical-offset="5292">
+            <state line="125" column="32" selection-start="3867" selection-end="4232" vertical-scroll-proportion="0.5182342" vertical-offset="1980" max-vertical-offset="3474">
               <folding />
             </state>
           </provider>
@@ -601,9 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Page.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/TestSuccess.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Faq.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumQuestion.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/ForumTheme.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig" />
@@ -643,15 +103,18 @@
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/Metro/list.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Form/MetroType.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/Map.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Entity/MapRepository.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/SocialAdapterController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js/styler.js" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Geo/SxGeo.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Geo/Geo.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" />
       </list>
     </option>
   </component>
@@ -726,6 +189,188 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Geo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -737,11 +382,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Wzc/MainBundle/Geo" />
       <recent name="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public" />
       <recent name="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/views" />
       <recent name="$PROJECT_DIR$/src/Wzc/AdminBundle/Controller" />
       <recent name="$PROJECT_DIR$/src/Wzc/AdminBundle/Resources/public/js" />
-      <recent name="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js" />
@@ -800,12 +445,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23333333" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22664456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39791667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39791667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -856,29 +501,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="41" />
+      <option name="time" value="42" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/FaqController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="50" selection-start="1652" selection-end="1681" vertical-scroll-proportion="-31.333334" vertical-offset="0" max-vertical-offset="1602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/AdminBundle/Controller/ConsultationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="55" selection-start="4401" selection-end="4401" vertical-scroll-proportion="-27.074074" vertical-offset="1537" max-vertical-offset="2448">
-          <folding>
-            <element signature="e#45#102#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/answers.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="19" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.47840533" vertical-offset="1008" max-vertical-offset="3240" />
@@ -1039,11 +665,6 @@
         <state line="65" column="91" selection-start="1669" selection-end="1691" vertical-scroll-proportion="0.62350935" vertical-offset="804" max-vertical-offset="2052" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="86" selection-start="965" selection-end="971" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="666" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/PageRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="5" selection-start="0" selection-end="494" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="486" />
@@ -1070,11 +691,6 @@
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Entity/MapRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="37" selection-start="221" selection-end="221" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="468" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="28" selection-start="2864" selection-end="2864" vertical-scroll-proportion="0.36404493" vertical-offset="1296" max-vertical-offset="3384" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/TestController.php">
@@ -1111,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="23" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.0" vertical-offset="1527" max-vertical-offset="5292">
+        <state line="96" column="23" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.28470254" vertical-offset="1527" max-vertical-offset="5292">
           <folding />
         </state>
       </provider>
@@ -1119,20 +735,54 @@
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="164" column="0" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-30.962963" vertical-offset="2116" max-vertical-offset="4914">
-          <folding>
-            <element signature="e#5416#5491#0" expanded="true" />
-            <element signature="e#5552#5674#0" expanded="true" />
-            <element signature="e#5901#5958#0" expanded="true" />
-            <element signature="e#6052#6109#0" expanded="true" />
-            <element signature="e#6180#6201#0" expanded="true" />
-            <element signature="e#8674#8693#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="64" selection-start="6327" selection-end="6327" vertical-scroll-proportion="1.933934" vertical-offset="980" max-vertical-offset="3978">
+        <state line="68" column="40" selection-start="2623" selection-end="2623" vertical-scroll-proportion="0.36636636" vertical-offset="980" max-vertical-offset="3978">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js/styler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="72" selection-start="15330" selection-end="15330" vertical-scroll-proportion="0.77922076" vertical-offset="0" max-vertical-offset="693">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1410715750145" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410715750145" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Geo/Geo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="59" selection-start="470" selection-end="470" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="2808">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Geo/SxGeo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="34" selection-start="3140" selection-end="3148" vertical-scroll-proportion="-24.0" vertical-offset="378" max-vertical-offset="5724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="40" selection-start="951" selection-end="951" vertical-scroll-proportion="-6.4074073" vertical-offset="331" max-vertical-offset="1098">
+          <folding>
+            <element signature="e#45#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="32" selection-start="3867" selection-end="4232" vertical-scroll-proportion="0.5182342" vertical-offset="1980" max-vertical-offset="3474">
           <folding />
         </state>
       </provider>

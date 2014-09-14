@@ -8,6 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 use Wzc\MainBundle\Entity\Map;
+use Wzc\MainBundle\Geo\SxGeo;
 
 class MapController extends Controller
 {
@@ -17,6 +18,18 @@ class MapController extends Controller
      */
     public function indexAction(Request $request, $thisMetro = 0)
     {
+
+
+        $dir = __DIR__.'/../Geo/SxGeoCity.dat';
+        $SxGeo = new SxGeo($dir);
+// $SxGeo->getCity($ip); (возвращает с краткой информацией, без названия региона и временной зоны)
+
+//        $ip = $_SERVER["REMOTE_ADDR"];
+        $ip = '91.78.94.11';
+        $info = $SxGeo->getCityFull($ip);
+        unset($SxGeo);
+
+
         if (isset($thisMetro) && $thisMetro != 0){
             $thisMetro = $this->getDoctrine()->getRepository('WzcMainBundle:Metro')->findOneById($thisMetro);
         }else{
@@ -30,7 +43,13 @@ class MapController extends Controller
         }
         $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('map');
         $metro = $this->getDoctrine()->getRepository('WzcMainBundle:Metro')->findAll();
-        return array('coords' => $coords, 'page' => $page, 'metro' => $metro, 'thisMetro' => $thisMetro);
+
+        $ipCity = $info['city'];
+        $ipRegion = $info['region'];
+
+
+
+        return array('coords' => $coords, 'page' => $page, 'metro' => $metro, 'thisMetro' => $thisMetro, 'ipCity' => $ipCity, 'ipRegion' => $ipRegion );
     }
 
 

@@ -9,10 +9,9 @@ class PageRepository extends EntityRepository
     public function search($string){
         $result= $this
             ->createQueryBuilder('p')
-            ->from('WzcMainBundle:Page','p')
+            ->select('p')
             ->where("p.title LIKE '%$string%' ")
             ->orWhere("p.body LIKE '%$string%' ")
-            ->setParameter('string', $string)
             ->getQuery()
             ->getResult();
         return $result;

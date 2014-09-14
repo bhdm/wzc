@@ -9,7 +9,7 @@ class FaqRepository extends EntityRepository
     public function search($string){
         $result= $this
             ->createQueryBuilder('f')
-            ->from('WzcMainBundle:Faq','f')
+            ->select('f')
             ->where("f.question LIKE '%$string%' ")
             ->orWhere("f.answer LIKE '%$string%' ")
             ->getQuery()

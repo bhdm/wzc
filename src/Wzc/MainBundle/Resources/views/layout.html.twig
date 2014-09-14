@@ -52,7 +52,13 @@
                         }else{
                             return true;
                         }
-                    })
+                    });
+
+                    $('#search-btn').click(function(){
+                        var val = $('input.search').val();
+                        var url = '{{ path('search') }}'+'?s='+val;
+                        window.location.href = url;
+                    });
 
                 })
             </script>

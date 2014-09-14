@@ -12,42 +12,67 @@
             font-size: 30px;
             text-transform: uppercase;
         }
+        .search-item{
+            padding: 10px;
+        }
+        h3{
+            color: #920055;
+            /*text-transform: uppercase;*/
+            font-weight: normal;
+        }
+        a{
+            color: #920055;
+        }
     </style>
 {% endblock %}
 {% block content %}
     <div class="content">
-        <h2>Поиск: </h2>
+        <h2>Поиск </h2>
         <br />
 
-        {% if search_1 %}
-            <title>Страницы</title>
-            {% for s in search_1 %}
-                <div class="search-item">
-                    <b>s.title</b> <br />
-                    s.body
-                </div>
-            {% endfor %}
+        {% if search_1 == null and search_2 == null and search_3 == null %}
+            <div style="text-align: center">
+                <h3>По вашему запросу "<b>{{ s }}</b>" ничего не найдено. Попробуйте найти другое</h3>
+                <br />
+                <input type="text" name="body-search" id="body-search" value="" class="styler" placeholder="Поиск" data-placeholder="Поиск">
+            </div>
+        {% else %}
+            <div style="text-align: center">
+                <h3>Результаты поиска "<b>{{ s }}</b>"</h3>
+            </div>
         {% endif %}
 
-        {% if search_2 %}
-            <title>Вопросы</title>
-            {% for s in search_2 %}
+        {% if search_1 %}
+            <h3>Найдено на страницах:</h3>
+            {% for s in search_1 %}
                 <div class="search-item">
-                    <b>s.question</b> <br />
-                    s.answer
+                    <b><a class="a" href="{{ path('page', {'url' : s.url }) }}">{{ s.title | raw }}</a></b> <br />
+                    {{ s.description | raw }}
                 </div>
             {% endfor %}
         {% endif %}
 
         {% if search_3 %}
-            <title>Форум</title>
+            <h3>Найдено на форуме:</h3>
             {% for s in search_3 %}
                 <div class="search-item">
-                    <b>s.title</b> <br />
-                    s.body
+                    <b><a href="{{ path('forum_answers',{'themeId' : s.theme.id ,  'questionId' : s.id }) }}">{{ s.title | raw }}</a></b> <br />
+                    {{ s.body | raw }}
                 </div>
             {% endfor %}
         {% endif %}
+
+        {% if search_2 %}
+            <h3>Найдено в часто задаваемых вопросах:</h3>
+            {% for s in search_2 %}
+                <div class="search-item">
+                    <b>{{ s.question | raw }}</b> <br />
+                    {{ s.answer | raw }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+
 
     </div>
 {% endblock %}

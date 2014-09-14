@@ -112,7 +112,7 @@ class DefaultController extends Controller
         $search_1 = null;
         $search_2 = null;
         $search_3 = null;
-        if ( empty($searchString) ){
+        if ( !empty($searchString) ){
             $search_1 = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->search($searchString);
             $search_2 = $this->getDoctrine()->getRepository('WzcMainBundle:Faq')->search($searchString);
             $search_3 = $this->getDoctrine()->getRepository('WzcMainBundle:ForumQuestion')->search($searchString);
@@ -122,6 +122,7 @@ class DefaultController extends Controller
           'search_1' =>$search_1,
           'search_2' =>$search_2,
           'search_3' =>$search_3,
+          's' => $searchString,
         );
 
     }

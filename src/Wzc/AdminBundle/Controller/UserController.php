@@ -4,6 +4,8 @@ namespace Wzc\AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\User;
 use Wzc\MainBundle\Form\UserType;
@@ -16,6 +18,7 @@ use Wzc\MainBundle\Form\UserType;
 class UserController extends Controller{
         const ENTITY_NAME = 'User';
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/", name="admin_user_list")
      * @Template()
      */
@@ -32,6 +35,7 @@ class UserController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/add", name="admin_user_add")
      * @Template()
      */
@@ -54,6 +58,7 @@ class UserController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/edit/{id}", name="admin_user_edit")
      * @Template()
      */
@@ -75,6 +80,7 @@ class UserController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/remove/{id}", name="admin_user_remove")
      */
     public function removeAction(Request $request, $id){

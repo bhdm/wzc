@@ -5,6 +5,8 @@ namespace Wzc\AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\File;
 
@@ -16,6 +18,7 @@ use Wzc\MainBundle\Entity\File;
 class FileController extends Controller
 {
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/{folderId}", name="file_index", defaults={"folderId"="null"})
      * @Template()
      */
@@ -34,6 +37,7 @@ class FileController extends Controller
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/add/{folderId}", name="file_add", defaults={"folderId"="null"})
      * @Template()
      */
@@ -60,6 +64,7 @@ class FileController extends Controller
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/remove/{fileId}", name="file_remove")
      */
     public function removeFileAction(Request $request, $fileId){

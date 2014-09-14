@@ -4,6 +4,8 @@ namespace Wzc\AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\Map;
 use Wzc\MainBundle\Form\MapType;
@@ -16,6 +18,7 @@ use Wzc\MainBundle\Form\MapType;
 class MapController extends Controller{
         const ENTITY_NAME = 'Map';
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/", name="admin_map_list")
      * @Template()
      */
@@ -33,6 +36,7 @@ class MapController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/add", name="admin_map_add")
      * @Template()
      */
@@ -55,6 +59,7 @@ class MapController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/edit/{id}", name="admin_map_edit")
      * @Template()
      */
@@ -76,6 +81,7 @@ class MapController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/remove/{id}", name="admin_map_remove")
      */
     public function removeAction(Request $request, $id){

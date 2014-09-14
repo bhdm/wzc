@@ -99,7 +99,7 @@
                         <div class="top" style="text-align: right; display: block;">
                             <span style="color: #FFFFFF">{{ app.user }}</span>&nbsp;&nbsp;&nbsp;
                             <a href="{{ path('profile') }}">Профиль</a>&nbsp;&nbsp;&nbsp;
-                            <a href="/logout">Выйти</a>
+                            <a href="{{ path('_security_logout') }}">Выйти</a>
                         </div>
                         {% endif %}
                         <div class="right">

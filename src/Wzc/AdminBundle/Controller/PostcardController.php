@@ -4,6 +4,8 @@ namespace Wzc\AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\Postcard;
 use Wzc\MainBundle\Form\PostcardType;
@@ -16,6 +18,7 @@ use Wzc\MainBundle\Form\PostcardType;
 class PostcardController extends Controller{
         const ENTITY_NAME = 'Postcard';
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/", name="admin_postcard_list")
      * @Template()
      */
@@ -32,6 +35,7 @@ class PostcardController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/add", name="admin_postcard_add")
      * @Template()
      */
@@ -54,6 +58,7 @@ class PostcardController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/edit/{id}", name="admin_postcard_edit")
      * @Template()
      */
@@ -75,6 +80,7 @@ class PostcardController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/remove/{id}", name="admin_postcard_remove")
      */
     public function removeAction(Request $request, $id){

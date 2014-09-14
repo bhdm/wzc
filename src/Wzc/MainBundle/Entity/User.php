@@ -91,6 +91,10 @@ class User extends BaseEntity implements UserInterface
      */
     protected $roles;
 
+    protected $socialId;
+
+    protected $provider;
+
 
     public function __construct(){
         $this->roles    = 'ROLE_USER';
@@ -445,6 +449,39 @@ class User extends BaseEntity implements UserInterface
     public function removeFile($file){
         $this->files->removeElement($file);
     }
+
+    /**
+     * @param mixed $provider
+     */
+    public function setProvider($provider)
+    {
+        $this->provider = $provider;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProvider()
+    {
+        return $this->provider;
+    }
+
+    /**
+     * @param mixed $socialId
+     */
+    public function setSocialId($socialId)
+    {
+        $this->socialId = $socialId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSocialId()
+    {
+        return $this->socialId;
+    }
+
 
 
 }

@@ -4,6 +4,8 @@ namespace Wzc\AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\Slidebar;
 use Wzc\MainBundle\Form\SlidebarType;
@@ -16,6 +18,7 @@ use Wzc\MainBundle\Form\SlidebarType;
 class SlidebarController extends Controller{
         const ENTITY_NAME = 'Slidebar';
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/", name="admin_slidebar_list")
      * @Template()
      */
@@ -32,6 +35,7 @@ class SlidebarController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/add", name="admin_slidebar_add")
      * @Template()
      */
@@ -54,6 +58,7 @@ class SlidebarController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/edit/{id}", name="admin_slidebar_edit")
      * @Template()
      */
@@ -75,6 +80,7 @@ class SlidebarController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/remove/{id}", name="admin_slidebar_remove")
      */
     public function removeAction(Request $request, $id){

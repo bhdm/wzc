@@ -4,6 +4,8 @@ namespace Wzc\AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\TestAnswer;
 use Wzc\MainBundle\Form\TestAnswerType;
@@ -16,6 +18,7 @@ use Wzc\MainBundle\Form\TestAnswerType;
 class TestAnswerController extends Controller{
     const ENTITY_NAME = 'TestAnswer';
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/{questionId}", name="admin_testanswer_list")
      * @Template()
      */
@@ -34,6 +37,7 @@ class TestAnswerController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/add/{questionId}", name="admin_testanswer_add")
      * @Template()
      */
@@ -61,6 +65,7 @@ class TestAnswerController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/edit/{id}", name="admin_testanswer_edit")
      * @Template()
      */
@@ -83,6 +88,7 @@ class TestAnswerController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/remove/{id}", name="admin_testanswer_remove")
      */
     public function removeAction(Request $request, $id){

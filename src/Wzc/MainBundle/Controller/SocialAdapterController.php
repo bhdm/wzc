@@ -74,21 +74,34 @@ class SocialAdapterController extends Controller
                 ));
 
 
+
                 if ($record==NULL) {
                     $values = array(
                         'provider' => $auther->getProvider(),
                         'socialId' => $auther->getSocialId(),
                         'name' => $auther->getName(),
-                        'email' => $auther->getEmail(),
+                        'username' => $auther->getEmail(),
                         #'' => $auther->getSex(),
                         #'date' => $auther->getBirthday()
                         #$auther->getAvatar()
                     );
 
+
+                    $user = new User();
+                    $user->setProvider($auther->getProvider());
+                    $user->setSocialId($auther->getSocialId());
+                    $user->getFirstName($auther->getName());
+                    $user->setUsername($auther->getEmail());
+                    $this->getDoctrine()->getManager()->persist($user);
+                    $this->getDoctrine()->getManager()->flush($user);
+
                     #return new RedirectResponse($this->generateUrl('main'));
                     #$this->registerAction(null,$values);
-                    return $this->redirect($this->generateUrl('register',array('campaign' => NULL, 'user' => $values)));
-                } else {
+//                    return $this->redirect($this->generateUrl('register',array('campaign' => NULL, 'user' => $values)));
+
+
+
+                }
                     //Пользователь с таким SocialId и provider есть и это $record, надо бы его авторизовать
                     $password = $record->getPassword();
                     $username = $record->getUsername();
@@ -105,12 +118,9 @@ class SocialAdapterController extends Controller
 
 
                     return new RedirectResponse($this->generateUrl('main'));
-
-                }
-            }else{
-                return $this->render($this->generateUrl('main'));
             }
         }
+        return $this->redirect($this->generateUrl('main'));
     }
 
     /**

@@ -4,6 +4,8 @@ namespace Wzc\AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\Metro;
 use Wzc\MainBundle\Form\MetroType;
@@ -16,6 +18,7 @@ use Wzc\MainBundle\Form\MetroType;
 class MetroController extends Controller{
         const ENTITY_NAME = 'Metro';
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/", name="admin_metro_list")
      * @Template()
      */
@@ -33,6 +36,7 @@ class MetroController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/add", name="admin_metro_add")
      * @Template()
      */
@@ -55,6 +59,7 @@ class MetroController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/edit/{id}", name="admin_metro_edit")
      * @Template()
      */
@@ -76,6 +81,7 @@ class MetroController extends Controller{
     }
 
     /**
+     * @Security("has_role('ROLE_ADMIN')")
      * @Route("/remove/{id}", name="admin_metro_remove")
      */
     public function removeAction(Request $request, $id){

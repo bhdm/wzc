@@ -10,8 +10,8 @@ class PageRepository extends EntityRepository
         $result= $this
             ->createQueryBuilder('p')
             ->from('WzcMainBundle:Page','p')
-            ->where('p.title LIKE %:string% ')
-            ->orWhere('p.body LIKE %:string% ')
+            ->where("p.title LIKE '%$string%' ")
+            ->orWhere("p.body LIKE '%$string%' ")
             ->setParameter('string', $string)
             ->getQuery()
             ->getResult();

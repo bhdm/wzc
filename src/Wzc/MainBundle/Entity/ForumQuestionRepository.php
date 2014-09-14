@@ -10,9 +10,8 @@ class ForumQuestionRepository extends EntityRepository
         $result= $this
             ->createQueryBuilder('f')
             ->from('WzcMainBundle:ForumQuestion','f')
-            ->where('f.title LIKE %:string% ')
-            ->orWhere('f.body LIKE %:string% ')
-            ->setParameter('string', $string)
+            ->where("f.title LIKE '%$string%' ")
+            ->orWhere("f.body LIKE '%$string%' ")
             ->getQuery()
             ->getResult();
         return $result;

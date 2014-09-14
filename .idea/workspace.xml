@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99566ec2-73ca-4b32-aff7-b7e257e19dc8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MapController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MapController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="27" selection-start="909" selection-end="909" vertical-scroll-proportion="-12.481482" vertical-offset="41" max-vertical-offset="990">
+            <state line="28" column="27" selection-start="939" selection-end="939" vertical-scroll-proportion="0.5228277" vertical-offset="41" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="38" selection-start="4349" selection-end="4349" vertical-scroll-proportion="0.3976436" vertical-offset="2124" max-vertical-offset="3474">
+            <state line="133" column="38" selection-start="4349" selection-end="4349" vertical-scroll-proportion="-22.0" vertical-offset="1800" max-vertical-offset="3474">
               <folding />
             </state>
           </provider>
@@ -106,8 +106,8 @@
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/js/styler.js" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Geo/SxGeo.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Geo/Geo.php" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php" />
       </list>
     </option>
   </component>
@@ -756,16 +756,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php">
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="909" selection-end="909" vertical-scroll-proportion="-12.481482" vertical-offset="41" max-vertical-offset="990">
+        <state line="133" column="38" selection-start="4349" selection-end="4349" vertical-scroll-proportion="-22.0" vertical-offset="1800" max-vertical-offset="3474">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="38" selection-start="4349" selection-end="4349" vertical-scroll-proportion="0.3976436" vertical-offset="2124" max-vertical-offset="3474">
+        <state line="28" column="27" selection-start="939" selection-end="939" vertical-scroll-proportion="0.5228277" vertical-offset="41" max-vertical-offset="990">
           <folding />
         </state>
       </provider>

@@ -15,11 +15,14 @@
             top: 75px;
             cursor: pointer;
         }
+
+
         .slidebar{
             position: relative;
             overflow: hidden;
-            width: 1200px;
-            height: 450px;
+            width: 100%;
+            max-width: 1200px;
+            max-height: 450px;
         }
         .btn-left{
             position: absolute;
@@ -75,18 +78,12 @@
         .slidebar-title{
             font-size: 45px;
         }
-        .slidewrapper{
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 450px;
-            margin: 0;
-            padding: 0;
-        }
+
         .slide{
             width: 1200px;
             height: 450px;
-            float: left;
+            /*float: left;*/
+            display: inline-block;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -96,6 +93,10 @@
         .bottom{
             margin: 30px 0;
         }
+
+
+
+
         .left-tr{
             float: left;
             width: 40%;
@@ -118,92 +119,101 @@
             padding-left: 15px;
             padding-bottom: 10px;
         }
+
+        .jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
+        {
+            position: absolute;
+            cursor: pointer;
+            display: block;
+            background: url({{ asset('bundles/wzcmain/JssorSlider/img/a03.png') }}) no-repeat;
+            overflow:hidden;
+        }
+        .jssora03l { background-position: -3px -33px; }
+        .jssora03r { background-position: -63px -33px; }
+        .jssora03l:hover { background-position: -123px -33px; }
+        .jssora03r:hover { background-position: -183px -33px; }
+        .jssora03ldn { background-position: -243px -33px; }
+        .jssora03rdn { background-position: -303px -33px; }
     </style>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.core.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.utils.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.slider.js') }}"></script>
+
     <script>
-        $(document).ready(function(){
-           $('.btn-left').hover(
-                   function(){
-                        $(this).attr('src','{{ asset('bundles/wzcmain/images/ico_left_active.png') }}')
-                   },
-                   function(){
-                       $(this).attr('src','{{ asset('bundles/wzcmain/images/ico_left.png') }}')
-                   }
-           );
-           $('.btn-right').hover(
-                    function(){
-                        $(this).attr('src','{{ asset('bundles/wzcmain/images/ico_right_active.png') }}')
-                    },
-                    function(){
-                        $(this).attr('src','{{ asset('bundles/wzcmain/images/ico_right.png') }}')
-                    }
-           );
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,
+                $AutoPlaySteps: 1,
+                $AutoPlayInterval: 2000,
+                $PauseOnHover: 1,
 
-            $('.btn-left').click(function(){
-                $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
-                nextSlide();
-            });
+                $ArrowKeyNavigation: true,
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,
+                $SlideDuration: 800,
+                $MinDragOffsetToSlide: 20,
+                //$SlideWidth: 600,
+                //$SlideHeight: 300,
+                $SlideSpacing: 0,
+                $DisplayPieces: 1,
+                $ParkingPosition: 0,
+                $UISearchMode: 1,
+                $PlayOrientation: 1,
 
-            $('.btn-right').click(function(){
-                $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
-                backSlide();
-            });
-
-            var slideWidth=1200;
-            var sliderTimer;
-            $(function(){
-                $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
-                sliderTimer=setInterval(nextSlide,10000);
-                $('.viewport').hover(function(){
-                    clearInterval(sliderTimer);
-                },function(){
-                    sliderTimer=setInterval(nextSlide,10000);
-                });
-            });
-
-            function nextSlide(){
-                var currentSlide=parseInt($('.slidewrapper').data('current'));
-                currentSlide++;
-                if(currentSlide>=$('.slidewrapper').children().size())
-                {
-                    currentSlide=0;
+                $DragOrientation: 3,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,
+                    $ChanceToShow: 2,
+                    $AutoCenter: 0,
+                    $Steps: 1
                 }
-                $('.slidewrapper').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$SetScaleWidth(Math.max(Math.min(parentWidth, 1200), 450));
+                else
+                    window.setTimeout(ScaleSlider, 30);
             }
 
-            function backSlide(){
-                var currentSlide=parseInt($('.slidewrapper').data('current'));
-                currentSlide++;
-                if(currentSlide>=$('.slidewrapper').children().size())
-                {
-                    currentSlide=0;
-                }
-                $('.slidewrapper').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);
-            }
+            ScaleSlider();
 
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
         });
     </script>
 {% endblock %}
 
 {% block content %}
-    <div class="slidebar viewport">
-        <div class="slidewrapper" data-current=0>
+
+
+
+    <div id="slider1_container" style="position: relative; width: 1200px; height: 450px; overflow: hidden;">
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1200px; height: 450px;
+            overflow: hidden;">
             {% for item in banners %}
-                <li class="slide">
-                    <img src="{{ item.image.path }}">
-                    <div class="slidebar-msg">
-                        <div class="slidebar-title" >{{ item.title | raw }}</div>
-                        {{ item.body | raw }}
-                    </div>
-                </li>
+                <div><img u="image" src="{{ item.image.path }}" /></div>
             {% endfor %}
         </div>
-        <img src="{{ asset('bundles/wzcmain/images/ico_left.png') }}" class="btn-left">
-        <img src="{{ asset('bundles/wzcmain/images/ico_right.png') }}" class="btn-right">
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 200px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 200px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
     </div>
+
     <div class="banner">
         <img src="{{ asset('bundles/wzcmain/images/banner.png') }}">
         <a href="{{ path('test') }}"><img class="banner-btn" src="{{ asset('bundles/wzcmain/images/btn_4.png') }}"></a>
@@ -212,7 +222,6 @@
         <div class="message-title">{{ message.title | raw }}</div>
         <div class="message-body">{{ message.body | raw }}</div>
     </div>
-
     <div class="bottom">
         <div class="left-tr">
             <a href="{{ path('postcard') }}"><img src="{{ asset('bundles/wzcmain/images/btn_2.png') }}"></a>

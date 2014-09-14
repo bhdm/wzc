@@ -106,12 +106,11 @@ body{
 .menu ul li{
     display: inline-block;
     padding: 10px;
+    height: 45px;
+    font-size: 1em;
 }
 .menu ul li a{
     color: #920055;
-}
-.menu ul li{
-    height: 45px;
 }
 .menu ul li a:hover{
     text-decoration: underline;

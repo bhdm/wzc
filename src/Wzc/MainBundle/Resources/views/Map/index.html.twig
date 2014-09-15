@@ -126,7 +126,7 @@
                                 <select class="changeMetro" id="changeMetro">
                                         <option value="0">Выберите метро</option>
                                     {% for m in metro %}
-                                        <option value="{{ m.id }}">{{ m.title }}</option>
+                                        <option value="{{ m.id }}" {{ m.id == thisMetro.id ? 'selected="selected"' : '' }}>{{ m.title }}</option>
                                     {% endfor %}
                                 </select>
                                 &nbsp;

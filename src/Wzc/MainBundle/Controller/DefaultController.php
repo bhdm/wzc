@@ -33,6 +33,7 @@ class DefaultController extends Controller
         $session = $request->getSession();
         if ($session->get('notice')){
             $notice = $session->get('notice');
+            $session->set('notice', null);
         }else{
             $notice = null;
         }

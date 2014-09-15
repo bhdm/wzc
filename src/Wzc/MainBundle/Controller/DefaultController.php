@@ -63,6 +63,13 @@ class DefaultController extends Controller
             $manager->persist($user);
             $manager->flush($user);
 
+            $this->get('email.service')->send(
+                $user->getUsername(),
+//                array('zakaz@zdravzona.ru'),
+                array('WzcMainBundle:Email:register.html.twig', array()),
+                'Открытка с сайта WZC'
+            );
+
         }
         return $this->redirect($request->headers->get('referer'));
     }

@@ -128,4 +128,29 @@ class ForumController extends Controller
         }
         return $this->redirect($request->headers->get('referer'));
     }
+
+    /**
+     * @Route("questions/delete/{questionId}", name="questions-delete")
+     */
+    public function questionDeleteAction(Request $request, $questionId){
+        $question = $this->getDoctrine()->getRepository('WzcMainBundle:ForumQuestion')->find($questionId);
+        if ($question){
+            $this->getDoctrine()->getManager()->remove($question);
+            $this->getDoctrine()->getManager()->flush();
+        }
+        return $this->redirect($request->headers->get('referer'));
+    }
+
+    /**
+     * @Route("theme/delete/{themeId}", name="theme-delete")
+     */
+    public function themeDeleteAction(Request $request, $themeId){
+        $theme = $this->getDoctrine()->getRepository('WzcMainBundle:ForumTheme')->find($themeId);
+        if ($theme){
+            $this->getDoctrine()->getManager()->remove($theme);
+            $this->getDoctrine()->getManager()->flush();
+        }
+        return $this->redirect($request->headers->get('referer'));
+    }
+
 }

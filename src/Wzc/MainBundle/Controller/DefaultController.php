@@ -21,13 +21,26 @@ class DefaultController extends Controller
      * @Route("/login")
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $message = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('message');
         $banners = $this->getDoctrine()->getRepository('WzcMainBundle:Slidebar')->findByEnabled(1);
+
+//        $session = $request->getSession();
+//        $session->set('notice', 'Поздравляем, Вы зарегистрировались.');
+//        $session->save();
+
+        $session = $request->getSession();
+        if ($session->get('notice')){
+            $notice = $session->get('notice');
+        }else{
+            $notice = null;
+        }
+
         return array(
             'banners' => $banners,
-            'message' => $message
+            'message' => $message,
+            'notice' => $notice
         );
     }
 
@@ -69,9 +82,13 @@ class DefaultController extends Controller
                 array('WzcMainBundle:Email:register.html.twig', array()),
                 'Открытка с сайта WZC'
             );
+            $session = $request->getSession();
+            $session->set('notice', 'Поздравляем, Вы зарегистрировались.');
+            $session->save();
 
         }
-        return $this->redirect($request->headers->get('referer'));
+
+        return $this->redirect($this->generateUrl('main'));
     }
 
     /**
@@ -128,8 +145,15 @@ class DefaultController extends Controller
                     array('WzcMainBundle:Email:password.html.twig', array('password' => $p)),
                     'Открытка с сайта WZC'
                 );
+                $session = $request->getSession();
+                $session->set('notice', 'Новый пароль отправлен Вам на почту');
+                $session->save();
+            }else{
+                $session = $request->getSession();
+                $session->set('notice', 'Пользователь с таким email не найден');
+                $session->save();
             }
-            return $this->redirect($request->headers->get('referer'));
+            return $this->redirect($this->generateUrl('main'));
         }else{
             return $this->redirect($this->generateUrl('main'));
         }

@@ -269,4 +269,24 @@
         </div>
         <br style="clear: both">
     </div>
+
+
+
+    {% if notice != null %}
+    <div class="popup popup-msg"  style="height: 25px !important; {{ notice == null ? ' display: none;' : ' display: block;' }}">
+        <div class="flash-notice" style="color: #920055; text-align: center">
+            {{ notice }}
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            window.setTimeout(function(){
+                $('.popup-msg').fadeOut();
+            }, 2000);
+        });
+    </script>
+    {% endif %}
+
+
 {% endblock %}

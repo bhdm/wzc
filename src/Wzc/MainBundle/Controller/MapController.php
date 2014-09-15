@@ -26,7 +26,7 @@ class MapController extends Controller
 
         $ip = $_SERVER["REMOTE_ADDR"];
         if ($ip == '127.0.0.1'){
-            $ip = '212.92.128.0';
+            $ip = '84.253.73.126';
         }
 
         $info = $SxGeo->getCityFull($ip);

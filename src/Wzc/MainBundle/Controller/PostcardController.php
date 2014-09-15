@@ -37,6 +37,12 @@ class PostcardController extends Controller
                     )),
                     'Открытка с сайта WZC'
                 );
+
+                $session = $request->getSession();
+                $session->set('notice', 'Открытка отправлена');
+                $session->save();
+                return $this->redirect($this->generateUrl('main'));
+
             }else{
                 $error = 'Неправильно введена капча';
             }

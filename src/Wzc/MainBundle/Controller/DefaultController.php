@@ -26,9 +26,9 @@ class DefaultController extends Controller
         $message = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('message');
         $banners = $this->getDoctrine()->getRepository('WzcMainBundle:Slidebar')->findByEnabled(1);
 
-        $session = $request->getSession();
-        $session->set('notice', 'Поздравляем, Вы зарегистрировались.');
-        $session->save();
+        //$session = $request->getSession();
+        //$session->set('notice', 'Поздравляем, Вы зарегистрировались.');
+        //$session->save();
 
         $session = $request->getSession();
         if ($session->get('notice')){

@@ -140,6 +140,9 @@
         #form_captcha{
             width: 97px;
         }
+        .error-msg{
+            color: #CC3333;
+        }
     </style>
 {% endblock %}
 
@@ -150,9 +153,19 @@
             $('.img-item').click(function(){
                 var originalName = $(this).attr('data-name');
                 $('.postcard').css('background', 'url("'+originalName+'")');
-                $('#imgid').val($(this).attr('data-id'));
+                $('#form_img').val($(this).attr('data-id'));
             });
 
+            $('#form_submit').click(function(){
+                $('#form_title').val($('.input-postcard-title').val());
+            });
+
+            {% if formData != null %}
+                $('#form_img').val( {{ formData.img }});
+                $('.input-postcard-title').val($('#form_title').val());
+                var originalName = $('#img{{ formData.img }}').children('img').attr('data-name');
+                $('.postcard').css('background', 'url("'+originalName+'")');
+            {% endif %}
 
         });
     </script>
@@ -175,13 +188,15 @@
             <br />
             <form method="POST">
                 <div class="postcard">
-                    <input type="hidden" name="imgid" id="imgid" value="3">
                     <div class="postcard-title"></div>
                     <input type="text" class="input-postcard-title" name="title" placeholder="Заголовок">
                     {#<div class="postcard-body"></div>#}
                     {#<textarea class="textarea-postcard-body" name="text"></textarea>#}
                 </div>
                 <br />
+                {% if error != false %}
+                    <div class="error-msg">{{ error }}</div>
+                {% endif %}
                 {{ form_widget(form) }}
                 {#Email: <input type="text" class="styler" style="width: 260px" name="email">#}
                 {#<button type="submit" class="styler">Отправить</button>#}

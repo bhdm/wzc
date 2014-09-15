@@ -195,24 +195,24 @@
 
 
 
-    {#<div id="slider1_container" style="position: relative; width: 1200px; height: 450px; overflow: hidden;">#}
+    <div id="slider1_container" style="position: relative; width: 1200px; height: 450px; overflow: hidden;">
 
-        {#<!-- Slides Container -->#}
-        {#<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1200px; height: 450px;#}
-            {#overflow: hidden;">#}
-            {#{% for item in banners %}#}
-                {#<div><img u="image" src="{{ item.image.path }}" /></div>#}
-            {#{% endfor %}#}
-        {#</div>#}
-        {#<!-- Arrow Left -->#}
-        {#<span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 200px; left: 8px;">#}
-        {#</span>#}
-        {#<!-- Arrow Right -->#}
-        {#<span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 200px; right: 8px">#}
-        {#</span>#}
-        {#<!-- Arrow Navigator Skin End -->#}
-        {#<a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>#}
-    {#</div>#}
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1200px; height: 450px;
+            overflow: hidden;">
+            {% for item in banners %}
+                <div><img u="image" src="{{ item.image.path }}" /></div>
+            {% endfor %}
+        </div>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 200px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 200px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+    </div>
 
     <div class="banner">
         <img src="{{ asset('bundles/wzcmain/images/banner.png') }}">

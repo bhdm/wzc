@@ -101,11 +101,41 @@ class DefaultController extends Controller
                 $item = $formData->getData();
                 $em->flush($item);
                 $em->refresh($item);
-                return $this->redirect($this->generateUrl('admin_user_list'));
+                return $this->redirect($request->headers->get('referer'));
             }
         }
         return array('form' => $form->createView());
     }
+
+    /**
+     * @Route("/password-reset", name="password-reset")
+     */
+    public function refreshPasswordAction(Request $request){
+        if ($request->getMethod() == 'POST'){
+            $username = $request->request->get('username');
+            $user = $this->getDoctrine()->getRepository('WzcMainBundle:User')->findOneByUsername($username);
+            if ($user){
+                $p = $this->generatePassword(6);
+                $em = $this->getDoctrine()->getManager();
+                $user->setSalt(md5(time()));
+                $encoder = new MessageDigestPasswordEncoder('sha512', true, 10);
+                $password = $encoder->encodePassword($p, $user->getSalt());
+                $user->setPassword($password);
+                $em->flush($user);
+
+                $this->get('email.service')->send(
+                    $user->getUsername(),
+                    array('WzcMainBundle:Email:password.html.twig', array('password' => $p)),
+                    'Открытка с сайта WZC'
+                );
+            }
+            return $this->redirect($request->headers->get('referer'));
+        }else{
+            return $this->redirect($this->generateUrl('main'));
+        }
+
+    }
+
 
     /**
      * @Route("/search", name="search")
@@ -132,5 +162,17 @@ class DefaultController extends Controller
           's' => $searchString,
         );
 
+    }
+
+    function generatePassword($length = 8) {
+        $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        $count = mb_strlen($chars);
+
+        for ($i = 0, $result = ''; $i < $length; $i++) {
+            $index = rand(0, $count - 1);
+            $result .= mb_substr($chars, $index, 1);
+        }
+
+        return $result;
     }
 }

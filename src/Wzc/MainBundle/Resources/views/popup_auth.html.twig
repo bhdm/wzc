@@ -15,15 +15,17 @@
                 <td colspan="2">
                     <div style="float: left; padding-top: 10px;">
                         <a href="#" style="color: #920055; text-decoration: underline" class="register">Зарегистрироваться</a>
+                        <a href="#" style="color: #920055; text-decoration: underline" class="password">Забыли пароль</a>
                     </div>
-                    <button type="submit" style="float: right;">Войти</button>
+                    <button type="submit" style="float: right;">Войти</button><br />
+
                 </td>
             </tr>
         </table>
     </form>
 </div>
 
-<div class="popup popup-register" style="min-height: 280px; display: none">
+<div class="popup popup-register" style="display: none">
     <h2>Регистрация</h2>
     <br />
     <div id="register-errors"></div>
@@ -47,6 +49,26 @@
                         <a href="#" style="color: #920055;">Нажимая кнопку зарегистрироваться вы принимаете наше соглашение</a>
                     </div>
                     <button type="submit" id="register-submit" style="float: right;">Зарегистрироваться</button>
+                </td>
+            </tr>
+        </table>
+        <br/>
+    </form>
+</div>
+
+<div class="popup popup-password" style="min-height: 280px; display: none">
+    <h2>Забыли пароль</h2>
+    <br />
+    <div id="register-errors"></div>
+    <form method="post" action="{{ path('password-reset') }}">
+        <table>
+            <tr>
+                <td style="width: 150px">E-mail:<br /></td>
+                <td><input type="text" class="ainput" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" id="register-submit" style="float: right;">Отправить</button>
                 </td>
             </tr>
         </table>

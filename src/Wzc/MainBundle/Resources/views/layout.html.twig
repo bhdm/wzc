@@ -38,6 +38,15 @@
                         return false;
                     });
 
+                    $('.password').click(function(){
+                        $('.popup').fadeOut();
+                        $('.popup-password').fadeIn();
+                        $('.blaskbg').fadeIn();
+                        return false;
+                    });
+
+
+
                     $('#register-submit').click(function(){
                         var error = '';
                         if ($('#username').val() == '' ){

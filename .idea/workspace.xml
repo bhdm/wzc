@@ -8,7 +8,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/postcard/1.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/postcard/2.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/postcard/3.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,13 +32,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="54" selection-start="5840" selection-end="5840" vertical-scroll-proportion="-6.4814816" vertical-offset="1985" max-vertical-offset="4086">
+            <state line="82" column="12" selection-start="3081" selection-end="5530" vertical-scroll-proportion="0.29601228" vertical-offset="1283" max-vertical-offset="4086">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -49,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="18" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.6858006" vertical-offset="1724" max-vertical-offset="5292">
+            <state line="116" column="1" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0" vertical-offset="1694" max-vertical-offset="5292">
               <folding />
             </state>
           </provider>
@@ -120,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Email/postcard.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/PostcardController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Postcard/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
       </list>
     </option>
   </component>
@@ -545,10 +546,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1089" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24791667" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24791667" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -899,24 +900,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="1" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0" vertical-offset="1694" max-vertical-offset="5292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="54" selection-start="5840" selection-end="5840" vertical-scroll-proportion="-6.4814816" vertical-offset="1985" max-vertical-offset="4086">
+        <state line="82" column="12" selection-start="3081" selection-end="5530" vertical-scroll-proportion="0.29601228" vertical-offset="1283" max-vertical-offset="4086">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="18" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.6858006" vertical-offset="1724" max-vertical-offset="5292">
-          <folding />
         </state>
       </provider>
     </entry>

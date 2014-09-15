@@ -32,7 +32,8 @@
         "braincrafted/bootstrap-bundle": "dev-master",
         "knplabs/knp-paginator-bundle": "~2.4",
         "evrikaru/socialauther":"dev-master",
-        "friendsofsymfony/jsrouting-bundle": "@stable"
+        "friendsofsymfony/jsrouting-bundle": "@stable",
+        "gregwar/captcha-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

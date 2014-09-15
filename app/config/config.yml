@@ -120,3 +120,10 @@ knp_paginator:
         pagination: WzcAdminBundle::pagination.html.twig
 #        pagination: KnpPaginatorBundle:Pagination:sliding.html.twig     # sliding pagination controls template
 #        sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig # sort link template
+
+gregwar_captcha:
+    width: 180
+    height: 50
+    length: 4
+#    background_color: [254,181,224]
+    background_color: [255,255,255]

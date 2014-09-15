@@ -17,6 +17,16 @@ class PostcardController extends Controller
      */
     public function indexAction(Request $request)
     {
+
+        $form = $this->createFormBuilder()
+            ->add('img', 'hidden')
+            ->add('email', null, array('label' => 'E-mail: ', 'attr' => array('class' => 'styler')))
+            ->add('captcha', 'captcha', array('label' => 'Картинка: ', 'attr' => array('class' => 'styler')))
+            ->add('submit', 'submit', array('label' => 'Отправить', 'attr' => array('class' => 'styler')))
+            ->getForm();
+
+
+
         if ($request->getMethod() == 'POST'){
 
             $email =$request->request->get('email');
@@ -40,7 +50,7 @@ class PostcardController extends Controller
 
 
 
-        return array('postcards' => $postcards, 'page' => $page, 'page2' => $page2);
+        return array('postcards' => $postcards, 'page' => $page, 'page2' => $page2, 'form' => $form->createView());
     }
 
 

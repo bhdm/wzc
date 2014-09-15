@@ -119,7 +119,7 @@ body{
     position: absolute;
     background: #feb5e0;
     padding: 7px;
-    margin-top: 12px;
+    margin-top: 10px;
     width: 190px;
     display: none;
     z-index: 400;
@@ -260,7 +260,7 @@ body{
     background: url('../images/footer_bg.png');
 }
 .footer a{
-    color: #9b9b9b;
+    color: #757575;
 }
 .footer a:hover{
     color: #920055;
@@ -272,8 +272,9 @@ body{
 }
 h2{
     color: #920055;
-    font-size: 30px;
+    font-size: 24px !important;
     text-transform: uppercase;
+    font-weight: normal;
 }
 .ainput{
     background: #ba6295;

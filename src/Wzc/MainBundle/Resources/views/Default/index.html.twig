@@ -120,6 +120,10 @@
             padding-bottom: 10px;
         }
 
+        .banner:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
         .jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
         {
             position: absolute;
@@ -215,8 +219,10 @@
     </div>
 
     <div class="banner">
-        <img src="{{ asset('bundles/wzcmain/images/banner.png') }}">
-        <a href="{{ path('test') }}"><img class="banner-btn" src="{{ asset('bundles/wzcmain/images/btn_4.png') }}"></a>
+        <a href="{{ path('test') }}">
+            <img src="{{ asset('bundles/wzcmain/images/banner.png') }}">
+            <img class="banner-btn" src="{{ asset('bundles/wzcmain/images/btn_4.png') }}">
+        </a>
     </div>
     <div class="message">
         <div class="message-title">{{ message.title | raw }}</div>

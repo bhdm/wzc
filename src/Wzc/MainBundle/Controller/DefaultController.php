@@ -21,13 +21,28 @@ class DefaultController extends Controller
      * @Route("/login")
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $message = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('message');
         $banners = $this->getDoctrine()->getRepository('WzcMainBundle:Slidebar')->findByEnabled(1);
+
+        //$session = $request->getSession();
+        //$session->set('notice', 'Поздравляем, Вы зарегистрировались.');
+        //$session->save();
+
+        $session = $request->getSession();
+        if ($session->get('notice')){
+            $notice = $session->get('notice');
+            $session->set('notice', null);
+            $session->save();
+        }else{
+            $notice = null;
+        }
+
         return array(
             'banners' => $banners,
-            'message' => $message
+            'message' => $message,
+            'notice' => $notice
         );
     }
 
@@ -63,8 +78,19 @@ class DefaultController extends Controller
             $manager->persist($user);
             $manager->flush($user);
 
+            $this->get('email.service')->send(
+                $user->getUsername(),
+//                array('zakaz@zdravzona.ru'),
+                array('WzcMainBundle:Email:register.html.twig', array()),
+                'Открытка с сайта WZC'
+            );
+            $session = $request->getSession();
+            $session->set('notice', 'Поздравляем, Вы зарегистрировались.');
+            $session->save();
+
         }
-        return $this->redirect($request->headers->get('referer'));
+
+        return $this->redirect($this->generateUrl('main'));
     }
 
     /**
@@ -94,11 +120,48 @@ class DefaultController extends Controller
                 $item = $formData->getData();
                 $em->flush($item);
                 $em->refresh($item);
-                return $this->redirect($this->generateUrl('admin_user_list'));
+                return $this->redirect($request->headers->get('referer'));
             }
         }
         return array('form' => $form->createView());
     }
+
+    /**
+     * @Route("/password-reset", name="password-reset")
+     */
+    public function refreshPasswordAction(Request $request){
+        if ($request->getMethod() == 'POST'){
+            $username = $request->request->get('username');
+            $user = $this->getDoctrine()->getRepository('WzcMainBundle:User')->findOneByUsername($username);
+            if ($user){
+                $p = $this->generatePassword(6);
+                $em = $this->getDoctrine()->getManager();
+                $user->setSalt(md5(time()));
+                $encoder = new MessageDigestPasswordEncoder('sha512', true, 10);
+                $password = $encoder->encodePassword($p, $user->getSalt());
+                $user->setPassword($password);
+                $em->flush($user);
+
+                $this->get('email.service')->send(
+                    $user->getUsername(),
+                    array('WzcMainBundle:Email:password.html.twig', array('password' => $p)),
+                    'Открытка с сайта WZC'
+                );
+                $session = $request->getSession();
+                $session->set('notice', 'Новый пароль отправлен Вам на почту');
+                $session->save();
+            }else{
+                $session = $request->getSession();
+                $session->set('notice', 'Пользователь с таким email не найден');
+                $session->save();
+            }
+            return $this->redirect($this->generateUrl('main'));
+        }else{
+            return $this->redirect($this->generateUrl('main'));
+        }
+
+    }
+
 
     /**
      * @Route("/search", name="search")
@@ -125,5 +188,17 @@ class DefaultController extends Controller
           's' => $searchString,
         );
 
+    }
+
+    function generatePassword($length = 8) {
+        $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        $count = mb_strlen($chars);
+
+        for ($i = 0, $result = ''; $i < $length; $i++) {
+            $index = rand(0, $count - 1);
+            $result .= mb_substr($chars, $index, 1);
+        }
+
+        return $result;
     }
 }

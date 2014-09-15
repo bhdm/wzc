@@ -29,14 +29,14 @@ class SocialAdapterController extends Controller
             'redirect_uri'  => 'http://medram.ru/sociallogin?provider=vk'
         ),
         'odnoklassniki' => array(
-            'client_id'     => 'CBAFPLICEBABABABA',
-            'client_secret' => '5E19627A46F4ECAE5B68E406',
+            'client_id'     => '1099625472',
+            'client_secret' => '5F3326EFBDA6C27798B9A229',
             'redirect_uri'  => 'http://medram.ru/sociallogin?provider=odnoklassniki',
-            'public_key'    => 'CBALJDBMABABABABA'
+            'public_key'    => 'CBAFGJKCEBABABABA'
         ),
         'facebook' => array(
-            'client_id'     => '545052125595569',
-            'client_secret' => 'b1d967d9d5bb29b4d2484fbbe5bb5337',
+            'client_id'     => '554661164634665',
+            'client_secret' => 'd464fa562bd3f59c29660701ae7a238d',
             'redirect_uri'  => 'http://medram.ru/sociallogin?provider=facebook'
         )
     );

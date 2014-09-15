@@ -33,7 +33,7 @@ class EmailService
 //            $mail->From = 'maillist@vidal.ru';
 //        }
 //        else {
-            $mail->Host       = 'smtp.mail.ru';
+            $mail->Host       = 'smtp.yandex.ru';
             $mail->From       = 'medrampost@yandex.ru';
             $mail->SMTPSecure = 'ssl';
             $mail->Port       = 465;

@@ -92,12 +92,12 @@ class User extends BaseEntity implements UserInterface
     protected $roles;
 
     /**
-     * @ORM\Column(type="string", length=150)
+     * @ORM\Column(type="string", length=150, nullable=true)
      */
     protected $socialId;
 
     /**
-     * @ORM\Column(type="string", length=150)
+     * @ORM\Column(type="string", length=150, nullable=true)
      */
     protected $provider;
 

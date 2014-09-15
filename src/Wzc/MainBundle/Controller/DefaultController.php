@@ -34,6 +34,7 @@ class DefaultController extends Controller
         if ($session->get('notice')){
             $notice = $session->get('notice');
             $session->set('notice', null);
+            $session->save();
         }else{
             $notice = null;
         }

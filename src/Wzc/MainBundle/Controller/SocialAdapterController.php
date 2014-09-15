@@ -35,8 +35,8 @@ class SocialAdapterController extends Controller
             'public_key'    => 'CBALJDBMABABABABA'
         ),
         'facebook' => array(
-            'client_id'     => '545052125595569',
-            'client_secret' => 'b1d967d9d5bb29b4d2484fbbe5bb5337',
+            'client_id'     => '554661164634665',
+            'client_secret' => 'd464fa562bd3f59c29660701ae7a238d',
             'redirect_uri'  => 'http://medram.ru/sociallogin?provider=facebook'
         )
     );

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84104bc-f79d-4c8d-8bea-5b43afe9028a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/postcard/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/postcard/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/postcard/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/slidebar/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/slidebar/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/slidebar/banner_img_1.png" afterPath="" />
     </list>
     <ignored path="wzc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +33,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="14" selection-start="3496" selection-end="3496" vertical-scroll-proportion="0.0" vertical-offset="2034" max-vertical-offset="3474">
+            <state line="122" column="24" selection-start="3731" selection-end="3731" vertical-scroll-proportion="0.27597955" vertical-offset="2034" max-vertical-offset="3474">
               <folding />
             </state>
           </provider>
@@ -517,7 +520,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="14" selection-start="3496" selection-end="3496" vertical-scroll-proportion="0.0" vertical-offset="2034" max-vertical-offset="3474">
+        <state line="122" column="24" selection-start="3731" selection-end="3731" vertical-scroll-proportion="0.27597955" vertical-offset="2034" max-vertical-offset="3474">
           <folding />
         </state>
       </provider>

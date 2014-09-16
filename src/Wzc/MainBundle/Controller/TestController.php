@@ -45,18 +45,25 @@ class TestController extends Controller
         }
         $question = $this->getDoctrine()->getRepository('WzcMainBundle:TestQuestion')->findNext($questionId);
 
-        if ($question){
+        if ($question != null){
             return array('question' => $question);
         }else{
             if ( $sum >= 6 ){
-                $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('test-success-yes');
+                $url = $this->generateUrl('map');
+                $page['title'] = '';
+                $page['body'] = '
+                <p>Ваш показатель  <b>'.$sum.'</b> баллов. <br />
+                При сумме 6 баллов и более наличие у Вас болезни Крона&nbsp;<strong>высоковероятно</strong>.<br />
+                Пожалуйста, обратитесь к врачу-гастроэнтерологу.<br />
+                <br />
+                Вы можете воспользоваться <a href="'.$url.'" style="font-weight: bold; color: #920055;">нашей картой</a> для поиска клиники
+                </p>';
             }else{
-                $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('test-success-no');
+                $page['title'] = '';
+                $page['body'] = '<p>Ваш показатель <b>'.$sum.'</b> баллов. При сумме менее баллов наличие у болезни Крона&nbsp;<strong>маловероятно</strong>.</p>';
             }
             return array('answer' => $page);
         }
-
-
 
     }
 

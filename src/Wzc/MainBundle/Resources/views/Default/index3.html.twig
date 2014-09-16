@@ -1,0 +1,361 @@
+{% extends "WzcMainBundle::layout.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .banner{
+            width: 860px;
+            margin: 40px auto;
+            position: relative;
+        }
+        .banner-btn{
+            position: absolute;
+            left: 50%;
+            margin-left: -141px;
+            top: 75px;
+            cursor: pointer;
+        }
+
+
+        .slidebar{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1200px;
+            max-height: 450px;
+        }
+        .btn-left{
+            position: absolute;
+            top: 200px;
+            left: 0;
+            cursor: pointer;
+        }
+        .btn-right{
+            position: absolute;
+            top: 200px;
+            right: 0;
+            cursor: pointer;
+        }
+        .message{
+            background: url("{{ asset('bundles/wzcmain/images/message_bg.png') }}") repeat-x ;
+            height: 120px;
+            text-align: center;
+            padding: 15px;
+
+        }
+        .left-tr img{
+            cursor: pointer;
+            width: 230px;
+        }
+        .message-title{
+            font-size: 45px;
+            text-align: center;
+            color: #920055;
+            font-style: italic;
+        }
+
+        .message-body{
+            font-size: 20px;
+            text-align: center;
+            color: #920055;
+            font-style: italic;
+            line-height: 30px;
+        }
+
+
+        .slidebar-msg{
+            background: url("{{ asset('bundles/wzcmain/images/banner_message_bg.png') }}") repeat-x;
+            width: 400px;
+            height: 160px;
+            position: absolute;
+            /*z-index: 80;*/
+            bottom: 50px;
+            left: 100px;
+            padding: 13px;
+            color: #920055;
+            font-size: 25px;
+        }
+        .slidebar-title{
+            font-size: 45px;
+        }
+
+        .slide{
+            width: 1200px;
+            height: 450px;
+            /*float: left;*/
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .bottom{
+            margin: 30px 0;
+        }
+
+
+
+
+        .left-tr{
+            float: left;
+            width: 40%;
+            text-align: center;
+        }
+        .right-tr{
+            float: right;
+            width: 60%;
+        }
+        .post-title{
+            color: #595959;
+            font-size: 25px;
+        }
+
+        .post-body{
+            color: #595959;
+        }
+        .right-tr table tr td{
+            /*vertical-align: top;*/
+            padding-left: 15px;
+            padding-bottom: 10px;
+        }
+
+        .banner:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
+        {
+            position: absolute;
+            cursor: pointer;
+            display: block;
+            background: url({{ asset('bundles/wzcmain/JssorSlider/img/a03.png') }}) no-repeat;
+            overflow:hidden;
+        }
+        .jssora03l { background-position: -3px -33px; }
+        .jssora03r { background-position: -63px -33px; }
+        .jssora03l:hover { background-position: -123px -33px; }
+        .jssora03r:hover { background-position: -183px -33px; }
+        .jssora03ldn { background-position: -243px -33px; }
+        .jssora03rdn { background-position: -303px -33px; }
+
+
+        .facts{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .facts td{
+            padding: 0 10px;
+            font-size: 16px !important;
+            color: #333333;
+        }
+        .facts td img{
+            width: 24px;
+        }
+        .line-fact{
+            width: 600px !important;
+            padding: 10px 0;
+        }
+        .btn-big{
+            width: 200px;
+            height: 100px;
+            padding: 10px 20px;
+            display: inline-block;
+            margin: 10px 20px;
+            line-height: 100px;
+            background: #feb5e0;
+            font-size: 20px;
+            color: #920055;
+            box-shadow: 0 0 3px rgba(146, 0, 85, 0.64);
+        }
+        .btn-big:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.core.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.utils.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.slider.js') }}"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,
+                $AutoPlaySteps: 1,
+                $AutoPlayInterval: 2000,
+                $PauseOnHover: 1,
+
+                $ArrowKeyNavigation: true,
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,
+                $SlideDuration: 800,
+                $MinDragOffsetToSlide: 20,
+                //$SlideWidth: 600,
+                //$SlideHeight: 300,
+                $SlideSpacing: 0,
+                $DisplayPieces: 1,
+                $ParkingPosition: 0,
+                $UISearchMode: 1,
+                $PlayOrientation: 1,
+
+                $DragOrientation: 3,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,
+                    $ChanceToShow: 2,
+                    $AutoCenter: 0,
+                    $Steps: 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$SetScaleWidth(Math.max(Math.min(parentWidth, 1200), 450));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
+        });
+    </script>
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div id="slider1_container" style="position: relative; width: 1200px; height: 450px; overflow: hidden;">
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1200px; height: 450px;
+            overflow: hidden;">
+            {% for item in banners %}
+                <div><img u="image" src="{{ item.image.path }}" /></div>
+            {% endfor %}
+        </div>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 200px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 200px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+    </div>
+
+    {#<div class="banner">#}
+        {#<a href="{{ path('test') }}">#}
+            {#<img src="{{ asset('bundles/wzcmain/images/banner.png') }}">#}
+            {#<img class="banner-btn" src="{{ asset('bundles/wzcmain/images/btn_4.png') }}">#}
+        {#</a>#}
+    {#</div>#}
+    {#<div class="message">#}
+        {#<div class="message-title">{{ message.title | raw }}</div>#}
+        {#<div class="message-body">{{ message.body | raw }}</div>#}
+    {#</div>#}
+    <div style="text-align: center">
+        <div class="btn-big">Пройти тест</div>
+        <div class="btn-big">Отправить открытку</div>
+        <div class="btn-big">Скачать брошуру</div>
+    </div>
+
+
+
+    <div class="bottom">
+        {#<div class="left-tr">#}
+            {#<a href="{{ path('postcard') }}"><img src="{{ asset('bundles/wzcmain/images/btn_2.png') }}"></a>#}
+            {#<br/>#}
+            {#<br/>#}
+            {#<img src="{{ asset('bundles/wzcmain/images/btn_3.png') }}">#}
+            {#<br/>#}
+            {#<br/>#}
+            {#<img src="{{ asset('bundles/wzcmain/images/btn_1.png') }}">#}
+        {#</div>#}
+        {#<div class="right-tr">#}
+            {#<table>#}
+                {#<tr>#}
+                    {#<td>#}
+                        {#<img src="{{ asset('bundles/wzcmain/images/thrumb_1.png') }}">#}
+                    {#</td>#}
+                    {#<td>#}
+                        {#<div class="post-title">Как востановить силы</div>#}
+                        {#<div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>#}
+                    {#</td>#}
+                {#</tr>#}
+                {#<tr>#}
+                    {#<td>#}
+                        {#<img src="{{ asset('bundles/wzcmain/images/thrumb_2.png') }}">#}
+                    {#</td>#}
+                    {#<td>#}
+                        {#<div class="post-title">Как востановить силы</div>#}
+                        {#<div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>#}
+                    {#</td>#}
+                {#</tr>#}
+                {#<tr>#}
+                    {#<td>#}
+                        {#<img src="{{ asset('bundles/wzcmain/images/thrumb_3.png') }}">#}
+                    {#</td>#}
+                    {#<td>#}
+                        {#<div class="post-title">Как востановить силы</div>#}
+                        {#<div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>#}
+                    {#</td>#}
+                {#</tr>#}
+            {#</table>#}
+        {#</div>#}
+        <table class="facts">
+            <tr>
+                <td><img src="{{ asset('bundles/wzcmain/images/zn.png') }}"></td>
+                <td >Распространенность ЯК колеблется от 28 до 117, БК от 34 до 146 больных на</td>
+            </tr>
+            <tr><td colspan="2" style="text-align: center"><img class="line-fact" src="{{ asset('bundles/wzcmain/images/line-fact.png') }}"></td></tr>
+            <tr>
+                <td><img src="{{ asset('bundles/wzcmain/images/zn.png') }}"></td>
+                <td>100 000 населения в зависимости от этнической принадлежности и географической зоны.</td>
+            </tr>
+            <tr><td colspan="2" style="text-align: center"><img class="line-fact" src="{{ asset('bundles/wzcmain/images/line-fact.png') }}"></td></tr>
+            <tr>
+                <td><img src="{{ asset('bundles/wzcmain/images/zn.png') }}"></td>
+                <td>Чаще заболевают лица европеоидной популяции, нежели негроидной.</td>
+            </tr>
+            <tr><td colspan="2" style="text-align: center"><img class="line-fact" src="{{ asset('bundles/wzcmain/images/line-fact.png') }}"></td></tr>
+            <tr>
+                <td><img src="{{ asset('bundles/wzcmain/images/zn.png') }}"></td>
+                <td>ВЗК считаются болезнями промышленно развитых стран.</td>
+            </tr>
+            <tr><td colspan="2" style="text-align: center"><img class="line-fact" src="{{ asset('bundles/wzcmain/images/line-fact.png') }}"></td></tr>
+        </table>
+
+
+
+
+        <br style="clear: both">
+    </div>
+
+
+
+    {% if notice != null %}
+    <div class="popup popup-msg"  style="height: 15px !important; {{ notice == null ? ' display: none;' : ' display: block;' }}">
+        <div class="flash-notice" style="color: #920055; text-align: center">
+            {{ notice }}
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            window.setTimeout(function(){
+                $('.popup-msg').fadeOut();
+            }, 2000);
+        });
+    </script>
+    {% endif %}
+
+
+{% endblock %}

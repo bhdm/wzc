@@ -86,7 +86,7 @@
             {% for c in coords %}
                 myPlacemark = new ymaps.Placemark([{{ c.latitude }}, {{ c.longitude }}], {
                     hintContent: '{{ c.title }}',
-                    balloonContent: '<div><b>{{ c.title }}</b><br /><b>Адрес:</b> {{ c.adrs }}<br /><b>Телефон:</b> {{ c.phone }}<br />{{ c.body }}</div>',
+                    balloonContent: '<div><b>{{ c.title | raw }}</b><br /><b>Адрес:</b> {{ c.adrs | raw }}<br /><b>Телефон:</b> {{ c.phone | raw }}<br />{{ c.body | raw }}</div>',
                 },{
                     preset: 'islands#icon',
                     iconColor: '#920055'
@@ -126,7 +126,11 @@
                                 <select class="changeMetro" id="changeMetro">
                                         <option value="0">Выберите метро</option>
                                     {% for m in metro %}
-                                        <option value="{{ m.id }}" {{ m.id == thisMetro.id ? 'selected="selected"' : '' }}>{{ m.title }}</option>
+                                        {% if thisMetro is defined and thisMetro != null and thisMetro != 0 %}
+                                            <option value="{{ m.id }}" {{ m.id == thisMetro.id ? 'selected="selected"' : '' }}>{{ m.title }}</option>
+                                        {% else %}
+                                            <option value="{{ m.id }}" >{{ m.title }}</option>
+                                        {% endif %}
                                     {% endfor %}
                                 </select>
                                 &nbsp;

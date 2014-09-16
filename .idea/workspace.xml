@@ -35,7 +35,7 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.7875" vertical-offset="144" max-vertical-offset="3780">
+            <state line="27" column="0" selection-start="976" selection-end="976" vertical-scroll-proportion="0.45945945" vertical-offset="180" max-vertical-offset="3780">
               <folding>
                 <element signature="e#45#102#0" expanded="true" />
               </folding>
@@ -46,7 +46,7 @@
       <file leaf-file-name="popup_auth.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/popup_auth.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2883" selection-end="2883" vertical-scroll-proportion="-20.62963" vertical-offset="829" max-vertical-offset="1494">
+            <state line="77" column="0" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.0" vertical-offset="829" max-vertical-offset="1494">
               <folding />
             </state>
           </provider>
@@ -55,7 +55,7 @@
       <file leaf-file-name="PostcardController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/PostcardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="29" selection-start="1514" selection-end="1514" vertical-scroll-proportion="-24.0" vertical-offset="0" max-vertical-offset="1332">
+            <state line="41" column="29" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1422">
               <folding />
             </state>
           </provider>
@@ -64,16 +64,8 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="275" column="50" selection-start="8791" selection-end="8791" vertical-scroll-proportion="-42.185184" vertical-offset="3811" max-vertical-offset="5346">
-              <folding>
-                <element signature="e#5416#5491#0" expanded="true" />
-                <element signature="e#5552#5674#0" expanded="true" />
-                <element signature="e#5901#5958#0" expanded="true" />
-                <element signature="e#6052#6109#0" expanded="true" />
-                <element signature="e#6180#6201#0" expanded="true" />
-                <element signature="e#8678#8697#0" expanded="true" />
-                <element signature="e#8905#8947#0" expanded="true" />
-              </folding>
+            <state line="275" column="50" selection-start="8791" selection-end="8791" vertical-scroll-proportion="0.0" vertical-offset="3811" max-vertical-offset="5346">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,12 +73,8 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="12" selection-start="3349" selection-end="11083" vertical-scroll-proportion="-60.666668" vertical-offset="0" max-vertical-offset="4572">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="91" column="12" selection-start="3349" selection-end="11083" vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="4572">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -255,6 +243,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -395,7 +384,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,13 +456,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24791667" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.246875" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39192924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24046434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.396875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -482,11 +470,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -507,9 +495,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30735213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -646,11 +634,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/questions.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="24" selection-start="1672" selection-end="2100" vertical-scroll-proportion="0.5173979" vertical-offset="432" max-vertical-offset="2772">
-          <folding>
-            <element signature="e#1967#1986#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="43" column="24" selection-start="1672" selection-end="2100" vertical-scroll-proportion="0.5173979" vertical-offset="432" max-vertical-offset="2772" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/answers.html.twig">
@@ -660,11 +644,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Forum/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="74" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.4175655" vertical-offset="341" max-vertical-offset="2556">
-          <folding>
-            <element signature="e#1878#1897#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="34" column="74" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.4175655" vertical-offset="341" max-vertical-offset="2556" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
@@ -679,186 +659,133 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Postcard/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="53" selection-start="4135" selection-end="4135" vertical-scroll-proportion="0.26172465" vertical-offset="2617" max-vertical-offset="3906">
-          <folding>
-            <element signature="e#6126#6147#0" expanded="false" />
-            <element signature="e#6239#6258#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="155" column="53" selection-start="4135" selection-end="4135" vertical-scroll-proportion="0.26172465" vertical-offset="2617" max-vertical-offset="3906" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="1" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.5693642" vertical-offset="1694" max-vertical-offset="5292">
-          <folding />
-        </state>
+        <state line="116" column="1" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.5693642" vertical-offset="1694" max-vertical-offset="5292" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="254" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
+        <state line="8" column="26" selection-start="254" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Service/EmailService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="44" selection-start="1305" selection-end="1316" vertical-scroll-proportion="0.10676692" vertical-offset="667" max-vertical-offset="1332">
-          <folding />
-        </state>
+        <state line="41" column="44" selection-start="1305" selection-end="1316" vertical-scroll-proportion="0.10676692" vertical-offset="667" max-vertical-offset="1332" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/evrikaru/socialauther/lib/SocialAuther/Adapter/AdapterInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="374" selection-end="386" vertical-scroll-proportion="0.43460765" vertical-offset="0" max-vertical-offset="497">
-          <folding />
-        </state>
+        <state line="17" column="32" selection-start="374" selection-end="386" vertical-scroll-proportion="0.43460765" vertical-offset="0" max-vertical-offset="497" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/evrikaru/socialauther/lib/SocialAuther/SocialAuther.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="20" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1296">
-          <folding />
-        </state>
+        <state line="19" column="20" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1296" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Email/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="414">
-          <folding />
-        </state>
+        <state line="17" column="7" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Email/postcard.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="116" selection-end="116" vertical-scroll-proportion="0.1125" vertical-offset="0" max-vertical-offset="640">
-          <folding />
-        </state>
+        <state line="4" column="20" selection-start="116" selection-end="116" vertical-scroll-proportion="0.1125" vertical-offset="0" max-vertical-offset="640" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Email/password.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="97" selection-start="600" selection-end="600" vertical-scroll-proportion="0.24360903" vertical-offset="0" max-vertical-offset="665">
-          <folding />
-        </state>
+        <state line="9" column="97" selection-start="600" selection-end="600" vertical-scroll-proportion="0.24360903" vertical-offset="0" max-vertical-offset="665" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Map/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.38650307" vertical-offset="162" max-vertical-offset="3474">
-          <folding />
-        </state>
+        <state line="23" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.38650307" vertical-offset="162" max-vertical-offset="3474" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/MapController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="32" selection-start="945" selection-end="945" vertical-scroll-proportion="0.02556391" vertical-offset="379" max-vertical-offset="1044">
-          <folding />
-        </state>
+        <state line="28" column="32" selection-start="945" selection-end="945" vertical-scroll-proportion="0.02556391" vertical-offset="379" max-vertical-offset="1044" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/ForumController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="78" selection-start="5209" selection-end="5209" vertical-scroll-proportion="2.4646616" vertical-offset="845" max-vertical-offset="2736">
-          <folding />
-        </state>
+        <state line="147" column="78" selection-start="5209" selection-end="5209" vertical-scroll-proportion="2.4646616" vertical-offset="845" max-vertical-offset="2736" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/SocialAdapterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2061" selection-end="2061" vertical-scroll-proportion="-6.111111" vertical-offset="915" max-vertical-offset="2790">
-          <folding />
-        </state>
+        <state line="60" column="0" selection-start="2061" selection-end="2061" vertical-scroll-proportion="-6.111111" vertical-offset="915" max-vertical-offset="2790" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2974" column="0" selection-start="88464" selection-end="88464" vertical-scroll-proportion="0.33195022" vertical-offset="53372" max-vertical-offset="55872">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2974" column="0" selection-start="88464" selection-end="88464" vertical-scroll-proportion="0.33195022" vertical-offset="53372" max-vertical-offset="55872" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1928" selection-end="1928" vertical-scroll-proportion="-19.703703" vertical-offset="242" max-vertical-offset="882">
-          <folding />
-        </state>
+        <state line="44" column="0" selection-start="1928" selection-end="1928" vertical-scroll-proportion="-19.703703" vertical-offset="242" max-vertical-offset="882" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="43" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-21.62963" vertical-offset="64" max-vertical-offset="1476">
-          <folding />
-        </state>
+        <state line="36" column="43" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-21.62963" vertical-offset="64" max-vertical-offset="1476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="4080" selection-end="4080" vertical-scroll-proportion="0.0" vertical-offset="1763" max-vertical-offset="2430">
-          <folding />
-        </state>
+        <state line="129" column="0" selection-start="4080" selection-end="4080" vertical-scroll-proportion="0.0" vertical-offset="1763" max-vertical-offset="2430" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/cache/dev/classes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="494" column="0" selection-start="13946" selection-end="13946" vertical-scroll-proportion="-5.962963" vertical-offset="8479" max-vertical-offset="115650">
-          <folding />
-        </state>
+        <state line="494" column="0" selection-start="13946" selection-end="13946" vertical-scroll-proportion="-5.962963" vertical-offset="8479" max-vertical-offset="115650" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/PostcardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="29" selection-start="1514" selection-end="1514" vertical-scroll-proportion="-24.0" vertical-offset="0" max-vertical-offset="1332">
+        <state line="41" column="29" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1422">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="12" selection-start="3349" selection-end="11083" vertical-scroll-proportion="-60.666668" vertical-offset="0" max-vertical-offset="4572">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="91" column="12" selection-start="3349" selection-end="11083" vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="4572">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/popup_auth.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2883" selection-end="2883" vertical-scroll-proportion="-20.62963" vertical-offset="829" max-vertical-offset="1494">
+        <state line="77" column="0" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.0" vertical-offset="829" max-vertical-offset="1494">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="50" selection-start="8791" selection-end="8791" vertical-scroll-proportion="-42.185184" vertical-offset="3811" max-vertical-offset="5346">
-          <folding>
-            <element signature="e#5416#5491#0" expanded="true" />
-            <element signature="e#5552#5674#0" expanded="true" />
-            <element signature="e#5901#5958#0" expanded="true" />
-            <element signature="e#6052#6109#0" expanded="true" />
-            <element signature="e#6180#6201#0" expanded="true" />
-            <element signature="e#8678#8697#0" expanded="true" />
-            <element signature="e#8905#8947#0" expanded="true" />
-          </folding>
+        <state line="275" column="50" selection-start="8791" selection-end="8791" vertical-scroll-proportion="0.0" vertical-offset="3811" max-vertical-offset="5346">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.7875" vertical-offset="144" max-vertical-offset="3780">
+        <state line="27" column="0" selection-start="976" selection-end="976" vertical-scroll-proportion="0.45945945" vertical-offset="180" max-vertical-offset="3780">
           <folding>
             <element signature="e#45#102#0" expanded="true" />
           </folding>

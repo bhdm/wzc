@@ -201,4 +201,12 @@ class DefaultController extends Controller
 
         return $result;
     }
+
+    /**
+     * @Route("/news", name="news")
+     * @Template()
+     */
+    public function newsAction(){
+
+    }
 }

@@ -255,7 +255,7 @@ body{
     position: relative;
 }
 .footer{
-    height: 149px;
+    height: 100px;
     padding-top: 50px;
     background: url('../images/footer_bg.png');
 }
@@ -268,7 +268,7 @@ body{
 .footer-menu li{
     color: #9b9b9b;
     padding: 5px;
-    font-size: 14px;
+    font-size: 10px;
 }
 h2{
     color: #920055;

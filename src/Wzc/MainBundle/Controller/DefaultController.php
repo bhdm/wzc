@@ -207,6 +207,8 @@ class DefaultController extends Controller
      * @Template()
      */
     public function newsAction(){
+        $news = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findByEnabled(true);
 
+        return array('news' => $news);
     }
 }

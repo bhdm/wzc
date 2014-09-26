@@ -264,9 +264,9 @@
         {#<div class="message-body">{{ message.body | raw }}</div>#}
     {#</div>#}
     <div style="text-align: center">
-        <div class="btn-big">Пройти тест</div>
-        <div class="btn-big">Отправить открытку</div>
-        <div class="btn-big">Скачать брошуру</div>
+        <a href="{{ path('test') }}"><div class="btn-big">Пройти тест</div></a>
+        <a href="{{ path('postcard') }}"><div class="btn-big">Отправить открытку</div></a>
+        <a href="{{ path('page',{'url': 'download'}) }}"><div class="btn-big">Скачать брошуру</div></a>
     </div>
 
 

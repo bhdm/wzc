@@ -11,7 +11,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/slidebar/5.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/slidebar/6.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/upload/slidebar/banner_img_1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wzc.iws" />
@@ -35,11 +35,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
+      <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="121" selection-start="6812" selection-end="6812" vertical-scroll-proportion="0.4678261" vertical-offset="2215" max-vertical-offset="4068">
-              <folding />
+            <state line="268" column="50" selection-start="7943" selection-end="7943" vertical-scroll-proportion="0.6573913" vertical-offset="4428" max-vertical-offset="6858">
+              <folding>
+                <element signature="e#7694#7720#0" expanded="true" />
+                <element signature="e#8369#8395#0" expanded="true" />
+                <element signature="e#8766#8792#0" expanded="true" />
+                <element signature="e#9143#9169#0" expanded="true" />
+                <element signature="e#9508#9534#0" expanded="true" />
+                <element signature="e#9905#9931#0" expanded="true" />
+                <element signature="e#10269#10295#0" expanded="true" />
+                <element signature="e#10463#10488#0" expanded="true" />
+                <element signature="e#10561#10583#0" expanded="true" />
+                <element signature="e#10872#10893#0" expanded="true" />
+                <element signature="e#11399#11420#0" expanded="true" />
+                <element signature="e#11926#11947#0" expanded="true" />
+                <element signature="e#12396#12421#0" expanded="true" />
+                <element signature="e#12476#12498#0" expanded="true" />
+                <element signature="e#12621#12640#0" expanded="true" />
+                <element signature="e#12718#12812#0" expanded="true" />
+                <element signature="e#12848#12890#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +93,8 @@
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/news.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/public/css/common.css" />
-        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig" />
       </list>
     </option>
   </component>
@@ -228,6 +246,40 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wzc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -316,7 +368,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.037037037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29519072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.528125" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -369,7 +421,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="168" column="29" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.0" vertical-offset="3024" max-vertical-offset="6570">
           <folding>
-            <element signature="e#11803#11824#0" expanded="false" />
+            <element signature="e#7694#7720#0" expanded="true" />
+            <element signature="e#8369#8395#0" expanded="true" />
+            <element signature="e#8766#8792#0" expanded="true" />
+            <element signature="e#9143#9169#0" expanded="true" />
+            <element signature="e#9508#9534#0" expanded="true" />
+            <element signature="e#9905#9931#0" expanded="true" />
+            <element signature="e#10269#10295#0" expanded="true" />
+            <element signature="e#10463#10488#0" expanded="true" />
+            <element signature="e#10561#10583#0" expanded="true" />
+            <element signature="e#10872#10893#0" expanded="true" />
+            <element signature="e#11399#11420#0" expanded="true" />
+            <element signature="e#11926#11947#0" expanded="true" />
+            <element signature="e#12396#12421#0" expanded="true" />
+            <element signature="e#12476#12498#0" expanded="true" />
+            <element signature="e#12621#12640#0" expanded="true" />
+            <element signature="e#12718#12812#0" expanded="true" />
+            <element signature="e#12848#12890#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,19 +597,33 @@
         <state line="215" column="0" selection-start="3541" selection-end="3541" vertical-scroll-proportion="-0.014634146" vertical-offset="3879" max-vertical-offset="5310" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="9" selection-start="4330" selection-end="4330" vertical-scroll-proportion="1.2857143" vertical-offset="2376" max-vertical-offset="6858">
-          <folding>
-            <element signature="e#11803#11824#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="121" selection-start="6812" selection-end="6812" vertical-scroll-proportion="0.4678261" vertical-offset="2215" max-vertical-offset="4068">
-          <folding />
+        <state line="127" column="34" selection-start="5888" selection-end="5888" vertical-scroll-proportion="0.12347826" vertical-offset="2215" max-vertical-offset="4068" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wzc/MainBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="50" selection-start="7943" selection-end="7943" vertical-scroll-proportion="0.6573913" vertical-offset="4428" max-vertical-offset="6858">
+          <folding>
+            <element signature="e#7694#7720#0" expanded="true" />
+            <element signature="e#8369#8395#0" expanded="true" />
+            <element signature="e#8766#8792#0" expanded="true" />
+            <element signature="e#9143#9169#0" expanded="true" />
+            <element signature="e#9508#9534#0" expanded="true" />
+            <element signature="e#9905#9931#0" expanded="true" />
+            <element signature="e#10269#10295#0" expanded="true" />
+            <element signature="e#10463#10488#0" expanded="true" />
+            <element signature="e#10561#10583#0" expanded="true" />
+            <element signature="e#10872#10893#0" expanded="true" />
+            <element signature="e#11399#11420#0" expanded="true" />
+            <element signature="e#11926#11947#0" expanded="true" />
+            <element signature="e#12396#12421#0" expanded="true" />
+            <element signature="e#12476#12498#0" expanded="true" />
+            <element signature="e#12621#12640#0" expanded="true" />
+            <element signature="e#12718#12812#0" expanded="true" />
+            <element signature="e#12848#12890#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

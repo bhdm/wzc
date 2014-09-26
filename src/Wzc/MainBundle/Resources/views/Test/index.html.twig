@@ -54,14 +54,16 @@
     {{ parent() }}
     <script>
         $(document).ready(function(){
+            var cc = 1;
             $('.next').click(function(){
                 var items = [];
                 $("input:checkbox:checked").each(function(item){
-                    items.pu(item.attr('name'));
-                    alert(item.attr('name'));
+                    items.push(item.attr('name'));
                 });
-
-
+                cc ++;
+                if ( cc >= 8){
+                    $('.next').fadeOut();
+                }
                 $("#form_question").ajaxSubmit({
                     url: Routing.generate('test_next', { questionId: $('#questionId').val() }),
                     type: 'post',

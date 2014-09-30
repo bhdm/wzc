@@ -179,7 +179,7 @@
         {{ page.body | raw }}
     {% endif %}
         <br />
-        <div class="column" style="width: 645px">
+        <div class="column" style="width: 680px">
             {% for pc in postcards %}
             <div class="thrumb" id="img{{ pc.id }}">
                 <img src="{{ pc.image.path }}" alt="{{ pc.title }}" title="{{ pc.title }}" class="img-item" data-name="{{ pc.image.path }}" data-id="{{ pc.id }}">
@@ -203,7 +203,7 @@
             </form>
         </div>
         {% if page2 != null %}
-            <div class="column" style="width: 250px;">
+            <div class="column" style="width: 210px;">
                 {{ page2.body | raw }}
             </div>
         {% endif %}

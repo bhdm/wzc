@@ -55,24 +55,29 @@
     <script>
         $(document).ready(function(){
             var cc = 1;
+
             $('.next').click(function(){
-                var items = [];
-                $("input:checkbox:checked").each(function(item){
-                    items.push(item.attr('name'));
-                });
-                cc ++;
-                if ( cc >= 8){
-                    $('.next').fadeOut();
-                }
-                $("#form_question").ajaxSubmit({
-                    url: Routing.generate('test_next', { questionId: $('#questionId').val() }),
-                    type: 'post',
-                    success: function (msg){
-                        $('select').styler();
-                        $('.styler').styler();
-                        $('#form_question').html(msg);
+                if ($("input:radio:checked").length > 0){
+                    var items = [];
+                    $("input:checkbox:checked").each(function(item){
+                        items.push(item.attr('name'));
+                    });
+                    cc ++;
+                    if ( cc >= 8){
+                        $('.next').fadeOut();
                     }
-                });
+                    $("#form_question").ajaxSubmit({
+                        url: Routing.generate('test_next', { questionId: $('#questionId').val() }),
+                        type: 'post',
+                        success: function (msg){
+                            $('select').styler();
+                            $('.styler').styler();
+                            $('#form_question').html(msg);
+                        }
+                    });
+                }else{
+                    $('.question-body').prepend('<div style="color: #CC3333">Выберите вариант ответа</div><br />');
+                }
             });
         });
     </script>

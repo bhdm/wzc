@@ -82,14 +82,18 @@
 //                ]
 //            });
 
-
             {% for c in coords %}
                 myPlacemark = new ymaps.Placemark([{{ c.latitude }}, {{ c.longitude }}], {
-                    hintContent: '{{ c.title }}',
+                    {#iconContent: '{{ c.phone }}',#}
+                    hintContent: '{{ c.title }} ({{ c.phone }})',
                     balloonContent: '<div><b>{{ c.title | raw }}</b><br /><b>Адрес:</b> {{ c.adrs | raw }}<br /><b>Телефон:</b> {{ c.phone | raw }}<br />{{ c.body | raw }}</div>',
                 },{
-                    preset: 'islands#icon',
-                    iconColor: '#920055'
+                    iconLayout: 'default#image',
+                    iconImageHref: '{{ asset('bundles/wzcmain/images/icoHospital.png') }}',
+                    iconImageSize: [24, 24],
+                    iconImageOffset: [-12, -12]
+//                    preset: 'islands#redSmallPoint',
+//                    iconColor: '#920055'
                 });
                 myMap.geoObjects.add(myPlacemark);
             {% endfor %}

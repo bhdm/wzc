@@ -201,4 +201,14 @@ class DefaultController extends Controller
 
         return $result;
     }
+
+    /**
+     * @Route("/news", name="news")
+     * @Template()
+     */
+    public function newsAction(){
+        $news = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findByEnabled(true);
+
+        return array('news' => $news);
+    }
 }

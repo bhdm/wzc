@@ -102,10 +102,15 @@ iphp_file_store:
            namer:
               property:
                   params: { field : id }
-
        files:
            upload_dir:  %kernel.root_dir%/../web/upload/files
            upload_path: /upload/files
+       publication:
+           upload_dir:  %kernel.root_dir%/../web/upload/publications
+           upload_path: /upload/publications
+           namer:
+              property:
+                  params: { field : id }
 
 
 

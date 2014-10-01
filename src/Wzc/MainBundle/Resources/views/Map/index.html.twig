@@ -85,7 +85,7 @@
             {% for c in coords %}
                 myPlacemark = new ymaps.Placemark([{{ c.latitude }}, {{ c.longitude }}], {
                     {#iconContent: '{{ c.phone }}',#}
-                    hintContent: '{{ c.title }} ({{ c.phone }})',
+                    hintContent: '{{ c.title }} {{ c.phone }}',
                     balloonContent: '<div><b>{{ c.title | raw }}</b><br /><b>Адрес:</b> {{ c.adrs | raw }}<br /><b>Телефон:</b> {{ c.phone | raw }}<br />{{ c.body | raw }}</div>',
                 },{
                     iconLayout: 'default#image',

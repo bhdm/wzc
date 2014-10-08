@@ -1,0 +1,45 @@
+{% extends "WzcMainBundle::layout.html.twig" %}
+
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .content{
+            padding: 50px 0 30px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2{
+            color: #920055;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <h2>
+            <span style="color: #555; padding-right: 20px; font-size: 14px">
+                {{ new.created | date('d.m.Y') }}
+            </span>
+            {{ new.title }}
+        </h2>
+        <br />
+        <table>
+            <tr>
+                <td>
+                    {% if new.image.path is defined %}
+                        <a href="{{ path('news',{ 'newId' : new.id }) }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
+                    {% endif %}
+                </td>
+                <td>
+                    <div class="post-body">{{ new.anons|raw }}</div>
+                </td>
+            </tr>
+            <tr>
+                <div class="post-body">{{ new.body|raw }}</div>
+            </tr>
+
+        </table>
+    </div>
+{% endblock %}

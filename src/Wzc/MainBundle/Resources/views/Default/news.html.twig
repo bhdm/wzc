@@ -14,12 +14,54 @@
             font-size: 30px;
             text-transform: uppercase;
         }
+        .post-title{
+            color: #595959;
+            font-size: 25px;
+        }
+
+        .post-body{
+            color: #595959;
+        }
+        .img-td{
+            padding-right: 20px;
+        }
+        .img-td a img{
+            max-width: 60px;
+        }
     </style>
 {% endblock %}
 {% block content %}
     <div class="content">
         <h2>Новости портала</h2>
         <br />
-        Новостей не найдено
+        <table>
+        {% for new in news %}
+                <tr>
+                    <td class="img-td">
+                        {% if new.image.path is defined %}
+                            <a href="{{ path('new',{ 'newId' : new.id }) }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{{ path('new',{ 'newId' : new.id }) }}">
+                            <div class="post-title">
+                                {#<span style="color: #555; padding-right: 20px; font-size: 14px">#}
+                                    {#{{ new.created | date('d.m.Y') }}#}
+                                {#</span>#}
+                                {{ new.title|raw }}</div></a>
+                        <div class="post-body">{{ new.anons|raw }}</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <br />
+                        <img src="{{ asset('bundles/wzcmain/images/line-fact.png') }}" style="width: 500px; height: 1px">
+                        <br /><br />
+                    </td>
+                </tr>
+        {%  else %}
+            <tr><td>Новостей не найдено</td></tr>
+        {% endfor %}
+            </table>
     </div>
 {% endblock %}

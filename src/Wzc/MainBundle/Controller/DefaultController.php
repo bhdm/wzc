@@ -212,7 +212,16 @@ class DefaultController extends Controller
      */
     public function newsAction(){
         $news = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findByEnabled(true);
-
+        ksort($news);
         return array('news' => $news);
+    }
+
+    /**
+     * @Route("/new/{newId}", name="new")
+     * @Template()
+     */
+    public function newAction($newId){
+        $new = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findOneByid($newId);
+        return array('new' => $new);
     }
 }

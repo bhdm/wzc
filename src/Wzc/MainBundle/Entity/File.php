@@ -16,15 +16,15 @@ use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
  */
 class File extends BaseEntity
 {
-    /**
-     * @ORM\ManyToOne(targetEntity="User", inversedBy="files")
-     */
-    protected $user;
+//    /**
+//     * @ORM\ManyToOne(targetEntity="User", inversedBy="files")
+//     */
+//    protected $user;
 
-    /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $title;
+//    /**
+//     * @ORM\Column(type="string", nullable=true, nullable=true)
+//     */
+//    protected $title;
 
     /**
      * @Assert\File( maxSize="2M", uploadIniSizeErrorMessage = "Максимальный размер файла - 2 Мб")
@@ -33,45 +33,46 @@ class File extends BaseEntity
      **/
     protected $file;
 
-    /**
-     * @ORM\OneToMany(targetEntity="File", mappedBy="childs")
-     */
-    protected $parent;
+//    /**
+//     * @ORM\OneToMany(targetEntity="File", mappedBy="childs")
+//     */
+//    protected $parent;
+//
+//    /**
+//     * @ORM\ManyToOne(targetEntity="File", inversedBy="parent")
+//     */
+//    protected $childs;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="File", inversedBy="parent")
-     */
-    protected $childs;
+//    /**
+//     * file|folder|image
+//     * @ORM\Column(type="string", length=6, nullable=true)
+//     */
+//    protected $type = 'folder';
 
-    /**
-     * file|folder|image
-     * @ORM\Column(type="string", length=6, nullable=true)
-     */
-    protected $type = 'folder';
+//    public function __toString(){
+////        return $this->title;
+//        return 'файл';
+//    }
 
-    public function __toString(){
-        return $this->title;
-    }
+//    public function __construct(){
+//        $this->childs = new ArrayCollection();
+//    }
 
-    public function __construct(){
-        $this->childs = new ArrayCollection();
-    }
-
-    /**
-     * @param mixed $childs
-     */
-    public function setChilds($childs)
-    {
-        $this->childs = $childs;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getChilds()
-    {
-        return $this->childs;
-    }
+//    /**
+//     * @param mixed $childs
+//     */
+//    public function setChilds($childs)
+//    {
+//        $this->childs = $childs;
+//    }
+//
+//    /**
+//     * @return mixed
+//     */
+//    public function getChilds()
+//    {
+//        return $this->childs;
+//    }
 
     /**
      * @param mixed $file
@@ -89,68 +90,68 @@ class File extends BaseEntity
         return $this->file;
     }
 
-    /**
-     * @param mixed $parent
-     */
-    public function setParent($parent)
-    {
-        $this->parent = $parent;
-    }
+//    /**
+//     * @param mixed $parent
+//     */
+//    public function setParent($parent)
+//    {
+//        $this->parent = $parent;
+//    }
+//
+//    /**
+//     * @return mixed
+//     */
+//    public function getParent()
+//    {
+//        return $this->parent;
+//    }
 
-    /**
-     * @return mixed
-     */
-    public function getParent()
-    {
-        return $this->parent;
-    }
+//    /**
+//     * @param mixed $title
+//     */
+//    public function setTitle($title)
+//    {
+//        $this->title = $title;
+//    }
+//
+//    /**
+//     * @return mixed
+//     */
+//    public function getTitle()
+//    {
+//        return $this->title;
+//    }
 
-    /**
-     * @param mixed $title
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-    }
+//    /**
+//     * @param mixed $type
+//     */
+//    public function setType($type = 'folder')
+//    {
+//        $this->type = $type;
+//    }
+//
+//    /**
+//     * @return mixed
+//     */
+//    public function getType()
+//    {
+//        return $this->type;
+//    }
 
-    /**
-     * @return mixed
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param mixed $type
-     */
-    public function setType($type = 'folder')
-    {
-        $this->type = $type;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * @param mixed $user
-     */
-    public function setUser($user)
-    {
-        $this->user = $user;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
+//    /**
+//     * @param mixed $user
+//     */
+//    public function setUser($user)
+//    {
+//        $this->user = $user;
+//    }
+//
+//    /**
+//     * @return mixed
+//     */
+//    public function getUser()
+//    {
+//        return $this->user;
+//    }
 
 }

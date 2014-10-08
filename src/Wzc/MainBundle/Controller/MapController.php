@@ -45,7 +45,7 @@ class MapController extends Controller
             $coords = $this->getDoctrine()->getRepository('WzcMainBundle:Map')->findByEnabled(1);
         }
         $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('map');
-        $metro = $this->getDoctrine()->getRepository('WzcMainBundle:Metro')->findAll();
+        $metro = $this->getDoctrine()->getRepository('WzcMainBundle:Metro')->findByEnabled(true);
 
         $ipCity = $info['city'];
         $ipRegion = $info['region'];

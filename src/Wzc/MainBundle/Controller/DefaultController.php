@@ -25,6 +25,9 @@ class DefaultController extends Controller
     {
         $message = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl('message');
         $banners = $this->getDoctrine()->getRepository('WzcMainBundle:Slidebar')->findByEnabled(1);
+        $news = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findByEnabled(1);
+        krsort($news);
+        $news = array_slice($news,0,3);
 
         //$session = $request->getSession();
         //$session->set('notice', 'Поздравляем, Вы зарегистрировались.');
@@ -42,7 +45,8 @@ class DefaultController extends Controller
         return array(
             'banners' => $banners,
             'message' => $message,
-            'notice' => $notice
+            'notice' => $notice,
+            'news' => $news
         );
     }
 
@@ -208,7 +212,16 @@ class DefaultController extends Controller
      */
     public function newsAction(){
         $news = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findByEnabled(true);
-
+        ksort($news);
         return array('news' => $news);
+    }
+
+    /**
+     * @Route("/new/{newId}", name="new")
+     * @Template()
+     */
+    public function newAction($newId){
+        $new = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findOneByid($newId);
+        return array('new' => $new);
     }
 }

@@ -277,7 +277,7 @@
     <div style="text-align: center">
         <a href="{{ path('test') }}"><div class="btn-big btn1">Пройти тест</div></a>
         <a href="{{ path('postcard') }}"><div class="btn-big  btn2">Отправить открытку</div></a>
-        <a href="{{ path('page',{'url': 'download'}) }}"><div class="btn-big  btn3">Скачать брошуру</div></a>
+        <a href="{{ path('page',{'url': 'download'}) }}"><div class="btn-big  btn3">Скачать брошюру</div></a>
     </div>
 
 
@@ -325,33 +325,37 @@
         </div>
         <div class="right-tr">
             <table>
+                {% for new in news %}
                 <tr>
                     <td>
-                        <img src="{{ asset('bundles/wzcmain/images/thrumb_1.png') }}" style="width: 110px;">
+                        {% if new.image.path is defined %}
+                            <a href="{{ path('new',{'newId': new.id }) }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
+                        {% endif %}
                     </td>
                     <td>
-                        <div class="post-title">Как востановить силы</div>
-                        <div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>
+                        <div class="post-title">{{ new.title|raw }}</div>
+                        <div class="post-body">{{ new.anons|raw }}</div>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <img src="{{ asset('bundles/wzcmain/images/thrumb_2.png') }}" style="width: 110px;">
-                    </td>
-                    <td>
-                        <div class="post-title">Как востановить силы</div>
-                        <div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="{{ asset('bundles/wzcmain/images/thrumb_3.png') }}" style="width: 110px;">
-                    </td>
-                    <td>
-                        <div class="post-title">Как востановить силы</div>
-                        <div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>
-                    </td>
-                </tr>
+                {% endfor %}
+                {#<tr>#}
+                    {#<td>#}
+                        {#<img src="{{ asset('bundles/wzcmain/images/thrumb_2.png') }}" style="width: 110px;">#}
+                    {#</td>#}
+                    {#<td>#}
+                        {#<div class="post-title">Как востановить силы</div>#}
+                        {#<div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>#}
+                    {#</td>#}
+                {#</tr>#}
+                {#<tr>#}
+                    {#<td>#}
+                        {#<img src="{{ asset('bundles/wzcmain/images/thrumb_3.png') }}" style="width: 110px;">#}
+                    {#</td>#}
+                    {#<td>#}
+                        {#<div class="post-title">Как востановить силы</div>#}
+                        {#<div class="post-body">Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская Современная медицинская </div>#}
+                    {#</td>#}
+                {#</tr>#}
                 <tr>
                     <td></td>
                     <td style="text-align: right">

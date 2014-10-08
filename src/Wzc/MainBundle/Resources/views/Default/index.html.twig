@@ -329,7 +329,7 @@
                 <tr>
                     <td>
                         {% if new.image.path is defined %}
-                            <a href="{{ path('new',{'newId', new.id }) }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
+                            <a href="{{ path('new',{'newId': new.id }) }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
                         {% endif %}
                     </td>
                     <td>

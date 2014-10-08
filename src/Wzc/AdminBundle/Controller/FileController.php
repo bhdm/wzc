@@ -13,51 +13,60 @@ use Wzc\MainBundle\Entity\File;
 /**
  * Class FilesController
  * @package Wzc\AdminBundle\Controller
- * @Route("/file")
+ * @Route("/admin/file")
  */
 class FileController extends Controller
 {
     /**
      * @Security("has_role('ROLE_ADMIN')")
-     * @Route("/{folderId}", name="file_index", defaults={"folderId"="null"})
+     * @Route("/", name="admin_file_list")
      * @Template()
      */
-    public function indexAction($folderId = null){
-        if ( $folderId ){
-            $parent = $this->getDoctrine()->getRepository('WzcMainBundle:File')->findOneById($folderId);
-        }else{
-            $parent = null;
-        }
-        $files = $this->getDoctrine()->getRepository('WzcMainBundle:File')->findByParent($parent);
-
+    //defaults={"folderId"="null"}
+    public function listAction($folderId = null){
+//        if ( $folderId ){
+//            $parent = $this->getDoctrine()->getRepository('WzcMainBundle:File')->findOneById($folderId);
+//        }else{
+//            $parent = null;
+//        }
+//        $files = $this->getDoctrine()->getRepository('WzcMainBundle:File')->findByParent($parent);
+        $files = $this->getDoctrine()->getRepository('WzcMainBundle:File')->findAll();
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $files,
+            $this->get('request')->query->get('page', 1),
+            40
+        );
         return array(
-            'folder'    => $parent,
-            'files'     => $files
+            'domain' => $_SERVER['SERVER_NAME'],
+//            'folder'    => $parent,
+            'pagination'     => $pagination
         );
     }
 
     /**
      * @Security("has_role('ROLE_ADMIN')")
-     * @Route("/add/{folderId}", name="file_add", defaults={"folderId"="null"})
+     * @Route("/add/{folderId}", name="admin_file_add", defaults={"folderId"="null"})
      * @Template()
      */
-    public function addFileAction(Request $request, $folderId = null){
+    public function addAction(Request $request, $folderId = null){
 
         $file = new File();
         $em = $this->getDoctrine()->getManager();
-        $form = $this->createForm($file);
-        $form->add('title',null, array('label' => 'Название файла'));
+        $form = $this->createFormBuilder($file);
+//        $form->add('title',null, array('label' => 'Название файла'));
         $form->add('file','iphp_file', array('label' => 'файл'));
         $form->add('submit', 'submit', array('label' => 'Сохранить'));
+        $form = $form->getForm();
 
         $formData = $form->handleRequest($request);
 
         if ($request->getMethod() == 'POST'){
             if ($formData->isValid()){
                 $item = $formData->getData();
+                $em->persist($item);
                 $em->flush($item);
-                $em->refresh($item);
-                return $this->redirect($this->generateUrl('file_index',array('folderId' => $folderId)));
+                return $this->redirect($this->generateUrl('admin_file_list',array('folderId' => $folderId)));
             }
         }
         return array('form' => $form->createView());
@@ -65,7 +74,7 @@ class FileController extends Controller
 
     /**
      * @Security("has_role('ROLE_ADMIN')")
-     * @Route("/remove/{fileId}", name="file_remove")
+     * @Route("/remove/{fileId}", name="admin_file_remove")
      */
     public function removeFileAction(Request $request, $fileId){
         $em = $this->getDoctrine()->getManager();

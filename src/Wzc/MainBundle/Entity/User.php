@@ -27,10 +27,10 @@ class User extends BaseEntity implements UserInterface
      */
     protected $forumAnswers;
 
-    /**
-     * @ORM\OneToMany(targetEntity="File", mappedBy="user")
-     */
-    protected $files;
+//    /**
+//     * @ORM\OneToMany(targetEntity="File", mappedBy="user")
+//     */
+//    protected $files;
 
     /**
      * @ORM\OneToMany(targetEntity="Faq", mappedBy="user", orphanRemoval=false)

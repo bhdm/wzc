@@ -16,6 +16,7 @@ class SlidebarType extends AbstractType
     {
         $builder
             ->add('title', null, array('label'=> 'Заголовок'))
+            ->add('url', null, array('label'=> 'URL для перехода'))
             ->add('image', 'iphp_file', array('label'=> 'Картинка'))
             ->add('body', null, array('label'=> 'Текст к картинке', 'attr' => array('class'=> 'ckeditor')))
             ->add('enabled','choice',  array(

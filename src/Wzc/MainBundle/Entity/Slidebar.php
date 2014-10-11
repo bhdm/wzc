@@ -22,7 +22,12 @@ class Slidebar extends BaseEntity
     protected $title;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $url;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
      */
     protected $body;
 
@@ -83,6 +88,22 @@ class Slidebar extends BaseEntity
     public function getImage()
     {
         return $this->image;
+    }
+
+    /**
+     * @param mixed $url
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUrl()
+    {
+        return $this->url;
     }
 
 

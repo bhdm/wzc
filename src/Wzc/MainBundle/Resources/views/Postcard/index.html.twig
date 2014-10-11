@@ -143,6 +143,9 @@
         .error-msg{
             color: #CC3333;
         }
+        form{
+            display: none;
+        }
     </style>
 {% endblock %}
 
@@ -154,6 +157,7 @@
                 var originalName = $(this).attr('data-name');
                 $('.postcard').css('background', 'url("'+originalName+'")');
                 $('#form_img').val($(this).attr('data-id'));
+                $('form').css('display', 'block');
             });
 
             $('#form_submit').click(function(){
@@ -186,7 +190,7 @@
             </div>
             {% endfor %}
             <br />
-            <form method="POST">
+            <form method="POST" id="form">
                 <div class="postcard">
                     <div class="postcard-title"></div>
                     <input type="text" class="input-postcard-title" name="title" placeholder="Заголовок">

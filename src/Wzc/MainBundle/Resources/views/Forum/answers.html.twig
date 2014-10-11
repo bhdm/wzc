@@ -46,7 +46,7 @@
                 </table>
             </div>
         {% else %}
-            <b>Ответов нет</b>
+            <b>Ответов нет</b><br /><br />
         {% endfor %}
         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
             <br />
@@ -58,7 +58,7 @@
             </div>
             {#<button class="styler">Ответить</button>#}
         {% else %}
-            <button class="styler in" >Авторизуйтесь что бы ответить</button>
+            <button class="styler in" >Пожалуйста, авторизуйтесь что бы ответить</button>
         {% endif %}
     </div>
 {% endblock %}

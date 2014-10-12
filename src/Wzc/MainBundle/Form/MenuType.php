@@ -17,6 +17,12 @@ class MenuType extends AbstractType
         $builder
             ->add('title', null, array('label'=> 'Заголовок'))
             ->add('url', null, array('label'=> 'URL для перехода'))
+            ->add('parent', 'entity', array(
+                'label'         => 'родительское меню',
+                'required'      => false,
+                'class'         => 'WzcMainBundle:Menu'
+            ))
+
             ->add('enabled','choice',  array(
                 'empty_value' => false,
                 'choices' => array(

@@ -2,6 +2,7 @@
 
 namespace Wzc\MainBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -20,9 +21,23 @@ class Menu extends BaseEntity
     protected $title;
 
     /**
+     * @ORM\OneToMany(targetEntity="Menu", mappedBy="parent")
+     */
+    protected $childs;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Menu", inversedBy="childs")
+     */
+    protected $parent;
+
+    /**
      * @ORM\Column(type="string")
      */
     protected $url;
+
+    public function __construct(){
+        $this->childs = new ArrayCollection();
+    }
 
     public function __toString(){
         return $this->title;
@@ -64,5 +79,44 @@ class Menu extends BaseEntity
         return $this->url;
     }
 
+    /**
+     * @param mixed $childs
+     */
+    public function setChilds($childs)
+    {
+        $this->childs = $childs;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getChilds()
+    {
+        return $this->childs;
+    }
+
+    /**
+     * @param mixed $parent
+     */
+    public function setParent($parent)
+    {
+        $this->parent = $parent;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getParent()
+    {
+        return $this->parent;
+    }
+
+    public function addChild($menu){
+        $this->childs[] = $menu;
+    }
+
+    public function removeChild($menu){
+        $this->childs->removeElement($menu);
+    }
 
 }

@@ -224,4 +224,13 @@ class DefaultController extends Controller
         $new = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findOneByid($newId);
         return array('new' => $new);
     }
+
+    /**
+     * @Route("/menu", name="menu")
+     * @Template()
+     */
+    public function menuAction(){
+        $menu = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findBy(array('enabled' => true, 'parent' => null));
+        return array('menu' => $menu);
+    }
 }

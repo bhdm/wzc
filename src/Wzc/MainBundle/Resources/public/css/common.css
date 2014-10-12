@@ -306,3 +306,9 @@ h2{
 .content table tr td ul {
     padding-left: 20px;
 }
+.forum-theme-title{
+    border: 0px !important;
+}
+.forum-theme-body{
+    border: 0px !important;
+}

@@ -26,18 +26,18 @@ class SocialAdapterController extends Controller
         'vk' => array(
             'client_id'     => '4524333',
             'client_secret' => 'MRAPcZtDAZO3fMiaYBmJ',
-            'redirect_uri'  => 'http://medram.ru/sociallogin?provider=vk'
+            'redirect_uri'  => 'http://vzk-life.ru/sociallogin?provider=vk'
         ),
         'odnoklassniki' => array(
             'client_id'     => '1099625472',
             'client_secret' => '5F3326EFBDA6C27798B9A229',
-            'redirect_uri'  => 'http://medram.ru/sociallogin?provider=odnoklassniki',
+            'redirect_uri'  => 'http://vzk-life.ru/sociallogin?provider=odnoklassniki',
             'public_key'    => 'CBAFGJKCEBABABABA'
         ),
         'facebook' => array(
             'client_id'     => '554661164634665',
             'client_secret' => 'd464fa562bd3f59c29660701ae7a238d',
-            'redirect_uri'  => 'http://medram.ru/sociallogin?provider=facebook'
+            'redirect_uri'  => 'http://vzk-life.ru/sociallogin?provider=facebook'
         )
     );
 

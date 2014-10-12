@@ -76,7 +76,7 @@
                         }
                     });
                 }else{
-                    $('.question-body').prepend('<div style="color: #CC3333">Выберите вариант ответа</div><br />');
+                    $('.test-error').html('<div style="color: #CC3333">Выберите вариант ответа</div><br />');
                 }
             });
         });
@@ -91,6 +91,7 @@
         <br />
         <div class="test">
             {#{% for t in test %}#}
+            <div class="test-error"></div>
             <form method="POST" id="form_question">
                 <div class="question">{{ question.title | raw }}</div>
                 <div class="question-body">{{ question.body | raw}}</div>

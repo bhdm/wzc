@@ -233,4 +233,13 @@ class DefaultController extends Controller
         $menu = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findBy(array('enabled' => true, 'parent' => null));
         return array('menu' => $menu);
     }
+
+    /**
+     * @Route("/footer", name="footer")
+     * @Template()
+     */
+    public function footerAction(){
+        $footer = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findBy(array('enabled' => true, 'parent' => null));
+        return array('footer' => $footer);
+    }
 }

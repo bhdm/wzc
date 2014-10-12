@@ -1,0 +1,12 @@
+<td style=" width: 700px">
+{% for f in footer %}
+            <div>
+                <div style="float: left; width: 200px">
+                    <ul class="footer-menu">
+                        <li><a href="{{ f.url }}">{{ f.title }}</a></li>
+                    </ul>
+                </div>
+            </div>
+            {#<div style="float: left; padding: 10px; width: 30%"><a href="{{ f.url }}">{{ f.title }}</a></div>#}
+{% endfor %}
+</td>

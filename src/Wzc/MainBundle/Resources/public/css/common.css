@@ -290,3 +290,19 @@ h2{
     color: #ffffff;
     outline: 0;
 }
+
+.content table tr td {
+    border: 1px solid #333333;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.content ul li {
+    padding-left: 20px;
+}
+.content table tr td ul {
+    padding-left: 20px;
+}

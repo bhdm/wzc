@@ -8,7 +8,9 @@
                         <img class="triangle-3" src="{{ asset('bundles/wzcmain/images/triangle-3.png') }}">
                         <ul>
                             {% for mc in m.childs %}
-                            <li><a href="{{ mc.url }}">{{ mc.title }}</a></li>
+                                {% if mc.enabled == true %}
+                                    <li><a href="{{ mc.url }}">{{ mc.title }}</a></li>
+                                {% endif %}
                             {% endfor %}
                         </ul>
                     </div>

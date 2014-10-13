@@ -124,13 +124,27 @@ body{
     display: none;
     z-index: 400;
 }
+.footer-menu li .sub-menu{
+    bottom: 72px;
+}
+
 .triangle-3{
     position: absolute;
     top: -6px;
 }
+.triangle-4 {
+    position: absolute;
+    bottom: -6px;
+}
+
 .menu ul li:hover .sub-menu{
     display: block;
 }
+
+.footer-menu li:hover .sub-menu{
+    display: block;
+}
+
 .sub-menu ul li{
     display: block;
     height: inherit;
@@ -267,7 +281,7 @@ body{
 }
 .footer-menu li{
     color: #9b9b9b;
-    padding: 5px;
+    padding: 9px;
     font-size: 10px;
 }
 .footer-menu{

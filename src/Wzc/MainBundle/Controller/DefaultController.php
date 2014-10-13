@@ -149,7 +149,7 @@ class DefaultController extends Controller
                 $this->get('email.service')->send(
                     $user->getUsername(),
                     array('WzcMainBundle:Email:password.html.twig', array('password' => $p)),
-                    'Открытка с сайта WZC'
+                    'Открытка с сайта VZK-LIFE'
                 );
                 $session = $request->getSession();
                 $session->set('notice', 'Новый пароль отправлен Вам на почту');

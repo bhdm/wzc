@@ -60,7 +60,7 @@ class TestController extends Controller
                 </p>';
             }else{
                 $page['title'] = '';
-                $page['body'] = '<p>Ваш показатель <b>'.$sum.'</b> баллов. При сумме менее баллов наличие у болезни Крона&nbsp;<strong>маловероятно</strong>.</p>';
+                $page['body'] = '<p>Ваш показатель <b>'.$sum.'</b> баллов. При сумме менее 6 баллов наличие у болезни Крона&nbsp;<strong>маловероятно</strong>.</p>';
             }
             return array('answer' => $page);
         }

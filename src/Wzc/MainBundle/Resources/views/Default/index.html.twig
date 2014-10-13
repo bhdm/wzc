@@ -173,6 +173,7 @@
             background: #feb5e0;
             font-size: 24px;
             color: #920055;
+            position: relative;
             /*box-shadow: 0 0 10px rgba(146, 0, 85, 0.64);*/
 
         }
@@ -189,6 +190,30 @@
         .btn3{
             background: url("/bundles/wzcmain/images/btn3.png");
         }
+
+        .big-btn-bg {
+            background: #FFF;
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            top: 65px;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0.5;
+            border-radius: 5px;
+            box-shadow:  0 0 20px rgba(0,0,0,0.7);
+        }
+
+        .big-btn-txt{
+            width: 200px;
+            height: 40px;
+            top: 70px;
+            left: 50%;
+            margin-left: -100px;
+            position: absolute;
+            line-height: normal;
+        }
+
     </style>
 {% endblock %}
 
@@ -288,9 +313,26 @@
         {#<div class="message-body">{{ message.body | raw }}</div>#}
     {#</div>#}
     <div style="text-align: center">
-        <a href="{{ path('test') }}"><div class="btn-big btn1">Пройти тест</div></a>
-        <a href="{{ path('postcard') }}"><div class="btn-big  btn2">Отправить открытку</div></a>
-        <a href="http://vzk-life.ru/bundles/wzcmain/images/blank.png" target="_blank"><div class="btn-big  btn3" style="line-height: 30px"><br/>Скачать направление</div></a>
+        <a href="{{ path('test') }}">
+            <div class="btn-big btn1">
+                <div class="big-btn-bg"></div>
+                <div class="big-btn-txt">Пройти тест</div>
+            </div>
+        </a>
+
+        <a href="{{ path('postcard') }}">
+            <div class="btn-big btn2">
+                <div class="big-btn-bg" style="top: 50px; height: 75px;"></div>
+                <div class="big-btn-txt" style="top: 57px;">Отправить открытку</div>
+            </div>
+        </a>
+
+        <a href="http://vzk-life.ru/bundles/wzcmain/images/blank.png" target="_blank">
+            <div class="btn-big btn3">
+                <div class="big-btn-bg" style="top: 50px; height: 75px;" ></div>
+                <div class="big-btn-txt" style="top: 57px;">Скачать направление</div>
+            </div>
+        </a>
     </div>
 
 

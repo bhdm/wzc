@@ -127,7 +127,7 @@
 
         input.styler{
             width: 300px;
-        }
+        }df
         .form-group label{
             width: 150px;
             display: inline-block;
@@ -161,9 +161,9 @@
                 $('form').css('display', 'block');
             });
 
-            $('#form_submit').click(function(){
-                $('#form_title').val($('.input-postcard-title').val());
-            });
+//            $('#form_submit').click(function(){
+//                $('#form_title').val($('.input-postcard-title').val());
+//            });
 
             {% if formData != null %}
                 $('#form_img').val( {{ formData.img }});

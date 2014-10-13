@@ -130,6 +130,7 @@
         }
         .form-group label{
             width: 150px;
+            display: inline-block;
         }
         .form-group{
             margin: 10px;
@@ -166,7 +167,7 @@
 
             {% if formData != null %}
                 $('#form_img').val( {{ formData.img }});
-                $('.input-postcard-title').val($('#form_title').val());
+//                $('.input-postcard-title').val($('#form_title').val());
                 var originalName = $('#img{{ formData.img }}').children('img').attr('data-name');
                 $('.postcard').css('background', 'url("'+originalName+'")');
             {% endif %}
@@ -192,8 +193,8 @@
             <br />
             <form method="POST" id="form">
                 <div class="postcard">
-                    <div class="postcard-title"></div>
-                    <input type="text" class="input-postcard-title" name="title" placeholder="Заголовок">
+                    {#<div class="postcard-title"></div>#}
+                    {#<input type="text" class="input-postcard-title" name="title" placeholder="Заголовок">#}
                     {#<div class="postcard-body"></div>#}
                     {#<textarea class="textarea-postcard-body" name="text"></textarea>#}
                 </div>

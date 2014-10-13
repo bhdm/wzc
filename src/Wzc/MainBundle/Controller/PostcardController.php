@@ -49,7 +49,7 @@ class PostcardController extends Controller
         }
         $form = $this->createFormBuilder($formData)
             ->add('img', 'hidden')
-            ->add('title', null, array('label' => 'Заголовок: ', 'attr' => array('class' => 'styler')))
+            ->add('title', null, array('label' => 'Введите Ваше пожелание: ', 'attr' => array('class' => 'styler')))
             ->add('email', null, array('label' => 'E-mail: ', 'attr' => array('class' => 'styler')))
             ->add('captcha', 'captcha', array('label' => 'Картинка: ', 'attr' => array('class' => 'styler')))
             ->add('submit', 'submit', array('label' => 'Отправить', 'attr' => array('class' => 'styler')))

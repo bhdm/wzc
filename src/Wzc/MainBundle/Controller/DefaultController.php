@@ -86,7 +86,7 @@ class DefaultController extends Controller
                 $user->getUsername(),
 //                array('zakaz@zdravzona.ru'),
                 array('WzcMainBundle:Email:register.html.twig', array()),
-                'Открытка с сайта WZC'
+                'Открытка с сайта VZK-LIFE'
             );
             $session = $request->getSession();
             $session->set('notice', 'Поздравляем, Вы зарегистрировались.');

@@ -35,7 +35,7 @@ class PostcardController extends Controller
                         'title' => $formData['title'],
 //                    'text' => $request->request->get('text')
                     )),
-                    'Открытка с сайта WZC'
+                    'Открытка с сайта VZK-LIFE'
                 );
 
                 $session = $request->getSession();

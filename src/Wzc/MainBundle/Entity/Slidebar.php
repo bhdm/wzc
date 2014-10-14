@@ -16,8 +16,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Slidebar extends BaseEntity
 {
     /**
-     * @ORM\Column(type="string")
-     * @Assert\NotBlank( message = "поле Заголовок обязательно для заполнения" )
+     * @ORM\Column(type="string", nullable=true)
      */
     protected $title;
 

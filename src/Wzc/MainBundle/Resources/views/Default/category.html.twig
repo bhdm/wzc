@@ -1,0 +1,53 @@
+{% extends "WzcMainBundle::layout.html.twig" %}
+
+
+{% block header %}
+    <title>{{ category.title }}</title>
+    <META NAME="Keywords" CONTENT="{{ category.title | raw}}">
+    <META NAME="Description" CONTENT="{{ category.title  | raw }}">
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .content{
+            padding: 50px 0 30px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2{
+            color: #920055;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .content table tr td {
+            border: 1px solid #333333;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .content table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .content ul li {
+            padding-left: 20px;
+        }
+        a{
+            color: #920055;
+        }
+        a:hover{
+            border-bottom: 1px dashed #920055;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <h2>{{ category.title | raw }}</h2>
+        <br />
+        {% for pages in category.childs %}
+            {% if pages == true %}
+                <a href="{{ pages.url }}">{{ pages.title }}</a><br /><br />
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

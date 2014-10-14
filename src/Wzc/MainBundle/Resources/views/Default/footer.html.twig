@@ -4,19 +4,19 @@
                 <div style="float: left; width: 200px">
                     <ul class="footer-menu">
                         <li>
-                            <a href="{{ f.url }}">{{ f.title }}</a>
-                            {% if f.childs is not empty %}
-                                <div class="sub-menu">
-                                    <ul>
-                                        {% for fc in f.childs %}
-                                            {% if fc.enabled == true %}
-                                                <li><a href="{{ fc.url }}">{{ fc.title }}</a></li>
-                                            {% endif %}
-                                        {% endfor %}
-                                    </ul>
-                                    <img class="triangle-4" src="{{ asset('bundles/wzcmain/images/triangle-4.png') }}">
-                                </div>
-                            {% endif %}
+                            <a href="{{ path('category', {'id' : f.id}) }}">{{ f.title }}</a>
+                            {#{% if f.childs is not empty %}#}
+                                {#<div class="sub-menu">#}
+                                    {#<ul>#}
+                                        {#{% for fc in f.childs %}#}
+                                            {#{% if fc.enabled == true %}#}
+                                                {#<li><a href="{{ fc.url }}">{{ fc.title }}</a></li>#}
+                                            {#{% endif %}#}
+                                        {#{% endfor %}#}
+                                    {#</ul>#}
+                                    {#<img class="triangle-4" src="{{ asset('bundles/wzcmain/images/triangle-4.png') }}">#}
+                                {#</div>#}
+                            {#{% endif %}#}
                         </li>
                     </ul>
                 </div>

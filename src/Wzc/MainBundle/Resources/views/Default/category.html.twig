@@ -45,7 +45,7 @@
         <h2>{{ category.title | raw }}</h2>
         <br />
         {% for pages in category.childs %}
-            {% if pages == true %}
+            {% if pages.enabled == true %}
                 <a href="{{ pages.url }}">{{ pages.title }}</a><br /><br />
             {% endif %}
         {% endfor %}

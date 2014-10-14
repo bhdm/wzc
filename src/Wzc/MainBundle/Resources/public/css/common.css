@@ -108,6 +108,8 @@ body{
     padding: 10px;
     height: 18px;
     font-size: 15px;
+    float: left;
+
 }
 .menu ul li a{
     color: #920055;

@@ -52,6 +52,7 @@
             text-align: center;
             color: #920055;
             font-style: italic;
+
         }
 
         .message-body{
@@ -76,7 +77,18 @@
             font-size: 25px;
         }
         .slidebar-title{
+            background: url("{{ asset('bundles/wzcmain/images/banner_message_bg.png') }}") repeat-x;
             font-size: 45px;
+            color: #920055;
+            position: absolute;
+            bottom: 85px;
+            /*width: 400px;*/
+            /*height: 160px;*/
+            right: 80px;
+            z-index: 99999;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            padding: 15px 10px;
+            border-radius: 10px;
         }
 
         .slide{
@@ -281,12 +293,14 @@
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1200px; height: 450px;
             overflow: hidden;">
             {% for item in banners %}
-                <div>
+                <div style="position: relative">
                     {% if item.url == null %}
                         <img u="image" src="{{ item.image.path }}" />
+                        <div class="slidebar-title">{{ item.title }}</div>
                     {% else %}
                         <a href="{{ item.url }}">
                             <img u="image" src="{{ item.image.path }}" />
+                            <div class="slidebar-title">{{ item.title }}</div>
                         </a>
                     {% endif %}
                 </div>

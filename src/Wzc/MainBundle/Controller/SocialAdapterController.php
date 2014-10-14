@@ -38,7 +38,7 @@ class SocialAdapterController extends Controller
         'facebook' => array(
             'client_id'     => '545052125595569',
             'client_secret' => 'b1d967d9d5bb29b4d2484fbbe5bb5337',
-            'redirect_uri'  => 'http://wzc.loc/app_dev.php/sociallogin?provider=facebook'
+            'redirect_uri'  => 'http://vzk-life.ru/sociallogin?provider=facebook'
         )
     );
 

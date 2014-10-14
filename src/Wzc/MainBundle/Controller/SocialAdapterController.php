@@ -27,7 +27,7 @@ class SocialAdapterController extends Controller
         'vk' => array(
             'client_id'     => '4589715',
             'client_secret' => '6wfJE98rQfqGQeiMcXLd',
-            'redirect_uri'  => 'http://wzc.loc/app_dev.php/sociallogin?provider=vk'
+            'redirect_uri'  => 'http://vzk-life.ru/sociallogin?provider=vk'
         ),
         'odnoklassniki' => array(
             'client_id'     => '1105148416',

@@ -26,6 +26,11 @@ class Slidebar extends BaseEntity
     protected $url;
 
     /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $bgColor;
+
+    /**
      * @ORM\Column(type="text", nullable=true)
      */
     protected $body;
@@ -103,6 +108,22 @@ class Slidebar extends BaseEntity
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * @param mixed $bgColor
+     */
+    public function setBgColor($bgColor)
+    {
+        $this->bgColor = $bgColor;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBgColor()
+    {
+        return $this->bgColor;
     }
 
 

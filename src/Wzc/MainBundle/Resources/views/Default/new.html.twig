@@ -22,14 +22,14 @@
             <span style="color: #555; padding-right: 20px; font-size: 14px">
                 {{ new.created | date('d.m.Y') }}
             </span>
-            {{ new.title }}
+            <a href="{{ path('news') }}" style="color: #920055">{{ new.title }}</a>
         </h2>
         <br />
         <table>
             <tr>
                 <td>
                     {% if new.image.path is defined %}
-                        <a href="{{ path('news',{ 'newId' : new.id }) }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
+                        <a href="{{ path('news') }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
                     {% endif %}
                 </td>
                 <td>

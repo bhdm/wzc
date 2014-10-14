@@ -403,8 +403,10 @@
                         {% endif %}
                     </td>
                     <td>
-                        <div class="post-title">{{ new.title|raw }}</div>
-                        <div class="post-body">{{ new.anons|raw }}</div>
+                        <a href="{{ path('new',{'newId': new.id }) }}">
+                            <div class="post-title">{{ new.title|raw }}</div>
+                            <div class="post-body">{{ new.anons|raw }}</div>
+                        </a>
                     </td>
                 </tr>
                 {% endfor %}

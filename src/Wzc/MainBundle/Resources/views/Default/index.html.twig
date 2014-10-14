@@ -296,11 +296,11 @@
                 <div style="position: relative">
                     {% if item.url == null %}
                         <img u="image" src="{{ item.image.path }}" />
-                        <div class="slidebar-title">{{ item.title }}</div>
+                        {% if item.title != null %}<div class="slidebar-title">{{ item.title }}</div>{% endif %}
                     {% else %}
                         <a href="{{ item.url }}">
                             <img u="image" src="{{ item.image.path }}" />
-                            <div class="slidebar-title">{{ item.title }}</div>
+                            {% if item.title != null %}<div class="slidebar-title">{{ item.title }}</div>{% endif %}
                         </a>
                     {% endif %}
                 </div>

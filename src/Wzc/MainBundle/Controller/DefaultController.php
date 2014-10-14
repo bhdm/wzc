@@ -18,7 +18,6 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="main")
-     * @Route("/login")
      * @Template()
      */
     public function indexAction(Request $request)
@@ -50,6 +49,13 @@ class DefaultController extends Controller
         );
     }
 
+    /**
+     * @Route("/login", name="login")
+     * @Template()
+     */
+    public function loginAction(){
+        return array();
+    }
 
     /**
      * @Route("/page/{url}" ,name="page")

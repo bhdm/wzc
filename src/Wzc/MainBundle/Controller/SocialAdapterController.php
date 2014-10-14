@@ -36,9 +36,9 @@ class SocialAdapterController extends Controller
             'public_key'    => 'CBAFGJKCEBABABABA'
         ),
         'facebook' => array(
-            'client_id'     => '554661164634665',
-            'client_secret' => 'd464fa562bd3f59c29660701ae7a238d',
-            'redirect_uri'  => 'http://vzk-life.ru/sociallogin?provider=facebook'
+            'client_id'     => '545052125595569',
+            'client_secret' => 'b1d967d9d5bb29b4d2484fbbe5bb5337',
+            'redirect_uri'  => 'http://wzc.loc/app_dev.php/sociallogin?provider=facebook'
         )
     );
 
@@ -92,7 +92,7 @@ class SocialAdapterController extends Controller
                     $user->setProvider($auther->getProvider());
                     $user->setSocialId($auther->getSocialId());
                     $user->setFirstName(explode(' ',$auther->getName())[0]);
-                    $user->setLastName(explode(' ',$auther->getName())[0]);
+                    $user->setLastName(explode(' ',$auther->getName())[1]);
                     $user->setUsername(( $auther->getEmail() ? $auther->getEmail() :  $auther->getSocialId() ));
                     $user->setSalt(md5($auther->getSocialId()));
                     $encoder = new MessageDigestPasswordEncoder('sha512', true, 10);
@@ -113,7 +113,6 @@ class SocialAdapterController extends Controller
 
                     //Пользователь с таким SocialId и provider есть и это $record, надо бы его авторизовать
                     $password = $record->getPassword();
-                    $username = $record->getUsername();
                     $roles = $record->getRoles();
 
                     // Get the security firewall name, login
@@ -129,7 +128,8 @@ class SocialAdapterController extends Controller
 //                    return new RedirectResponse($this->generateUrl('main'));
             }
         }
-        return $this->redirect($this->generateUrl('main'));
+//        return $this->redirect($this->generateUrl('main'));
+            return $this->forward('WzcMainBundle:Default:index');
     }
 
 

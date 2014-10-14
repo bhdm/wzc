@@ -30,10 +30,10 @@ class SocialAdapterController extends Controller
             'redirect_uri'  => 'http://wzc.loc/app_dev.php/sociallogin?provider=vk'
         ),
         'odnoklassniki' => array(
-            'client_id'     => '1099625472',
-            'client_secret' => '5F3326EFBDA6C27798B9A229',
+            'client_id'     => '1105148416',
+            'client_secret' => '74EA49ED1C2497C897CE6A4A',
             'redirect_uri'  => 'http://vzk-life.ru/sociallogin?provider=odnoklassniki',
-            'public_key'    => 'CBAFGJKCEBABABABA'
+            'public_key'    => 'CBALDQNCEBABABABA'
         ),
         'facebook' => array(
             'client_id'     => '545052125595569',

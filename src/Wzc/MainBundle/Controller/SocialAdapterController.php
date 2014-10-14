@@ -19,14 +19,15 @@ use Symfony\Component\HttpFoundation\Request,
     Symfony\Component\HttpFoundation\RedirectResponse,
     Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken,
     Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
+use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 
 class SocialAdapterController extends Controller
 {
     private $adapterConfigs = array(
         'vk' => array(
-            'client_id'     => '4524333',
-            'client_secret' => 'MRAPcZtDAZO3fMiaYBmJ',
-            'redirect_uri'  => 'http://vzk-life.ru/sociallogin?provider=vk'
+            'client_id'     => '4589715',
+            'client_secret' => '6wfJE98rQfqGQeiMcXLd',
+            'redirect_uri'  => 'http://wzc.loc/app_dev.php/sociallogin?provider=vk'
         ),
         'odnoklassniki' => array(
             'client_id'     => '1099625472',
@@ -80,7 +81,7 @@ class SocialAdapterController extends Controller
                         'provider' => $auther->getProvider(),
                         'socialId' => $auther->getSocialId(),
                         'name' => $auther->getName(),
-                        'username' => $auther->getEmail(),
+                        'username' => ( $auther->getEmail() ? $auther->getEmail() :  $auther->getSocialId() ),
                         #'' => $auther->getSex(),
                         #'date' => $auther->getBirthday()
                         #$auther->getAvatar()
@@ -90,8 +91,15 @@ class SocialAdapterController extends Controller
                     $user = new User();
                     $user->setProvider($auther->getProvider());
                     $user->setSocialId($auther->getSocialId());
-                    $user->getFirstName($auther->getName());
-                    $user->setUsername($auther->getEmail());
+                    $user->setFirstName(explode(' ',$auther->getName())[0]);
+                    $user->setLastName(explode(' ',$auther->getName())[0]);
+                    $user->setUsername(( $auther->getEmail() ? $auther->getEmail() :  $auther->getSocialId() ));
+                    $user->setSalt(md5($auther->getSocialId()));
+                    $encoder = new MessageDigestPasswordEncoder('sha512', true, 10);
+                    $password = $encoder->encodePassword($auther->getSocialId(), $user->getSalt());
+                    $user->setPassword($password);
+
+                    $user->setRoles('ROLE_USER');
                     $this->getDoctrine()->getManager()->persist($user);
                     $this->getDoctrine()->getManager()->flush($user);
 
@@ -100,8 +108,9 @@ class SocialAdapterController extends Controller
 //                    return $this->redirect($this->generateUrl('register',array('campaign' => NULL, 'user' => $values)));
 
 
-
+                    $record = $user;
                 }
+
                     //Пользователь с таким SocialId и provider есть и это $record, надо бы его авторизовать
                     $password = $record->getPassword();
                     $username = $record->getUsername();
@@ -117,11 +126,12 @@ class SocialAdapterController extends Controller
                     $this->get("event_dispatcher")->dispatch("security.interactive_login", $event);
 
 
-                    return new RedirectResponse($this->generateUrl('main'));
+//                    return new RedirectResponse($this->generateUrl('main'));
             }
         }
         return $this->redirect($this->generateUrl('main'));
     }
+
 
     /**
      * @Route("/socialauthurl", name = "social_Auth_Url" )

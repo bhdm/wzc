@@ -128,7 +128,7 @@ class User extends BaseEntity implements UserInterface
     {
 //        return $this->username;
         if ($this->lastName || $this->firstName || $this->surName){
-            return $this->lastName.'. '.$this->firstName();
+            return $this->lastName.'. '.$this->firstName;
         }else{
             return 'Анонимный № '.$this->id;
         }

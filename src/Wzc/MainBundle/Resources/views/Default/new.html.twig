@@ -25,23 +25,29 @@
             <a href="{{ path('news') }}" style="color: #920055">{{ new.title }}</a>
         </h2>
         <br />
-        <table>
-            <tr>
-                <td>
-                    {% if new.image.path is defined %}
-                        <a href="{{ path('news') }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
-                    {% endif %}
-                </td>
-                <td>
-                    <div class="post-body">{{ new.anons|raw }}</div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="post-body">{{ new.body|raw }}</div>
-                </td>
-            </tr>
+        {% if new.image.path is defined %}
+            <a href="{{ path('news') }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
+        {% endif %}
+        {{ new.anons|raw }}
+        <br/>
+        {{ new.body|raw }}
+        {#<table>#}
+            {#<tr>#}
+                {#<td>#}
 
-        </table>
+
+
+                {#</td>#}
+                {#<td>#}
+                    {#<div class="post-body">{{ new.anons|raw }}</div>#}
+                {#</td>#}
+            {#</tr>#}
+            {#<tr>#}
+                {#<td colspan="2">#}
+                    {#<div class="post-body">{{ new.body|raw }}</div>#}
+                {#</td>#}
+            {#</tr>#}
+
+        {#</table>#}
     </div>
 {% endblock %}

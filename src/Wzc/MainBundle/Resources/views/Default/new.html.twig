@@ -26,7 +26,7 @@
         </h2>
         <br />
         {% if new.image.path is defined %}
-            <a href="{{ path('news') }}"><img  src="{{ new.image.path }}" style="width: 110px; float: left"></a>
+            <a href="{{ path('news') }}"><img  src="{{ new.image.path }}" style="width: 110px; float: left; margin: 10px;"></a>
         {% endif %}
         {{ new.anons|raw }}
         <br/>

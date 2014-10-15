@@ -34,6 +34,7 @@
         }
         .jq-selectbox__dropdown{
             z-index: 50;
+            text-align: left;
         }
         #searchmap::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
             color: #cccccc;
@@ -125,7 +126,7 @@
             {% spaceless %}
                 <table class="table">
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="text-align: left">
                             {% if ipRegion.iso == 'RU-MOW' %}
                                 <select class="changeMetro" id="changeMetro">
                                         <option value="0">Выберите метро</option>

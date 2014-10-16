@@ -49,17 +49,18 @@ class TestController extends Controller
         if ($question != null){
             return array('question' => $question);
         }else{
+            if ( $this->getUser() != null ){
+                $user = $this->getDoctrine()->getRepository('WzcMainBundle')->find($this->getUser());
+            }else{
+                $user = null;
+            }
+            $testStatistic = new TestStatistic();
+            $testStatistic->setUser($user);
+            $testStatistic->setBalls($sum);
+            $this->getDoctrine()->getManager()->persist($testStatistic);
+            $this->getDoctrine()->getManager()->flush($testStatistic);
+
             if ( $sum >= 6 ){
-                if ( $this->getUser() != null ){
-                    $user = $this->getDoctrine()->getRepository('WzcMainBundle')->find($this->getUser());
-                }else{
-                    $user = null;
-                }
-                $testStatistic = new TestStatistic();
-                $testStatistic->setUser($user);
-                $testStatistic->setBalls($sum);
-                $this->getDoctrine()->getManager()->persist($testStatistic);
-                $this->getDoctrine()->getManager()->flush($testStatistic);
 
                 $url = $this->generateUrl('map');
                 $page['title'] = '';

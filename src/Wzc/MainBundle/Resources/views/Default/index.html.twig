@@ -403,7 +403,7 @@
                             <a href="{{ path('new',{'newId': new.id }) }}"><img src="{{ new.image.path }}" style="width: 110px;"></a>
                         {% endif %}
                     </td>
-                    <td>
+                    <td style="text-align: left">
                         <a href="{{ path('new',{'newId': new.id }) }}">
                             <div class="post-title">{{ new.title|raw }}</div>
                             <div class="post-body">{{ new.anons|raw }}</div>

@@ -18,7 +18,7 @@ class User extends BaseEntity implements UserInterface
 {
 
     /**
-     * @ORM\OneToMany(targetEntity="TestStatistic", inversedBy="user")
+     * @ORM\OneToMany(targetEntity="TestStatistic", mappedBy="user")
      */
     protected $testStatistic;
 

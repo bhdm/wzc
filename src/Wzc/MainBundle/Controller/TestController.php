@@ -8,6 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 use Wzc\MainBundle\Entity\Map;
+use Wzc\MainBundle\Entity\TestStatistic;
 
 class TestController extends Controller
 {
@@ -49,6 +50,17 @@ class TestController extends Controller
             return array('question' => $question);
         }else{
             if ( $sum >= 6 ){
+                if ( $this->getUser() != null ){
+                    $user = $this->getDoctrine()->getRepository('WzcMainBundle')->find($this->getUser());
+                }else{
+                    $user = null;
+                }
+                $testStatistic = new TestStatistic();
+                $testStatistic->setUser($user);
+                $testStatistic->setBalls($sum);
+                $this->getDoctrine()->getManager()->persist($testStatistic);
+                $this->getDoctrine()->getManager()->flush($testStatistic);
+
                 $url = $this->generateUrl('map');
                 $page['title'] = '';
                 $page['body'] = '

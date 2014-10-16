@@ -18,6 +18,11 @@ class User extends BaseEntity implements UserInterface
 {
 
     /**
+     * @ORM\OneToMany(targetEntity="TestStatistic", inversedBy="user")
+     */
+    protected $testStatistic;
+
+    /**
      * @ORM\OneToMany(targetEntity="ForumQuestion", mappedBy="author")
      */
     protected $forumQuestions;
@@ -109,6 +114,7 @@ class User extends BaseEntity implements UserInterface
         $this->forumAnswers = new ArrayCollection();
         $this->consultations = new ArrayCollection();
         $this->files = new ArrayCollection();
+        $this->testStatistic = new ArrayCollection();
     }
 
     static public function getRolesNames(){
@@ -486,6 +492,22 @@ class User extends BaseEntity implements UserInterface
     public function getSocialId()
     {
         return $this->socialId;
+    }
+
+    /**
+     * @param mixed $testStatistic
+     */
+    public function setTestStatistic($testStatistic)
+    {
+        $this->testStatistic = $testStatistic;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTestStatistic()
+    {
+        return $this->testStatistic;
     }
 
 

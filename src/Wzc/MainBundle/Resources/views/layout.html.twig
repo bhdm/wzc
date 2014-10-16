@@ -82,6 +82,14 @@
                         }
                     });
 
+                    $('.search').keypress(function(eventObject){
+                        if (eventObject.which == 13){
+                            var val = $('input.search').val();
+                            var url = '{{ path('search') }}'+'?s='+val;
+                            window.location.href = url;
+                        }
+                    });
+
                     $('#search-btn').click(function(){
                         var val = $('input.search').val();
                         var url = '{{ path('search') }}'+'?s='+val;

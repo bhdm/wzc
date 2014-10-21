@@ -4,7 +4,11 @@
                 <div style="float: left; width: 200px">
                     <ul class="footer-menu">
                         <li>
-                            <a href="{{ path('category', {'id' : f.id}) }}">{{ f.title }}</a>
+                            {% if f.url == '#' %}
+                                <a href="{{ path('category', {'id' : f.id}) }}">{{ f.title }}</a>
+                            {% else %}
+                                <a href="{{ f.url }}">{{ f.title }}</a>
+                            {% endif %}
                             {#{% if f.childs is not empty %}#}
                                 {#<div class="sub-menu">#}
                                     {#<ul>#}

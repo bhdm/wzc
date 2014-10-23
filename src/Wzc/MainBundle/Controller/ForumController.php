@@ -41,6 +41,7 @@ class ForumController extends Controller
                 $em->persist($item);
                 $em->flush();
                 $em->refresh($item);
+                return $this->redirect($this->generateUrl($request->get('forum_index')));
             }
         }
         $page = $em->getRepository('WzcMainBundle:Page')->findOneByUrl('forum');
@@ -72,7 +73,7 @@ class ForumController extends Controller
                 $em->persist($item);
                 $em->flush();
                 $em->refresh($item);
-                return $this->redirect($this->generateUrl($request->get('_route'), $request->query->all()));
+                return $this->redirect($this->generateUrl($request->get('forum_questions'), array('themeId' =>$themeId)));
             }
         }
 
@@ -105,7 +106,7 @@ class ForumController extends Controller
                 $em->persist($item);
                 $em->flush();
                 $em->refresh($item);
-                return $this->redirect($this->generateUrl($request->get('_route'), $request->query->all()));
+                return $this->redirect($this->generateUrl($request->get('forum_answers'), array('themeId' =>$themeId, 'questionId' => $questionId)));
             }
 
         }

@@ -50,7 +50,7 @@
                         {% endif %}
                     </tr>
                     <tr>
-                        <td class="forum-theme-body">{{ (q.body|length > 200 ? q.body | raw | slice(0, 200) ~ '...' : q.body) | raw  }}</td>
+                        <td class="forum-theme-body">{{ (q.body|length > 150 ? q.body | raw | slice(0, 150) ~ '...' : q.body) | raw  }}</td>
                     </tr>
                 </table>
             </div>

@@ -41,7 +41,7 @@
                                 Последний ответ - <b>{{ lastItem.created | date("d.m.Y H:i") }}</b>
                             {% endif %}
                         </td>
-                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        {% if is_granted("ROLE_ADMIN") %}
                             <td rowspan="2">
                                 <a href="{{ path('questions-delete',{ 'questionId' : q.id}) }}">
                                     &nbsp;<img src="{{ asset('bundles/wzcmain/images/delete.png') }}" style="width: 20px">&nbsp;

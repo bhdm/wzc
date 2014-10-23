@@ -72,6 +72,7 @@ class ForumController extends Controller
                 $em->persist($item);
                 $em->flush();
                 $em->refresh($item);
+                return $this->redirect($this->generateUrl($request->get('_route'), $request->query->all()));
             }
         }
 
@@ -104,8 +105,9 @@ class ForumController extends Controller
                 $em->persist($item);
                 $em->flush();
                 $em->refresh($item);
-
+                return $this->redirect($this->generateUrl($request->get('_route'), $request->query->all()));
             }
+
         }
         $answers = $em->getRepository('WzcMainBundle:ForumAnswer')->findBy(array('enabled'=>true, 'question'=>$question));
 

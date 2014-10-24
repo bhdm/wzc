@@ -15,7 +15,7 @@
             max-width: 900px;
             margin: 0 auto;
         }
-        h2{
+        h1{
             color: #920055;
             font-size: 30px;
             text-transform: uppercase;
@@ -42,7 +42,7 @@
 {% endblock %}
 {% block content %}
     <div class="content">
-        <h2>{{ category.title | raw }}</h2>
+        <h1>{{ category.title | raw }}</h1>
         <br />
         {% for pages in category.childs %}
             {% if pages.enabled == true %}

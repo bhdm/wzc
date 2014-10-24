@@ -9,7 +9,7 @@
             max-width: 900px;
             margin: 0 auto;
         }
-        h2{
+        h1{
             color: #920055;
             font-size: 30px;
             text-transform: uppercase;
@@ -18,12 +18,12 @@
 {% endblock %}
 {% block content %}
     <div class="content">
-        <h2>
+        <h1>
             <span style="color: #555; padding-right: 20px; font-size: 14px">
                 {{ new.created | date('d.m.Y') }}
             </span>
             <a href="{{ path('news') }}" style="color: #920055">{{ new.title }}</a>
-        </h2>
+        </h1>
         <br />
         {% if new.image.path is defined %}
             <a href="{{ path('news') }}"><img  src="{{ new.image.path }}" style="width: 110px; float: left; margin: 10px;"></a>

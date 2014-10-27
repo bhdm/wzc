@@ -3,8 +3,8 @@
 
 {% block header %}
     <title>{{ category.title }}</title>
-    <META NAME="Keywords" CONTENT="{{ category.title | raw}}">
-    <META NAME="Description" CONTENT="{{ category.title  | raw }}">
+    <META NAME="Keywords" CONTENT="{{ page.keywords | raw }}">
+    <META NAME="Description" CONTENT="{{ page.description  | raw }}">
 {% endblock %}
 
 {% block stylesheets %}
@@ -43,6 +43,8 @@
 {% block content %}
     <div class="content">
         <h1>{{ category.title | raw }}</h1>
+        <br />
+        {{ page.body | raw  }}
         <br />
         {% for pages in category.childs %}
             {% if pages.enabled == true %}

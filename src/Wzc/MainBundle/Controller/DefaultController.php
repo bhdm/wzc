@@ -255,6 +255,7 @@ class DefaultController extends Controller
      */
     public function categoryAction($id){
         $category = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findOneById($id);
-        return array('category' => $category );
+        $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByurl('/category/'.$id);
+        return array('category' => $category,'page' => $page);
     }
 }

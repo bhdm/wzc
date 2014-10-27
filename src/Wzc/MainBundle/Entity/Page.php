@@ -36,8 +36,7 @@ class Page extends BaseEntity
     protected $description;
 
     /**
-     * @ORM\Column(type="text")
-     * @Assert\NotBlank( message = "поле Текст обязательно для заполнения" )
+     * @ORM\Column(type="text", nullable=true)
      */
     protected $body;
 

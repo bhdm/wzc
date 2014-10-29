@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 use Wzc\MainBundle\Entity\Page;
@@ -257,5 +258,41 @@ class DefaultController extends Controller
         $category = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findOneById($id);
         $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByurl('/category/'.$id);
         return array('category' => $category,'page' => $page);
+    }
+
+    /**
+     * @Route("/sitemap", name="sitemap")
+     */
+    public function sitemapAction(){
+        $sitemap = '';
+        $menus = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findByEnabled(true);
+        $pages = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findByEnabled(true);
+        $sitemap .= '<?xml version="1.0" encoding="UTF-8"?>';
+        $sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+
+        foreach($pages as $item){
+            $sitemap .= '<url>';
+            $sitemap .= '<loc>'.$item->getUrl().'</loc>';
+            $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
+            $sitemap .= '<changefreq>monthly</changefreq>';
+            $sitemap .= '<priority>0.8</priority>';
+            $sitemap .= '</url>';
+        }
+
+        foreach($menus as $item){
+            $sitemap .= '<url>';
+            $sitemap .= '<loc>'.$item->getUrl().'</loc>';
+            $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
+            $sitemap .= '<changefreq>monthly</changefreq>';
+            $sitemap .= '<priority>0.8</priority>';
+            $sitemap .= '</url>';
+        }
+
+        $sitemap .= '</urlset>';
+
+        $response = new Response($sitemap);
+        $response->headers->set('Content-Type', 'text/xml');
+        return $response;
+
     }
 }

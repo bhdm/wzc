@@ -202,7 +202,9 @@
                 {% if error != false %}
                     <div class="error-msg">{{ error }}</div>
                 {% endif %}
+                <noindex>
                 {{ form_widget(form) }}
+                </noindex>
                 {#Email: <input type="text" class="styler" style="width: 260px" name="email">#}
                 {#<button type="submit" class="styler">Отправить</button>#}
             </form>

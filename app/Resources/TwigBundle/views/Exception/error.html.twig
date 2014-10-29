@@ -1,26 +1,227 @@
-{% extends "WzcMainBundle::layout.html.twig" %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {#{% block header %}#}
+        {#<title></title>#}
+    {#{% endblock %}#}
 
-{% block content %}
-    <div style="text-align: center">
-        {% if status_code == 404 or status_code == 403 %}
-            <table style="width: 600px;" align='center'>
-                <tr>
-                    <td style="text-align: left; padding-left: 10px;">
-                        <h3>К сожалению, запрошенная Вами страница не найдена на сервере по одной из следующих причин:
-                            <br /><br />
-                            <ul style="font-weight: normal">
-                                <li>неправильно набран адрес</li>
-                                <li>такой страницы никогда не было на этом сайте</li>
-                                <li>такая страница была, но по этому адресу ее больше нет</li>
-                                <li>Такая страница есть, но она временно недоступна</li>
-                            </ul>
-                        </h3>
-                    </td>
-                </tr>
-            </table>
-        {% else %}
-            <h1 style="text-align: center">К сожалению, возникли трудности:</h1><br/><br/>
-            <h3>Ваш запрос сейчас не может быть обработан. Мы в курсе этой ошибки и работаем над её устранением. Попробуйте заглянуть чуть позже</h3>
-        {% endif %}
+    {#{% block javascripts %}#}
+        <script src="{{ asset('bundles/wzcmain/js/jquery-1.11.1.min.js') }}"></script>
+        <script src="{{ asset('bundles/wzcmain/js/styler.js') }}"></script>
+        <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+        {#<script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>#}
+        {#<script type="text/javascript">#}
+        {#window.vkAsyncInit = function() {#}
+        {#VK.init({#}
+        {#apiId: 4589715#}
+        {#//                        apiId: 4524333#}
+        {#});#}
+        {#};#}
+
+        {#function authInfo(response) {#}
+        {#if (response.session) {#}
+        {#alert('user: '+response.session.mid);#}
+        {#} else {#}
+        {#alert('not auth');#}
+        {#}#}
+        {#}#}
+        {#VK.Auth.getLoginStatus(authInfo);#}
+        {#VK.UI.button('login_button');#}
+        {#</script>#}
+        <script>
+            $(document).ready(function(){
+
+                $('select').styler();
+                $('.styler').styler();
+
+
+                $('.blaskbg').click(function(){
+                    $('.popup').fadeOut();
+                    $('.blaskbg').fadeOut();
+                    return false;
+                });
+
+                $('.in').click(function(){
+                    $('.popup').fadeOut();
+                    $('.popup-auth').fadeIn();
+                    $('.blaskbg').fadeIn();
+                    return false;
+                });
+
+                $('.register').click(function(){
+                    $('.popup').fadeOut();
+                    $('.popup-register').fadeIn();
+                    $('.blaskbg').fadeIn();
+                    return false;
+                });
+
+                $('.password').click(function(){
+                    $('.popup').fadeOut();
+                    $('.popup-password').fadeIn();
+                    $('.blaskbg').fadeIn();
+                    return false;
+                });
+
+
+
+                $('#register-submit').click(function(){
+                    var error = '';
+                    if ($('#username').val() == '' ){
+                        error += '<div>Вы не ввели E-mail</div>';
+                    }
+                    if ($('#password').val() != $('#confirm').val() ){
+                        error += '<div>Пароль пустой или не совпадают</div>';
+                    }
+                    if (error != ''){
+                        $('#register-errors').html(error);
+                        return false;
+                    }else{
+                        return true;
+                    }
+                });
+
+                $('.search').keypress(function(eventObject){
+                    if (eventObject.which == 13){
+                        var val = $('input.search').val();
+                        var url = '{{ path('search') }}'+'?s='+val;
+                        window.location.href = url;
+                    }
+                });
+
+                $('#search-btn').click(function(){
+                    var val = $('input.search').val();
+                    var url = '{{ path('search') }}'+'?s='+val;
+                    window.location.href = url;
+                });
+
+            })
+        </script>
+    {#{% endblock %}#}
+
+    {#{% block stylesheets %}#}
+        <link href="{{ asset('bundles/wzcmain/css/styler.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/wzcmain/css/common.css') }}" rel="stylesheet">
+        <style>
+            .top a:hover{
+                text-decoration: underline;
+            }
+            .register, .in{
+                padding-right: 19px;
+                padding-top: 4px;
+            }
+            .content{
+                padding: 50px 0 30px 0;
+                width: 900px;
+                margin: 0 auto;
+            }
+        </style>
+    {#{% endblock %}#}
+</head>
+<body>
+<div style="min-height: 100%; margin-bottom: -110px">
+    <div class="header">
+        <div class="header_line"></div>
+        <div class="body">
+            <div class="logo">
+                <a href="{{ path('main') }}"><img src="{{ asset('bundles/wzcmain/images/logo.png') }}"></a>
+            </div>
+            <div class="auth">
+                {#{% if not is_granted('IS_AUTHENTICATED_REMEMBERED') %}#}
+                    {#<div class="top">#}
+                        {#<a href="#" class="register">РЕГИСТРАЦИЯ</a>#}
+                        {#<a href="#" class="in">ВХОД </a>#}
+                        {#<a href="http://www.odnoklassniki.ru/oauth/authorize?client_id=1105148416&response_type=code&redirect_uri=http://vzk-life.ru/sociallogin?provider=odnoklassniki"><img src="{{ asset('bundles/wzcmain/images/ico_s_1.png') }}" class="ico soc"></a>#}
+                        {#&#123;&#35;<img src="{{ asset('bundles/wzcmain/images/ico_s_2.png') }}" class="ico soc" id="login_button" onclick="VK.Auth.login(authInfo);">&#35;&#125;#}
+                        {#<a href="http://oauth.vk.com/authorize?client_id=4589715&scope=notify&redirect_uri=http://vzk-life.ru/sociallogin?provider=vk&response_type=code"><img src="{{ asset('bundles/wzcmain/images/ico_s_2.png') }}" class="ico soc"></a>#}
+                        {#<a href="https://www.facebook.com/dialog/oauth?client_id=545052125595569&redirect_uri=http://vzk-life.ru/sociallogin?provider=facebook&response_type=code&scope=email,user_birthday"><img src="{{ asset('bundles/wzcmain/images/ico_s_3.png') }}" class="ico soc"></a>#}
+                        {#<div id="vk_api_transport"></div>#}
+                    {#</div>#}
+                {#{% else %}#}
+                    {#<div class="top" style="text-align: right; display: block;">#}
+                        {#<span style="color: #FFFFFF">{{ app.user }}</span>&nbsp;&nbsp;&nbsp;#}
+                        {#<a href="{{ path('profile') }}">Профиль</a>&nbsp;&nbsp;&nbsp;#}
+                        {#<a href="{{ path('_security_logout') }}">Выйти</a>#}
+                    {#</div>#}
+                {#{% endif %}#}
+                <div class="right">
+                    <div class="top">
+                        {#{% spaceless %}#}
+                            <input type="text" class="search" placeholder="Поиск...">
+                            <div id="search-btn"><img src="{{ asset('bundles/wzcmain/images/ico_search.png') }}"></div>
+                        {#{% endspaceless %}#}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-{% endblock %}
+    <div class="body" style="padding-bottom: 200px;">
+        {{ render(controller('WzcMainBundle:Default:menu')) }}
+
+        {#{% block content %}{% endblock %}#}
+        <div class="content" style="min-height: 500px">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div style="text-align: center">
+                <h3 style="color: #920055">К сожалению, запрошенная Вами страница не найдена на сервере по одной из следующих причин:
+                    <br /><br />
+                    <ul style="font-weight: normal; text-align: left; margin-left: 30%;" >
+                        <li>неправильно набран адрес</li>
+                        <li>такой страницы никогда не было на этом сайте</li>
+                        <li>такая страница была, но по этому адресу ее больше нет</li>
+                        <li>Такая страница есть, но она временно недоступна</li>
+                    </ul>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="body">
+        <table style="margin: 0px auto; font-size: 14px; margin-top: 6px">
+            <tr>
+                <td style="width: 300px;">
+                    &copy; {{ 'now' | date('Y')  }} Все права защищены
+                    <br />
+                    <br />
+                    <a href="http://medinform.ru/ru/mi_digital" target="_blank">Сайт разработан Medinform Digital</a>
+                </td>
+                {{ render(controller('WzcMainBundle:Default:footer')) }}
+            </tr>
+        </table>
+    </div>
+</div>
+{% include "WzcMainBundle::popup_auth.html.twig" %}
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '545052125595569',
+            xfbml      : true,
+            version    : 'v2.1'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-55680260-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>

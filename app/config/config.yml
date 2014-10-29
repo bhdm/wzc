@@ -28,6 +28,12 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+#    exception_controller:  Symfony\Bundle\TwigBundle\Controller\ExceptionController::showAction
+#    form:
+#        resources:
+#            - error.html.twig
+
+
 
 # Assetic Configuration
 assetic:

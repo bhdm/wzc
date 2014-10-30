@@ -272,7 +272,7 @@ class DefaultController extends Controller
 
         foreach($pages as $item){
             $sitemap .= '<url>';
-            $sitemap .= '<loc>'.$item->getUrl().'</loc>';
+            $sitemap .= '<loc>http://vzk-life.ru/page/'.$item->getUrl().'</loc>';
             $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
             $sitemap .= '<changefreq>monthly</changefreq>';
             $sitemap .= '<priority>0.8</priority>';
@@ -281,6 +281,9 @@ class DefaultController extends Controller
 
         foreach($menus as $item){
             $sitemap .= '<url>';
+            if (strripos($item->getUrl(), 'vzk-life') === false){
+                $sitemap .= '<loc>http://vzk-life.ru/page/'.$item->getUrl().'</loc>';
+            }
             $sitemap .= '<loc>'.$item->getUrl().'</loc>';
             $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
             $sitemap .= '<changefreq>monthly</changefreq>';

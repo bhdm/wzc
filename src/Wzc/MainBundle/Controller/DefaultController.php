@@ -270,21 +270,29 @@ class DefaultController extends Controller
         $sitemap .= '<?xml version="1.0" encoding="UTF-8"?>';
         $sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
 
-        foreach($pages as $item){
-            $sitemap .= '<url>';
-            $sitemap .= '<loc>http://vzk-life.ru/page/'.$item->getUrl().'</loc>';
-            $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
-            $sitemap .= '<changefreq>monthly</changefreq>';
-            $sitemap .= '<priority>0.8</priority>';
-            $sitemap .= '</url>';
-        }
+//        foreach($pages as $item){
+//            if ($item->getUrl() != 'message' && $item->getUrl() != 'map' &&$item->getUrl() != 'postcard' && $item->getUrl() != 'postcard2' && $item->getUrl() != 'test'   ){
+//                $sitemap .= '<url>';
+//                $sitemap .= '<loc>http://vzk-life.ru/page/'.$item->getUrl().'</loc>';
+//                $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
+//                $sitemap .= '<changefreq>monthly</changefreq>';
+//                $sitemap .= '<priority>0.8</priority>';
+//                $sitemap .= '</url>';
+//            }
+//        }
 
         foreach($menus as $item){
             $sitemap .= '<url>';
             if (strripos($item->getUrl(), 'vzk-life') === false){
-                $sitemap .= '<loc>http://vzk-life.ru/page/'.$item->getUrl().'</loc>';
+                if ($item->getUrl()[0] == '/'){
+                    $sitemap .= '<loc>http://vzk-life.ru'.$item->getUrl().'</loc>';
+                }else{
+                    $sitemap .= '<loc>http://vzk-life.ru/'.$item->getUrl().'</loc>';
+                }
+            }else{
+                $sitemap .= '<loc>'.$item->getUrl().'</loc>';
             }
-            $sitemap .= '<loc>'.$item->getUrl().'</loc>';
+
             $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
             $sitemap .= '<changefreq>monthly</changefreq>';
             $sitemap .= '<priority>0.8</priority>';

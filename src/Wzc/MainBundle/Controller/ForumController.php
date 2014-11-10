@@ -100,6 +100,11 @@ class ForumController extends Controller
         $question = $em->getRepository('WzcMainBundle:ForumQuestion')->find($questionId);
 //        $answers = $em->getRepository('WzcMainBundle:ForumAnswer')->findBy(array('enabled'=>true, 'question'=>$question));
 
+        if ($theme == null || $question == null){
+            throw $this->createNotFoundException('');
+        }
+
+
         $item = new ForumAnswer();
         $form = $this->createForm(new ForumAnswerType($em), $item);
         $formData = $form->handleRequest($request);

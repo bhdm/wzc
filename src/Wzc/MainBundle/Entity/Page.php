@@ -22,6 +22,11 @@ class Page extends BaseEntity
     /**
      * @ORM\Column(type="string", nullable=true)
      */
+    protected $h1;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
     protected $keywords;
 
     /**
@@ -126,6 +131,22 @@ class Page extends BaseEntity
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getH1()
+    {
+        return $this->h1;
+    }
+
+    /**
+     * @param mixed $h1
+     */
+    public function setH1($h1)
+    {
+        $this->h1 = $h1;
     }
 
 

@@ -36,7 +36,11 @@
 {% endblock %}
 {% block content %}
     <div class="content">
-        <h1>{{ page.title  | raw }}</h1>
+        {% if page.h1 == null %}
+            <h1>{{ page.h1  | raw }}</h1>
+        {% else %}
+            <h1>{{ page.title | raw }}</h1>
+        {% endif %}
         <br />
         {{ page.body  | raw }}
     </div>

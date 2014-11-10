@@ -13,7 +13,7 @@ DirectoryIndex app.php
     RewriteRule ^(.*)$ http://vzk-life.ru/$1 [L,R=301]
 
     RewriteCond %{HTTP_HOST} ^vzk-life\.ru\. [NC]
-    RewriteRule ^(.*)$ http://vzk-life.ru [L,R=301]
+    RewriteRule ^(.*)$ http://vzk-life.ru/$1 [L,R=301]
 
     RewriteCond %{HTTP_HOST} ^www\.wzc\.loc [NC]
     RewriteRule ^(.*)$ http://wzc.loc/$1 [L,R=301]

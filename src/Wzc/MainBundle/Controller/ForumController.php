@@ -63,7 +63,7 @@ class ForumController extends Controller
         $theme = $em->getRepository('WzcMainBundle:ForumTheme')->find($themeId);
 
         if ($theme == null){
-            return new Response("",404);
+            throw $this->createNotFoundException('');
         }
 
         $questions = $em->getRepository('WzcMainBundle:ForumQuestion')->findBy(array('enabled'=>true, 'theme'=>$theme));

@@ -25,7 +25,7 @@ class Page extends BaseEntity
     protected $h1;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\Column(type="text", nullable=true)
      */
     protected $keywords;
 

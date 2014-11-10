@@ -306,4 +306,14 @@ class DefaultController extends Controller
         return $response;
 
     }
+
+    /**
+     * @Route("/site-map", name="site-map")
+     * @Template()
+     */
+    public function sitemapclientAction(){
+        $menus = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findByEnabled(true);
+
+        return array('menus' => $menus);
+    }
 }

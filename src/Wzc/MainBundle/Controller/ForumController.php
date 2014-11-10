@@ -5,6 +5,7 @@ namespace Wzc\MainBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Wzc\MainBundle\Entity\ForumTheme;
 use Wzc\MainBundle\Entity\ForumQuestion;
@@ -60,6 +61,11 @@ class ForumController extends Controller
     public function questionsAction(Request $request, $themeId){
         $em = $this->getDoctrine()->getManager();
         $theme = $em->getRepository('WzcMainBundle:ForumTheme')->find($themeId);
+
+        if ($theme == null){
+            return new Response("",404);
+        }
+
         $questions = $em->getRepository('WzcMainBundle:ForumQuestion')->findBy(array('enabled'=>true, 'theme'=>$theme));
 
 

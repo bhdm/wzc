@@ -65,6 +65,9 @@ class DefaultController extends Controller
     public function pageAction($url)
     {
         $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByUrl($url);
+        if ($page == null ){
+            throw $this->createNotFoundException('');
+        }
         return array('page' => $page);
     }
 

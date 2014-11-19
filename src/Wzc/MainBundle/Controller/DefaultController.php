@@ -302,6 +302,88 @@ class DefaultController extends Controller
             $sitemap .= '</url>';
         }
 
+        $sitemap .= '
+        <url>
+            <loc>http://vzk-life.ru/</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/page/facts</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/new/4</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/new/3</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/new/2</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/site-map</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/news</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+
+
+        <url>
+            <loc>http://vzk-life.ru/forum/questions/3</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/forum/questions/4</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/forum/answers/4/15</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/forum/answers/3/6</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/forum/answers/4/4</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/forum/answers/3/1</loc>
+            <lastmod>27.10.2014</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>';
+
         $sitemap .= '</urlset>';
 
         $response = new Response($sitemap);

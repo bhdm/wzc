@@ -53,6 +53,13 @@
             text-transform: uppercase;
             font-weight: normal;
         }
+        #loader{
+            position: absolute;
+            left: 50%;
+            width: 64px;
+            margin-left: -32px;
+            top: 400px;
+        }
     </style>
 {% endblock %}
 
@@ -75,10 +82,19 @@
                     $("#form_question").ajaxSubmit({
                         url: Routing.generate('test_next', { questionId: $('#questionId').val() }),
                         type: 'post',
+                        beforeSubmit: function(){
+                            $('#loader').css('display','block');
+                        },
                         success: function (msg){
                             $('select').styler();
                             $('.styler').styler();
                             $('#form_question').html(msg);
+                            $('#loader').css('display','none');
+                            $('.test-error').html('');
+                        },
+                        error: function(){
+                            $('.test-error').html('<div style="color: #CC3333">Ошибка соединения с сервером. Попробуйте еще раз.</div><br />');
+                            $('#loader').css('display','none');
                         }
                     });
                 }else{
@@ -101,6 +117,7 @@
         <div class="test">
             {#{% for t in test %}#}
             <div class="test-error"></div>
+            <img src="{{ asset('bundles/wzcmain/images/loader.gif') }}" id="loader">
             <form method="POST" id="form_question">
                 <div class="question">{{ question.title | raw }}</div>
                 <div class="question-body">{{ question.body | raw}}</div>

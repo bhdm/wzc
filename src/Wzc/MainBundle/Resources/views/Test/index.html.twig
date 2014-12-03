@@ -47,6 +47,12 @@
         /*.test button{*/
             /*margin-left: 375px;*/
         /*}*/
+        h1{
+            color: #920055;
+            font-size: 20px !important;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
     </style>
 {% endblock %}
 
@@ -86,6 +92,9 @@
 {% block content %}
     <div class="content">
         <h2>{{ page.title  | raw }}</h2>
+        <br />
+        <h1>Тест на болезнь Крона</h1>
+        <br />
         <br />
         {{ page.body  | raw }}
         <br />

@@ -233,7 +233,12 @@
             position: absolute;
             line-height: normal;
         }
-
+        h1{
+            color: #920055;
+            font-size: 20px !important;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
     </style>
 {% endblock %}
 
@@ -334,6 +339,9 @@
         {#<div class="message-title">{{ message.title | raw }}</div>#}
         {#<div class="message-body">{{ message.body | raw }}</div>#}
     {#</div>#}
+    <br />
+    <h1>Центр воспалительных заболеваний кишечника</h1>
+    <br />
     <div style="text-align: center">
         <a href="{{ path('test') }}">
             <div class="btn-big btn1">

@@ -69,7 +69,7 @@ class TestController extends Controller
                 При сумме 6 баллов и более наличие у Вас болезни Крона&nbsp;<strong>высоковероятно</strong>.<br />
                 Пожалуйста, обратитесь к врачу-гастроэнтерологу.<br />
                 <br />
-                Вы можете воспользоваться <a href="'.$url.'" style="font-weight: bold; color: #920055;">нашей картой</a> для поиска клиники
+                Вы можете воспользоваться <a href="'.$url.'" style="font-weight: bold; color: #991199;">нашей картой</a> для поиска клиники
                 </p>';
             }else{
                 $page['title'] = '';

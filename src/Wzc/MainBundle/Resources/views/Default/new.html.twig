@@ -10,7 +10,7 @@
             margin: 0 auto;
         }
         h1{
-            color: #920055;
+            color: #991199;
             font-size: 30px;
             text-transform: uppercase;
         }
@@ -22,7 +22,7 @@
             <span style="color: #555; padding-right: 20px; font-size: 14px">
                 {{ new.created | date('d.m.Y') }}
             </span>
-            <a href="{{ path('news') }}" style="color: #920055">{{ new.title }}</a>
+            <a href="{{ path('news') }}" style="color: #991199">{{ new.title }}</a>
         </h1>
         <br />
         {% if new.image.path is defined %}

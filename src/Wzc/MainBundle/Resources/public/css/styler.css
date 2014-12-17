@@ -18,7 +18,7 @@
     box-shadow: inset 0 -3px 6px #AAA;
 }
 .jq-checkbox.focused {
-    border: 1px solid #920055;
+    border: 1px solid #991199;
 }
 .jq-checkbox.disabled {
     opacity: 0.55;
@@ -44,7 +44,7 @@
     background: #666;
 }
 .jq-radio.focused {
-    border: 1px solid #920055;
+    border: 1px solid #991199;
 }
 .jq-radio.disabled {
     opacity: 0.55;
@@ -297,7 +297,7 @@
     border-radius: 0 0 3px 3px;
 }
 .jq-select-multiple li.selected {
-    background: #920055;
+    background: #991199;
     color: #FFF;
 }
 .jq-select-multiple li.disabled {

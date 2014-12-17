@@ -7,7 +7,7 @@ a{
     text-decoration: none;
 }
 .header{
-    background: #920055;
+    background: #991199;
     height: 100px
 }
 .body{
@@ -101,7 +101,7 @@ body{
 }
 .menu ul{
     list-style: none;
-    color: #920055;
+    color: #991199;
     display: inline-block;
 }
 .menu ul li{
@@ -113,7 +113,7 @@ body{
 
 }
 .menu ul li a{
-    color: #920055;
+    color: #991199;
 }
 .menu ul li a:hover{
     text-decoration: underline;
@@ -204,7 +204,7 @@ body{
     font-size: 15px;
 }
 .sub-menu-2 ul li a:hover{
-    color: #920055;
+    color: #991199;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -225,10 +225,10 @@ body{
     bottom: 0;
     z-index: 149;
     display: none;
-    /*color: #920055;*/
+    /*color: #991199;*/
 }
 .popup table{
-    color: #920055;
+    color: #991199;
 }
 
 .popup table tr td{
@@ -255,7 +255,7 @@ button{
     height: 160px;
     padding: 20px;
     background: #feb5e0;
-    border: 3px dashed #920055;
+    border: 3px dashed #991199;
     border-radius: 5px;
     top: 20%;
     z-index: 150;
@@ -280,7 +280,7 @@ body{
     color: #757575;
 }
 .footer a:hover{
-    color: #920055;
+    color: #991199;
 }
 .footer-menu li{
     color: #9b9b9b;
@@ -291,7 +291,7 @@ body{
     list-style: none;
 }
 h1{
-    color: #920055;
+    color: #991199;
     font-size: 24px !important;
     text-transform: uppercase;
     font-weight: normal;

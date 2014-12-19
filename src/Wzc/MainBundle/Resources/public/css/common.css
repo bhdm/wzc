@@ -120,7 +120,7 @@ body{
 }
 .sub-menu{
     position: absolute;
-    background: #E4B5FE;
+    background: #EBB5FE;
     padding: 7px;
     margin-top: 10px;
     width: 190px;
@@ -187,7 +187,7 @@ body{
 }
 .sub-menu-2{
     position: absolute;
-    background: #E4B5FE;
+    background: #EBB5FE;
     left: 192px;
     padding: 7px;
     display: none;
@@ -254,7 +254,7 @@ button{
     margin-left: -200px;
     height: 160px;
     padding: 20px;
-    background: #E4B5FE;
+    background: #EBB5FE;
     border: 3px dashed #991199;
     border-radius: 5px;
     top: 20%;

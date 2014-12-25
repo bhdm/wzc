@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <base href="http://vzk-life.ru/">
+        {#<base href="http://vzk-life.ru/">#}
 
         {% block header %}
             <title></title>
@@ -122,7 +122,12 @@
                 <div class="header_line"></div>
                 <div class="body">
                     <div class="logo">
-                        <a href="{{ path('main') }}"><img src="{{ asset('bundles/wzcmain/images/logo.png') }}"></a>
+                        <table>
+                            <tr>
+                                <td><a href="{{ path('main') }}"><img src="{{ asset('bundles/wzcmain/images/logo.png') }}"></a></td>
+                                <td><img src="{{ asset('bundles/wzcmain/images/logo2.png') }}" style="margin-left: 20px; height: 75px" /></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="auth">
                         {% if not is_granted('IS_AUTHENTICATED_REMEMBERED') %}

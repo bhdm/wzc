@@ -80,8 +80,16 @@
                             $('#register-errors').html(error);
                             return false;
                         }else{
+                            (function(h){function k(){var a=function(d,b){if(this instanceof AdriverCounter)d=a.items.length||1,a.items[d]=this,b.ph=d,b.custom&&(b.custom=a.toQueryString(b.custom,";")),a.request(a.toQueryString(b));else return a.items[d]};a.httplize=function(a){return(/^\/\//.test(a)?location.protocol:"")+a};a.loadScript=function(a){try{var b=g.getElementsByTagName("head")[0],c=g.createElement("script");c.setAttribute("type","text/javascript");c.setAttribute("charset","windows-1251");c.setAttribute("src",a.split("![rnd]").join(Math.round(1E6*Math.random())));c.onreadystatechange=function(){/loaded|complete/.test(this.readyState)&&(c.onload=null,b.removeChild(c))};c.onload=function(){b.removeChild(c)};b.insertBefore(c,b.firstChild)}catch(f){}};a.toQueryString=function(a,b,c){b=b||"&";c=c||"=";var f=[],e;for(e in a)a.hasOwnProperty(e)&&f.push(e+c+escape(a[e]));return f.join(b)};a.request=function(d){var b=a.toQueryString(a.defaults);a.loadScript(a.redirectHost+"/cgi-bin/erle.cgi?"+d+"&rnd=![rnd]"+(b?"&"+b:""))};a.items=[];a.defaults={tail256:document.referrer||"unknown"};a.redirectHost=a.httplize("//ad.adriver.ru");return a}var g=document;"undefined"===typeof AdriverCounter&&(AdriverCounter=k());new AdriverCounter(0,h)})
+                            ({"sid":203524,"sz":"action_lead","bt":62,"custom":{"150":"lead_id","153":"user_id"}});
                             return true;
                         }
+                    });
+
+                    $('#auth-submit').click(function(){
+                        (function(h){function k(){var a=function(d,b){if(this instanceof AdriverCounter)d=a.items.length||1,a.items[d]=this,b.ph=d,b.custom&&(b.custom=a.toQueryString(b.custom,";")),a.request(a.toQueryString(b));else return a.items[d]};a.httplize=function(a){return(/^\/\//.test(a)?location.protocol:"")+a};a.loadScript=function(a){try{var b=g.getElementsByTagName("head")[0],c=g.createElement("script");c.setAttribute("type","text/javascript");c.setAttribute("charset","windows-1251");c.setAttribute("src",a.split("![rnd]").join(Math.round(1E6*Math.random())));c.onreadystatechange=function(){/loaded|complete/.test(this.readyState)&&(c.onload=null,b.removeChild(c))};c.onload=function(){b.removeChild(c)};b.insertBefore(c,b.firstChild)}catch(f){}};a.toQueryString=function(a,b,c){b=b||"&";c=c||"=";var f=[],e;for(e in a)a.hasOwnProperty(e)&&f.push(e+c+escape(a[e]));return f.join(b)};a.request=function(d){var b=a.toQueryString(a.defaults);a.loadScript(a.redirectHost+"/cgi-bin/erle.cgi?"+d+"&rnd=![rnd]"+(b?"&"+b:""))};a.items=[];a.defaults={tail256:document.referrer||"unknown"};a.redirectHost=a.httplize("//ad.adriver.ru");return a}var g=document;"undefined"===typeof AdriverCounter&&(AdriverCounter=k());new AdriverCounter(0,h)})
+                        ({"sid":203524,"sz":"action_lead","bt":62,"custom":{"150":"lead_id","153":"user_id"}});
+                        return true;
                     });
 
                     $('.search').keypress(function(eventObject){
@@ -202,76 +210,6 @@
 
 
         {% include "WzcMainBundle::1-all_site_page.html.twig" %}
-        {% include "WzcMainBundle::2-action_lead_page.html.twig" %}
-        <script type="application/javascript">
-            (function (h)
-            {function k() {
-                var a = function (d,b) {
-                    if (this instanceof AdriverCounter) d = a.items.length || 1,
-                            a.items[d] = this, b.ph = d,
-                    b.custom && (b.custom = a.toQueryString(b.custom,";")),
-                            a.request(a.toQueryString(b));
-                    else return a.items[d]};
-                a.httplize = function (a) {return (/^\/\//.test(a)?location.protocol:"")+a};
-                a.loadScript = function (a) {
-                    try {
-                        var b = g.getElementsByTagName("head")[0],
-                                c = g.createElement("script");
-                        c.setAttribute("type", "text/javascript");
-                        c.setAttribute("charset", "windows-1251");
-                        c.setAttribute("src",a.split("![rnd]").join(Math.round(1E6*Math.random())));
-                        c.onreadystatechange = function () {
-                            /loaded|complete/.test(this.readyState)&&(c.onload=null,b.removeChild(c))};
-                        c.onload = function () {b.removeChild(c)};
-                        b.insertBefore(c,b.firstChild)} catch (f) {}};
-                a.toQueryString = function (a,b,c) {
-                    b = b || "&";c = c || "=";var f = [],e;
-                    for (e in a) a.hasOwnProperty(e) && f.push(e+c+escape(a[e]));
-                    return f.join(b)};
-                a.request = function (d) {var b = a.toQueryString(a.defaults);
-                    a.loadScript(a.redirectHost+"/cgi-bin/erle.cgi?"+d+"&rnd=![rnd]"+(b?"&"+b:""))};
-                a.items = [];
-                a.defaults = { tail256: document.referrer || "unknown" };
-                a.redirectHost = a.httplize("//ad.adriver.ru");return a}
-                var g = document;
-                "undefined" === typeof AdriverCounter && (AdriverCounter = k());
-                new AdriverCounter(0, h)})
-            ({"sid":203524,"bt":62,"custom":{"153":"user_id"}});
-
-            (function (h)
-            {function k() {
-                var a = function (d,b) {
-                    if (this instanceof AdriverCounter) d = a.items.length || 1,
-                            a.items[d] = this, b.ph = d,
-                    b.custom && (b.custom = a.toQueryString(b.custom,";")),
-                            a.request(a.toQueryString(b));
-                    else return a.items[d]};
-                a.httplize = function (a) {return (/^\/\//.test(a)?location.protocol:"")+a};
-                a.loadScript = function (a) {
-                    try {
-                        var b = g.getElementsByTagName("head")[0],
-                                c = g.createElement("script");
-                        c.setAttribute("type", "text/javascript");
-                        c.setAttribute("charset", "windows-1251");
-                        c.setAttribute("src",a.split("![rnd]").join(Math.round(1E6*Math.random())));
-                        c.onreadystatechange = function () {
-                            /loaded|complete/.test(this.readyState)&&(c.onload=null,b.removeChild(c))};
-                        c.onload = function () {b.removeChild(c)};
-                        b.insertBefore(c,b.firstChild)} catch (f) {}};
-                a.toQueryString = function (a,b,c) {
-                    b = b || "&";c = c || "=";var f = [],e;
-                    for (e in a) a.hasOwnProperty(e) && f.push(e+c+escape(a[e]));
-                    return f.join(b)};
-                a.request = function (d) {var b = a.toQueryString(a.defaults);
-                    a.loadScript(a.redirectHost+"/cgi-bin/erle.cgi?"+d+"&rnd=![rnd]"+(b?"&"+b:""))};
-                a.items = [];
-                a.defaults = { tail256: document.referrer || "unknown" };
-                a.redirectHost = a.httplize("//ad.adriver.ru");return a}
-                var g = document;
-                "undefined" === typeof AdriverCounter && (AdriverCounter = k());
-                new AdriverCounter(0, h)})
-            ({"sid":203524,"sz":"action_lead","bt":62,"custom":{"150":"lead_id","153":"user_id"}});
-        </script>
 
     </body>
 </html>

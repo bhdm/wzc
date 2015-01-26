@@ -51,6 +51,30 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/test-auth", name="test_auth", options={"expose" = true})
+     */
+    public function testauthAction(Request $request){
+        $login = $request->request->get('login');
+        $password = $request->request->get('pass');
+
+        $user = $this->getDoctrine()->getRepository('WzcMainBundle:User')->findOneByUsername($login);
+
+        if ( $user ){
+            $encoder = new MessageDigestPasswordEncoder('sha512', true, 10);
+            $password = $encoder->encodePassword($password, $user->getSalt());
+
+            if($user->getPassword() == $password){
+                echo 'ok';
+            }else{
+                echo 'no';
+            }
+        }else{
+            echo 'no';
+        }
+        exit;
+    }
+
+    /**
      * @Route("/login", name="login")
      * @Template()
      */

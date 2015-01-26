@@ -1,15 +1,15 @@
 <div class="blaskbg"></div>
 <div class="popup popup-auth">
     <h2>Вход</h2>
-    <form method="post" action="{{ path('login_check') }}">
+    <form method="post" action="{{ path('login_check') }}" id="auth-form">
         <table>
             <tr>
                 <td style="width: 150px">E-mail:<br /></td>
-                <td><input type="text" class="ainput" name="_username"></td>
+                <td><input type="text" class="ainput" name="_username" id="_username"></td>
             </tr>
             <tr>
                 <td>Пароль:</td>
-                <td><input type="password" class="ainput" name="_password"></td>
+                <td><input type="password" class="ainput" name="_password" id="_password"></td>
             </tr>
             <tr>
                 <td colspan="2">

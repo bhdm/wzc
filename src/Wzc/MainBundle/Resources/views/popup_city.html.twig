@@ -1,0 +1,25 @@
+
+<div class="popup popup-city" style="display: block; height: auto">
+    <h2>Выберите ближайший город</h2>
+    <form method="post" action="{{ path('city') }}" id="auth-form">
+        <table>
+            <tr>
+                <td style="width: 150px">Ваш город:<br /></td>
+                <td>
+                    <select name="city_name_ru">
+                        <option value="Москва">Москва</option>
+                        <option value="Екатеринбург">Екатеринбург</option>
+                        <option value="Красноярск">Красноярск</option>
+                        <option value="Сургут">Сургут</option>
+                        <option value="Уфа">Уфа</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" style="float: right;">Запомнить</button><br />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

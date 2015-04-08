@@ -6,6 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 use Wzc\MainBundle\Entity\Map;
 use Wzc\MainBundle\Geo\SxGeo;
@@ -19,7 +21,11 @@ class MapController extends Controller
     public function indexAction(Request $request, $thisMetro = 0)
     {
 
+        $session = new Session();
 
+        if ( $session->get('city') == null){
+
+        }
         $dir = __DIR__.'/../Geo/SxGeoCity.dat';
         $SxGeo = new SxGeo($dir);
 // $SxGeo->getCity($ip); (возвращает с краткой информацией, без названия региона и временной зоны)
@@ -53,6 +59,25 @@ class MapController extends Controller
 
 
         return array('coords' => $coords, 'page' => $page, 'metro' => $metro, 'thisMetro' => $thisMetro, 'ipCity' => $ipCity, 'ipRegion' => $ipRegion );
+    }
+
+    /**
+     * @Route("/city", name="city")
+     * @Template()
+     */
+    public function cityAction(Request $request){
+        $session = new Session();
+        if ($request->getMethod() == 'POST'){
+            $session->set('city',$request->request->get('city_name_ru'));
+            $referer = $request->headers->get('referer');
+            return $this->redirect($referer);
+        }else{
+            if ( $session->get('city') == null ){
+                return $this->render('WzcMainBundle::popup_city.html.twig');
+            }else{
+                return new Response('');
+            }
+        }
     }
 
 

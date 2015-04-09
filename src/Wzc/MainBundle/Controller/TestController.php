@@ -8,6 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 use Wzc\MainBundle\Entity\Map;
+use Wzc\MainBundle\Entity\Stats;
 use Wzc\MainBundle\Entity\TestStatistic;
 
 class TestController extends Controller
@@ -61,6 +62,24 @@ class TestController extends Controller
             $this->getDoctrine()->getManager()->flush($testStatistic);
 
             if ( $sum >= 6 ){
+
+                $dir = __DIR__.'/../Geo/SxGeoCity.dat';
+                $SxGeo = new SxGeo($dir);
+
+                $ip = $_SERVER["REMOTE_ADDR"];
+                if ($ip == '127.0.0.1'){
+                    $ip = '84.253.73.126';
+                }
+                $info = $SxGeo->getCityFull($ip);
+                $ipCity = $info['city'];
+                unset($SxGeo);
+
+                $stat = new Stats();
+                $stat->setType('test');
+                $stat->setIp($ip);
+                $stat->setCity($ipCity['name_ru']);
+                $this->getDoctrine()->getManager()->persist($stat);
+                $this->getDoctrine()->getManager()->flush($stat);
 
                 $url = $this->generateUrl('map');
                 $page['title'] = '';

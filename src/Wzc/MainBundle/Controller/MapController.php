@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 use Wzc\MainBundle\Entity\Map;
+use Wzc\MainBundle\Entity\Stats;
 use Wzc\MainBundle\Geo\SxGeo;
 
 class MapController extends Controller
@@ -39,6 +40,9 @@ class MapController extends Controller
         unset($SxGeo);
 
 
+
+
+
         if (isset($thisMetro) && $thisMetro != 0){
             $thisMetro = $this->getDoctrine()->getRepository('WzcMainBundle:Metro')->findOneById($thisMetro);
         }else{
@@ -56,7 +60,12 @@ class MapController extends Controller
         $ipCity = $info['city'];
         $ipRegion = $info['region'];
 
-
+        $stat = new Stats();
+        $stat->setType('map');
+        $stat->setIp($ip);
+        $stat->setCity($ipCity['name_ru']);
+        $this->getDoctrine()->getManager()->persist($stat);
+        $this->getDoctrine()->getManager()->flush($stat);
 
         return array('coords' => $coords, 'page' => $page, 'metro' => $metro, 'thisMetro' => $thisMetro, 'ipCity' => $ipCity, 'ipRegion' => $ipRegion );
     }
@@ -80,5 +89,42 @@ class MapController extends Controller
         }
     }
 
+    /**
+     * @Route("/download", name="download")
+     */
+    public function downloadAction(){
+
+        $dir = __DIR__.'/../Geo/SxGeoCity.dat';
+        $SxGeo = new SxGeo($dir);
+
+        $ip = $_SERVER["REMOTE_ADDR"];
+        if ($ip == '127.0.0.1'){
+            $ip = '84.253.73.126';
+        }
+        $info = $SxGeo->getCityFull($ip);
+        $ipCity = $info['city'];
+        unset($SxGeo);
+
+        $stat = new Stats();
+        $stat->setType('doc');
+        $stat->setIp($ip);
+        $stat->setCity($ipCity['name_ru']);
+        $this->getDoctrine()->getManager()->persist($stat);
+        $this->getDoctrine()->getManager()->flush($stat);
+
+        $filename = 'blank.png';
+        $path = $this->get('kernel')->getRootDir(). "/../web/bundles/wzcmain/images/";
+        $content = file_get_contents($path.$filename);
+
+        $response = new Response();
+
+        //set headers
+        $response->headers->set('Content-Type', 'mime/type');
+        $response->headers->set('Content-Disposition', 'attachment;filename="'.$filename);
+
+        $response->setContent($content);
+        return $response;
+
+    }
 
 }

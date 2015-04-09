@@ -13,13 +13,13 @@ use Wzc\MainBundle\Form\FaqType;
 /**
  * Class FaqController
  * @package Wzc\AdminBundle\Controller
- * @Route("/admin/test-statistic")
+ * @Route("/admin")
  */
 class TestStatisticController extends Controller{
     const ENTITY_NAME = 'TestStatistic';
     /**
      * @Security("has_role('ROLE_ADMIN')")
-     * @Route("/", name="admin_teststatistic_list")
+     * @Route("/test-statistic", name="admin_teststatistic_list")
      * @Template()
      */
     public function listAction(){
@@ -43,10 +43,25 @@ class TestStatisticController extends Controller{
         return array('pagination' => $pagination, 'avg' => $avg, 'count' => count($items) );
     }
 
+    /**
+     * @Security("has_role('ROLE_ADMIN')")
+     * @Route("/stats/list", name="admin_stats_list")
+     * @Template()
+     */
+    public function statsAction(){
+        #Скачивания
+
+        #Просмотры карты
+
+        #Прохождение теста
+
+        return array();
+    }
+
 
     /**
      * @Security("has_role('ROLE_ADMIN')")
-     * @Route("/remove/{id}", name="admin_teststatistic_remove")
+     * @Route("/test-statistic/remove/{id}", name="admin_teststatistic_remove")
      */
     public function removeAction(Request $request, $id){
         $em = $this->getDoctrine()->getManager();

@@ -66,8 +66,9 @@ class MapController extends Controller
         $stat->setCity($ipCity['name_ru']);
         $this->getDoctrine()->getManager()->persist($stat);
         $this->getDoctrine()->getManager()->flush($stat);
+        $sessionCity = $session->get('city');
 
-        return array('coords' => $coords, 'page' => $page, 'metro' => $metro, 'thisMetro' => $thisMetro, 'ipCity' => $ipCity, 'ipRegion' => $ipRegion );
+        return array('coords' => $coords, 'page' => $page, 'metro' => $metro, 'thisMetro' => $thisMetro, 'ipCity' => $ipCity, 'ipRegion' => $ipRegion,'sessionCity' => $sessionCity );
     }
 
     /**

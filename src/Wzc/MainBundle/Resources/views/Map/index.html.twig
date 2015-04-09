@@ -60,7 +60,13 @@
                     center: [{{ thisMetro.longitude }}, {{ thisMetro.latitude }}],
                     zoom: 14,
                 {% else %}
-                    center: [{{ ipCity.lat }}, {{ ipCity.lon }}],
+                    {% if sessionCity == 'Екатеринбург' %}
+                        center: [56.856289, 60.614444],
+                    {% elseif sessionCity == 'Москва'  %}
+                        center: [55.753676, 37.619899],
+                    {% else %}
+                        center: [{{ ipCity.lat }}, {{ ipCity.lon }}],
+                    {% endif %}
                     zoom: 10,
                 {% endif %}
                 controls: ['default']
@@ -134,7 +140,7 @@
                 <table class="table">
                     <tr>
                         <td colspan="2" style="text-align: left">
-                            {% if ipRegion.iso == 'RU-MOW' %}
+                            {% if sessionCity == 'Москва' %}
                                 <select class="changeMetro" id="changeMetro">
                                         <option value="0">Выберите метро</option>
                                     {% for m in metro %}
@@ -213,4 +219,5 @@
 
         <br style="clear: both"/>
     </div>
+    {{ render(controller('WzcMainBundle:Map:city')) }}
 {% endblock %}

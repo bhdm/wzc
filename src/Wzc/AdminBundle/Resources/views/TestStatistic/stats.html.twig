@@ -1,0 +1,52 @@
+{% extends "WzcAdminBundle::layout.html.twig" %}
+
+{% block breadcrumb %}
+    <ul class="breadcrumb well">
+        <li><a href="{{ path('admin_main') }}">Домой</a> <span class="divider"></span></li>
+        <li class="active"><a href="{{ path('admin_stats_list') }}">Статистика</a> <span class="divider"></span></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <div class="well">
+        <h2>Просмотр карты</h2>
+        <table class="table">
+            <tr>
+                <th>Город</th>
+                <th>Кол-во</th>
+            </tr>
+            {% for m in map  %}
+                <tr>
+                    <td>{{ m.city }}</td>
+                    <td>{{ m.amount }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <h2>Прохождение теста</h2>
+        <table class="table">
+            <tr>
+                <th>Город</th>
+                <th>Кол-во</th>
+            </tr>
+            {% for m in test  %}
+                <tr>
+                    <td>{{ m.city }}</td>
+                    <td>{{ m.amount }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <h2>Скачивание документа</h2>
+        <table class="table">
+            <tr>
+                <th>Город</th>
+                <th>Кол-во</th>
+            </tr>
+            {% for m in doc  %}
+                <tr>
+                    <td>{{ m.city }}</td>
+                    <td>{{ m.amount }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

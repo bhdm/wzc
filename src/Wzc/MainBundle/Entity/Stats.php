@@ -9,15 +9,15 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Статистика посещений и скачиваний
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="StatsRepository")
  */
 class Stats extends BaseEntity
 {
     /**
      * Может быть test, doc и map
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\Column(name="category", type="string", nullable=true)
      */
-    protected $type;
+    protected $category;
 
     /**
      * @ORM\Column(type="string", nullable=true)
@@ -34,7 +34,7 @@ class Stats extends BaseEntity
      */
     public function getType()
     {
-        return $this->type;
+        return $this->category;
     }
 
     /**
@@ -42,7 +42,7 @@ class Stats extends BaseEntity
      */
     public function setType($type)
     {
-        $this->type = $type;
+        $this->category = $type;
     }
 
     /**
@@ -78,6 +78,23 @@ class Stats extends BaseEntity
     {
         $this->city = $city;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param mixed $category
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+    }
+
 
 
 }

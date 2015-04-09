@@ -50,12 +50,16 @@ class TestStatisticController extends Controller{
      */
     public function statsAction(){
         #Скачивания
-
+        $doc = $this->getDoctrine()->getRepository('WzcMainBundle:Stats')->stats('doc');
         #Просмотры карты
-
+        $map = $this->getDoctrine()->getRepository('WzcMainBundle:Stats')->stats('map');
         #Прохождение теста
-
-        return array();
+        $test = $this->getDoctrine()->getRepository('WzcMainBundle:Stats')->stats('test');
+        return array(
+            'test' => $test,
+            'map' => $map,
+            'doc' => $doc
+        );
     }
 
 

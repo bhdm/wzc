@@ -62,12 +62,15 @@
                 {% else %}
                     {% if sessionCity == 'Екатеринбург' %}
                         center: [56.856289, 60.614444],
+                        zoom: 9,
                     {% elseif sessionCity == 'Москва'  %}
                         center: [55.753676, 37.619899],
+                        zoom: 10,
                     {% else %}
                         center: [{{ ipCity.lat }}, {{ ipCity.lon }}],
+                        zoom: 10,
                     {% endif %}
-                    zoom: 10,
+
                 {% endif %}
                 controls: ['default']
             });

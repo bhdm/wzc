@@ -10,6 +10,7 @@ use Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder;
 use Wzc\MainBundle\Entity\Map;
 use Wzc\MainBundle\Entity\Stats;
 use Wzc\MainBundle\Entity\TestStatistic;
+use Wzc\MainBundle\Geo\SxGeo;
 
 class TestController extends Controller
 {

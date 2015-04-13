@@ -297,9 +297,6 @@
 {% endblock %}
 
 {% block content %}
-
-
-
     <div id="slider1_container" style="position: relative; width: 1200px; height: 450px; overflow: hidden;">
 
         <!-- Slides Container -->
@@ -312,7 +309,7 @@
                         {% if item.title != null %}<div class="slidebar-title" {% if item.bgColor is defined and item.bgColor is not null %} style="background: {{ item.bgColor }}; "{% endif %}>{{ item.title }}</div>{% endif %}
                     {% else %}
                         <a href="{{ item.url }}">
-                            <img u="image" src="{{ item.image.path }}" />
+                            <img u="image" src="{{ item.image.path is defined ? item.image.path : '' }}" />
                             {% if item.title != null %}<div class="slidebar-title" {% if item.bgColor is defined and item.bgColor is not null %} style="background: {{ item.bgColor }}; "{% endif %}>{{ item.title }}</div>{% endif %}
                         </a>
                     {% endif %}
@@ -455,8 +452,6 @@
 
         <br style="clear: both">
     </div>
-
-
 
     {% if notice != null %}
     <div class="popup popup-msg"  style="height: 15px !important; {{ notice == null ? ' display: none;' : ' display: block;' }}">

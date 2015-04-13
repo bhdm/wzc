@@ -28,6 +28,8 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    globals:
+      router: @router
 #    exception_controller:  Symfony\Bundle\TwigBundle\Controller\ExceptionController::showAction
 #    form:
 #        resources:

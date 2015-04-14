@@ -1,7 +1,3 @@
-{#{{ app.request.uri | raw }}#}
-{#{{ dump(app.request.server.parameters) }}#}
-{#{{ dump(app.request) }}#}
-{#{{ render(controller('YourBundle:Menu:menu', { '_locale': app.request.locale, 'route': app.request.attributes.get('_route') } )) }}#}
 <div class="menu">
     <ul>
         {% for m in menu %}

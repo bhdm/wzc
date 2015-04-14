@@ -133,6 +133,10 @@ body{
     width: 190px;
     display: none;
     z-index: 400;
+    color: #991199;
+}
+.sub-menu ul li a{
+    color: #991199;
 }
 .footer-menu li .sub-menu{
     bottom: 72px;

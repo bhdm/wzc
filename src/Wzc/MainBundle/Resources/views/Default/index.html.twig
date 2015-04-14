@@ -336,8 +336,8 @@
         {#<div class="message-title">{{ message.title | raw }}</div>#}
         {#<div class="message-body">{{ message.body | raw }}</div>#}
     {#</div>#}
-    <br />
-    <h1>Центр воспалительных заболеваний кишечника</h1>
+    {#<br />#}
+    {#<h1>Центр воспалительных заболеваний кишечника</h1>#}
     <br />
     <div style="text-align: center">
         <a href="{{ path('test') }}">
@@ -357,7 +357,7 @@
         <a href="{{ path('map') }}" target="_blank">
             <div class="btn-big btn3">
                 <div class="big-btn-bg" style="top: 50px; height: 75px;" ></div>
-                <div class="big-btn-txt" style="top: 57px;">записаться к врачу</div>
+                <div class="big-btn-txt" style="top: 57px;">Записаться к врачу</div>
             </div>
         </a>
     </div>
@@ -366,6 +366,9 @@
 
     <div class="bottom">
         <div class="left-tr" style="vertical-align: top;">
+            {#<div style="text-align: left">#}
+                <h1 style="padding-left: 20px">Факты</h1>
+            {#</div>#}
             <table class="facts">
                 <tr>
                     {#<td><img src="{{ asset('bundles/wzcmain/images/zn.png') }}"></td>#}
@@ -406,6 +409,9 @@
             </table>
         </div>
         <div class="right-tr" style="text-align: center">
+            {#<div style="text-align: left">#}
+                <h1 style="padding-left: 20px">Новости</h1>
+            {#</div>#}
             <table>
                 {% for new in news %}
                 <tr>

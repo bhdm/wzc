@@ -265,7 +265,16 @@ class DefaultController extends Controller
      */
     public function menuAction(){
         $menu = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findBy(array('enabled' => true, 'parent' => null));
-        return array('menu' => $menu);
+        $url = $_SERVER['PHP_SELF'];
+        $url = str_replace('/app_dev.php','',$url);
+        $url = 'http://vzk-life.ru'.$url;
+        $active = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findOneBy(array('enabled' => true, 'url' => $url));
+        if ($active->getParent() != null){
+            $act = $active->getParent();
+        } else{
+            $act = $active;
+        }
+        return array('menu' => $menu, 'act' => $act);
     }
 
     /**

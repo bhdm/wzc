@@ -17,7 +17,7 @@
             {{ page.body | raw }}
         </div>
         <br />
-        {#{% if is_granted("ROLE_ADMIN") %}#}
+        {% if is_granted("ROLE_USER") %}
             <button class="styler showform"><b>+</b> Добавить тему</button>
             <br />
             <div class="form">
@@ -25,7 +25,7 @@
                     {{ form_widget(form) }}
                 </form>
             </div>
-        {#{% endif %}#}
+        {% endif %}
         {% for theme in themes %}
             <div class="forum-item">
                 <table>

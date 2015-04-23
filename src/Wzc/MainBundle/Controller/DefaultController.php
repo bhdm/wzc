@@ -220,10 +220,10 @@ class DefaultController extends Controller
         }
 
         return array(
-          'search_1' =>$search_1,
-          'search_2' =>$search_2,
-          'search_3' =>$search_3,
-          's' => $searchString,
+            'search_1' =>$search_1,
+            'search_2' =>$search_2,
+            'search_3' =>$search_3,
+            's' => $searchString,
         );
 
     }
@@ -296,6 +296,13 @@ class DefaultController extends Controller
      * @Template()
      */
     public function categoryAction($id){
+
+        if ( $id == 1 ){
+            return $this->redirect('http://vzk-life.ru/page/about');
+        }
+        if ( $id == 18 ){
+            return $this->redirect('http://vzk-life.ru/forum/');
+        }
         $category = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findOneById($id);
         $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByurl('/category/'.$id);
         return array('category' => $category,'page' => $page);
@@ -323,21 +330,23 @@ class DefaultController extends Controller
 //        }
 
         foreach($menus as $item){
-            $sitemap .= '<url>';
-            if (strripos($item->getUrl(), 'vzk-life') === false){
-                if ($item->getUrl()[0] == '/'){
-                    $sitemap .= '<loc>http://vzk-life.ru'.$item->getUrl().'</loc>';
+            if (strripos($item->getUrl(),'forum')===false){
+                $sitemap .= '<url>';
+                if (strripos($item->getUrl(), 'vzk-life') === false){
+                    if ($item->getUrl()[0] == '/'){
+                        $sitemap .= '<loc>http://vzk-life.ru'.$item->getUrl().'</loc>';
+                    }else{
+                        $sitemap .= '<loc>http://vzk-life.ru/'.$item->getUrl().'</loc>';
+                    }
                 }else{
-                    $sitemap .= '<loc>http://vzk-life.ru/'.$item->getUrl().'</loc>';
+                    $sitemap .= '<loc>'.$item->getUrl().'</loc>';
                 }
-            }else{
-                $sitemap .= '<loc>'.$item->getUrl().'</loc>';
-            }
 
-            $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
-            $sitemap .= '<changefreq>monthly</changefreq>';
-            $sitemap .= '<priority>0.8</priority>';
-            $sitemap .= '</url>';
+                $sitemap .= '<lastmod>'.$item->getUpdated()->format('d.m.Y').'</lastmod>';
+                $sitemap .= '<changefreq>monthly</changefreq>';
+                $sitemap .= '<priority>0.8</priority>';
+                $sitemap .= '</url>';
+            }
         }
 
         $sitemap .= '
@@ -384,43 +393,49 @@ class DefaultController extends Controller
             <priority>0.8</priority>
         </url>
 
-
         <url>
-            <loc>http://vzk-life.ru/forum/questions/3</loc>
-            <lastmod>27.10.2014</lastmod>
+            <loc>http://vzk-life.ru/page/yazvenniy-kolit</loc>
+            <lastmod>20.04.2015</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
         </url>
         <url>
-            <loc>http://vzk-life.ru/forum/questions/4</loc>
-            <lastmod>27.10.2014</lastmod>
+            <loc>http://vzk-life.ru/page/yazvenniy-kolit-lecenie</loc>
+            <lastmod>20.04.2015</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
         </url>
         <url>
-            <loc>http://vzk-life.ru/forum/answers/4/15</loc>
-            <lastmod>27.10.2014</lastmod>
+            <loc>http://vzk-life.ru/page/yazvenniy-kolit-simptomi</loc>
+            <lastmod>20.04.2015</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
         </url>
         <url>
-            <loc>http://vzk-life.ru/forum/answers/3/6</loc>
-            <lastmod>27.10.2014</lastmod>
+            <loc>http://vzk-life.ru/page/bolezn-krona</loc>
+            <lastmod>20.04.2015</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
         </url>
         <url>
-            <loc>http://vzk-life.ru/forum/answers/4/4</loc>
-            <lastmod>27.10.2014</lastmod>
+            <loc>http://vzk-life.ru/page/bolezn-krona-lecenie</loc>
+            <lastmod>20.04.2015</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
         </url>
         <url>
-            <loc>http://vzk-life.ru/forum/answers/3/1</loc>
-            <lastmod>27.10.2014</lastmod>
+            <loc>http://vzk-life.ru/page/bolezn-krona-simptomi</loc>
+            <lastmod>20.04.2015</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
-        </url>';
+        </url>
+        <url>
+            <loc>http://vzk-life.ru/page/nedifferencirovanniy-kolit</loc>
+            <lastmod>20.04.2015</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+        ';
 
         $sitemap .= '</urlset>';
 

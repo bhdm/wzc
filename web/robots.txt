@@ -12,6 +12,7 @@ Disallow: /postcard
 Disallow: /*_openstat
 Disallow: /*gclid=
 Disallow: /*utm_source=
+Disallow: /forum/
 
 Host: vzk-life.ru
 Sitemap: http://vzk-life.ru/sitemap

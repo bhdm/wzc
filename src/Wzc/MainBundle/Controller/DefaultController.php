@@ -298,10 +298,10 @@ class DefaultController extends Controller
     public function categoryAction($id){
 
         if ( $id == 1 ){
-            return $this->redirect('http://vzk-life.ru/page/about');
+            return $this->redirect('http://vzk-life.ru/page/about',301);
         }
         if ( $id == 18 ){
-            return $this->redirect('http://vzk-life.ru/forum/');
+            return $this->redirect('http://vzk-life.ru/forum/',301);
         }
         $category = $this->getDoctrine()->getRepository('WzcMainBundle:Menu')->findOneById($id);
         $page = $this->getDoctrine()->getRepository('WzcMainBundle:Page')->findOneByurl('/category/'.$id);
@@ -395,12 +395,6 @@ class DefaultController extends Controller
 
         <url>
             <loc>http://vzk-life.ru/page/yazvenniy-kolit</loc>
-            <lastmod>20.04.2015</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
-        </url>
-        <url>
-            <loc>http://vzk-life.ru/page/yazvenniy-kolit-lecenie</loc>
             <lastmod>20.04.2015</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>

@@ -65,7 +65,7 @@ class Page extends BaseEntity
     }
 
     public function __toString(){
-        return $this->url;
+        return $this->title;
     }
 
     /**

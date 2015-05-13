@@ -21,6 +21,7 @@ class PageType extends AbstractType
             ->add('description',null, array('label' => 'Мета описание'))
             ->add('h1',null, array('label' => 'H1 заголовок'))
             ->add('body',null, array('label' => 'Контент страницы', 'attr' => array('class'=>'ckeditor')))
+            ->add('links',null, array('label' => 'ссылкт пересечения'))
             ->add('enabled','choice',  array(
                 'empty_value' => false,
                 'choices' => array(

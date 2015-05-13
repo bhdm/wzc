@@ -46,5 +46,17 @@
         {% endif %}
         <br />
         {{ page.body  | raw }}
+        <br />
+        <br />
+        {% if page.links != null %}
+
+        <div style="color: #991199; font-size: 20px">
+            Смотрите так же:
+        </div>
+            <br />
+            {% for l in page.links %}
+            <a href="{{ path('page',{'url' : l.url }) }}" style="color: #991199; text-decoration: underline">{{ l.title }}</a><br /><br />
+            {% endfor %}
+        {% endif %}
     </div>
 {% endblock %}

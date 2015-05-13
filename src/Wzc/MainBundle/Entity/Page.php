@@ -2,6 +2,7 @@
 
 namespace Wzc\MainBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -18,6 +19,16 @@ class Page extends BaseEntity
      * @Assert\NotBlank( message = "поле Заголовок обязательно для заполнения" )
      */
     protected $title;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Page", inversedBy="page")
+     */
+    protected $links;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Page", mappedBy="links")
+     */
+    protected $page;
 
     /**
      * @ORM\Column(type="string", nullable=true)
@@ -44,6 +55,10 @@ class Page extends BaseEntity
      * @ORM\Column(type="text", nullable=true)
      */
     protected $body;
+
+    public function __construct(){
+        $this->links = new ArrayCollection();
+    }
 
     public function getId(){
         return $this->id;
@@ -147,6 +162,46 @@ class Page extends BaseEntity
     public function setH1($h1)
     {
         $this->h1 = $h1;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLinks()
+    {
+        return $this->links;
+    }
+
+    /**
+     * @param mixed $links
+     */
+    public function setLinks($links)
+    {
+        $this->links = $links;
+    }
+
+    public function addLink($link){
+        $this->links[] = $link;
+    }
+
+    public function removeLink($link){
+        $this->links->removeElement($link);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPage()
+    {
+        return $this->page;
+    }
+
+    /**
+     * @param mixed $page
+     */
+    public function setPage($page)
+    {
+        $this->page = $page;
     }
 
 

@@ -429,6 +429,12 @@ class DefaultController extends Controller
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
         </url>
+        <url>
+            <loc>http://vzk-life.ru/page/yazvenniy-kolit-lecenie</loc>
+            <lastmod>17.05.2015</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
         ';
 
         $sitemap .= '</urlset>';

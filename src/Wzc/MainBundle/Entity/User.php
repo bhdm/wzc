@@ -133,8 +133,12 @@ class User extends BaseEntity implements UserInterface
     public function __toString()
     {
 //        return $this->username;
-        if ($this->lastName || $this->firstName || $this->surName){
-            return $this->lastName.'. '.$this->firstName;
+        if ($this->firstName){
+            if ($this->lastName != null){
+                return $this->lastName.'. '.$this->firstName;
+            }else{
+                return $this->firstName;
+            }
         }else{
             return 'Анонимный № '.$this->id;
         }

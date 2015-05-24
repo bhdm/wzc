@@ -70,6 +70,9 @@
 
                     $('#register-submit').click(function(){
                         var error = '';
+                        if ($('#name').val() == '' ){
+                            error += '<div>Вы не ввели имя</div>';
+                        }
                         if ($('#username').val() == '' ){
                             error += '<div>Вы не ввели E-mail</div>';
                         }

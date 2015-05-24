@@ -25,12 +25,16 @@
     </form>
 </div>
 
-<div class="popup popup-register" style="min-height: 280px;  display: none">
+<div class="popup popup-register" style="min-height: 360px;  display: none">
     <h2>Регистрация</h2>
     <br />
     <div id="register-errors"></div>
     <form method="post" action="{{ path('register') }}">
         <table>
+            <tr>
+                <td style="width: 150px">Имя:<br /></td>
+                <td><input type="text" class="ainput" name="name" id="name"></td>
+            </tr>
             <tr>
                 <td style="width: 150px">E-mail:<br /></td>
                 <td><input type="text" class="ainput" name="username" id="username"></td>
@@ -52,7 +56,8 @@
                 </td>
             </tr>
         </table>
-        <br/>
+        <br style="clear: both"/>
+        <br style="clear: both"/>
     </form>
 </div>
 

@@ -103,6 +103,7 @@ class DefaultController extends Controller
         if ($request->getMethod() == 'POST'){
             $user = new User();
             $user->setUsername($request->request->get('username'));
+            $user->setFirstName($request->request->get('name'));
             $user->setSalt(md5(time()));
 
             // шифрует и устанавливает пароль для пользователя,

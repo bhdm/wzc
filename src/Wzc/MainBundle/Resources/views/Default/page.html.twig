@@ -50,9 +50,9 @@
         <br />
         {% if page.links != null %}
 
-        <div style="color: #991199; font-size: 20px">
+        <h1 style="color: #991199; font-size: 20px !important; text-transform: none;">
             Смотрите так же:
-        </div>
+        </h1>
             <br />
             {% for l in page.links %}
             <a href="{{ path('page',{'url' : l.url }) }}" style="color: #991199; text-decoration: underline">{{ l.title }}</a><br /><br />

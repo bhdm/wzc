@@ -46,7 +46,7 @@ class ForumController extends Controller
             }
         }
         $page = $em->getRepository('WzcMainBundle:Page')->findOneByUrl('forum');
-        $themes = $em->getRepository('WzcMainBundle:ForumTheme')->findByEnabled(true);
+        $themes = $em->getRepository('WzcMainBundle:ForumTheme')->findBy(array('enabled'=> true), array('id' => 'DESC'));
         return array(
             'page' => $page,
             'themes' => $themes,

@@ -66,7 +66,7 @@ class ForumController extends Controller
             throw $this->createNotFoundException('');
         }
 
-        $questions = $em->getRepository('WzcMainBundle:ForumQuestion')->findBy(array('enabled'=>true, 'theme'=>$theme));
+        $questions = $this->getDoctrine()->getRepository('WzcMainBundle:ForumQuestion')->findBy(array('enabled'=>true, 'theme'=>$theme), array('id' => 'DESC'));
 
 
         $item = new ForumQuestion();

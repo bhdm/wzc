@@ -246,8 +246,8 @@ class DefaultController extends Controller
      * @Template()
      */
     public function newsAction(){
-        $news = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findByEnabled(true);
-        ksort($news);
+        $news = $this->getDoctrine()->getRepository('WzcMainBundle:Publication')->findBy(array('enabled'=>true),array('id' => 'DESC'));
+//        ksort($news);
         return array('news' => $news);
     }
 

@@ -1946,7 +1946,7 @@ new function () {
             }
             else if ($JssorUtils$.$IsBrowserChrome() && $JssorUtils$.$GetBrowserVersion() >= 30 && $JssorUtils$.$GetBrowserVersion() < 34) {
                 elmt.style.WebkitTransition = "transform 0s";
-                elmt.style.WebkitTransform = "translate3d(" + x + "px, " + y + "px, 0px) perspective(2000px)";
+                elmt.style.WebkitTransform = "translate3d(" + x + "px, " + y + "px, 0px)";
             }
             else {
                 $JssorUtils$.$CssLeft(elmt, x);

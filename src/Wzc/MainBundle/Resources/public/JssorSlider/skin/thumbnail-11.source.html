@@ -2,14 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Thumbnail Navigator Skin 11 - Jssor Slider, Slideshow with Javascript Source Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Navigator Skin 11 - Jssor Slider, Carousel, Slideshow with Javascript Source Code</title>
 </head>
 <body style="font-family:Arial, Verdana;background-color:#fff;">
     <!-- use jssor.slider.min.js instead for release -->
-    <!-- jssor.slider.min.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.core.js"></script>
-    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <!-- jssor.slider.min.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
     <script type="text/javascript" src="../js/jssor.slider.js"></script>
     <script>
 
@@ -120,13 +119,13 @@
             </style>
             <div u="slides" style="cursor: move;">
                 <div u="prototype" class=p style="POSITION: absolute; WIDTH: 60px; HEIGHT: 30px; TOP: 0; LEFT: 0;">
-                    <thumbnailtemplate class=t style=" WIDTH: 60px; HEIGHT: 30px; border: none;position:absolute; TOP: 0; LEFT: 0;"></thumbnailtemplate>
+                    <div u="thumbnailtemplate" class=t style=" WIDTH: 60px; HEIGHT: 30px; border: none;position:absolute; TOP: 0; LEFT: 0;"></div>
                 </div>
             </div>
             <!-- Thumbnail Item Skin End -->
         </div>
         <!-- ThumbnailNavigator Skin End -->
-        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+        <a style="display: none" href="http://www.jssor.com">Image Slider</a>
         <!-- Trigger -->
         <script>
             jssor_slider1_starter('slider1_container');

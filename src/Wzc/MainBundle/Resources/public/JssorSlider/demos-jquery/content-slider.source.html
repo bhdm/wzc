@@ -2,16 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Content Slider - Jssor Slider, Slideshow with Javascript Source Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Slider - Jssor Slider, Carousel, Slideshow with Javascript Source Code</title>
 </head>
 <body style="padding: 0; margin: 0; font-family: Arial, Verdana; background-color: #fff;">
     <!-- it works the same with all jquery version from 1.x to 2.x -->
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
-    <!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
-    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.core.js"></script>
-    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
     <script type="text/javascript" src="../js/jssor.slider.js"></script>
     <script>
         jQuery(document).ready(function ($) {
@@ -62,21 +61,15 @@
             function ScaleSlider() {
                 var bodyWidth = document.body.clientWidth;
                 if (bodyWidth)
-                    jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 980));
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 980));
                 else
                     window.setTimeout(ScaleSlider, 30);
             }
-
             ScaleSlider();
 
-            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-                $(window).bind('resize', ScaleSlider);
-            }
-
-
-            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-            //    $(window).bind("orientationchange", ScaleSlider);
-            //}
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
             //responsive code end
         });
     </script>
@@ -106,16 +99,19 @@
                             <br />
                             <br />
                             <span style="display: block; line-height: 1.1em; font-size: 2.5em; color: #FFFFFF;">
-                                iT Solutions & Services </span>
+                                iT Solutions & Services
+                            </span>
                             <br />
                             <span style="display: block; line-height: 1.1em; font-size: 1.5em; color: #FFFFFF;">
                                 Our professional services help you address the ever evolving business and technological
-                                challenges.</span>
+                                challenges.
+                            </span>
                             <br />
                             <br />
                             <a href="http://www.jssor.com">
                                 <img src="../img/major/find-out-more-bt.png" border="0" alt="auction slider" width="215"
-                                    height="50" /></a>
+                                     height="50" />
+                            </a>
                         </div>
                         <img src="../img/major/s2.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="../img/major/s2t.jpg" />
@@ -128,12 +124,14 @@
                             <br />
                             <br />
                             <span style="display: block; line-height: 1.1em; font-size: 2.5em; color: #FFFFFF;">
-                                Visually Compelling & Functional </span>
+                                Visually Compelling & Functional
+                            </span>
                             <br />
                             <br />
                             <a href="http://www.jssor.com">
                                 <img src="../img/major/find-out-more-bt.png" border="0" alt="ebay slideshow" width="215"
-                                    height="50" /></a>
+                                     height="50" />
+                            </a>
                         </div>
                         <img src="../img/major/s3.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="../img/major/s3t.jpg" />
@@ -145,12 +143,14 @@
                                 color: #FFFFFF;">Online marketing</span>
                             <br />
                             <span style="display: block; line-height: 1.1em; font-size: 2.5em; color: #FFFFFF;">
-                                We enhance your brand, your website traffic and your bottom line online. </span>
+                                We enhance your brand, your website traffic and your bottom line online.
+                            </span>
                             <br />
                             <br />
                             <a href="http://www.jssor.com">
                                 <img src="../img/major/find-out-more-bt.png" border="0" alt="listing slider" width="215"
-                                    height="50" /></a>
+                                     height="50" />
+                            </a>
                         </div>
                         <img src="../img/major/s4.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="../img/major/s4t.jpg" />
@@ -164,12 +164,14 @@
                             <br />
                             <br />
                             <span style="display: block; line-height: 1.1em; font-size: 2.5em; color: #FFFFFF;">
-                                we offer the web's best hosting plans for every site. </span>
+                                we offer the web's best hosting plans for every site.
+                            </span>
                             <br />
                             <br />
                             <a href="http://www.jssor.com">
                                 <img src="../img/major/find-out-more-bt.png" border="0" alt="ebay store slider" width="215"
-                                    height="50" /></a>
+                                     height="50" />
+                            </a>
                         </div>
                         <img src="../img/major/s5.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="../img/major/s5t.jpg" />
@@ -181,12 +183,14 @@
                                 color: #FFFFFF;">domain name registration</span>
                             <br />
                             <span style="display: block; line-height: 1.1em; font-size: 2.5em; color: #FFFFFF;">
-                                Secure your online identity and register your domain now. </span>
+                                Secure your online identity and register your domain now.
+                            </span>
                             <br />
                             <br />
                             <a href="http://www.jssor.com">
                                 <img src="../img/major/find-out-more-bt.png" border="0" alt="listing template slider"
-                                    width="215" height="50" /></a>
+                                     width="215" height="50" />
+                            </a>
                         </div>
                         <img src="../img/major/s6.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="../img/major/s6t.jpg" />
@@ -205,7 +209,8 @@
                             <br />
                             <a href="http://www.jssor.com">
                                 <img src="../img/major/find-out-more-bt.png" border="0" alt="auction template slider"
-                                    width="215" height="50" /></a>
+                                     width="215" height="50" />
+                            </a>
                         </div>
                         <img src="../img/major/s7.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="../img/major/s7t.jpg" />
@@ -222,129 +227,144 @@
                                 <br />
                                 <a href="http://www.jssor.com">
                                     <img src="../img/major/find-out-more-bt.png" border="0" alt="ebay slider" width="215"
-                                        height="50" /></a>
+                                         height="50" />
+                                </a>
                         </div>
                         <img src="../img/major/s8.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
                         <img u="thumb" src="../img/major/s8t.jpg" />
                     </div>
                 </div>
-                <!-- Arrow Navigator Skin Begin -->
+                
+                <!--#region Arrow Navigator Skin Begin -->
+                <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
                 <style>
                     /* jssor slider arrow navigator skin 07 css */
                     /*
-                    .jssora07l              (normal)
-                    .jssora07r              (normal)
-                    .jssora07l:hover        (normal mouseover)
-                    .jssora07r:hover        (normal mouseover)
-                    .jssora07ldn            (mousedown)
-                    .jssora07rdn            (mousedown)
+                    .jssora07l                  (normal)
+                    .jssora07r                  (normal)
+                    .jssora07l:hover            (normal mouseover)
+                    .jssora07r:hover            (normal mouseover)
+                    .jssora07l.jssora07ldn      (mousedown)
+                    .jssora07r.jssora07rdn      (mousedown)
                     */
-                    .jssora07l, .jssora07r, .jssora07ldn, .jssora07rdn
-                    {
-                        position: absolute;
-                        cursor: pointer;
+                    .jssora07l, .jssora07r {
                         display: block;
+                        position: absolute;
+                        /* size of arrow element */
+                        width: 50px;
+                        height: 50px;
+                        cursor: pointer;
                         background: url(../img/a07.png) no-repeat;
                         overflow: hidden;
                     }
-                    .jssora07l
-                    {
-                        background-position: -5px -35px;
-                    }
-                    .jssora07r
-                    {
-                        background-position: -65px -35px;
-                    }
-                    .jssora07l:hover
-                    {
-                        background-position: -125px -35px;
-                    }
-                    .jssora07r:hover
-                    {
-                        background-position: -185px -35px;
-                    }
-                    .jssora07ldn
-                    {
-                        background-position: -245px -35px;
-                    }
-                    .jssora07rdn
-                    {
-                        background-position: -305px -35px;
-                    }
+                    .jssora07l { background-position: -5px -35px; }
+                    .jssora07r { background-position: -65px -35px; }
+                    .jssora07l:hover { background-position: -125px -35px; }
+                    .jssora07r:hover { background-position: -185px -35px; }
+                    .jssora07l.jssora07ldn { background-position: -245px -35px; }
+                    .jssora07r.jssora07rdn { background-position: -305px -35px; }
                 </style>
                 <!-- Arrow Left -->
-                <span u="arrowleft" class="jssora07l" style="width: 50px; height: 50px; top: 123px;
-                    left: 8px;"></span>
+                <span u="arrowleft" class="jssora07l" style="top: 123px; left: 8px;">
+                </span>
                 <!-- Arrow Right -->
-                <span u="arrowright" class="jssora07r" style="width: 50px; height: 50px; top: 123px;
-                    right: 8px"></span>
-                <!-- Arrow Navigator Skin End -->
-                <!-- ThumbnailNavigator Skin Begin -->
-                <div u="thumbnavigator" class="jssort04" style="position: absolute; width: 600px;
-                    height: 60px; right: 0px; bottom: 0px;">
-                    <!-- Thumbnail Item Skin Begin -->
-                    <style>
-                        /* jssor slider thumbnail navigator skin 04 css */
-                        /*
-                        .jssort04 .p            (normal)
-                        .jssort04 .p:hover      (normal mouseover)
-                        .jssort04 .pav          (active)
-                        .jssort04 .pav:hover    (active mouseover)
-                        .jssort04 .pdn          (mousedown)
-                        */
-                        .jssort04 .w, .jssort04 .pav:hover .w
-                        {
-                            position: absolute;
-                            width: 60px;
-                            height: 30px;
-                            border: #0099FF 1px solid;
-                        }
-                        * html .jssort04 .w
-                        {
-                            width: /**/ 62px;
-                            height: /**/ 32px;
-                        }
-                        .jssort04 .pdn .w, .jssort04 .pav .w
-                        {
-                            border-style: solid;
-                        }
-                        .jssort04 .c
-                        {
-                            width: 62px;
-                            height: 32px;
-                            filter: alpha(opacity=45);
-                            opacity: .45;
-                            transition: opacity .6s;
-                            -moz-transition: opacity .6s;
-                            -webkit-transition: opacity .6s;
-                            -o-transition: opacity .6s;
-                        }
-                        .jssort04 .p:hover .c, .jssort04 .pav .c
-                        {
-                            filter: alpha(opacity=0);
-                            opacity: 0;
-                        }
-                        .jssort04 .p:hover .c
-                        {
-                            transition: none;
-                            -moz-transition: none;
-                            -webkit-transition: none;
-                            -o-transition: none;
-                        }
-                    </style>
-                    <div u="slides" style="bottom: 25px; right: 30px;">
-                        <div u="prototype" class="p" style="position: absolute; width: 62px; height: 32px; top: 0; left: 0;">
-                            <div class="w">
-                                <thumbnailtemplate style="width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0;"></thumbnailtemplate>
-                            </div>
-                            <div class="c" style="position: absolute; background-color: #000; top: 0; left: 0">
-                            </div>
-                        </div>
+                <span u="arrowright" class="jssora07r" style="top: 123px; right: 8px;">
+                </span>
+                <!--#endregion Arrow Navigator Skin End -->
+                
+            <!--#region Thumbnail Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html -->
+            <style>
+                /* jssor slider thumbnail navigator skin 04 css */
+                /*
+                .jssort04 .p            (normal)
+                .jssort04 .p:hover      (normal mouseover)
+                .jssort04 .pav          (active)
+                .jssort04 .pav:hover    (active mouseover)
+                .jssort04 .pdn          (mousedown)
+                */
+
+                .jssort04 {
+                    position: absolute;
+                    /* size of thumbnail navigator container */
+                    width: 600px;
+                    height: 60px;
+                }
+
+                    .jssort04 .p {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 62px;
+                        height: 32px;
+                    }
+
+                    .jssort04 .t {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }
+
+                    .jssort04 .w, .jssort04 .pav:hover .w {
+                        position: absolute;
+                        width: 60px;
+                        height: 30px;
+                        border: #0099FF 1px solid;
+                        box-sizing: content-box;
+                    }
+
+                    .jssort04 .pdn .w, .jssort04 .pav .w {
+                        border-style: dashed;
+                    }
+
+                    .jssort04 .c {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 62px;
+                        height: 32px;
+                        background-color: #000;
+                        filter: alpha(opacity=45);
+                        opacity: .45;
+                        transition: opacity .6s;
+                        -moz-transition: opacity .6s;
+                        -webkit-transition: opacity .6s;
+                        -o-transition: opacity .6s;
+                    }
+
+                    .jssort04 .p:hover .c, .jssort04 .pav .c {
+                        filter: alpha(opacity=0);
+                        opacity: 0;
+                    }
+
+                    .jssort04 .p:hover .c {
+                        transition: none;
+                        -moz-transition: none;
+                        -webkit-transition: none;
+                        -o-transition: none;
+                    }
+
+                    * html .jssort04 .w {
+                        width /**/: 62px;
+                        height /**/: 32px;
+                    }
+            </style>
+            <!-- thumbnail navigator container -->
+            <div u="thumbnavigator" class="jssort04" style="right: 0px; bottom: 0px;">
+                <!-- Thumbnail Item Skin Begin -->
+                <div u="slides" style="bottom: 25px; right: 30px; cursor: default;">
+                    <div u="prototype" class="p">
+                        <div class=w><div u="thumbnailtemplate" class="t"></div></div>
+                        <div class=c></div>
                     </div>
-                    <!-- Thumbnail Item Skin End -->
                 </div>
-                <!-- ThumbnailNavigator Skin End -->
-                <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+                <!-- Thumbnail Item Skin End -->
+            </div>
+            <!--#endregion Thumbnail Navigator Skin End -->
+                <a style="display: none" href="http://www.jssor.com">Image Slider</a>
             </div>
             <!-- Jssor Slider End -->
         </div>

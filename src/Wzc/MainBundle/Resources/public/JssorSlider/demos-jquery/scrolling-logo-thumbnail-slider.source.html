@@ -2,16 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Scrolling Logo/Thumbnail Slider Demo - Jssor Slider, Slideshow with Javascript Source Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Logo/Thumbnail Slider Demo - Jssor Slider, Carousel, Slideshow with Javascript Source Code</title>
 </head>
 <body style="font-family:Arial, Verdana;background-color:#fff;">
     <!-- it works the same with all jquery version from 1.x to 2.x -->
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
-    <!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
-    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.core.js"></script>
-    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
     <script type="text/javascript" src="../js/jssor.slider.js"></script>
     <script>
         jQuery(document).ready(function ($) {
@@ -23,7 +22,7 @@
 
                 $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
                 $SlideEasing: $JssorEasing$.$EaseLinear,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
-                $SlideDuration: 3000,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $SlideDuration: 1600,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
                 $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
                 $SlideWidth: 140,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
                 //$SlideHeight: 100,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
@@ -42,26 +41,20 @@
             function ScaleSlider() {
                 var bodyWidth = document.body.clientWidth;
                 if (bodyWidth)
-                    jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 980));
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 980));
                 else
                     window.setTimeout(ScaleSlider, 30);
             }
-
             ScaleSlider();
 
-            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-                $(window).bind('resize', ScaleSlider);
-            }
-
-
-            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-            //    $(window).bind("orientationchange", ScaleSlider);
-            //}
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
             //responsive code end
         });
     </script>
     <!-- Jssor Slider Begin -->
-    <!-- You can move inline styles to css file or css block. -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
     <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; ">
 
         <!-- Loading Screen -->
@@ -98,7 +91,7 @@
             <div><img u="image" alt="wordpress" src="../img/logo/wordpress.jpg" /></div>
             <div><img u="image" alt="youtube" src="../img/logo/youtube.jpg" /></div>
         </div>
-        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+        <a style="display: none" href="http://www.jssor.com">Image Slider</a>
     </div>
     <!-- Jssor Slider End -->
 </body>

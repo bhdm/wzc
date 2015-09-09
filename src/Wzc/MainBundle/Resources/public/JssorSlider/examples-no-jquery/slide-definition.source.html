@@ -2,14 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Slide Definition Example - Jssor Slider, Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Definition Example - Jssor Slider, Carousel, Slideshow</title>
 </head>
 <body>
     <!-- use jssor.slider.min.js instead for release -->
-    <!-- jssor.slider.min.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.core.js"></script>
-    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <!-- jssor.slider.min.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
     <script type="text/javascript" src="../js/jssor.slider.js"></script>
     <script>
         jssor_slider1_starter = function (containerId) {
@@ -37,7 +36,7 @@
         }
     </script>
     <!-- Jssor Slider Begin -->
-    <!-- You can move inline styles to css file or css block. -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
     <div id="slider1_container" style="position: relative; width: 600px; height: 300px;">
     
         <!-- Loading Screen -->
@@ -66,7 +65,7 @@ http://www.jssor.com" target="_blank"><img src="../img/landscape/02.jpg"/></a></
                 </div>
             </div>
         </div>
-        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+        <a style="display: none" href="http://www.jssor.com">Image Slider</a>
         <!-- Trigger -->
         <script>
             jssor_slider1_starter('slider1_container');

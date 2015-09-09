@@ -2,16 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Arrow Navigator Example - Jssor Slider, Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Navigator Example - Jssor Slider, Carousel, Slideshow</title>
 </head>
 <body style="font-family:Arial, Verdana;background-color:#fff;">
     <!-- it works the same with all jquery version from 1.x to 2.x -->
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
-    <!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
-    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.core.js"></script>
-    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
     <script type="text/javascript" src="../js/jssor.slider.js"></script>
     <script>
         jQuery(document).ready(function ($) {
@@ -29,7 +28,7 @@
         });
     </script>
     <!-- Jssor Slider Begin -->
-    <!-- You can move inline styles to css file or css block. -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
     <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px;
         height: 300px; ">
 
@@ -45,40 +44,43 @@
             <div><img u="image" src="../img/photography/008.jpg" /></div>
         </div>
         
-        <!-- Arrow Navigator Skin Begin -->
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
         <style>
             /* jssor slider arrow navigator skin 03 css */
             /*
-            .jssora03l              (normal)
-            .jssora03r              (normal)
-            .jssora03l:hover        (normal mouseover)
-            .jssora03r:hover        (normal mouseover)
-            .jssora03ldn            (mousedown)
-            .jssora03rdn            (mousedown)
+            .jssora03l                  (normal)
+            .jssora03r                  (normal)
+            .jssora03l:hover            (normal mouseover)
+            .jssora03r:hover            (normal mouseover)
+            .jssora03l.jssora03ldn      (mousedown)
+            .jssora03r.jssora03rdn      (mousedown)
             */
-            .jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
-            {
-            	position: absolute;
-            	cursor: pointer;
-            	display: block;
+            .jssora03l, .jssora03r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
                 background: url(../img/a03.png) no-repeat;
-                overflow:hidden;
+                overflow: hidden;
             }
             .jssora03l { background-position: -3px -33px; }
             .jssora03r { background-position: -63px -33px; }
             .jssora03l:hover { background-position: -123px -33px; }
             .jssora03r:hover { background-position: -183px -33px; }
-            .jssora03ldn { background-position: -243px -33px; }
-            .jssora03rdn { background-position: -303px -33px; }
+            .jssora03l.jssora03ldn { background-position: -243px -33px; }
+            .jssora03r.jssora03rdn { background-position: -303px -33px; }
         </style>
         <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+        <span u="arrowleft" class="jssora03l" style="top: 123px; left: 8px;">
         </span>
         <!-- Arrow Right -->
-        <span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+        <span u="arrowright" class="jssora03r" style="top: 123px; right: 8px;">
         </span>
-        <!-- Arrow Navigator Skin End -->
-        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+        <!--#endregion Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">Image Slider</a>
     </div>
     <!-- Jssor Slider End -->
 </body>

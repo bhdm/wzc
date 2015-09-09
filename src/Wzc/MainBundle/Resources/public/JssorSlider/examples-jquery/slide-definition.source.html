@@ -2,16 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Slide Definition Example - Jssor Slider, Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Definition Example - Jssor Slider, Carousel, Slideshow</title>
 </head>
 <body>
     <!-- it works the same with all jquery version from 1.x to 2.x -->
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
-    <!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
-    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.core.js"></script>
-    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
     <script type="text/javascript" src="../js/jssor.slider.js"></script>
     <script>
         jQuery(document).ready(function ($) {
@@ -39,7 +38,7 @@
         });
     </script>
     <!-- Jssor Slider Begin -->
-    <!-- You can move inline styles to css file or css block. -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
     <div id="slider1_container" style="position: relative; width: 600px; height: 300px;">
     
         <!-- Loading Screen -->
@@ -68,7 +67,7 @@ http://www.jssor.com" target="_blank"><img src="../img/landscape/02.jpg"/></a></
                 </div>
             </div>
         </div>
-        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+        <a style="display: none" href="http://www.jssor.com">Image Slider</a>
     </div>
     <!-- Jssor Slider End -->
 </body>

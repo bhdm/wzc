@@ -244,8 +244,8 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.core.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.utils.js') }}"></script>
+    {#<script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.core.js') }}"></script>#}
+    <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/wzcmain/JssorSlider/js/jssor.slider.js') }}"></script>
 
     <script>
@@ -257,8 +257,8 @@
                 $PauseOnHover: 1,
 
                 $ArrowKeyNavigation: true,
-                $SlideEasing: $JssorEasing$.$EaseOutQuint,
                 $SlideDuration: 800,
+//                $SlideEasing: $JssorEasing$.$EaseOutQuint,
                 $MinDragOffsetToSlide: 20,
                 //$SlideWidth: 600,
                 //$SlideHeight: 300,
@@ -273,7 +273,9 @@
                     $Class: $JssorArrowNavigator$,
                     $ChanceToShow: 2,
                     $AutoCenter: 0,
-                    $Steps: 1
+                    $Steps: 1,
+                    $SpacingX: 1,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $SpacingY: 0,
                 }
             };
 

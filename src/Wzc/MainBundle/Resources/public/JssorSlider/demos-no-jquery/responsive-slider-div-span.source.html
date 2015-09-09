@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Responsive Slider with Float Text - Jssor Slider, Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider with Float Text - Jssor Slider, Carousel, Slideshow</title>
 </head>
 <body style="font-family:Arial, Verdana;background-color:#fff;">
     <!-- Caption Style -->
@@ -45,9 +45,8 @@
         }
     </style>
     <!-- use jssor.slider.min.js instead for release -->
-    <!-- jssor.slider.min.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.core.js"></script>
-    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <!-- jssor.slider.min.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
     <script type="text/javascript" src="../js/jssor.slider.js"></script>
     <script>
     </script> 
@@ -117,32 +116,26 @@
                     }
 
                     //clear fix for safari 3.1, chrome 3
-                    var toClearElment = $JssorUtils$.$GetElement("clearFixDiv");
-                    toClearElment && $JssorUtils$.$Css(toClearElment, "clear", clearFix);
+                    var toClearElment = $Jssor$.$GetElement("clearFixDiv");
+                    toClearElment && $Jssor$.$Css(toClearElment, "clear", clearFix);
 
-                    jssor_slider2.$SetScaleWidth(sliderWidth);
+                    jssor_slider2.$ScaleWidth(sliderWidth);
                 }
                 else
-                    $JssorUtils$.$Delay(ScaleSlider, 30);
+                    $Jssor$.$Delay(ScaleSlider, 30);
             }
 
             ScaleSlider();
-            $JssorUtils$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
 
-
-            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-                $JssorUtils$.$OnWindowResize(window, ScaleSlider);
-            }
-
-            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-            //    $JssorUtils$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //}
+            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             //responsive code end
         };
     </script>
     <div style="display: block; overflow: hidden; margin: 20px auto 0 auto; padding: 10px 5px 5px 10px; width: 96%; max-width:940px; min-width: 240px; border: 1px solid #ccc; background-color: #fff; box-shadow: 2px 2px 10px 2px #dddddd; -webkit-box-shadow: 0px 0px 5px 0px #dddddd; font-size: .8em; line-height: 1.5em;">
     <!-- Jssor Slider Begin -->
-    <!-- You can move inline styles to css file or css block. -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
         <div id="slider2_container" style="position: relative; margin: 0px 5px 5px 0px; float: left; top: 0px; left: 0px; width: 600px;
             height: 300px; overflow: hidden;">
             <!-- Slides Container -->
@@ -169,7 +162,7 @@
                     <div u="caption" t="FLTTR|R" style="position:absolute;left:380px;top:80px;width:130px;height:40px;font-size:36px;color:#fff;line-height:40px;">Please!</div>
                 </div>
             </div>
-        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+        <a style="display: none" href="http://www.jssor.com">Image Slider</a>
             <!-- Trigger -->
             <script>
                 jssor_slider2_starter('slider2_container');

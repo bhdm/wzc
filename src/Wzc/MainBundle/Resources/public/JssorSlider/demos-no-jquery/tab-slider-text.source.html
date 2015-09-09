@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Tab Slider Demo - Jssor Slider, Slideshow with Javascript Source Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Slider Demo - Jssor Slider, Carousel, Slideshow with Javascript Source Code</title>
 </head>
 <body style="background:#fff;">
     <!-- Caption Style -->
@@ -45,9 +45,8 @@
         }
     </style>
     <!-- use jssor.slider.min.js instead for release -->
-    <!-- jssor.slider.min.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.core.js"></script>
-    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <!-- jssor.slider.min.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
     <script type="text/javascript" src="../js/jssor.slider.js"></script>
     <script>
         jssor_slider2_starter = function (containerId) {
@@ -97,28 +96,22 @@
                     //keep the slider width no more than 602
                     sliderWidth = Math.min(sliderWidth, 602);
 
-                    jssor_slider2.$SetScaleWidth(sliderWidth);
+                    jssor_slider2.$ScaleWidth(sliderWidth);
                 }
                 else
-                    $JssorUtils$.$Delay(ScaleSlider, 30);
+                    $Jssor$.$Delay(ScaleSlider, 30);
             }
 
             ScaleSlider();
-            $JssorUtils$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
 
-
-            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-                $JssorUtils$.$OnWindowResize(window, ScaleSlider);
-            }
-
-            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-            //    $JssorUtils$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //}
+            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             //responsive code end
         };
     </script>
     <!-- Jssor Slider Begin -->
-    <!-- You can move inline styles to css file or css block. -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
     <div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 602px; height: 331px; background: #fff; overflow: hidden; ">
         
         <!-- Slides Container -->
@@ -144,57 +137,78 @@
                 <div u="thumb">Carousel</div>
             </div>
         </div>
-        
-        <!-- ThumbnailNavigator Skin Begin -->
-        <div u="thumbnavigator" class="jssort12" style="position: absolute; width: 500px; height: 30px; left:0px; top: 0px;">
-            <!-- Thumbnail Item Skin Begin -->
-            <style>
-                /* jssor slider thumbnail navigator skin 12 css */
-                /*
-                .jssort12 .p            (normal)
-                .jssort12 .p:hover      (normal mouseover)
-                .jssort12 .pav          (active)
-                .jssort12 .pav:hover    (active mouseover)
-                .jssort12 .pdn          (mousedown)
-                */
-                .jssort12 .w, .jssort12 .phv .w
-                {
-                	cursor: pointer;
-                	position: absolute;
-                	WIDTH: 99px;
-                	HEIGHT: 28px;
-                	border: 1px solid gray;
-                	top: 0px;
-                	left: -1px;
+        <!--#region ThumbnailNavigator Skin Begin -->
+        <style>
+            /* jssor slider thumbnail navigator skin 12 css */
+            /*
+            .jssort12 .p            (normal)
+            .jssort12 .p:hover      (normal mouseover)
+            .jssort12 .pav          (active)
+            .jssort12 .pav:hover    (active mouseover)
+            .jssort12 .pdn          (mousedown)
+            */
+            .jssort12 {
+                position: absolute;
+                width: 500px;
+                height: 30px;
+            }
+
+                .jssort12 .w {
+                    cursor: pointer;
+                    position: absolute;
+                    WIDTH: 99px;
+                    HEIGHT: 28px;
+                    border: 1px solid gray;
+                    top: 0px;
+                    left: -1px;
                 }
-                .jssort12 .pav .w, .jssort12 .pdn .w
-                {
-                	border-bottom: 1px solid #fff;
+
+                .jssort12 .p {
+                    position: absolute;
+                    width: 100px;
+                    height: 30px;
+                    top: 0;
+                    left: 0;
+                    padding: 0px;
                 }
-                .jssort12 .c
-                {
+
+                .jssort12 .pav .w, .jssort12 .pdn .w {
+                    border-bottom: 1px solid #fff;
+                }
+
+                .jssort12 .c {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    line-height: 28px;
+                    text-align: center;
                     color: #000;
-                    font-size:13px;             	
+                    font-size: 13px;
                 }
-                .jssort12 .p .c, .jssort12 .pav:hover .c
-                {
-                	background-color:#eee;
+
+                .jssort12 .p .c, .jssort12 .pav:hover .c {
+                    background-color: #eee;
                 }
-                .jssort12 .pav .c, .jssort12 .p:hover .c, .jssort12 .phv .c
-                {
-                	background-color:#fff;
+
+                .jssort12 .pav .c, .jssort12 .p:hover .c {
+                    background-color: #fff;
                 }
-            </style>
-            <div u="slides" style="cursor: move; top:0px; left:0px; border-left: 1px solid gray;">
-                <div u="prototype" class="p" style="POSITION: absolute; WIDTH: 100px; HEIGHT: 30px; TOP: 0; LEFT: 0; padding:0px;">
-                    <div class=w><ThumbnailTemplate class="c" style=" WIDTH: 100%; HEIGHT: 100%; position:absolute; TOP: 0; LEFT: 0; line-height:28px; text-align:center;"></ThumbnailTemplate></div>
+        </style>
+
+        <div u="thumbnavigator" class="jssort12" style="left:0px; top: 0px;">
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides" style="cursor: default; top: 0px; left: 0px; border-left: 1px solid gray;">
+                <div u="prototype" class="p">
+                    <div class=w><div u="thumbnailtemplate" class="c"></div></div>
                 </div>
             </div>
             <!-- Thumbnail Item Skin End -->
         </div>
-        <!-- ThumbnailNavigator Skin End -->
+        <!--#endregion ThumbnailNavigator Skin End -->
 
-        <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
+        <a style="display: none" href="http://www.jssor.com">Image Slider</a>
         <!-- Trigger -->
         <script>
             jssor_slider2_starter('slider2_container');

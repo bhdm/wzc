@@ -76,7 +76,7 @@ class TestController extends Controller
                 unset($SxGeo);
 
                 $stat = new Stats();
-                $stat->setType('test');
+                $stat->setType('test_new');
                 $stat->setIp($ip);
                 $stat->setCity($ipCity['name_ru']);
                 $this->getDoctrine()->getManager()->persist($stat);
@@ -86,8 +86,7 @@ class TestController extends Controller
                 $page['title'] = '';
                 $page['body'] = '
                 <p>Ваш показатель  <b>'.$sum.'</b> баллов. <br />
-                При сумме 6 баллов и более наличие у Вас болезни Крона&nbsp;<strong>высоковероятно</strong>.<br />
-                Пожалуйста, обратитесь к врачу-гастроэнтерологу.<br />
+                сли Вы набрали <b>8 и более</b> баллов – Вы, с высокой долей вероятности, являетесь пациентом с болезнью Крона.  <br />
                 <br />
                 Вы можете воспользоваться <a href="'.$url.'" style="font-weight: bold; color: #991199;">нашей картой</a> для поиска клиники
                 </p>';

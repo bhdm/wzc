@@ -55,8 +55,11 @@ class TestStatisticController extends Controller{
         $map = $this->getDoctrine()->getRepository('WzcMainBundle:Stats')->stats('map');
         #Прохождение теста
         $test = $this->getDoctrine()->getRepository('WzcMainBundle:Stats')->stats('test');
+        #Прохождение нового теста
+        $test2 = $this->getDoctrine()->getRepository('WzcMainBundle:Stats')->stats('test_new');
         return array(
             'test' => $test,
+            'test2' => $test2,
             'map' => $map,
             'doc' => $doc
         );

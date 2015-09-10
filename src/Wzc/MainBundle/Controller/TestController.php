@@ -62,26 +62,25 @@ class TestController extends Controller
             $this->getDoctrine()->getManager()->persist($testStatistic);
             $this->getDoctrine()->getManager()->flush($testStatistic);
 
+            $dir = __DIR__.'/../Geo/SxGeoCity.dat';
+            $SxGeo = new SxGeo($dir);
+
+            $ip = $_SERVER["REMOTE_ADDR"];
+            if ($ip == '127.0.0.1'){
+                $ip = '84.253.73.126';
+            }
+            $info = $SxGeo->getCityFull($ip);
+            $ipCity = $info['city'];
+            unset($SxGeo);
+
+            $stat = new Stats();
+            $stat->setType('test_new');
+            $stat->setIp($ip);
+            $stat->setCity($ipCity['name_ru']);
+            $this->getDoctrine()->getManager()->persist($stat);
+            $this->getDoctrine()->getManager()->flush($stat);
+
             if ( $sum >= 6 ){
-
-                $dir = __DIR__.'/../Geo/SxGeoCity.dat';
-                $SxGeo = new SxGeo($dir);
-
-                $ip = $_SERVER["REMOTE_ADDR"];
-                if ($ip == '127.0.0.1'){
-                    $ip = '84.253.73.126';
-                }
-                $info = $SxGeo->getCityFull($ip);
-                $ipCity = $info['city'];
-                unset($SxGeo);
-
-                $stat = new Stats();
-                $stat->setType('test_new');
-                $stat->setIp($ip);
-                $stat->setCity($ipCity['name_ru']);
-                $this->getDoctrine()->getManager()->persist($stat);
-                $this->getDoctrine()->getManager()->flush($stat);
-
                 $url = $this->generateUrl('map');
                 $page['title'] = '';
                 $page['body'] = '
@@ -92,7 +91,7 @@ class TestController extends Controller
                 </p>';
             }else{
                 $page['title'] = '';
-                $page['body'] = '<p>Ваш показатель <b>'.$sum.'</b> баллов. При сумме менее 6 баллов наличие у Вас болезни Крона&nbsp;<strong>маловероятно</strong>.</p>';
+                $page['body'] = '<p>Ваш показатель <b>'.$sum.'</b> баллов. При сумме менее 8 баллов наличие у Вас болезни Крона&nbsp;<strong>маловероятно</strong>.</p>';
             }
             return array('answer' => $page);
         }

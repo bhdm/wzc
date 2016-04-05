@@ -28,7 +28,7 @@ class MetroController extends Controller{
         $paginator  = $this->get('knp_paginator');
         $pagination = $paginator->paginate(
             $items,
-            $this->get('request')->query->get('metro', 1),
+            $this->get('request')->query->get('page', 1),
             20
         );
 

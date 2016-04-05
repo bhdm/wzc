@@ -28,7 +28,7 @@ class MapController extends Controller{
         $paginator  = $this->get('knp_paginator');
         $pagination = $paginator->paginate(
             $items,
-            $this->get('request')->query->get('map', 1),
+            $this->get('request')->query->get('page', 1),
             20
         );
 

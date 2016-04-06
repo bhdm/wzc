@@ -11,6 +11,7 @@
 {% endblock %}
 
 {% block content %}
+    {% set p = (page * 20) - 20 %}
     <div class="well">
         <table class="table">
             <tr>
@@ -20,9 +21,9 @@
                 <th></th>
                 <th class="setting">Инструменты</th>
             </tr>
-            {% for item in pagination %}
+            {% for k,item in pagination %}
                 <tr>
-                    <td>{{ item.id }}</td>
+                    <td>{{ k + p +1 }}</td>
                     <td>{{ item.title }}</td>
                     <td>{{ item.phone }}</td>
                     <td></td>

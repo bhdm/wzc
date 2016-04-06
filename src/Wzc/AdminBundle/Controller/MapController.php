@@ -32,7 +32,7 @@ class MapController extends Controller{
             20
         );
 
-        return array('pagination' => $pagination);
+        return array('pagination' => $pagination, 'page' => $this->get('request')->query->get('page', 1),);
     }
 
     /**

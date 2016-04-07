@@ -72,6 +72,9 @@
                     {% elseif sessionCity == 'ХМАО' %}
                         center: [61.098715, 72.666646],
                         zoom: 7,
+                    {% elseif sessionCity == 'Уфа' %}
+                        center: [54.735147, 55.958727],
+                        zoom: 7,
                     {% else %}
                         center: [{{ ipCity.lat }}, {{ ipCity.lon }}],
                         zoom: 8,

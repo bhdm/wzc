@@ -105,7 +105,7 @@
                 myPlacemark = new ymaps.Placemark([{{ c.latitude }}, {{ c.longitude }}], {
                     {#iconContent: '{{ c.phone }}',#}
                     hintContent: '{{ c.title }} {{ c.phone }}',
-                    balloonContent: '<div><b>{{ c.title |replace({"\n": '<br />',"\r" : '' }) | raw }}</b><br /><b>Адрес:</b> {{ c.adrs |replace({'\n': '<br />' }) | raw }}<br /><b>Телефон:</b> {{ c.phone |replace({'\n': '<br />' }) | raw }}<br />{{ c.body |replace({'\n': '<br />' }) | raw }}</div>',
+                    balloonContent: '<div><b>{{ c.title |replace({"\n": '<br />',"\r" : '' }) | raw }}</b><br /><b>Адрес:</b> {{ c.adrs |replace({"\n": '<br />',"\r" : '' }) | raw }}<br /><b>Телефон:</b> {{ c.phone |replace({"\n": '<br />',"\r" : '' }) | raw }}<br />{{ c.body |replace({"\n": '<br />',"\r" : '' }) | raw }}</div>',
                 },{
                     iconLayout: 'default#image',
                     iconImageHref: '{{ asset('bundles/wzcmain/images/icoHospital.png') }}',
